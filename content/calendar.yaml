@@ -16,6 +16,7 @@ days:
   - day: 1
     title: "Sarf ilminin önemi + Mecmûatü's-Sarf"
     post:
+      tags: ["#sarf", "#sarfilmi", "#mecmuatüssarf"]
       kind: video
       theme: kufi
       caption: |
@@ -30,7 +31,6 @@ days:
         eski nüshaya sadık yeni dizgi, ayrı ayrı düzenlenmiş haşiyeler,
         karışabilecek yerlerde hareke.
       book_line: "Mecmûatü's-Sarf"
-      tags: ["#mecmuatüssarf"]
       scenes:
         - type: hook
           kicker: "ARAPÇA"
@@ -99,6 +99,7 @@ days:
   - day: 2
     title: "el-Emsile nedir?"
     post:
+      tags: ["#emsile", "#sarf", "#arapçaöğren"]
       kind: carousel
       theme: samua
       caption: |
@@ -172,6 +173,7 @@ days:
   - day: 3
     title: "el-Binâ: 35 bâb"
     post:
+      tags: ["#bina", "#sarf", "#arapçagramer"]
       kind: video
       caption: |
         Emsile tek fiilin çekimlerini gösterir. Binâ ise fiillerin kaç farklı
@@ -244,6 +246,7 @@ days:
   - day: 4
     title: "Nahiv nedir? + Mecmûatü'n-Nahiv"
     post:
+      tags: ["#nahiv", "#nahivilmi", "#arapçakitap"]
       kind: video
       caption: |
         Sarf kelimeyi tanıtır, nahiv cümleyi kurar.
@@ -305,6 +308,7 @@ days:
   - day: 5
     title: "Arapçada kök mantığı"
     post:
+      tags: ["#sarf", "#arapçaöğren", "#arapçagramer"]
       kind: carousel
       caption: |
         Arapça kelime ezberlemek, aslında kök ezberlemektir.
@@ -370,6 +374,7 @@ days:
   - day: 6
     title: "Hareke anlamı nasıl değiştirir?"
     post:
+      tags: ["#hareke", "#arapçaöğren", "#arapçagramer"]
       kind: video
       caption: |
         Arapçada harfler aynı kalır, hareke değişir — ve anlam başkalaşır.
@@ -431,6 +436,7 @@ days:
   - day: 7
     title: "Haftalık: talebe için 5 usul"
     post:
+      tags: ["#talebe", "#ilimyolu", "#arapçaöğren"]
       kind: carousel
       caption: |
         Arapça çalışmasını bırakanların çoğu zorlandığı için değil, usulsüz
@@ -493,6 +499,7 @@ days:
   - day: 8
     title: "el-Maksûd + Şürûhu'l-Maksûd"
     post:
+      tags: ["#maksud", "#sarf", "#klasikmetin"]
       kind: video
       caption: |
         Emsile örnek verir, Binâ kalıbı gösterir. el-Maksûd ise kuralı söyler.
@@ -555,6 +562,7 @@ days:
   - day: 9
     title: "et-Tasrîfu'l-İzzî"
     post:
+      tags: ["#sarfilmi", "#klasikmetin", "#talebe"]
       kind: video
       caption: |
         Sarfın klasik dizisinde dördüncü metin: İzzî.
@@ -613,6 +621,7 @@ days:
   - day: 10
     title: "Vezin (mîzan) nedir?"
     post:
+      tags: ["#vezin", "#sarf", "#arapçagramer"]
       kind: carousel
       caption: |
         Arapçanın terazisi: فَعَلَ
@@ -677,6 +686,7 @@ days:
   - day: 11
     title: "Lâzım ve müteaddî fiil"
     post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
       kind: video
       caption: |
         Bazı fiiller nesne ister, bazıları istemez.
@@ -738,6 +748,7 @@ days:
   - day: 12
     title: "Âcurrûmiyye ve Tuhfetü's-Seniyye"
     post:
+      tags: ["#nahiv", "#arapçakitap", "#klasikmetin"]
       kind: video
       caption: |
         Nahve giriş denince akla gelen ilk metin: el-Âcurrûmiyye.
@@ -799,6 +810,7 @@ days:
   - day: 13
     title: "İ'râb nedir?"
     post:
+      tags: ["#irab", "#nahiv", "#arapçagramer"]
       kind: carousel
       caption: |
         Türkçede "kitabı", "kitaba", "kitapta" deriz — ek değişir.
@@ -861,6 +873,7 @@ days:
   - day: 14
     title: "Mebnî ve mu'reb"
     post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
       kind: video
       caption: |
         Her kelimenin son harekesi değişmez.
@@ -922,6 +935,7 @@ days:
   - day: 15
     title: "Arapça öğrenirken 3 yaygın hata"
     post:
+      tags: ["#arapçaöğren", "#arapçaders", "#talebe"]
       kind: carousel
       caption: |
         Üç hata, yıllarca ilerlemeyi engelliyor:
@@ -978,6 +992,7 @@ days:
   - day: 16
     title: "İbn Hişâm ve Kavâidü'l-İ'râb"
     post:
+      tags: ["#nahiv", "#arapçakitap", "#klasikmetin"]
       kind: video
       caption: |
         Nahiv denince adı en çok anılan isimlerden biri: İbn Hişâm.
@@ -1039,6 +1054,7 @@ days:
   - day: 17
     title: "Marife ve nekire"
     post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
       kind: carousel
       caption: |
         Türkçede "bir kitap" ve "kitap" arasındaki farkı ekle değil, bağlamla
@@ -1099,6 +1115,7 @@ days:
   - day: 18
     title: "İsim cümlesi ve fiil cümlesi"
     post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaders"]
       kind: video
       caption: |
         Arapçada cümle, ilk kelimesine göre adlandırılır.
@@ -1158,6 +1175,7 @@ days:
   - day: 19
     title: "Molla Câmî — nahvin zirvesi"
     post:
+      tags: ["#mollacami", "#nahiv", "#klasikmetin"]
       kind: video
       caption: |
         Medrese tahsilinde nahvin en üst basamaklarından biri: Molla Câmî.
@@ -1217,6 +1235,7 @@ days:
   - day: 20
     title: "Harf-i cerler"
     post:
+      tags: ["#harficer", "#nahiv", "#arapçagramer"]
       kind: carousel
       caption: |
         Arapçada bazı harfler, kendilerinden sonraki ismi esre yapar.
@@ -1284,6 +1303,7 @@ days:
   - day: 21
     title: "Ezber mi, anlama mı?"
     post:
+      tags: ["#ilimyolu", "#talebe", "#medreseusulü"]
       kind: video
       caption: |
         "Ezber kötüdür" sözü, klasik usulü hiç tanımayanların sözüdür.
@@ -1340,6 +1360,7 @@ days:
   - day: 22
     title: "Belâgat nedir? + Telhîsu'l-Miftâh"
     post:
+      tags: ["#belagat", "#arapçakitap", "#klasikmetin"]
       kind: video
       caption: |
         Sarf kelimeyi doğru kurar, nahiv cümleyi doğru dizer.
@@ -1403,6 +1424,7 @@ days:
   - day: 23
     title: "Sülâsî mezîd bablar"
     post:
+      tags: ["#sarf", "#sarfilmi", "#arapçagramer"]
       kind: carousel
       caption: |
         Üç harfli bir fiile harf eklenirse ne olur? Anlamı değişir — rastgele
@@ -1469,6 +1491,7 @@ days:
   - day: 24
     title: "Haşiye nedir, neden önemli?"
     post:
+      tags: ["#haşiye", "#klasikmetin", "#ilimyolu"]
       kind: video
       caption: |
         Klasik bir sayfayı ilk defa açan talebe şaşırır: ortada küçük bir metin,
@@ -1532,6 +1555,7 @@ days:
   - day: 25
     title: "İsm-i fâil ve ism-i mef'ûl"
     post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaöğren"]
       kind: carousel
       caption: |
         Fiil bir işi bildirir. Peki o işi yapanı ve yapılanı nasıl söyleriz?
@@ -1595,6 +1619,7 @@ days:
   - day: 26
     title: "Medrese usulü: neden metin okunur?"
     post:
+      tags: ["#ilimyolu", "#klasikmetin", "#medreseusulü"]
       kind: video
       caption: |
         Bugün herkesin elinde yüzlerce kaynak var; yine de ilerleme yavaş.
@@ -1655,6 +1680,7 @@ days:
   - day: 27
     title: "Sıfırdan nahiv: ed-Dürûsü'n-Nahviyye"
     post:
+      tags: ["#nahiv", "#arapçaders", "#arapçakitap"]
       kind: video
       caption: |
         Klasik metinler ağır geliyorsa, önce basamakları yakınlaştırmak gerekir.
@@ -1714,6 +1740,7 @@ days:
   - day: 28
     title: "Arapça ve Kur'an'ı anlamak"
     post:
+      tags: ["#kuran", "#tefsir", "#arapçaöğren"]
       kind: video
       caption: |
         Meal okumak başka, metni anlamak başkadır.
@@ -1770,6 +1797,7 @@ days:
   - day: 29
     title: "90 günde sarf: çalışma takvimi"
     post:
+      tags: ["#sarf", "#arapçaöğren", "#talebe"]
       kind: carousel
       caption: |
         Sarf üç ayda bitmez — ama üç ayda sağlam bir temel kurulur.
@@ -1835,6 +1863,7 @@ days:
   - day: 30
     title: "Sarf ve nahiv bir arada"
     post:
+      tags: ["#sarf", "#nahiv", "#arapçakitap"]
       kind: video
       caption: |
         Otuz gün boyunca tek bir şeyi anlatmaya çalıştık: Arapça, ezberlenerek

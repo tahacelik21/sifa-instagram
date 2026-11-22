@@ -31,14 +31,21 @@ def load_calendar() -> dict[int, dict]:
 
 
 def hashtags(day: int, extra: list[str] | None = None) -> str:
+    """Instagram gönderi başına en fazla 5 etikete izin veriyor (Aralık 2025).
+
+    Sıra: sabit marka etiketleri → günün kendi etiketleri → havuzdan tamamlama.
+    Beş yer az olduğu için alakasız etiket koymaktansa günün konusuna yakın
+    olanlar tercih ediliyor; gün etiketleri content/calendar.yaml'da.
+    """
     h = BRAND["hashtags"]
-    r = random.Random(day * 977)
-    pool = [t for t in h["pool"] if t not in h["core"]]
-    tags = list(h["core"]) + r.sample(pool, k=min(8, len(pool)))
-    for t in extra or []:
+    limit = h.get("max", 5)
+    tags = list(h.get("always", []))
+    for t in list(extra or []) + random.Random(day * 977).sample(h["pool"], k=len(h["pool"])):
+        if len(tags) >= limit:
+            break
         if t not in tags:
             tags.append(t)
-    return " ".join(tags)
+    return " ".join(tags[:limit])
 
 
 def caption(day: int, spec: dict, book_url: str | None) -> str:
@@ -124,15 +131,22 @@ def build_day(day: int, only: str | None = None) -> Path:
             continue
         build_slot(day, slot, d[slot], outdir)
 
+    write_caption(day, d)
+    return outdir
+
+
+def write_caption(day: int, d: dict) -> Path:
+    outdir = OUT / f"gun-{day:02d}"
+    outdir.mkdir(parents=True, exist_ok=True)
     book = d["post"].get("book_url")
     if not book:
         slug = next((s.get("book") for s in d["post"]["scenes"] if s.get("book")), None)
         if slug:
             from .config import BOOKS
             book = BOOKS[slug]["url"]
-    (outdir / "aciklama.txt").write_text(caption(day, d["post"], book), encoding="utf-8")
-    print(f"  açıklama: {outdir / 'aciklama.txt'}")
-    return outdir
+    p = outdir / "aciklama.txt"
+    p.write_text(caption(day, d["post"], book), encoding="utf-8")
+    return p
 
 
 def check(days: list[int]) -> int:
@@ -166,6 +180,8 @@ def main(argv=None):
     g.add_argument("--days", help="aralık, örn. 1-7")
     g.add_argument("--all", action="store_true")
     ap.add_argument("--only", choices=["post", "story"])
+    ap.add_argument("--aciklama", action="store_true",
+                    help="render etme, sadece aciklama.txt dosyalarını yeniden yaz")
     ap.add_argument("--check", action="store_true",
                     help="render etme, sadece süreleri ölç")
     a = ap.parse_args(argv)
@@ -178,6 +194,11 @@ def main(argv=None):
     else:
         days = [a.day]
 
+    if a.aciklama:
+        for d in days:
+            write_caption(d, load_calendar()[d])
+        print(f"{len(days)} açıklama yenilendi")
+        return
     if a.check:
         raise SystemExit(1 if check(days) else 0)
 

@@ -114,7 +114,11 @@ def test_caption():
     cal = load_calendar()
     c = caption(1, cal[1]["post"], "https://ornek")
     assert BRAND["handle"] in c and "https://ornek" in c and "#" in c
-    assert len(hashtags(1).split()) >= 10
+    # Instagram gönderi başına 5 etiketle sınırlı (Aralık 2025)
+    for gun in (1, 7, 22, 30):
+        t = hashtags(gun, cal[gun]["post"].get("tags"))
+        assert len(t.split()) == 5, f"gün {gun}: {t}"
+        assert len(set(t.split())) == 5, f"gün {gun} tekrar eden etiket: {t}"
     assert caption(1, cal[2]["post"], None).count("http") == 0, "kitapsız günde link çıkmamalı"
     print(f"  açıklama: {len(c)} karakter, {len(hashtags(1).split())} etiket")
 

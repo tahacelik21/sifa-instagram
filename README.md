@@ -137,6 +137,23 @@ kelimeyi kullanırsan ses ve görüntü örtüşür.
 | `book` | kicker, book (slug) | Kitap tanıtımı (görsel varsa otomatik) |
 | `cta` | tr, body | Kapanış |
 
+### Etiketler
+
+Instagram **gönderi başına en fazla 5 etikete** izin veriyor (Aralık 2025'ten beri;
+önceki sınır 30'du). Beş yer az olduğu için etiketler günün konusuna göre seçiliyor:
+
+- `brand.yaml` → `hashtags.always`: her gönderide çıkan 2 etiket
+- `content/calendar.yaml` → her günün `post.tags` alanı: o güne özel 3 etiket
+- Gün etiket tanımlamamışsa kalan yerler `hashtags.pool` havuzundan tamamlanır
+
+Etiketleri değiştirdikten sonra videoları yeniden üretmeye gerek yok:
+
+```bash
+python -m src.build --all --aciklama
+```
+
+Sadece `aciklama.txt` dosyalarını yeniden yazar.
+
 ### Kitaplar
 
 `content/books.yaml` — slug, başlık, alt başlık, künye, link. `book: mecmuatus-sarf`

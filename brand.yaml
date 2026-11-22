@@ -66,7 +66,10 @@ cta:
   sub: "sifayayinevi.com.tr"
 
 hashtags:
-  core: ["#şifayayınevi", "#arapça", "#arapçaöğren", "#sarf", "#nahiv", "#ilim"]
+  max: 5                                    # Instagram sınırı (Aralık 2025'ten beri)
+  always: ["#şifayayınevi", "#arapça"]      # her gönderide
+  # Kalan 3 yer günün kendi etiketlerinden (content/calendar.yaml → tags).
+  # Gün etiket tanımlamamışsa aşağıdaki havuzdan tamamlanır.
   pool:
     - "#arapçagramer"
     - "#emsile"
