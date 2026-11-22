@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:01,170
+اَلنَّحْوُ.
+
+2
+00:00:01,370 --> 00:00:03,311
+Kelimenin cümledeki görevini inceler.
+
+3
+00:00:04,111 --> 00:00:05,970
+Çünkü tek bir hareke anlamı tersine
+
+4
+00:00:05,970 --> 00:00:06,766
+çevirebilir.
+
+5
+00:00:07,566 --> 00:00:09,247
+Örneğiyle bugünkü gönderide.

@@ -1,0 +1,75 @@
+1
+00:00:00,350 --> 00:00:02,376
+Arapçada cümlenin türünü ilk kelimesi
+
+2
+00:00:02,376 --> 00:00:04,511
+söyler. Türkçede ise cümlenin sonunu
+
+3
+00:00:04,511 --> 00:00:05,606
+beklemek gerekir.
+
+4
+00:00:06,406 --> 00:00:07,773
+اَلْبَيْتُ كَبِيرٌ:
+
+5
+00:00:07,973 --> 00:00:08,939
+ev büyüktür.
+
+6
+00:00:09,139 --> 00:00:10,341
+ذَهَبَ الْوَلَدُ:
+
+7
+00:00:10,541 --> 00:00:11,246
+çocuk gitti.
+
+8
+00:00:12,046 --> 00:00:14,404
+İsim cümlesi sabit bir hâli bildirir.
+
+9
+00:00:14,404 --> 00:00:16,702
+Mübtedâ ve haber, ikisi de merfû.
+
+10
+00:00:16,702 --> 00:00:19,059
+Zaman bildirmez; oluş değil, durum
+
+11
+00:00:19,059 --> 00:00:19,707
+anlatır.
+
+12
+00:00:20,507 --> 00:00:23,293
+Fiil cümlesi bir oluşu bildirir.
+
+13
+00:00:23,293 --> 00:00:25,920
+Fiil, fâil ve varsa mef'ûl.
+
+14
+00:00:25,920 --> 00:00:28,627
+Zamanı da fiilin kendisi taşır.
+
+15
+00:00:29,427 --> 00:00:32,191
+Önce ilk kelimeye bak. Türü bilmeden i'râb
+
+16
+00:00:32,191 --> 00:00:32,928
+yapılmaz.
+
+17
+00:00:33,728 --> 00:00:36,555
+Cümleyi baştan tanı. Gerisi kolaylaşır.
+
+18
+00:00:36,555 --> 00:00:39,068
+İlk kelime, cümlenin bütün haritasını
+
+19
+00:00:39,068 --> 00:00:39,633
+verir.

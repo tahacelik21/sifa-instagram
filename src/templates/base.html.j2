@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ assets }}/fonts/fonts.css">
+<style>
+/* ===================== tema değişkenleri ===================== */
+:root{
+{% for k, v in theme.vars.items() %}  {{ k }}: {{ v }};
+{% endfor %}
+  --enter: {{ theme.enter }};
+  --exitAnim: {{ theme.exit }};
+  --textEnter: {{ theme.text }};
+  --ease: cubic-bezier(.22,.9,.26,1);
+  --easeOut: cubic-bezier(.5,0,.75,0);
+  --total: {{ total }}s;
+  --kin: {{ v.kinetic }};
+  --disp: "{{ brand.fonts.display }}";
+  --body: "{{ brand.fonts.body }}";
+  --ar: "{{ brand.fonts.arabic }}";
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:{{ W }}px;height:{{ H }}px;overflow:hidden;background:var(--bg)}
+body{font-family:var(--body),system-ui,sans-serif;color:var(--ink);
+  -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+.stage{position:relative;width:{{ W }}px;height:{{ H }}px;overflow:hidden;isolation:isolate}
+
+/* ===================== arka plan modülleri ===================== */
+.bg{position:absolute;inset:-12%;z-index:0}
+.bg::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 50% 38%, transparent 38%, color-mix(in srgb,var(--bg) 88%, #000) 100%)}
+
+/* 1 kûfî örgü */
+.bg--kufi{background:
+  repeating-linear-gradient(45deg, color-mix(in srgb,var(--accent) 13%, transparent) 0 2px, transparent 2px {{ (78*v.bg_scale)|round|int }}px),
+  repeating-linear-gradient(-45deg, color-mix(in srgb,var(--accent) 13%, transparent) 0 2px, transparent 2px {{ (78*v.bg_scale)|round|int }}px),
+  repeating-linear-gradient(0deg, color-mix(in srgb,var(--accent) 7%, transparent) 0 2px, transparent 2px {{ (156*v.bg_scale)|round|int }}px),
+  radial-gradient(85% 70% at 50% 34%, var(--bg2), var(--bg) 78%);
+  animation:kufiDrift {{ (54/v.bg_speed)|round(1) }}s linear infinite}
+@keyframes kufiDrift{to{background-position:{{ (156*v.bg_scale)|round|int }}px 0,-{{ (156*v.bg_scale)|round|int }}px 0,0 {{ (156*v.bg_scale)|round|int }}px,0 0}}
+
+/* 2 şamua kâğıt + mürekkep */
+.bg--paper{background:
+  radial-gradient(60% 45% at 22% 18%, color-mix(in srgb,var(--accent) 12%, transparent), transparent 70%),
+  radial-gradient(55% 50% at 82% 86%, color-mix(in srgb,var(--accent2) 16%, transparent), transparent 72%),
+  linear-gradient(170deg,var(--bg),var(--bg2));
+  animation:paperBreathe {{ (30/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+@keyframes paperBreathe{to{background-position:4% -3%, -5% 4%, 0 0;filter:saturate(1.08)}}
+
+/* 3 nur huzmeleri */
+.bg--rays{background:conic-gradient(from {{ v.bg_angle }}deg at 50% 32%,
+  transparent 0 7deg, color-mix(in srgb,var(--accent) 22%, transparent) 7deg 9deg,
+  transparent 9deg 22deg, color-mix(in srgb,var(--accent) 12%, transparent) 22deg 23deg, transparent 23deg 36deg);
+  animation:rayTurn {{ (120/v.bg_speed)|round(1) }}s linear infinite;
+  mask:radial-gradient(70% 60% at 50% 32%, #000 10%, transparent 76%)}
+.bg--rays::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(45% 35% at 50% 28%, color-mix(in srgb,var(--accent) 26%, transparent), transparent 70%),
+  linear-gradient(180deg,var(--bg2),var(--bg));z-index:-1}
+@keyframes rayTurn{to{transform:rotate(360deg)}}
+
+/* 4 editoryal ızgara */
+.bg--grid{background:
+  repeating-linear-gradient(90deg, color-mix(in srgb,var(--ink) 7%, transparent) 0 1px, transparent 1px {{ (108*v.bg_scale)|round|int }}px),
+  repeating-linear-gradient(0deg, color-mix(in srgb,var(--ink) 5%, transparent) 0 1px, transparent 1px {{ (108*v.bg_scale)|round|int }}px),
+  linear-gradient(180deg,var(--bg),var(--bg2))}
+.bg--grid::before{content:"";position:absolute;left:0;top:18%;width:140%;height:16px;
+  background:var(--accent);opacity:.9;transform:translateX(-120%) rotate({{ v.accent_angle }}deg);
+  animation:barSweep {{ (9/v.bg_speed)|round(1) }}s var(--ease) infinite}
+@keyframes barSweep{0%{transform:translateX(-120%) rotate({{ v.accent_angle }}deg)}
+  55%,100%{transform:translateX(120%) rotate({{ v.accent_angle }}deg)}}
+
+/* 5 arabesk çizgi */
+.bg--lines{background:linear-gradient(160deg,var(--bg),var(--bg2))}
+.bg--lines svg{position:absolute;inset:0;width:100%;height:100%;
+  animation:lineTurn {{ (90/v.bg_speed)|round(1) }}s linear infinite}
+.bg--lines path{fill:none;stroke:color-mix(in srgb,var(--accent) 34%, transparent);stroke-width:2.5;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw {{ (14/v.bg_speed)|round(1) }}s var(--ease) infinite alternate}
+.bg--lines path:nth-child(2){animation-delay:-3s;stroke:color-mix(in srgb,var(--accent2) 30%, transparent)}
+.bg--lines path:nth-child(3){animation-delay:-6.5s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes lineTurn{to{transform:rotate(360deg) scale(1.1)}}
+
+/* 6 dalgalar */
+.bg--waves{background:linear-gradient(180deg,var(--bg),var(--bg2))}
+.bg--waves i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.bg--waves i:nth-child(1){width:70%;height:50%;left:-10%;top:5%;background:var(--accent2);
+  animation:float1 {{ (22/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+.bg--waves i:nth-child(2){width:60%;height:55%;right:-12%;bottom:0%;background:var(--accent);opacity:.3;
+  animation:float2 {{ (28/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+.bg--waves i:nth-child(3){width:45%;height:40%;left:30%;top:45%;background:var(--bg2);
+  animation:float1 {{ (19/v.bg_speed)|round(1) }}s ease-in-out infinite alternate-reverse}
+@keyframes float1{to{transform:translate(14%,10%) scale(1.18)}}
+@keyframes float2{to{transform:translate(-12%,-9%) scale(1.12)}}
+
+/* 7 toz zerreleri */
+.bg--dust{background:radial-gradient(90% 70% at 50% 20%,var(--bg2),var(--bg))}
+.bg--dust i{position:absolute;border-radius:50%;background:var(--accent);opacity:.5;
+  animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(0) scale(1);opacity:0}
+  12%{opacity:.6} 88%{opacity:.5} to{transform:translateY(-130%) scale(.4);opacity:0}}
+
+/* 8 tahta */
+.bg--chalk{background:linear-gradient(175deg,var(--bg2),var(--bg));
+  position:absolute}
+.bg--chalk::before{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg, color-mix(in srgb,var(--ink) 6%, transparent) 0 1px, transparent 1px {{ (84*v.bg_scale)|round|int }}px),
+  radial-gradient(50% 40% at 30% 25%, color-mix(in srgb,#fff 7%, transparent), transparent 70%);
+  animation:chalkSmudge {{ (26/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+@keyframes chalkSmudge{to{opacity:.6;transform:translateX(2%)}}
+
+/* film grenisi */
+.grain{position:absolute;inset:-50%;z-index:9;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grainShift .6s steps(3) infinite}
+@keyframes grainShift{0%{transform:translate(0,0)}33%{transform:translate(-3%,2%)}66%{transform:translate(2%,-3%)}}
+
+/* ===================== sahne iskeleti ===================== */
+.scene{position:absolute;inset:0;z-index:2;display:flex;
+  justify-content:center;align-items:center;
+  padding:{{ pad_t }}px {{ pad_h }}px {{ pad_b }}px;opacity:0;
+  animation-name:var(--enter),var(--exitAnim);
+  animation-duration:.72s,.46s;
+  animation-delay:var(--t0),calc(var(--t0) + var(--dur) - .46s);
+  animation-fill-mode:both,forwards;
+  animation-timing-function:var(--ease),var(--easeOut)}
+.fit{display:flex;flex-direction:column;width:100%;
+  justify-content:center;align-items:{{ 'flex-start' if v.align=='left' else 'center' }};
+  text-align:{{ v.align }};gap:{{ gap }}px}
+.fit>*{animation-name:var(--textEnter);animation-duration:calc(.62s / var(--kin));
+  animation-fill-mode:both;animation-timing-function:var(--ease);
+  animation-delay:calc(var(--t0) + var(--d,0s))}
+
+/* ---- giriş ---- */
+@keyframes zoomBlur{from{opacity:0;transform:scale(1.09);filter:blur(16px)}to{opacity:1;transform:none;filter:none}}
+@keyframes inkBleed{from{opacity:0;filter:blur(20px) contrast(2.2) saturate(.4)}to{opacity:1;filter:none}}
+@keyframes scaleFade{from{opacity:0;transform:scale(.93)}to{opacity:1;transform:none}}
+@keyframes maskWipe{from{opacity:1;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes foldIn{from{opacity:0;transform:perspective(1400px) rotateX(16deg) translateY(7%)}to{opacity:1;transform:none}}
+@keyframes slideUp{from{opacity:0;transform:translateY(7%)}to{opacity:1;transform:none}}
+@keyframes dropIn{from{opacity:0;transform:translateY(-6%) scale(1.03)}to{opacity:1;transform:none}}
+@keyframes swipeLeft{from{opacity:0;transform:translateX(7%)}to{opacity:1;transform:none}}
+/* ---- çıkış ---- */
+@keyframes fadeOutUp{to{opacity:0;transform:translateY(-3.5%) scale(1.03);filter:blur(5px)}}
+@keyframes fadeOutDown{to{opacity:0;transform:translateY(3%);filter:blur(4px)}}
+@keyframes fadeOutScale{to{opacity:0;transform:scale(1.07);filter:blur(11px)}}
+@keyframes wipeOutLeft{to{opacity:1;clip-path:inset(0 0 0 100%)}}
+/* ---- metin ---- */
+@keyframes riseIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes blurIn{from{opacity:0;filter:blur(14px);transform:translateY(10px)}to{opacity:1;filter:none;transform:none}}
+@keyframes letterIn{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}
+@keyframes wipeRight{from{opacity:1;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 -8% 0 0)}}
+@keyframes popIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:none}}
+@keyframes tiltIn{from{opacity:0;transform:rotate(-2.4deg) translateY(26px)}to{opacity:1;transform:none}}
+
+/* ===================== tipografi ===================== */
+.kicker{font-size:{{ s(26) }}px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--accent);display:flex;align-items:center;gap:16px}
+.kicker::before{content:"";width:{{ s(54) }}px;height:3px;background:var(--accent);display:block}
+.h1{font-family:var(--disp),serif;font-weight:900;font-size:{{ s(88) }}px;line-height:1.06;letter-spacing:-.02em}
+.h2{font-family:var(--disp),serif;font-weight:700;font-size:{{ s(64) }}px;line-height:1.14;letter-spacing:-.015em}
+.h3{font-weight:700;font-size:{{ s(44) }}px;line-height:1.2}
+.body{font-size:{{ s(35) }}px;line-height:1.46;color:var(--muted);max-width:{{ s(880) }}px;font-weight:450}
+.lead{font-size:{{ s(40) }}px;line-height:1.4;font-weight:500;max-width:{{ s(900) }}px}
+.ar{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(118) }}px;line-height:1.5;color:var(--accent2);font-weight:700}
+.ar-md{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(72) }}px;line-height:1.7;color:var(--accent2)}
+.ar-quote{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(62) }}px;line-height:1.85;
+  max-width:{{ s(900) }}px;color:var(--ink)}
+.translit{font-size:{{ s(29) }}px;font-style:italic;color:var(--muted);letter-spacing:.04em}
+.src{font-size:{{ s(26) }}px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.accentw{color:var(--accent)}
+.big{font-family:var(--disp),serif;font-size:{{ s(220) }}px;font-weight:900;line-height:.86;color:var(--accent);letter-spacing:-.04em}
+.label{font-size:{{ s(34) }}px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* liste */
+.list{display:flex;flex-direction:column;gap:{{ s(22) }}px;width:100%;max-width:{{ s(900) }}px;
+  text-align:left;align-items:stretch}
+.li{display:flex;gap:{{ s(22) }}px;align-items:flex-start;font-size:{{ s(38) }}px;line-height:1.34;
+  background:var(--card);border-left:4px solid var(--accent);padding:{{ s(22) }}px {{ s(28) }}px;border-radius:0 14px 14px 0}
+.li b{color:var(--accent);font-variant-numeric:tabular-nums;min-width:{{ s(44) }}px;font-weight:800}
+
+/* karşılaştırma */
+.cols{display:grid;grid-template-columns:1fr 1px 1fr;gap:{{ s(34) }}px;width:100%;
+  max-width:{{ s(940) }}px;align-items:start;text-align:left}
+.cols .sep{background:linear-gradient(180deg,transparent,var(--accent),transparent);width:1px;height:100%}
+.col h4{font-family:var(--disp),serif;font-size:{{ s(46) }}px;margin-bottom:{{ s(18) }}px;color:var(--accent)}
+.col p{font-size:{{ s(33) }}px;line-height:1.4;color:var(--muted)}
+.col .ar-md{font-size:{{ s(52) }}px;margin-bottom:{{ s(10) }}px}
+
+/* kitap */
+.bookwrap{display:flex;flex-direction:column;align-items:center;gap:{{ s(18) }}px}
+.bookshot{position:relative;filter:drop-shadow(0 {{ s(34) }}px {{ s(60) }}px rgba(0,0,0,.5))}
+.bookshot img{height:{{ s(430) }}px;width:auto;border-radius:6px;display:block}
+.bookshot::after{content:"";position:absolute;inset:0;border-radius:6px;
+  background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.28) 48%,transparent 62%);
+  animation:sheen 3.4s var(--ease) infinite;animation-delay:calc(var(--t0) + .5s)}
+@keyframes sheen{0%{transform:translateX(-120%)}45%,100%{transform:translateX(120%)}}
+.chips{display:flex;flex-wrap:wrap;gap:{{ s(12) }}px;justify-content:center}
+.chip{font-size:{{ s(24) }}px;letter-spacing:.06em;padding:{{ s(10) }}px {{ s(20) }}px;border-radius:999px;
+  border:1px solid color-mix(in srgb,var(--accent) 45%, transparent);color:var(--muted)}
+
+/* cta */
+.ctalogo{height:{{ s(96) }}px;filter:brightness(0) invert(var(--inv,1));opacity:.95}
+.ctaline{font-family:var(--disp),serif;font-size:{{ s(56) }}px;font-weight:700}
+.handle{font-size:{{ s(32) }}px;letter-spacing:.18em;color:var(--accent)}
+.rule{width:{{ s(120) }}px;height:4px;background:var(--accent);border-radius:4px}
+.rule.dot{width:{{ s(14) }}px;height:{{ s(14) }}px;border-radius:50%}
+.rule.line{width:{{ s(260) }}px;height:2px}
+.rule.frame{width:{{ s(72) }}px;height:{{ s(72) }}px;background:none;
+  border:3px solid var(--accent);transform:rotate(45deg)}
+
+/* ===================== sabit katman ===================== */
+.chrome{position:absolute;inset:0;z-index:7;pointer-events:none}
+.wm{position:absolute;{{ 'bottom:' ~ wm_b ~ 'px' }};right:{{ pad_h }}px;font-size:{{ s(24) }}px;
+  letter-spacing:.16em;color:var(--muted);opacity:.75}
+.progress{position:absolute;bottom:0;left:0;right:0;height:5px;background:color-mix(in srgb,var(--ink) 14%, transparent)}
+.progress i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:0 50%;
+  transform:scaleX(0);animation:grow var(--total) linear both}
+@keyframes grow{to{transform:scaleX(1)}}
+
+/* ===================== altyazı ===================== */
+.subs{position:absolute;left:0;right:0;bottom:{{ sub_b }}px;z-index:8;display:grid;place-items:center;
+  padding:0 {{ s(70) }}px;pointer-events:none}
+.cue{grid-area:1/1;max-width:{{ s(900) }}px;text-align:center;font-size:{{ s(38) }}px;font-weight:600;
+  line-height:1.32;color:#fff;background:rgba(10,8,8,.62);backdrop-filter:blur(8px);
+  padding:{{ s(14) }}px {{ s(28) }}px;border-radius:{{ s(16) }}px;opacity:0;
+  box-shadow:0 10px 36px rgba(0,0,0,.35);
+  animation:cueIn .22s ease both, cueOut .18s ease forwards;
+  animation-delay:var(--c0), calc(var(--c1) - .18s)}
+.cue--ar{font-family:var(--ar),serif;direction:rtl;font-weight:400;
+  font-size:{{ s(50) }}px;line-height:1.75;padding:{{ s(10) }}px {{ s(30) }}px {{ s(18) }}px}
+@keyframes cueIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes cueOut{to{opacity:0}}
+</style>
+</head>
+<body data-format="{{ format }}">
+<div class="stage">
+
+  <div class="bg bg--{{ theme.bg }}">
+  {%- if theme.bg == 'waves' %}<i></i><i></i><i></i>
+  {%- elif theme.bg == 'dust' %}
+    {%- for d in dust %}<i style="left:{{ d.x }}%;top:{{ d.y }}%;width:{{ d.s }}px;height:{{ d.s }}px;
+      animation-duration:{{ d.dur }}s;animation-delay:-{{ d.delay }}s"></i>{% endfor %}
+  {%- elif theme.bg == 'lines' %}
+    <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+      <path d="M300,40 C480,110 560,300 440,430 C340,540 180,520 110,400 C40,280 120,110 300,40 Z"/>
+      <path d="M300,110 C440,170 500,300 410,400 C340,480 230,470 175,380 C115,285 170,165 300,110 Z"/>
+      <path d="M300,180 C395,225 435,305 380,370 C335,423 265,418 228,360 C190,300 225,218 300,180 Z"/>
+    </svg>
+  {%- endif %}
+  </div>
+  <div class="grain"></div>
+
+{% for s in scenes %}
+  <section class="scene s-{{ s.type }}" style="--t0:{{ s.t0 }}s;--dur:{{ s.dur }}s"><div class="fit">
+  {%- if s.type == 'hook' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    <div class="h1" style="--d:.16s">{{ s.tr|safe }}</div>
+    {% if s.ar %}<div class="ar-md" style="--d:.34s">{{ s.ar }}</div>{% endif %}
+    {% if s.body %}<div class="body" style="--d:.42s">{{ s.body }}</div>{% endif %}
+    <div class="rule {{ v.rule }}" style="--d:.52s"></div>
+
+  {%- elif s.type == 'concept' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    {% if s.ar %}<div class="ar" style="--d:.18s">{{ s.ar }}</div>{% endif %}
+    {% if s.translit %}<div class="translit" style="--d:.3s">{{ s.translit }}</div>{% endif %}
+    <div class="h2" style="--d:.4s">{{ s.tr|safe }}</div>
+    {% if s.body %}<div class="body" style="--d:.52s">{{ s.body }}</div>{% endif %}
+
+  {%- elif s.type == 'point' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    <div class="h2" style="--d:.16s">{{ s.tr|safe }}</div>
+    {% if s.ar %}<div class="ar-md" style="--d:.3s">{{ s.ar }}</div>{% endif %}
+    {% if s.body %}<div class="body" style="--d:.38s">{{ s.body }}</div>{% endif %}
+
+  {%- elif s.type == 'list' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    {% if s.tr %}<div class="h3" style="--d:.14s">{{ s.tr|safe }}</div>{% endif %}
+    <div class="list" style="--d:.2s">
+      {% for it in s['items'] %}
+      <div class="li" style="animation-name:var(--textEnter);animation-duration:.5s;animation-fill-mode:both;
+        animation-timing-function:var(--ease);animation-delay:calc(var(--t0) + {{ 0.3 + loop.index0 * 0.22 }}s)">
+        <b>{{ loop.index }}</b><span>{{ it|safe }}</span></div>
+      {% endfor %}
+    </div>
+
+  {%- elif s.type == 'compare' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    {% if s.tr %}<div class="h3" style="--d:.14s">{{ s.tr|safe }}</div>{% endif %}
+    <div class="cols" style="--d:.24s">
+      <div class="col">{% if s.left.ar %}<div class="ar-md">{{ s.left.ar }}</div>{% endif %}
+        <h4>{{ s.left.title }}</h4><p>{{ s.left.text }}</p></div>
+      <div class="sep"></div>
+      <div class="col">{% if s.right.ar %}<div class="ar-md">{{ s.right.ar }}</div>{% endif %}
+        <h4>{{ s.right.title }}</h4><p>{{ s.right.text }}</p></div>
+    </div>
+
+  {%- elif s.type == 'quote' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    {% if s.ar %}<div class="ar-quote" style="--d:.18s">{{ s.ar }}</div>{% endif %}
+    <div class="lead" style="--d:.36s">{{ s.tr|safe }}</div>
+    {% if s.src %}<div class="src" style="--d:.48s">{{ s.src }}</div>{% endif %}
+
+  {%- elif s.type == 'stat' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    <div class="big" style="--d:.16s">{{ s.big }}</div>
+    <div class="label" style="--d:.32s">{{ s.label }}</div>
+    {% if s.body %}<div class="body" style="--d:.42s">{{ s.body }}</div>{% endif %}
+
+  {%- elif s.type == 'book' %}
+    {% if s.kicker %}<div class="kicker" style="--d:.05s">{{ s.kicker }}</div>{% endif %}
+    <div class="bookwrap" style="--d:.16s">
+      {% if s.image %}<div class="bookshot"><img src="{{ s.image }}" alt=""></div>{% endif %}
+      <div class="ar-md" style="font-size:{{ s2(56) }}px">{{ s.title }}</div>
+      <div class="h3">{{ s.title_tr }}</div>
+      {% if s.subtitle %}<div class="translit">{{ s.subtitle }}</div>{% endif %}
+      {% if s.chips %}<div class="chips">{% for c in s.chips %}<span class="chip">{{ c }}</span>{% endfor %}</div>{% endif %}
+    </div>
+
+  {%- elif s.type == 'cta' %}
+    <img class="ctalogo" src="{{ assets }}/images/logo.webp" style="--d:.06s;--inv:{{ 1 if theme.dark else 0 }}">
+    <div class="ctaline" style="--d:.2s">{{ s.tr|safe }}</div>
+    {% if s.body %}<div class="body" style="--d:.32s">{{ s.body }}</div>{% endif %}
+    <div class="rule {{ v.rule }}" style="--d:.4s"></div>
+    <div class="handle" style="--d:.48s">{{ brand.handle }}</div>
+  {%- endif %}
+  </div></section>
+{% endfor %}
+
+  <div class="chrome">
+    <div class="progress"><i></i></div>
+    <div class="wm">{{ brand.handle }}</div>
+  </div>
+
+  <div class="subs">
+  {%- for c in cues if not c.hidden %}
+    <div class="cue{{ ' cue--ar' if c.rtl }}" style="--c0:{{ c.t0 }}s;--c1:{{ c.t1 }}s">{{ c.text }}</div>
+  {%- endfor %}
+  </div>
+</div>
+
+<script>
+// Tüm animasyonlar mutlak gecikmeli; kare yakalamak için zaman çizelgesini elle sürüyoruz.
+window.seek = function (t) {
+  const ms = t * 1000;
+  for (const a of document.getAnimations()) {
+    try { a.pause(); a.currentTime = ms; } catch (e) {}
+  }
+};
+window.__ready = false;
+(async () => {
+  await document.fonts.ready;
+  if (document.images.length) {
+    await Promise.all([...document.images].map(i => i.complete ? 0 :
+      new Promise(r => { i.onload = i.onerror = r; })));
+  }
+  await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  for (const sc of document.querySelectorAll('.scene')) {
+    const fit = sc.querySelector('.fit');
+    const cs = getComputedStyle(sc);
+    const avail = sc.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const need = fit.getBoundingClientRect().height;
+    if (need > avail) fit.style.zoom = Math.max(0.5, (avail / need) * 0.985);
+  }
+  window.seek(0);
+  window.__ready = true;
+})();
+</script>
+</body>
+</html>

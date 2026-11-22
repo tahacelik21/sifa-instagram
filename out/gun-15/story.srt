@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:02,339
+Yıllardır çalışıyorsun ama ilerlemiyor
+
+2
+00:00:02,339 --> 00:00:02,811
+musun?
+
+3
+00:00:03,611 --> 00:00:05,473
+Metinsiz çalışmak, sadece kelime
+
+4
+00:00:05,473 --> 00:00:07,175
+ezberlemek, sessiz okumak.
+
+5
+00:00:07,975 --> 00:00:10,435
+Üçünün de cevabı bugünkü gönderide.

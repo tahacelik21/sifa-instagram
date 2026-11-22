@@ -1,0 +1,86 @@
+# Şifa Yayınevi — marka kimliği
+# Renkler sitenin CSS'inden (#d92133 / #e62739) ve Mecmûatü's-Sarf kapağından
+# (bordo + altın + şamua kâğıt) türetildi.
+
+name: "Şifa Yayınevi"
+handle: "@sifa.yayinevi"
+site: "sifayayinevi.com.tr"
+whatsapp: "+90 535 830 11 16"
+
+tagline: "İlmin aslına sadık neşir"
+mission: >-
+  Klasik Arapça gramer ve dinî ilimler metinlerini, eski nüshaya sadık kalarak
+  yeni dizgiyle, harekeli ve haşiyeli olarak neşreden yayınevi.
+
+# Seslendirme tonu: sakin, öğretici, iddiasız. Reklam bağırganlığı yok.
+voice_tone: >-
+  Sakin, öğretici, saygılı. Kısa cümle. Merak uyandır, abartma.
+  "Efsane", "inanılmaz", "şok" gibi kelimeler kullanılmaz.
+
+# ---- Renk sistemi (tüm temalar bunun üzerinden türer) ----
+colors:
+  bordo:     "#5E1118"   # kapak bordosu — ana kurumsal renk
+  bordo_koyu: "#3A0A0F"
+  kirmizi:   "#D92133"   # site aksanı
+  altin:     "#C9A227"
+  altin_acik: "#E8C766"
+  samua:     "#F6EFE2"   # şamua kâğıt
+  krem:      "#FBF7EF"
+  murekkep:  "#17110F"
+  yesil:     "#1F4D3D"   # ikincil (tasavvuf/dinî eğitim serileri)
+  lacivert:  "#17233F"
+  teal:      "#39A19D"   # sitede mevcut ikincil
+
+fonts:
+  display: "Playfair Display"   # başlıklar
+  body: "Inter"                 # metin / altyazı
+  arabic: "Amiri"               # Arapça
+
+# ---- Seslendirme ----
+# Seslendirme iki dilli: vo metnindeki Arapça harfler otomatik algılanıp
+# Arapça sesle okunur. Aynı "Schedar" karakteri iki dilde de mevcut olduğu için
+# geçiş aynı anlatıcı gibi duyulur.
+tts:
+  language: "tr-TR"
+  voice: "tr-TR-Chirp3-HD-Schedar"   # erkek, sıcak. Alternatif: Algenib, Orus, Charon
+  speaking_rate: 1.08
+  language_ar: "ar-XA"
+  voice_ar: "ar-XA-Chirp3-HD-Schedar"
+  speaking_rate_ar: 0.88             # terimler tane tane duyulsun
+  gap: 0.20                          # dil değişiminde bırakılan nefes payı (sn)
+
+# ---- Ses tasarımı ----
+# Müzik kullanılmaz: sadece geçiş/vurgu efektleri ve tonal olmayan ortam dokusu.
+# "pad: true" yaparsan hafif tonal bir yastık eklenir.
+audio:
+  ambience: false
+  pad: false
+  sfx_gain: 0.55
+  ambience_gain: 0.10
+  duck: 0.45          # VO konuşurken efektler bu orana kısılır
+  loudness: -14       # Instagram hedefi (LUFS)
+
+# ---- Sabit kapanış ----
+cta:
+  default: "Şifa Yayınevi"
+  sub: "sifayayinevi.com.tr"
+
+hashtags:
+  core: ["#şifayayınevi", "#arapça", "#arapçaöğren", "#sarf", "#nahiv", "#ilim"]
+  pool:
+    - "#arapçagramer"
+    - "#emsile"
+    - "#bina"
+    - "#medresetüzzehra"
+    - "#klasikmetin"
+    - "#arapçaders"
+    - "#dinieğitim"
+    - "#kitaptavsiyesi"
+    - "#sarfilmi"
+    - "#nahivilmi"
+    - "#arapçakitap"
+    - "#talebe"
+    - "#ilimyolu"
+    - "#osmanlıca"
+    - "#tefsir"
+    - "#hadis"

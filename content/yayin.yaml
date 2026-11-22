@@ -1,0 +1,9 @@
+# Yayın takvimi.
+#
+# Aşağıdaki tarihte "gun-01" paylaşılır, ertesi gün "gun-02"… sırayla gider.
+# Tarihi değiştirmek bütün takvimi kaydırır.
+#
+# Paylaşım saatleri .github/workflows/yayin.yml içinde (cron, UTC olarak yazılır;
+# Türkiye saati = UTC + 3).
+
+baslangic: 2026-12-01

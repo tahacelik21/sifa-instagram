@@ -1,0 +1,30 @@
+KİTAP GÖRSELLERİ
+================
+
+Görselleri bu klasöre at. Dosyanın adı kitabın slug'ı olacak, uzantısı
+jpg / jpeg / png / webp olabilir. Başka ayar yapmak gerekmiyor —
+video üretilirken ilgili kitabın sahnesine otomatik yerleşir.
+
+    assets/books/mecmuatus-sarf.jpg
+
+Kare ya da dikey, kısa kenarı en az 800 px olsun; arka planı boş/beyaz
+görseller sahnede daha temiz duruyor.
+
+Beklenen dosya adları:
+
+  mecmuatus-sarf.jpg                 Mecmûatü's-Sarf              var  (mecmuatus-sarf.jpg)
+  mecmuatun-nahiv.jpg                Mecmûatü'n-Nahiv             YOK
+  suruhul-maksud.jpg                 Şürûhu'l-Maksûd              YOK
+  suruhul-izzi.jpg                   Şürûhu'l-İzzî                YOK
+  emsile-bina-semasi.jpg             Emsile – Binâ Şeması         YOK
+  tuhfetus-seniyye.jpg               Tuhfetü's-Seniyye            YOK
+  molla-cami.jpg                     Molla Câmî                   YOK
+  ed-durusun-nahviyye.jpg            ed-Dürûsü'n-Nahviyye         YOK
+  et-tatbikus-sarfi.jpg              et-Tatbîku's-Sarfî           YOK
+  aciklamali-cekimler.jpg            Açıklamalı İsim ve Fiil Çekimleri YOK
+  suruhul-izhar.jpg                  Şürûhu'l-İzhâr               YOK
+  kavaidul-irab.jpg                  Şürûhu Kavâidi'l-İ'râb       YOK
+  telhisul-miftah.jpg                Telhîsu'l-Miftâh             YOK
+  sarf-nahiv-set.jpg                 Mecmûatü's-Sarf + Mecmûatü'n-Nahiv Set YOK
+
+Görseli olmayan kitapta sahne yazıyla kurulur, kadraj bozulmaz.

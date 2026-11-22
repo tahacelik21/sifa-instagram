@@ -1,0 +1,114 @@
+# Kitap kataloğu. İçerik takviminde "book: <slug>" ile referans verilir.
+# Kitap görseli: assets/books/<slug>.jpg|png|webp — dosya adı slug ile aynı olmalı.
+
+mecmuatus-sarf:
+  title: "مجموعة الصرف"
+  title_tr: "Mecmûatü's-Sarf"
+  subtitle: "Klasik sarf metinleri tek ciltte"   # TODO: sitedeki risale listesini birebir yaz
+  url: "https://www.sifayayinevi.com.tr/mjmw-t-alsrf-mecmuatus-sarf-arapca"
+  meta: ["272 sayfa", "Sert kapak, dikişli", "Şamua kâğıt", "16,5 × 23,5"]
+  note: "Eski nüshaya sadık yeni dizgi · haşiyeli · harekeli"
+
+mecmuatun-nahiv:
+  title: "مجموعة النحو"
+  title_tr: "Mecmûatü'n-Nahiv"
+  subtitle: "Yeni dizgi · Arapça"
+  url: "https://www.sifayayinevi.com.tr/mjmw-t-alnhw-mecmuatun-nahiv-yeni-dizgi-arapca"
+  meta: ["Yeni dizgi", "Arapça"]
+  note: "Nahiv yolculuğunun ana güzergâhı"
+
+suruhul-maksud:
+  title: "شروح المقصود"
+  title_tr: "Şürûhu'l-Maksûd"
+  subtitle: "Şerhleriyle birlikte"
+  url: "https://www.sifayayinevi.com.tr/suruhul-maksud"
+  meta: ["Şerhli", "Arapça"]
+  note: "Maksûd'u şerhleriyle okumak isteyene"
+
+suruhul-izzi:
+  title: "شروح العزي"
+  title_tr: "Şürûhu'l-İzzî"
+  subtitle: "Şerhleriyle birlikte"
+  url: "https://www.sifayayinevi.com.tr/suruhul-izzi"
+  meta: ["Şerhli", "Arapça"]
+  note: "Sarfın son durağı, şerhleriyle"
+
+emsile-bina-semasi:
+  title: "الأمثلة والبناء"
+  title_tr: "Emsile – Binâ Şeması"
+  subtitle: "Tek sayfada bütün çekimler"
+  url: "https://www.sifayayinevi.com.tr/emsile-bina-semasi"
+  meta: ["Şema", "Duvar / masa boyu"]
+  note: "Ezber için görsel harita"
+
+tuhfetus-seniyye:
+  title: "التحفة السنية"
+  title_tr: "Tuhfetü's-Seniyye"
+  subtitle: "Âcurrûmiyye şerhi · Arapça"
+  url: "https://www.sifayayinevi.com.tr/althft-alsnyt-bshrh-alajrwmyt-tuhfetus-seniyye-arapca"
+  meta: ["Arapça", "Şerh"]
+  note: "Âcurrûmiyye'yi açan klasik şerh"
+
+molla-cami:
+  title: "ملا جامي"
+  title_tr: "Molla Câmî"
+  subtitle: "el-Fevâidü'z-Ziyâiyye · Arapça"
+  url: "https://www.sifayayinevi.com.tr/mla-jamy-molla-cami-arapca"
+  meta: ["Arapça", "İleri seviye nahiv"]
+  note: "Kâfiye şerhi — nahvin zirvesi"
+
+ed-durusun-nahviyye:
+  title: "الدروس النحوية"
+  title_tr: "ed-Dürûsü'n-Nahviyye"
+  subtitle: "Dört cilt bir arada"
+  url: "https://www.sifayayinevi.com.tr/ed-durusu-n-nahviyye"
+  meta: ["Kademeli", "Modern müfredat"]
+  note: "Sıfırdan nahiv için tedrîcî metin"
+
+et-tatbikus-sarfi:
+  title: "التطبيق الصرفي"
+  title_tr: "et-Tatbîku's-Sarfî"
+  subtitle: "Fatih Ulugöl"
+  url: "https://www.sifayayinevi.com.tr/et-tatbikus-sarfi"
+  meta: ["Uygulamalı", "Alıştırmalı"]
+  note: "Teoriyi tatbike çeviren çalışma kitabı"
+
+aciklamali-cekimler:
+  title: "الصرف التطبيقي"
+  title_tr: "Açıklamalı İsim ve Fiil Çekimleri"
+  subtitle: "Fatih Ulugöl"
+  url: "https://www.sifayayinevi.com.tr/aciklamali-isim-ve-fiil-cekimleri"
+  meta: ["Tablolu", "Açıklamalı"]
+  note: "Çekim tablolarının açıklamalı hâli"
+
+suruhul-izhar:
+  title: "شروح الإظهار"
+  title_tr: "Şürûhu'l-İzhâr"
+  subtitle: "İmam Birgivî"
+  url: "https://www.sifayayinevi.com.tr/shrwh-alazhar-suruhul-izhar"
+  meta: ["Şerhli", "Arapça"]
+  note: "İzhâr'ı şerhleriyle okumak"
+
+kavaidul-irab:
+  title: "شرح قواعد الإعراب"
+  title_tr: "Şürûhu Kavâidi'l-İ'râb"
+  subtitle: "İbn Hişâm"
+  url: "https://www.sifayayinevi.com.tr/suruhu-kavaidi-l-i-rab"
+  meta: ["İbn Hişâm", "Şerhli"]
+  note: "İ'râbın kaidelerini kuran metin"
+
+telhisul-miftah:
+  title: "تلخيص المفتاح"
+  title_tr: "Telhîsu'l-Miftâh"
+  subtitle: "Belâgat · Arapça"
+  url: "https://www.sifayayinevi.com.tr/tlkhys-almftah-telhisul-miftah-arapca"
+  meta: ["Belâgat", "Arapça"]
+  note: "Meânî, beyân, bedî'in özü"
+
+sarf-nahiv-set:
+  title: "مجموعة الصرف + النحو"
+  title_tr: "Mecmûatü's-Sarf + Mecmûatü'n-Nahiv Set"
+  subtitle: "İki temel mecmua bir arada"
+  url: "https://www.sifayayinevi.com.tr/mecmuatus-sarf-mecmuatun-nahiv-set"
+  meta: ["Set", "Sert kapak"]
+  note: "Sarf ve nahvi aynı rafta tamamlamak"

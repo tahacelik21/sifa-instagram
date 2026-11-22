@@ -1,0 +1,1893 @@
+# Şifa Yayınevi — 30 günlük içerik takvimi
+#
+# Her gün: post (video | carousel) + story (video).
+# Sahne tipleri: hook, concept, point, list, compare, quote, stat, book, cta
+# Alanlar: kicker, tr, ar, translit, body, items, left/right, big, label, src, book, dur
+# vo: seslendirme metni. Sahne süresi bu seslendirmenin gerçek uzunluğundan hesaplanır.
+#     Arapça terimleri vo içinde Türkçe okunuşuyla yaz — TTS doğru telaffuz etsin.
+# theme: boş bırakılırsa gün bazlı rotasyondan düşer (ardışık gün aynı temayı almaz).
+# Kitap önerisi 30 günün 9'unda var (1, 4, 8, 12, 16, 19, 22, 27, 30) — akış kitapla boğulmasın.
+#
+# Hedef süre: post videosu 35-55 sn, story 8-20 sn. Dışına çıkarsa build uyarır.
+
+days:
+
+  # ═══════════════════════════════ 1 ═══════════════════════════════
+  - day: 1
+    title: "Sarf ilminin önemi + Mecmûatü's-Sarf"
+    post:
+      kind: video
+      theme: kufi
+      caption: |
+        Bir kelimeyi sözlükte bulabiliyorsun. Ama aynı kelime cümlenin içinde
+        karşına çıkınca tanıyamıyorsun. Aradaki fark: sarf.
+
+        Sarf, kelimenin iç yapısını — kökünü, kalıbını, çekimini — çözen ilimdir.
+        Nahiv cümleyi kurar; sarf o cümleyi kuran kelimeleri tanıtır.
+        Bu yüzden klasik medrese usulünde yol daima sarftan başlar.
+
+        Mecmûatü's-Sarf, bu yolun temel metinlerini tek ciltte topluyor:
+        eski nüshaya sadık yeni dizgi, ayrı ayrı düzenlenmiş haşiyeler,
+        karışabilecek yerlerde hareke.
+      book_line: "Mecmûatü's-Sarf"
+      tags: ["#mecmuatüssarf"]
+      scenes:
+        - type: hook
+          kicker: "ARAPÇA"
+          tr: "Kelimeyi biliyorsun.<br>Cümlede neden tanıyamıyorsun?"
+          vo: "Kelimeyi sözlükte buluyorsun. Ama cümlede karşına çıkınca tanıyamıyorsun."
+        - type: concept
+          kicker: "SARF İLMİ"
+          ar: "اَلصَّرْف"
+          translit: "es-Sarf"
+          tr: "Kelimenin iç yapısını çözen ilim."
+          vo: "اَلصَّرْفُ. Kelimenin kendi içindeki değişimini inceleyen ilim. Kökü, kalıbı, çekimi."
+        - type: point
+          kicker: "KÖK"
+          tr: "Üç harf, onlarca kelime."
+          ar: "كَاتِبٌ · مَكْتُوبٌ · كِتَابٌ · مَكْتَبٌ"
+          body: "kâtib · mektûb · kitâb · mekteb — hepsi كَتَبَ kökünden"
+          vo: "Üç harflik tek kök: كَتَبَ. Ondan: كَاتِبٌ، مَكْتُوبٌ، كِتَابٌ، مَكْتَبٌ."
+        - type: compare
+          kicker: "İKİ İLİM"
+          tr: "Sarf ile nahiv aynı şey değil."
+          left:  {ar: "اَلصَّرْف", title: "Sarf", text: "Kelimenin içini çözer. Kök, kalıp, çekim."}
+          right: {ar: "اَلنَّحْو", title: "Nahiv", text: "Kelimenin cümledeki yerini ve son harekesini belirler."}
+          vo: "اَلصَّرْفُ kelimenin içini çözer. اَلنَّحْوُ cümledeki yerini belirler."
+        - type: point
+          kicker: "NEDEN ÖNCE SARF"
+          tr: "Kökü bulamazsan sözlük de işe yaramaz."
+          body: "Arapça sözlükler kelimeleri kökten dizer."
+          vo: "Arapça sözlükler kökten dizilir. Kökü çıkaramayan, bildiği kelimeyi bile arayamaz."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: mecmuatus-sarf
+          vo: "Klasik usulde sarf bir mecmua üzerinden okunur. مَجْمُوعَةُ الصَّرْف bu metinleri tek ciltte toplar."
+        - type: list
+          kicker: "BU BASKIDA"
+          tr: "Eski nüshaya sadık, yeni dizgi"
+          items:
+            - "Bütün metin yeniden dizildi, sayfa tutarları korundu"
+            - "Ana metin, yan haşiye ve ara haşiye ayrı düzenlendi"
+            - "Karışabilecek yerlere hareke konuldu"
+          vo: "Metin yeniden dizildi. Haşiyeler ayrı ayrı düzenlendi. Karışabilecek yerler harekelendi."
+        - type: cta
+          tr: "Önce sarf."
+          body: "Ezberden anlamaya geçmenin ilk adımı."
+          vo: "Sarfa başlamak, Arapçayı ezberden anlamaya geçirmektir."
+    story:
+      kind: video
+      theme: nur
+      caption: "Sarf nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Sarf ne demek?"
+          vo: "Sarf ne demek?"
+        - type: concept
+          ar: "اَلصَّرْف"
+          translit: "es-Sarf"
+          tr: "Kelimenin iç yapısı."
+          body: "Kök · kalıp · çekim"
+          vo: "اَلصَّرْفُ. Kelimenin kendi içindeki değişimini inceleyen ilim."
+        - type: cta
+          tr: "Ayrıntısı profilde"
+          body: "Mecmûatü's-Sarf"
+          vo: "Bugünkü gönderide ayrıntısı var."
+
+  # ═══════════════════════════════ 2 ═══════════════════════════════
+  - day: 2
+    title: "el-Emsile nedir?"
+    post:
+      kind: carousel
+      theme: samua
+      caption: |
+        Sarfa başlayan herkesin ilk karşılaştığı metin: el-Emsile.
+
+        Emsile "örnekler" demek. Tek bir fiilin — نَصَرَ — otuz beş ayrı çekimini
+        sırayla önüne koyar. Kural anlatmaz, örnek gösterir.
+        Klasik usulün mantığı budur: önce kalıbı göz tanır, kural sonra gelir.
+
+        Emsile'de maksat ezber değil, ritim. Sesli okunur, sıra bozulmaz,
+        her gün az ama kesintisiz.
+      scenes:
+        - type: hook
+          kicker: "SARFIN İLK ADIMI"
+          tr: "el-Emsile"
+          ar: "اَلْأَمْثِلَة"
+          body: "Kural anlatmayan, örnek gösteren metin."
+          dur: 3.0
+        - type: concept
+          kicker: "ANLAMI"
+          ar: "أَمْثِلَة"
+          translit: "emsile"
+          tr: "“Örnekler” demek."
+          body: "Misâl kelimesinin çoğulu."
+          dur: 3.0
+        - type: point
+          kicker: "TEK FİİL ÜZERİNDEN"
+          ar: "نَصَرَ"
+          tr: "Bütün çekimler bir fiille gösterilir."
+          body: "“Yardım etti” — sarf kitaplarının örnek fiili."
+          dur: 3.0
+        - type: stat
+          kicker: "EMSİLE-İ MUHTELİFE"
+          big: "35"
+          label: "ayrı çekim"
+          body: "Mâzî, muzârî, emir, nehiy, ism-i fâil, ism-i mef'ûl… sırayla."
+          dur: 3.2
+        - type: list
+          kicker: "NASIL OKUNUR"
+          tr: "Üç usul"
+          items:
+            - "Sesli oku — kalıp kulakta oturur"
+            - "Sırayı bozma, atlama yapma"
+            - "Her gün az ama kesintisiz"
+          dur: 3.6
+        - type: cta
+          tr: "Emsile biterse sıra Binâ'da."
+          body: "Yarın: Binâ nedir?"
+          dur: 3.0
+    story:
+      kind: video
+      theme: editorial
+      caption: "Emsile ne demek?"
+      scenes:
+        - type: concept
+          kicker: "KELİME"
+          ar: "أَمْثِلَة"
+          translit: "emsile"
+          tr: "“Örnekler”"
+          vo: "اَلْأَمْثِلَة, örnekler demek. مِثَال kelimesinin çoğulu."
+        - type: point
+          kicker: "NEDEN ÖNEMLİ"
+          tr: "Kuraldan önce göz alışkanlığı."
+          vo: "Klasik usulde önce kalıbı göz tanır. Kural sonra gelir."
+        - type: cta
+          tr: "Bugünkü gönderide"
+          body: "Emsile'nin okunuş usulü"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 3 ═══════════════════════════════
+  - day: 3
+    title: "el-Binâ: 35 bâb"
+    post:
+      kind: video
+      caption: |
+        Emsile tek fiilin çekimlerini gösterir. Binâ ise fiillerin kaç farklı
+        kalıpta kurulduğunu öğretir.
+
+        Otuz beş bâb. Her bâb, fiilin harf sayısına ve eklenen harflere göre
+        ayrı bir kalıp demek. Kalıbı tanıyan talebe, hiç görmediği bir fiilin
+        bile anlamını tahmin edebilir — çünkü kalıbın kendisi anlam taşır.
+
+        Sarfta ezberlenen şey kelimeler değil, kalıplardır.
+      scenes:
+        - type: hook
+          kicker: "SARF · 2. ADIM"
+          tr: "Hiç görmediğin bir fiili nasıl anlarsın?"
+          vo: "Hiç görmediğin bir fiilin anlamını nasıl tahmin edersin? Cevap, kelimenin kalıbında saklı."
+        - type: concept
+          kicker: "EL-BİNÂ"
+          ar: "اَلْبِنَاء"
+          translit: "el-Binâ"
+          tr: "Fiilin kuruluş kalıpları."
+          vo: "اَلْبِنَاء. Fiilin hangi kalıpta kurulduğunu öğreten metin."
+        - type: stat
+          kicker: "KALIP SAYISI"
+          big: "35"
+          label: "bâb"
+          body: "Harf sayısına ve eklenen harflere göre."
+          vo: "Otuz beş bâb. Her bâb ayrı bir kalıp demek."
+        - type: compare
+          kicker: "KALIP ANLAM TAŞIR"
+          tr: "Aynı kök, farklı kalıp"
+          left:  {ar: "عَلِمَ", title: "alime", text: "bildi"}
+          right: {ar: "عَلَّمَ", title: "alleme", text: "öğretti"}
+          vo: "عَلِمَ bildi demek. Şedde gelince عَلَّمَ olur: öğretti."
+        - type: point
+          kicker: "SONUÇ"
+          tr: "Kalıbı tanıyan, kelimeyi tanır."
+          body: "Sözlüğe bakmadan önce kalıba bak."
+          vo: "Kalıbı tanıyan talebe, sözlüğe bakmadan önce anlamı sezer. Çünkü aynı kalıp, hangi köke gelirse gelsin benzer bir anlam katar."
+        - type: list
+          kicker: "ÇALIŞMA USULÜ"
+          tr: "Binâ nasıl çalışılır?"
+          items:
+            - "Her bâbı kendi örnek fiiliyle ezberle"
+            - "Bâbın kattığı anlamı not et"
+            - "Okuduğun metinde o bâbı ara"
+          vo: "Her bâbı kendi örneğiyle ezberle. Kattığı anlamı not et. Sonra metinde ara. Üç haftada otuz beş bâb, günde iki bâb demektir."
+        - type: cta
+          tr: "Kelime değil, kalıp."
+          body: "Sarfın bütün sırrı burada."
+          vo: "Sarfta ezberlenen şey kelimeler değil, kalıplardır."
+    story:
+      kind: video
+      caption: "Binâ'nın 35 bâbı"
+      scenes:
+        - type: stat
+          kicker: "EL-BİNÂ"
+          big: "35"
+          label: "bâb"
+          vo: "اَلْبِنَاء. Otuz beş bâb vardır."
+        - type: compare
+          tr: "Kalıp anlamı değiştirir"
+          left:  {ar: "عَلِمَ", title: "alime", text: "bildi"}
+          right: {ar: "عَلَّمَ", title: "alleme", text: "öğretti"}
+          vo: "عَلِمَ bildi, عَلَّمَ öğretti. Aynı kök, farklı kalıp."
+        - type: cta
+          tr: "Gönderide detaylı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 4 ═══════════════════════════════
+  - day: 4
+    title: "Nahiv nedir? + Mecmûatü'n-Nahiv"
+    post:
+      kind: video
+      caption: |
+        Sarf kelimeyi tanıtır, nahiv cümleyi kurar.
+
+        Nahiv, kelimelerin cümle içindeki görevini ve bu göreve bağlı olarak
+        son harekesinin nasıl değiştiğini inceler. Fâil ref' olur, mef'ûl nasb
+        olur — ve tek bir hareke, cümlenin anlamını tersine çevirebilir.
+
+        Sarfı bitiren talebenin yolu buradan geçer.
+      book_line: "Mecmûatü'n-Nahiv"
+      scenes:
+        - type: hook
+          kicker: "TEK HAREKE"
+          tr: "Bir hareke, cümlenin anlamını tersine çevirebilir."
+          vo: "Tek bir hareke, cümlenin anlamını tersine çevirebilir. Üstelik harflerin hiçbirine dokunmadan."
+        - type: concept
+          kicker: "NAHİV"
+          ar: "اَلنَّحْو"
+          translit: "en-Nahv"
+          tr: "Kelimenin cümledeki görevi."
+          vo: "اَلنَّحْوُ. Kelimenin cümledeki görevini ve son harekesini inceler."
+        - type: compare
+          kicker: "ÖRNEK"
+          tr: "Aynı kelimeler, farklı hareke"
+          left:  {ar: "ضَرَبَ زَيْدٌ عَمْرًا", title: "Zeyd dövdü", text: "Zeyd fâil, Amr mef'ûl."}
+          right: {ar: "ضَرَبَ زَيْدًا عَمْرٌو", title: "Amr dövdü", text: "Hareke değişti, fâil değişti."}
+          vo: "ضَرَبَ زَيْدٌ عَمْرًا. ضَرَبَ زَيْدًا عَمْرٌو. Hareke değişti, döven ile dövülen yer değiştirdi."
+        - type: point
+          kicker: "İ'RÂB"
+          ar: "اَلْإِعْرَاب"
+          tr: "Son harekenin göreve göre değişmesi."
+          vo: "Buna اَلْإِعْرَاب denir. Son harekenin göreve göre değişmesi. Arapçayı Türkçeden ayıran en temel özellik budur."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: mecmuatun-nahiv
+          vo: "Nahvin temel metinleri de bir mecmuada toplanır: مَجْمُوعَةُ النَّحْو."
+        - type: cta
+          tr: "Sarf kelimeyi, nahiv cümleyi verir."
+          body: "İkisi birlikte Arapçayı verir."
+          vo: "Sarf kelimeyi verir, nahiv cümleyi. İkisi birlikte Arapçayı. Birini yarım bırakan, diğerinde ilerleyemez."
+    story:
+      kind: video
+      caption: "Nahiv nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلنَّحْو"
+          translit: "en-Nahv"
+          tr: "Kelimenin cümledeki görevi."
+          vo: "اَلنَّحْوُ. Kelimenin cümledeki görevini inceler."
+        - type: point
+          kicker: "NEDEN"
+          tr: "Tek hareke anlamı çevirir."
+          vo: "Çünkü tek bir hareke anlamı tersine çevirebilir."
+        - type: cta
+          tr: "Gönderide örnekle"
+          vo: "Örneğiyle bugünkü gönderide."
+
+  # ═══════════════════════════════ 5 ═══════════════════════════════
+  - day: 5
+    title: "Arapçada kök mantığı"
+    post:
+      kind: carousel
+      caption: |
+        Arapça kelime ezberlemek, aslında kök ezberlemektir.
+
+        Çoğu kelime üç harflik bir kökten türer. Kök anlamı taşır, kalıp o anlamı
+        biçimlendirir. ك ت ب kökü "yazmak" demektir; kâtib yazan, mektûb yazılan,
+        mekteb yazılan yer, kitâb yazılmış şeydir.
+
+        Bir kök öğrenmek, on kelime öğrenmektir.
+      scenes:
+        - type: hook
+          kicker: "KELİME EZBERİ"
+          tr: "On kelime mi,<br>bir kök mü?"
+          dur: 3.0
+        - type: concept
+          kicker: "KÖK"
+          ar: "ك ت ب"
+          translit: "k-t-b"
+          tr: "Anlamı taşıyan üç harf."
+          body: "“Yazmak”"
+          dur: 3.2
+        - type: list
+          kicker: "AYNI KÖKTEN"
+          tr: "Tek kök, beş kelime"
+          items:
+            - "كَاتِب — kâtib · yazan"
+            - "مَكْتُوب — mektûb · yazılan"
+            - "مَكْتَب — mekteb · yazılan yer"
+            - "كِتَاب — kitâb · yazılmış olan"
+            - "كِتَابَة — kitâbet · yazma işi"
+          dur: 4.2
+        - type: point
+          kicker: "MANTIK"
+          tr: "Kök anlamı taşır, kalıp biçimlendirir."
+          dur: 3.0
+        - type: point
+          kicker: "SÖZLÜK"
+          tr: "Arapça sözlükler alfabetik değil, köktendir."
+          body: "Kökü bulamayan, kelimeyi arayamaz."
+          dur: 3.2
+        - type: cta
+          tr: "Kelime değil, kök topla."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Bir kök, beş kelime"
+      scenes:
+        - type: concept
+          kicker: "KÖK"
+          ar: "ك ت ب"
+          tr: "“Yazmak”"
+          vo: "كَتَبَ. Yazmak demek."
+        - type: point
+          ar: "كَاتِبٌ · مَكْتُوبٌ · مَكْتَبٌ · كِتَابٌ"
+          tr: "Hepsi aynı kökten."
+          body: "kâtib · mektûb · mekteb · kitâb"
+          vo: "كَاتِبٌ، مَكْتُوبٌ، مَكْتَبٌ، كِتَابٌ. Hepsi bu kökten."
+        - type: cta
+          tr: "Bir kök, on kelime."
+          vo: "Bir kök öğrenmek, on kelime öğrenmektir."
+
+  # ═══════════════════════════════ 6 ═══════════════════════════════
+  - day: 6
+    title: "Hareke anlamı nasıl değiştirir?"
+    post:
+      kind: video
+      caption: |
+        Arapçada harfler aynı kalır, hareke değişir — ve anlam başkalaşır.
+
+        كَتَبَ yazdı, كُتِبَ yazıldı. Harfler tıpatıp aynı; fark sadece harekede.
+        Meçhul kalıbı işte böyle kurulur.
+
+        Harekesiz metin okuyabilmek, kalıpları tanımakla mümkündür. Bu yüzden
+        klasik metinlerde karışabilecek yerlere hareke konulur, tamamına değil.
+      scenes:
+        - type: hook
+          kicker: "HAREKE"
+          tr: "Aynı harfler.<br>Başka anlam."
+          vo: "Harfler aynı. Hareke değişti. Anlam başkalaştı. Arapçada bu, istisna değil kaidedir."
+        - type: compare
+          kicker: "MEÇHUL"
+          tr: "Tek fark: hareke"
+          left:  {ar: "كَتَبَ", title: "ketebe", text: "yazdı — fâili belli"}
+          right: {ar: "كُتِبَ", title: "kütibe", text: "yazıldı — fâili söylenmemiş"}
+          vo: "كَتَبَ yazdı demek. كُتِبَ ise yazıldı. Harfler aynı, hareke farklı."
+        - type: concept
+          kicker: "TERİM"
+          ar: "اَلْمَجْهُول"
+          translit: "el-Mechûl"
+          tr: "Fâili söylenmeyen fiil."
+          vo: "Buna اَلْمَجْهُول denir. Fâili söylenmeyen fiil."
+        - type: point
+          kicker: "ASIL MESELE"
+          tr: "Harekesiz metni kalıp okutur."
+          body: "Gözün kalıbı tanıması, harekenin yerini tutar."
+          vo: "Harekesiz metni okutan şey kalıptır. Göz kalıbı tanırsa hareke gerekmez. Bu yüzden klasik metinler çoğunlukla harekesiz basılır."
+        - type: point
+          kicker: "KLASİK USUL"
+          tr: "Tamamına değil, karışana hareke."
+          body: "Metnin her yerini harekelemek talebeyi tembelleştirir."
+          vo: "Bu yüzden klasik baskılarda yalnız karışabilecek yerler harekelenir. Her kelimeyi harekelemek, talebenin kalıp tanıma kasını zayıflatır."
+        - type: cta
+          tr: "Hareke bir koltuk değneğidir."
+          body: "Maksat, onsuz yürüyebilmek."
+          vo: "Hareke bir koltuk değneğidir. Maksat onsuz yürüyebilmek."
+    story:
+      kind: video
+      caption: "ketebe / kütibe"
+      scenes:
+        - type: compare
+          kicker: "TEK FARK"
+          tr: "Hareke"
+          left:  {ar: "كَتَبَ", title: "ketebe", text: "yazdı"}
+          right: {ar: "كُتِبَ", title: "kütibe", text: "yazıldı"}
+          vo: "كَتَبَ yazdı, كُتِبَ yazıldı."
+        - type: point
+          tr: "Harfler aynı, anlam başka."
+          vo: "Harfler tıpatıp aynı. Değişen sadece hareke."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 7 ═══════════════════════════════
+  - day: 7
+    title: "Haftalık: talebe için 5 usul"
+    post:
+      kind: carousel
+      caption: |
+        Arapça çalışmasını bırakanların çoğu zorlandığı için değil, usulsüz
+        çalıştığı için bırakıyor.
+
+        Klasik usulün beş ilkesi: metne bağlı kal, sesli oku, az ama kesintisiz
+        çalış, hocaya okut, tekrarı takvime bağla.
+
+        Hiçbiri yeni değil. Hepsi asırlardır aynı.
+      scenes:
+        - type: hook
+          kicker: "USUL"
+          tr: "Zorlandığın için değil,<br>usulsüz çalıştığın için bırakıyorsun."
+          dur: 3.4
+        - type: point
+          kicker: "1"
+          tr: "Metne bağlı kal."
+          body: "Her gün başka kaynak, hiçbir kaynak demektir."
+          dur: 3.0
+        - type: point
+          kicker: "2"
+          tr: "Sesli oku."
+          body: "Arapça kulakla oturur. Sessiz okuma kalıbı kaçırır."
+          dur: 3.0
+        - type: point
+          kicker: "3"
+          tr: "Az ama kesintisiz."
+          body: "Haftada bir üç saat değil, her gün yirmi dakika."
+          dur: 3.0
+        - type: point
+          kicker: "4"
+          tr: "Hocaya okut."
+          body: "Yanlış okuma, düzeltilmezse alışkanlığa döner."
+          dur: 3.0
+        - type: point
+          kicker: "5"
+          tr: "Tekrarı takvime bağla."
+          body: "Hatırladığında değil, sırası geldiğinde tekrar et."
+          dur: 3.0
+        - type: cta
+          tr: "Hiçbiri yeni değil."
+          body: "Hepsi asırlardır aynı."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Usul meselesi"
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Neden bırakıyoruz?"
+          vo: "Arapçayı neden bırakıyoruz?"
+        - type: point
+          tr: "Zorluktan değil, usulsüzlükten."
+          vo: "Zorlandığımız için değil, usulsüz çalıştığımız için."
+        - type: cta
+          tr: "5 usul · gönderide"
+          vo: "Beş maddelik usul bugünkü gönderide."
+
+  # ═══════════════════════════════ 8 ═══════════════════════════════
+  - day: 8
+    title: "el-Maksûd + Şürûhu'l-Maksûd"
+    post:
+      kind: video
+      caption: |
+        Emsile örnek verir, Binâ kalıbı gösterir. el-Maksûd ise kuralı söyler.
+
+        Sarf yolculuğunda üçüncü durak. Artık çekim tabloları değil, o tabloların
+        arkasındaki kaideler konuşulur: i'lâl, idgâm, hemze meselesi.
+
+        Maksûd'u şerhsiz okumak zordur; bu yüzden klasik usulde metin, şerhleriyle
+        birlikte okutulur.
+      book_line: "Şürûhu'l-Maksûd"
+      scenes:
+        - type: hook
+          kicker: "SARF · 3. ADIM"
+          tr: "Tabloyu ezberledin.<br>Peki neden böyle?"
+          vo: "Çekim tablosunu ezberledin. Peki neden böyle olduğunu biliyor musun? Emsile ve Binâ sana ne olduğunu gösterdi; niçin olduğunu değil."
+        - type: concept
+          kicker: "EL-MAKSÛD"
+          ar: "اَلْمَقْصُود"
+          translit: "el-Maksûd"
+          tr: "Kalıbın arkasındaki kaide."
+          vo: "اَلْمَقْصُود. Kalıbın arkasındaki kaideyi anlatan metin. Artık ezberlediğin tablonun sebebini öğrenirsin."
+        - type: list
+          kicker: "KONULARI"
+          tr: "Artık kural konuşulur"
+          items:
+            - "İ'lâl — illetli harflerin değişmesi"
+            - "İdgâm — iki harfin birleşmesi"
+            - "Hemze ve vakf meseleleri"
+          vo: "اَلْإِعْلَال، اَلْإِدْغَام ve hemze meseleleri. Artık tablo değil, kural konuşulur. Bunlar, harfler birbirine komşu olunca neden değiştiğini anlatan bahislerdir."
+        - type: point
+          kicker: "NEDEN ŞERHLİ"
+          tr: "Metin kısa, mesele derin."
+          body: "Maksûd'un her satırı bir bahis açar."
+          vo: "Metin kısadır ama her satırı bir bahis açar. Bu yüzden şerhsiz okunmaz. Bir satırın altında bazen üç sayfalık tartışma durur."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: suruhul-maksud
+          vo: "شُرُوحُ الْمَقْصُود, metni şerhleriyle birlikte veriyor."
+        - type: cta
+          tr: "Kuralı bilen, kalıbı unutmaz."
+          vo: "Kuralı bilen talebe, kalıbı unutmaz."
+    story:
+      kind: video
+      caption: "Maksûd nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْمَقْصُود"
+          translit: "el-Maksûd"
+          tr: "Kalıbın arkasındaki kaide."
+          vo: "اَلْمَقْصُود. Kalıbın arkasındaki kaideyi anlatır."
+        - type: point
+          kicker: "SIRA"
+          tr: "Emsile → Binâ → Maksûd"
+          vo: "اَلْأَمْثِلَة، اَلْبِنَاء، اَلْمَقْصُود."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 9 ═══════════════════════════════
+  - day: 9
+    title: "et-Tasrîfu'l-İzzî"
+    post:
+      kind: video
+      caption: |
+        Sarfın klasik dizisinde dördüncü metin: İzzî.
+
+        İzzeddîn ez-Zencânî'nin kaleme aldığı bu kısa risâle, sarfın bütün
+        bahislerini derli toplu bir araya getirir. Kısadır ama yoğundur;
+        asırlardır medreselerde okutulmasının sebebi budur.
+
+        Sarf yolu burada tamamlanır, nahiv kapısı açılır.
+      scenes:
+        - type: hook
+          kicker: "SARF · 4. ADIM"
+          tr: "Kısa bir risâle.<br>Asırlardır okutuluyor."
+          vo: "Çok kısa bir risâle. Ama asırlardır medreselerde okutuluyor. Kısalığı zayıflığından değil, yoğunluğundandır."
+        - type: concept
+          kicker: "ET-TASRÎFU'L-İZZÎ"
+          ar: "اَلتَّصْرِيفُ الْعِزِّي"
+          translit: "et-Tasrîfu'l-İzzî"
+          tr: "Sarfın derli toplu özeti."
+          vo: "اَلتَّصْرِيفُ الْعِزِّي. Sarfın bütün bahislerini derli toplu verir."
+        - type: point
+          kicker: "MÜELLİFİ"
+          tr: "İzzeddîn ez-Zencânî"
+          body: "Risâle, müellifinin adıyla anılır oldu."
+          vo: "Müellifi İzzeddîn ez-Zencânî. Risâle onun adıyla anılır."
+        - type: point
+          kicker: "NEDEN BU KADAR YAYGIN"
+          tr: "Kısa, ama eksiksiz."
+          body: "Ezberlenebilecek kadar kısa, yetecek kadar kapsamlı. Talebe onu ezberler, ömrü boyunca ona döner."
+          vo: "Ezberlenebilecek kadar kısa, yetecek kadar kapsamlı."
+        - type: point
+          kicker: "SIRA"
+          tr: "Emsile → Binâ → Maksûd → İzzî"
+          body: "Her metin öncekini tamamlar."
+          vo: "اَلْأَمْثِلَة، اَلْبِنَاء، اَلْمَقْصُود، اَلْعِزِّي. Her metin öncekini tamamlar. Sonrakine geçmeden önce, öncekinin sağlam oturması beklenir."
+        - type: cta
+          tr: "Sarf biter, nahiv başlar."
+          vo: "Sarf yolu burada tamamlanır, nahiv kapısı açılır."
+    story:
+      kind: video
+      caption: "İzzî"
+      scenes:
+        - type: concept
+          ar: "اَلتَّصْرِيفُ الْعِزِّي"
+          translit: "et-Tasrîfu'l-İzzî"
+          tr: "Sarfın özeti."
+          vo: "اَلتَّصْرِيفُ الْعِزِّي. Sarfın derli toplu özeti."
+        - type: point
+          tr: "Kısa ama eksiksiz."
+          vo: "Ezberlenebilecek kadar kısa, yetecek kadar kapsamlı."
+        - type: cta
+          tr: "Sarf dizisi · gönderide"
+          vo: "Sarf dizisinin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 10 ═══════════════════════════════
+  - day: 10
+    title: "Vezin (mîzan) nedir?"
+    post:
+      kind: carousel
+      caption: |
+        Arapçanın terazisi: فَعَلَ
+
+        Sarfçılar bir kelimenin yapısını göstermek için onu bu üç harfle tartar.
+        ف ilk harfin yeri, ع ikinci harfin, ل üçüncüsünün.
+        كَتَبَ kelimesinin vezni فَعَلَ, مَكْتُوب kelimesininki مَفْعُول olur.
+
+        Vezni gören, kelimenin ne olduğunu da görür.
+      scenes:
+        - type: hook
+          kicker: "MÎZAN"
+          tr: "Arapçanın terazisi"
+          ar: "فَعَلَ"
+          dur: 3.0
+        - type: concept
+          kicker: "NASIL ÇALIŞIR"
+          ar: "ف ع ل"
+          translit: "fâ · ayn · lâm"
+          tr: "Üç harf, üç yer."
+          body: "ف birinci harfin yeri, ع ikincinin, ل üçüncünün."
+          dur: 3.6
+        - type: compare
+          kicker: "ÖRNEK"
+          tr: "Kelime ve vezni"
+          left:  {ar: "كَتَبَ", title: "ketebe", text: "vezni: فَعَلَ"}
+          right: {ar: "مَكْتُوب", title: "mektûb", text: "vezni: مَفْعُول"}
+          dur: 3.4
+        - type: point
+          kicker: "NE İŞE YARAR"
+          tr: "Vezin, kelimenin kimliğidir."
+          body: "Vezni gören; fiil mi isim mi, fâil mi mef'ûl mü anlar."
+          dur: 3.4
+        - type: point
+          kicker: "NEDEN ف ع ل"
+          tr: "“Yapmak” kökü seçilmiş."
+          body: "Her dilde olduğu gibi en temel fiil."
+          dur: 3.0
+        - type: cta
+          tr: "Tartmayı öğren."
+          body: "Sarfın yarısı budur."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Vezin nedir?"
+      scenes:
+        - type: concept
+          kicker: "MÎZAN"
+          ar: "فَعَلَ"
+          tr: "Arapçanın terazisi."
+          vo: "فَعَلَ. Arapçanın terazisi."
+        - type: compare
+          tr: "Kelime / vezin"
+          left:  {ar: "كَتَبَ", title: "ketebe", text: "فَعَلَ"}
+          right: {ar: "مَكْتُوب", title: "mektûb", text: "مَفْعُول"}
+          vo: "كَتَبَ kelimesinin vezni فَعَلَ, مَكْتُوب kelimesininki مَفْعُول."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 11 ═══════════════════════════════
+  - day: 11
+    title: "Lâzım ve müteaddî fiil"
+    post:
+      kind: video
+      caption: |
+        Bazı fiiller nesne ister, bazıları istemez.
+
+        ذَهَبَ "gitti" — nesnesi yoktur, lâzımdır.
+        قَرَأَ "okudu" — neyi okudu? Nesne ister, müteaddîdir.
+
+        Bu ayrımı bilmeyen talebe, cümlede mef'ûl ararken olmayanı arar ya da
+        olanı göremez. Sarf ile nahvin birbirine en çok değdiği yer burasıdır.
+      scenes:
+        - type: hook
+          kicker: "FİİL"
+          tr: "Her fiil nesne istemez. Bunu bilmeyen, cümlede olmayan bir şeyi arar."
+          vo: "Her fiil nesne istemez."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "Lâzım ve müteaddî"
+          left:  {ar: "ذَهَبَ", title: "Lâzım", text: "“gitti” — nesne almaz"}
+          right: {ar: "قَرَأَ", title: "Müteaddî", text: "“okudu” — nesne ister"}
+          vo: "ذَهَبَ gitti demek, nesne almaz. قَرَأَ okudu demek, nesne ister."
+        - type: concept
+          kicker: "TERİM"
+          ar: "اَلْمُتَعَدِّي"
+          translit: "el-Müteaddî"
+          tr: "Fâilden nesneye “geçen” fiil."
+          vo: "اَلْمُتَعَدِّي, geçen demektir. Fiilin tesiri fâilden nesneye geçer. Tesir fâilde kalıyorsa lâzım, dışarı taşıyorsa müteaddîdir."
+        - type: point
+          kicker: "NEDEN ÖNEMLİ"
+          tr: "Olmayan mef'ûlü arama."
+          body: "Lâzım fiilde mef'ûl aramak, cümleyi yanlış kurdurur."
+          vo: "Lâzım fiilde mef'ûl aramak, cümleyi baştan yanlış kurdurur."
+        - type: point
+          kicker: "İPUCU"
+          tr: "Kalıp, fiili geçişli yapabilir."
+          ar: "عَلِمَ ← عَلَّمَ"
+          body: "Şedde geldi, fiil nesne ister oldu."
+          vo: "Kalıp da fiili geçişli yapar: عَلِمَ bildi, عَلَّمَ öğretti."
+        - type: cta
+          tr: "Önce fiili tanı."
+          body: "Cümle ondan sonra kurulur."
+          vo: "Önce fiili tanı. Cümle ondan sonra kurulur. Çünkü Arapça cümlenin iskeleti fiildir."
+    story:
+      kind: video
+      caption: "Lâzım / müteaddî"
+      scenes:
+        - type: compare
+          tr: "Nesne ister mi?"
+          left:  {ar: "ذَهَبَ", title: "Lâzım", text: "istemez"}
+          right: {ar: "قَرَأَ", title: "Müteaddî", text: "ister"}
+          vo: "ذَهَبَ nesne almaz. قَرَأَ nesne ister."
+        - type: point
+          tr: "Olmayan mef'ûlü arama."
+          vo: "Lâzım fiilde mef'ûl aramak cümleyi yanlış kurdurur."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 12 ═══════════════════════════════
+  - day: 12
+    title: "Âcurrûmiyye ve Tuhfetü's-Seniyye"
+    post:
+      kind: video
+      caption: |
+        Nahve giriş denince akla gelen ilk metin: el-Âcurrûmiyye.
+
+        Birkaç sayfalık bir risâle. Ama nahvin bütün temel kavramlarını —
+        kelimenin kısımları, i'râb, merfûât, mansûbât, mecrûrât — sırayla verir.
+        Asırlardır doğudan batıya bütün medreselerde ilk nahiv kitabıdır.
+
+        Tuhfetü's-Seniyye ise bu metni açan, en çok okunan şerhlerinden biridir.
+      book_line: "Tuhfetü's-Seniyye"
+      scenes:
+        - type: hook
+          kicker: "NAHVE GİRİŞ"
+          tr: "Birkaç sayfa.<br>Asırlardır ilk kitap."
+          vo: "Birkaç sayfalık bir risâle. Asırlardır nahvin ilk kitabı. Doğudan batıya pek çok medresede aynı metin okutulur."
+        - type: concept
+          kicker: "EL-ÂCURRÛMİYYE"
+          ar: "اَلْآجُرُّومِيَّة"
+          translit: "el-Âcurrûmiyye"
+          tr: "Nahvin temel kavram haritası."
+          vo: "اَلْآجُرُّومِيَّة. Nahvin temel kavramlarını sırayla veren metin."
+        - type: list
+          kicker: "İÇİNDE NE VAR"
+          tr: "Sırayla"
+          items:
+            - "Kelimenin kısımları: isim, fiil, harf"
+            - "İ'râb ve alâmetleri"
+            - "Merfûât, mansûbât, mecrûrât"
+          vo: "Kelimenin kısımları, اَلْإِعْرَاب ve alâmetleri, اَلْمَرْفُوعَات، اَلْمَنْصُوبَات، اَلْمَجْرُورَات."
+        - type: point
+          kicker: "NEDEN ŞERH"
+          tr: "Metin özet, şerh açar."
+          body: "Risâle anahtar verir; kapıyı şerh açar."
+          vo: "Metin anahtarı verir, kapıyı şerh açar. Âcurrûmiyye'nin üzerine pek çok şerh yazılmıştır."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: tuhfetus-seniyye
+          vo: "اَلتُّحْفَةُ السَّنِيَّة, bu metnin en çok okunan şerhlerinden biri."
+        - type: cta
+          tr: "Küçük metin, büyük kapı."
+          vo: "Küçük bir metin, büyük bir kapı. Nahve girişte hâlâ aşılamamış bir sadelik."
+    story:
+      kind: video
+      caption: "Âcurrûmiyye"
+      scenes:
+        - type: concept
+          ar: "اَلْآجُرُّومِيَّة"
+          translit: "el-Âcurrûmiyye"
+          tr: "Nahvin ilk kitabı."
+          vo: "اَلْآجُرُّومِيَّة. Nahvin ilk kitabı."
+        - type: point
+          tr: "Birkaç sayfa, bütün temel kavramlar."
+          vo: "Birkaç sayfada nahvin bütün temel kavramları."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 13 ═══════════════════════════════
+  - day: 13
+    title: "İ'râb nedir?"
+    post:
+      kind: carousel
+      caption: |
+        Türkçede "kitabı", "kitaba", "kitapta" deriz — ek değişir.
+        Arapçada ek değil, son hareke değişir. Buna i'râb denir.
+
+        Ref' (ötre), nasb (üstün), cerr (esre), cezm (sükûn).
+        Dört hâl, dört görev.
+
+        İ'râbı okuyabilen, cümleyi çözmüş demektir.
+      scenes:
+        - type: hook
+          kicker: "İ'RÂB"
+          tr: "Türkçede ek değişir.<br>Arapçada hareke."
+          dur: 3.2
+        - type: concept
+          kicker: "TANIM"
+          ar: "اَلْإِعْرَاب"
+          translit: "el-İ'râb"
+          tr: "Son harekenin göreve göre değişmesi."
+          dur: 3.2
+        - type: list
+          kicker: "DÖRT HÂL"
+          tr: "İ'râb çeşitleri"
+          items:
+            - "رَفْع — ref' · ötre · fâilin hâli"
+            - "نَصْب — nasb · üstün · mef'ûlün hâli"
+            - "جَرّ — cerr · esre · harf-i cerden sonra"
+            - "جَزْم — cezm · sükûn · fiile mahsus"
+          dur: 4.0
+        - type: compare
+          kicker: "ÖRNEK"
+          tr: "Aynı kelime, üç hâl"
+          left:  {ar: "جَاءَ زَيْدٌ", title: "Ref'", text: "Zeyd geldi — fâil"}
+          right: {ar: "رَأَيْتُ زَيْدًا", title: "Nasb", text: "Zeyd'i gördüm — mef'ûl"}
+          dur: 3.4
+        - type: point
+          kicker: "SONUÇ"
+          tr: "İ'râbı okuyan, cümleyi çözer."
+          dur: 3.0
+        - type: cta
+          tr: "Hareke tesadüf değildir."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "İ'râb"
+      scenes:
+        - type: concept
+          ar: "اَلْإِعْرَاب"
+          translit: "el-İ'râb"
+          tr: "Son harekenin değişmesi."
+          vo: "اَلْإِعْرَاب. Son harekenin göreve göre değişmesi."
+        - type: point
+          tr: "Ref' · nasb · cerr · cezm"
+          vo: "رَفْعٌ، نَصْبٌ، جَرٌّ، جَزْمٌ. Dört hâl, dört görev."
+        - type: cta
+          tr: "Gönderide örnekle"
+          vo: "Örnekleriyle bugünkü gönderide."
+
+  # ═══════════════════════════════ 14 ═══════════════════════════════
+  - day: 14
+    title: "Mebnî ve mu'reb"
+    post:
+      kind: video
+      caption: |
+        Her kelimenin son harekesi değişmez.
+
+        Mu'reb kelimeler göreve göre hareke değiştirir. Mebnî kelimeler ise
+        nerede olursa olsun aynı kalır: هَذَا hep هَذَا'dır, مَنْ hep مَنْ.
+
+        Bütün harfler, fiillerin çoğu ve isimlerin bir kısmı mebnîdir.
+        Bu ayrımı bilmeyen, değişmeyen kelimede i'râb arayıp kaybolur.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Her kelimenin harekesi değişir mi?"
+          vo: "Her kelimenin son harekesi değişir mi? Hayır. Ve bunu bilmemek, talebeyi saatlerce yanlış yerde arattırır."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "Mu'reb ve mebnî"
+          left:  {ar: "اَلْمُعْرَب", title: "Mu'reb", text: "Göreve göre hareke değiştirir."}
+          right: {ar: "اَلْمَبْنِي", title: "Mebnî", text: "Nerede olursa olsun aynı kalır."}
+          vo: "اَلْمُعْرَب göreve göre değişir. اَلْمَبْنِي ise nerede olursa olsun aynı kalır. Mebnîde hareke kelimenin kendi malıdır, görevin değil."
+        - type: point
+          kicker: "MEBNÎ ÖRNEK"
+          ar: "هَذَا · مَنْ · اَلَّذِي"
+          tr: "Bunlar hiç değişmez."
+          vo: "هَذَا، مَنْ، اَلَّذِي. Bunlar hiçbir yerde değişmez."
+        - type: list
+          kicker: "KURAL"
+          tr: "Mebnî olanlar"
+          items:
+            - "Bütün harfler"
+            - "Fiillerin çoğu"
+            - "İsimlerin bir kısmı"
+          vo: "Bütün harfler, fiillerin çoğu ve isimlerin bir kısmı mebnîdir. İsimlerin çoğu ise mu'rebdir; asıl değişen onlardır."
+        - type: point
+          kicker: "NEDEN ÖNEMLİ"
+          tr: "Değişmeyende i'râb arama."
+          body: "Mebnîde harekeyi zorlamak, cümleyi yanlış kurar."
+          vo: "Değişmeyen kelimede i'râb aramak talebeyi boşa yorar."
+        - type: cta
+          tr: "Önce hangi tür olduğunu sor."
+          vo: "Önce kelimenin hangi tür olduğunu sor. Cevabı bilmeden i'râba başlamak, kapalı kapıyı zorlamaktır."
+    story:
+      kind: video
+      caption: "Mebnî / mu'reb"
+      scenes:
+        - type: compare
+          tr: "Değişir mi?"
+          left:  {ar: "اَلْمُعْرَب", title: "Mu'reb", text: "değişir"}
+          right: {ar: "اَلْمَبْنِي", title: "Mebnî", text: "değişmez"}
+          vo: "اَلْمُعْرَب değişir, اَلْمَبْنِي değişmez."
+        - type: point
+          tr: "هَذَا hep هَذَا."
+          vo: "هَذَا her yerde هَذَا kalır."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 15 ═══════════════════════════════
+  - day: 15
+    title: "Arapça öğrenirken 3 yaygın hata"
+    post:
+      kind: carousel
+      caption: |
+        Üç hata, yıllarca ilerlemeyi engelliyor:
+
+        1. Metinsiz çalışmak — her gün başka kaynak, hiçbir kaynak demek.
+        2. Sadece kelime ezberlemek — kök ve kalıp olmadan kelime dağılır.
+        3. Okumadan anlamaya çalışmak — Arapça önce sesle, sonra gözle oturur.
+
+        Hiçbiri kabiliyetle ilgili değil. Hepsi usulle.
+      scenes:
+        - type: hook
+          kicker: "DİKKAT"
+          tr: "Üç hata,<br>yıllarca ilerletmiyor."
+          dur: 3.2
+        - type: point
+          kicker: "HATA 1"
+          tr: "Metinsiz çalışmak"
+          body: "Her gün başka kaynak, hiçbir kaynak demektir."
+          dur: 3.2
+        - type: point
+          kicker: "HATA 2"
+          tr: "Sadece kelime ezberlemek"
+          body: "Kök ve kalıp olmadan ezberlenen kelime dağılır."
+          dur: 3.2
+        - type: point
+          kicker: "HATA 3"
+          tr: "Okumadan anlamaya çalışmak"
+          body: "Arapça önce kulakta, sonra gözde oturur."
+          dur: 3.2
+        - type: point
+          kicker: "ORTAK NOKTA"
+          tr: "Hiçbiri kabiliyetle ilgili değil."
+          body: "Hepsi usulle ilgili."
+          dur: 3.0
+        - type: cta
+          tr: "Usulü düzelt, yol açılır."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "3 yaygın hata"
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Neden ilerlemiyor?"
+          vo: "Yıllardır çalışıyorsun ama ilerlemiyor musun?"
+        - type: point
+          tr: "Metinsizlik · kelime ezberi · sessiz okuma"
+          vo: "Metinsiz çalışmak, sadece kelime ezberlemek, sessiz okumak."
+        - type: cta
+          tr: "Üçünün cevabı gönderide"
+          vo: "Üçünün de cevabı bugünkü gönderide."
+
+  # ═══════════════════════════════ 16 ═══════════════════════════════
+  - day: 16
+    title: "İbn Hişâm ve Kavâidü'l-İ'râb"
+    post:
+      kind: video
+      caption: |
+        Nahiv denince adı en çok anılan isimlerden biri: İbn Hişâm.
+
+        Katru'n-Nedâ, Şüzûru'z-Zeheb, Muğni'l-Lebîb ve Kavâidü'l-İ'râb —
+        hepsi asırlardır okutulan eserler. Kavâidü'l-İ'râb, i'râbın kaidelerini
+        kısa ve sistemli biçimde ortaya koyar.
+
+        Nahvi öğrenmek bir şey, i'râb yapabilmek başka şeydir.
+      book_line: "Şürûhu Kavâidi'l-İ'râb"
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Nahvi bilmek bir şey,<br>i'râb yapmak başka."
+          vo: "Nahvi bilmek bir şey, i'râb yapabilmek başka şeydir. Birincisi kural ezberi, ikincisi tatbik."
+        - type: concept
+          kicker: "MÜELLİF"
+          ar: "اِبْنُ هِشَام"
+          translit: "İbn Hişâm"
+          tr: "Nahvin en çok okunan müelliflerinden."
+          vo: "اِبْنُ هِشَام. Nahvin en çok okunan müelliflerinden biri."
+        - type: list
+          kicker: "ESERLERİ"
+          tr: "Asırlardır okutuluyor"
+          items:
+            - "قَطْرُ النَّدَى — Katru'n-Nedâ"
+            - "شُذُورُ الذَّهَب — Şüzûru'z-Zeheb"
+            - "مُغْنِي اللَّبِيب — Muğni'l-Lebîb"
+            - "قَوَاعِدُ الْإِعْرَاب — Kavâidü'l-İ'râb"
+          vo: "قَطْرُ النَّدَى، شُذُورُ الذَّهَب، مُغْنِي اللَّبِيب، قَوَاعِدُ الْإِعْرَاب."
+        - type: point
+          kicker: "KAVÂİDÜ'L-İ'RÂB"
+          tr: "İ'râbın kaideleri, sistemli ve kısa."
+          vo: "قَوَاعِدُ الْإِعْرَاب, i'râbın kaidelerini kısa ve sistemli verir. Her kaide, cümlenin önünde durduğunda ne yapacağını söyler."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: kavaidul-irab
+          vo: "شُرُوحُ قَوَاعِدِ الْإِعْرَاب, metni şerhleriyle birlikte sunuyor."
+        - type: cta
+          tr: "Kaideyi bilen tereddüt etmez."
+          vo: "Kaideyi bilen talebe, cümlenin önünde tereddüt etmez. Çünkü neyi nereden soracağını bilir."
+    story:
+      kind: video
+      caption: "İbn Hişâm"
+      scenes:
+        - type: concept
+          ar: "اِبْنُ هِشَام"
+          translit: "İbn Hişâm"
+          tr: "Nahvin büyük müellifi."
+          vo: "اِبْنُ هِشَام. Nahvin en çok okunan müelliflerinden."
+        - type: point
+          tr: "Katru'n-Nedâ · Muğnî · Kavâid"
+          vo: "قَطْرُ النَّدَى، مُغْنِي اللَّبِيب، قَوَاعِدُ الْإِعْرَاب."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 17 ═══════════════════════════════
+  - day: 17
+    title: "Marife ve nekire"
+    post:
+      kind: carousel
+      caption: |
+        Türkçede "bir kitap" ve "kitap" arasındaki farkı ekle değil, bağlamla
+        anlarız. Arapçada bu fark yazıya geçer.
+
+        كِتَابٌ — bir kitap, belirsiz: nekire. Sonundaki tenvin bunun işaretidir.
+        اَلْكِتَابُ — o kitap, belirli: marife. Başındaki elif-lâm onu belirler.
+
+        Tenvin ile elif-lâm bir arada bulunmaz. Biri varsa diğeri yoktur.
+      scenes:
+        - type: hook
+          kicker: "BELİRLİLİK"
+          tr: "“Bir kitap” ile “o kitap”<br>arasındaki fark"
+          dur: 3.2
+        - type: compare
+          kicker: "İKİ HÂL"
+          tr: "Nekire ve marife"
+          left:  {ar: "كِتَابٌ", title: "Nekire", text: "bir kitap — belirsiz"}
+          right: {ar: "اَلْكِتَابُ", title: "Marife", text: "o kitap — belirli"}
+          dur: 3.4
+        - type: concept
+          kicker: "İŞARET"
+          ar: "ـٌ"
+          translit: "tenvin"
+          tr: "Sondaki çift hareke belirsizlik işaretidir."
+          dur: 3.2
+        - type: concept
+          kicker: "İŞARET"
+          ar: "اَلْ"
+          translit: "elif-lâm"
+          tr: "Baştaki takı belirlilik verir."
+          dur: 3.0
+        - type: point
+          kicker: "KURAL"
+          tr: "İkisi bir arada bulunmaz."
+          body: "Tenvin varsa elif-lâm yoktur; elif-lâm varsa tenvin yoktur."
+          dur: 3.4
+        - type: cta
+          tr: "Kelimenin başına ve sonuna bak."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Marife / nekire"
+      scenes:
+        - type: compare
+          tr: "Belirli mi?"
+          left:  {ar: "كِتَابٌ", title: "Nekire", text: "bir kitap"}
+          right: {ar: "اَلْكِتَابُ", title: "Marife", text: "o kitap"}
+          vo: "كِتَابٌ bir kitap, اَلْكِتَابُ o kitap."
+        - type: point
+          tr: "Tenvin ile elif-lâm bir arada olmaz."
+          vo: "Tenvin varsa elif-lâm olmaz, elif-lâm varsa tenvin."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 18 ═══════════════════════════════
+  - day: 18
+    title: "İsim cümlesi ve fiil cümlesi"
+    post:
+      kind: video
+      caption: |
+        Arapçada cümle, ilk kelimesine göre adlandırılır.
+
+        İsimle başlarsa isim cümlesidir: mübtedâ ve haber. Durumu, sıfatı,
+        sabit bir hâli bildirir.
+        Fiille başlarsa fiil cümlesidir: fiil, fâil ve varsa mef'ûl. Bir oluşu,
+        bir hareketi bildirir.
+
+        Cümlenin ilk kelimesine bakmak, onu çözmenin ilk adımıdır.
+      scenes:
+        - type: hook
+          kicker: "CÜMLE"
+          tr: "Cümlenin türünü<br>ilk kelimesi söyler."
+          vo: "Arapçada cümlenin türünü ilk kelimesi söyler. Türkçede ise cümlenin sonunu beklemek gerekir."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "İsim cümlesi / fiil cümlesi"
+          left:  {ar: "اَلْبَيْتُ كَبِيرٌ", title: "İsim cümlesi", text: "Ev büyüktür. Mübtedâ + haber."}
+          right: {ar: "ذَهَبَ الْوَلَدُ", title: "Fiil cümlesi", text: "Çocuk gitti. Fiil + fâil."}
+          vo: "اَلْبَيْتُ كَبِيرٌ: ev büyüktür. ذَهَبَ الْوَلَدُ: çocuk gitti."
+        - type: point
+          kicker: "İSİM CÜMLESİ"
+          tr: "Sabit bir hâli bildirir."
+          body: "Mübtedâ ve haber; ikisi de merfûdur."
+          vo: "İsim cümlesi sabit bir hâli bildirir. Mübtedâ ve haber, ikisi de merfû. Zaman bildirmez; oluş değil, durum anlatır."
+        - type: point
+          kicker: "FİİL CÜMLESİ"
+          tr: "Bir oluşu bildirir."
+          body: "Fiil, fâil ve varsa mef'ûl."
+          vo: "Fiil cümlesi bir oluşu bildirir. Fiil, fâil ve varsa mef'ûl. Zamanı da fiilin kendisi taşır."
+        - type: point
+          kicker: "USUL"
+          tr: "Önce ilk kelimeye bak."
+          body: "Türü bilmeden i'râb yapılmaz."
+          vo: "Önce ilk kelimeye bak. Türü bilmeden i'râb yapılmaz."
+        - type: cta
+          tr: "Cümleyi baştan tanı."
+          vo: "Cümleyi baştan tanı. Gerisi kolaylaşır. İlk kelime, cümlenin bütün haritasını verir."
+    story:
+      kind: video
+      caption: "Cümle türleri"
+      scenes:
+        - type: compare
+          tr: "İlk kelime ne?"
+          left:  {ar: "اَلْبَيْتُ كَبِيرٌ", title: "İsim cümlesi", text: "Ev büyüktür."}
+          right: {ar: "ذَهَبَ الْوَلَدُ", title: "Fiil cümlesi", text: "Çocuk gitti."}
+          vo: "İsimle başlarsa isim cümlesi, fiille başlarsa fiil cümlesi."
+        - type: point
+          tr: "Türü bilmeden i'râb olmaz."
+          vo: "Cümlenin türünü bilmeden i'râb yapılmaz."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 19 ═══════════════════════════════
+  - day: 19
+    title: "Molla Câmî — nahvin zirvesi"
+    post:
+      kind: video
+      caption: |
+        Medrese tahsilinde nahvin en üst basamaklarından biri: Molla Câmî.
+
+        Abdurrahman Câmî'nin, İbnü'l-Hâcib'in Kâfiye'si üzerine yazdığı
+        el-Fevâidü'z-Ziyâiyye adlı şerh. Talebeler arasında müellifinin adıyla
+        anılır oldu.
+
+        Buraya gelen talebe artık kural öğrenmez; kuralın niçin öyle olduğunu
+        tartışır.
+      book_line: "Molla Câmî"
+      scenes:
+        - type: hook
+          kicker: "NAHVİN ZİRVESİ"
+          tr: "Artık kural değil,<br>kuralın sebebi konuşulur."
+          vo: "Burada artık kural öğrenilmez. Kuralın sebebi tartışılır. Metinler cevap değil, soru öğretmeye başlar."
+        - type: concept
+          kicker: "ESER"
+          ar: "اَلْفَوَائِدُ الضِّيَائِيَّة"
+          translit: "el-Fevâidü'z-Ziyâiyye"
+          tr: "Kâfiye üzerine yazılmış şerh."
+          vo: "Eserin adı اَلْفَوَائِدُ الضِّيَائِيَّة. اَلْكَافِيَة üzerine yazılmış bir şerh."
+        - type: point
+          kicker: "MÜELLİFİ"
+          tr: "Abdurrahman Câmî"
+          body: "Talebeler arasında “Molla Câmî” diye anılır oldu."
+          vo: "Müellifi Abdurrahman Câmî. Kitap da onun adıyla anılır oldu. Aslında o bir şârihtir; ama şerhi metnin önüne geçmiştir."
+        - type: point
+          kicker: "KÂFİYE"
+          tr: "Metin İbnü'l-Hâcib'in."
+          body: "Şerh edilen asıl metin Kâfiye'dir."
+          vo: "Şerh edilen asıl metin İbnü'l-Hâcib'in اَلْكَافِيَة adlı eseridir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: molla-cami
+          vo: "Molla Câmî, Arapça aslıyla raflarımızda."
+        - type: cta
+          tr: "Yol uzun ama basamaklı."
+          vo: "Yol uzundur ama basamaklıdır. Sırayla çıkılır. Hiçbir basamak, bir öncekini atlayanı taşımaz."
+    story:
+      kind: video
+      caption: "Molla Câmî"
+      scenes:
+        - type: concept
+          ar: "اَلْفَوَائِدُ الضِّيَائِيَّة"
+          translit: "Molla Câmî"
+          tr: "Kâfiye şerhi."
+          vo: "Molla Câmî, اَلْكَافِيَة üzerine yazılmış bir şerhtir."
+        - type: point
+          tr: "Nahvin üst basamağı."
+          vo: "Medrese tahsilinde nahvin üst basamaklarından."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 20 ═══════════════════════════════
+  - day: 20
+    title: "Harf-i cerler"
+    post:
+      kind: carousel
+      caption: |
+        Arapçada bazı harfler, kendilerinden sonraki ismi esre yapar.
+        Bunlara harf-i cer denir.
+
+        مِنْ, إِلَى, عَنْ, عَلَى, فِي, الْبَاء, اللَّام, الْكَاف…
+        Klasik sayımda on yedi tanedir.
+
+        Harf-i ceri gören göz, sonraki kelimenin harekesini okumadan bilir.
+      scenes:
+        - type: hook
+          kicker: "HARF-İ CER"
+          tr: "Sonraki kelimeyi<br>okumadan bilirsin."
+          dur: 3.2
+        - type: concept
+          kicker: "TANIM"
+          ar: "حُرُوفُ الْجَرّ"
+          translit: "hurûfu'l-cerr"
+          tr: "Kendinden sonraki ismi esre yapan harfler."
+          dur: 3.4
+        - type: stat
+          kicker: "KLASİK SAYIM"
+          big: "17"
+          label: "harf"
+          body: "Kimi sayımlarda daha fazla zikredilir."
+          dur: 3.2
+        - type: list
+          kicker: "EN ÇOK KULLANILANLAR"
+          tr: "Tanıdık yüzler"
+          items:
+            - "مِنْ — min · -den"
+            - "إِلَى — ilâ · -e doğru"
+            - "فِي — fî · içinde"
+            - "عَلَى — alâ · üzerinde"
+            - "بِ — bi · ile"
+          dur: 4.0
+        - type: compare
+          kicker: "ETKİSİ"
+          tr: "Harf-i cerden önce / sonra"
+          left:  {ar: "اَلْبَيْتُ", title: "Yalın", text: "merfû — ötre"}
+          right: {ar: "فِي الْبَيْتِ", title: "Cerrli", text: "mecrûr — esre"}
+          dur: 3.4
+        - type: cta
+          tr: "Harfi tanı, harekeyi bil."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Harf-i cer"
+      scenes:
+        - type: concept
+          ar: "حُرُوفُ الْجَرّ"
+          translit: "hurûfu'l-cerr"
+          tr: "Sonraki ismi esre yapar."
+          vo: "حُرُوفُ الْجَرّ. Kendinden sonraki ismi esre yapar."
+        - type: compare
+          tr: "Etkisi"
+          left:  {ar: "اَلْبَيْتُ", title: "ötre", text: "merfû"}
+          right: {ar: "فِي الْبَيْتِ", title: "esre", text: "mecrûr"}
+          vo: "اَلْبَيْتُ ötreli, فِي الْبَيْتِ esreli."
+        - type: cta
+          tr: "Listesi gönderide"
+          vo: "Tam listesi bugünkü gönderide."
+
+  # ═══════════════════════════════ 21 ═══════════════════════════════
+  - day: 21
+    title: "Ezber mi, anlama mı?"
+    post:
+      kind: video
+      caption: |
+        "Ezber kötüdür" sözü, klasik usulü hiç tanımayanların sözüdür.
+
+        Medrese usulünde ezber, anlamanın yerine geçmez; önüne geçer.
+        Metin ezberlenir ki zihin onu her an önünde bulsun; şerh okunurken
+        tartışılan şeyin ne olduğu bilinsin.
+
+        Anlamadan ezber kurudur. Ezbersiz anlama ise kalıcı olmaz.
+      scenes:
+        - type: hook
+          kicker: "TARTIŞMA"
+          tr: "“Ezber kötüdür”<br>diyenler usulü bilmiyor."
+          vo: "Ezber kötüdür sözü, klasik usulü tanımayanların sözüdür. Çünkü medresede ezber, anlamanın rakibi değil hazırlığıdır."
+        - type: point
+          kicker: "USULDE EZBER"
+          tr: "Anlamanın yerine değil, önüne geçer."
+          vo: "Medrese usulünde ezber, anlamanın yerine geçmez. Önüne geçer. Önce metin zihne yerleşir, anlama sonra üzerine kurulur."
+        - type: point
+          kicker: "NEDEN"
+          tr: "Metin zihinde hazır dursun diye."
+          body: "Şerh okunurken tartışılanın ne olduğu bilinsin."
+          vo: "Metin ezberlenir ki şerh okunurken tartışılanın ne olduğu bilinsin. Elinde olmayan bir metin üzerinde düşünemezsin."
+        - type: compare
+          kicker: "İKİ UÇ"
+          tr: "İkisi de eksik"
+          left:  {title: "Anlamadan ezber", text: "Kurudur. Kısa sürede dökülür."}
+          right: {title: "Ezbersiz anlama", text: "Kalıcı olmaz. Her defa baştan."}
+          vo: "Anlamadan ezber kurudur. Ezbersiz anlama kalıcı olmaz."
+        - type: quote
+          kicker: "DUA"
+          ar: "وَقُلْ رَبِّ زِدْنِي عِلْمًا"
+          tr: "“De ki: Rabbim, ilmimi artır.”"
+          src: "Tâhâ, 114"
+          vo: "وَقُلْ رَبِّ زِدْنِي عِلْمًا. De ki: Rabbim, ilmimi artır."
+        - type: cta
+          tr: "Önce ezberle, sonra sor."
+          vo: "Önce ezberle. Sonra niçin diye sor. Sırası tersine dönerse, ikisi de eksik kalır."
+    story:
+      kind: video
+      caption: "Ezber meselesi"
+      scenes:
+        - type: hook
+          tr: "Ezber kötü müdür?"
+          vo: "Ezber gerçekten kötü müdür?"
+        - type: point
+          tr: "Anlamanın yerine değil, önüne geçer."
+          vo: "Klasik usulde ezber anlamanın yerine geçmez, önüne geçer."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 22 ═══════════════════════════════
+  - day: 22
+    title: "Belâgat nedir? + Telhîsu'l-Miftâh"
+    post:
+      kind: video
+      caption: |
+        Sarf kelimeyi doğru kurar, nahiv cümleyi doğru dizer.
+        Peki doğru cümleyi güzel söylemek?
+
+        Belâgat üç şubeye ayrılır:
+        Meânî — sözün duruma uygunluğu.
+        Beyân — aynı mânanın farklı yollarla anlatımı.
+        Bedî' — sözün süslenmesi.
+
+        تَلْخِيصُ الْمِفْتَاح, bu üç şubeyi özetleyen klasik metin.
+      book_line: "Telhîsu'l-Miftâh"
+      scenes:
+        - type: hook
+          kicker: "ÜÇÜNCÜ BASAMAK"
+          tr: "Doğru cümle kurdun.<br>Güzel söyleyebiliyor musun?"
+          vo: "Doğru cümle kurmayı öğrendin. Peki güzel söylemeyi? Arapçada bu da bir ilimdir, zevk meselesi değil."
+        - type: concept
+          kicker: "BELÂGAT"
+          ar: "اَلْبَلَاغَة"
+          translit: "el-Belâga"
+          tr: "Sözün yerinde ve etkili olması."
+          vo: "اَلْبَلَاغَة. Sözün yerinde ve etkili olması."
+        - type: list
+          kicker: "ÜÇ ŞUBE"
+          tr: "Belâgat nelere ayrılır?"
+          items:
+            - "اَلْمَعَانِي — Meânî · sözün duruma uygunluğu"
+            - "اَلْبَيَان — Beyân · aynı mânanın farklı yolları"
+            - "اَلْبَدِيع — Bedî' · sözün süslenmesi"
+          vo: "اَلْمَعَانِي، اَلْبَيَان، اَلْبَدِيع. Belâgatin üç şubesi."
+        - type: point
+          kicker: "SIRA"
+          tr: "Sarf → nahiv → belâgat"
+          body: "Her basamak öncekinin üzerine kurulur."
+          vo: "Önce sarf, sonra nahiv, sonra belâgat. Her basamak öncekinin üzerine kurulur. Belâgate nahivsiz girilmez; çünkü tartışılan şey cümlenin kuruluşudur."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: telhisul-miftah
+          vo: "تَلْخِيصُ الْمِفْتَاح, bu üç şubeyi özetleyen klasik metin."
+        - type: cta
+          tr: "Doğrudan sonra güzel."
+          vo: "Önce doğru söylemek. Sonra güzel söylemek. Kur'an'ın i'câzı da bu ilmin kapısından görünür."
+    story:
+      kind: video
+      caption: "Belâgat"
+      scenes:
+        - type: concept
+          ar: "اَلْبَلَاغَة"
+          translit: "el-Belâga"
+          tr: "Sözün yerinde olması."
+          vo: "اَلْبَلَاغَة. Sözün yerinde ve etkili olması."
+        - type: point
+          tr: "Meânî · Beyân · Bedî'"
+          vo: "Üç şubesi var: اَلْمَعَانِي، اَلْبَيَان، اَلْبَدِيع."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 23 ═══════════════════════════════
+  - day: 23
+    title: "Sülâsî mezîd bablar"
+    post:
+      kind: carousel
+      caption: |
+        Üç harfli bir fiile harf eklenirse ne olur? Anlamı değişir — rastgele
+        değil, kurala göre.
+
+        Sülâsî mezîd on iki bâbdır:
+        bir harf eklenenler (3), iki harf eklenenler (5), üç harf eklenenler (4).
+
+        Her bâbın kattığı anlam bellidir. Mesela إِسْتَفْعَلَ çoğu zaman
+        "istemek" anlamı katar: غَفَرَ bağışladı → إِسْتَغْفَرَ bağışlanma diledi.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "Harf eklenince<br>anlam nasıl değişir?"
+          dur: 3.2
+        - type: concept
+          kicker: "SÜLÂSÎ MEZÎD"
+          ar: "اَلثُّلَاثِيُّ الْمَزِيد"
+          translit: "sülâsî mezîd"
+          tr: "Üç harfli köke harf eklenmiş fiil."
+          dur: 3.4
+        - type: stat
+          kicker: "KLASİK SAYIM"
+          big: "12"
+          label: "bâb"
+          body: "3 + 5 + 4"
+          dur: 3.0
+        - type: list
+          kicker: "DAĞILIM"
+          tr: "Kaç harf eklenmiş?"
+          items:
+            - "Bir harf eklenen: 3 bâb"
+            - "İki harf eklenen: 5 bâb"
+            - "Üç harf eklenen: 4 bâb"
+          dur: 3.6
+        - type: compare
+          kicker: "ÖRNEK"
+          tr: "إِسْتَفْعَلَ — “istemek”"
+          left:  {ar: "غَفَرَ", title: "gafera", text: "bağışladı"}
+          right: {ar: "إِسْتَغْفَرَ", title: "istağfera", text: "bağışlanma diledi"}
+          dur: 3.6
+        - type: cta
+          tr: "Bâbı bil, anlamı tahmin et."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Mezîd bablar"
+      scenes:
+        - type: stat
+          kicker: "SÜLÂSÎ MEZÎD"
+          big: "12"
+          label: "bâb"
+          vo: "اَلثُّلَاثِيُّ الْمَزِيد. On iki bâbdır."
+        - type: compare
+          tr: "Harf eklenince"
+          left:  {ar: "غَفَرَ", title: "gafera", text: "bağışladı"}
+          right: {ar: "إِسْتَغْفَرَ", title: "istağfera", text: "bağışlanma diledi"}
+          vo: "غَفَرَ bağışladı, اِسْتَغْفَرَ bağışlanma diledi."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 24 ═══════════════════════════════
+  - day: 24
+    title: "Haşiye nedir, neden önemli?"
+    post:
+      kind: video
+      caption: |
+        Klasik bir sayfayı ilk defa açan talebe şaşırır: ortada küçük bir metin,
+        etrafında yazı denizi.
+
+        Ortadaki ana metindir. Kenardakiler yan haşiyeler, satır aralarındakiler
+        ara haşiyelerdir. Her biri ayrı bir âlimin, metnin bir noktasına düştüğü
+        nottur.
+
+        Haşiye, metnin asırlar boyunca nasıl okunduğunun kaydıdır. Bu yüzden iyi
+        bir baskıda ana metin, yan haşiye ve ara haşiye birbirine karışmaz.
+      scenes:
+        - type: hook
+          kicker: "KLASİK SAYFA"
+          tr: "Ortada küçük bir metin,<br>etrafında yazı denizi."
+          vo: "Klasik bir sayfayı ilk açan şaşırır. Ortada küçük bir metin, etrafında yazı denizi. Oysa o kalabalık, sayfanın en kıymetli kısmıdır."
+        - type: list
+          kicker: "SAYFADA NE VAR"
+          tr: "Üç katman"
+          items:
+            - "Ana metin — okunan asıl metin"
+            - "Yan haşiye — kenardaki notlar"
+            - "Ara haşiye — satır aralarındaki notlar"
+          vo: "Ana metin, yan haşiye, ara haşiye. Üç ayrı katman. Bazen tek bir kelimeyi açıklamak için sayfanın yarısı ayrılır."
+        - type: concept
+          kicker: "HAŞİYE"
+          ar: "اَلْحَاشِيَة"
+          translit: "el-Hâşiye"
+          tr: "Metnin kenarına düşülmüş âlim notu."
+          vo: "اَلْحَاشِيَة. Metnin kenarına düşülmüş âlim notu."
+        - type: point
+          kicker: "NEDEN DEĞERLİ"
+          tr: "Metnin okunma tarihidir."
+          body: "Asırlar boyunca hangi noktada durulduğunu gösterir."
+          vo: "Haşiye, metnin asırlar boyunca nasıl okunduğunun kaydıdır. Hangi noktada durulmuş, nerede ihtilaf çıkmış, hepsi oradadır."
+        - type: point
+          kicker: "İYİ BASKI"
+          tr: "Katmanlar birbirine karışmaz."
+          body: "Ana metin, yan haşiye ve ara haşiye ayrı ayrı düzenlenir."
+          vo: "İyi bir baskıda bu üç katman birbirine karışmaz."
+        - type: cta
+          tr: "Kenardakini atlama."
+          vo: "Sayfanın kenarındakini atlama. Asıl mesele orada başlar. Metni okumak kolaydır; haşiyeyi okumak talebeyi âlime yaklaştırır."
+    story:
+      kind: video
+      caption: "Haşiye nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْحَاشِيَة"
+          translit: "el-Hâşiye"
+          tr: "Metnin kenarındaki âlim notu."
+          vo: "اَلْحَاشِيَة. Metnin kenarına düşülmüş âlim notu."
+        - type: point
+          tr: "Metnin okunma tarihi."
+          vo: "Metnin asırlar boyunca nasıl okunduğunun kaydıdır."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 25 ═══════════════════════════════
+  - day: 25
+    title: "İsm-i fâil ve ism-i mef'ûl"
+    post:
+      kind: carousel
+      caption: |
+        Fiil bir işi bildirir. Peki o işi yapanı ve yapılanı nasıl söyleriz?
+
+        İsm-i fâil işi yapandır: كَاتِب yazan.
+        İsm-i mef'ûl işi yapılandır: مَكْتُوب yazılan.
+
+        Sülâsî fiilde kalıpları sabittir: فَاعِل ve مَفْعُول.
+        Kalıbı gören, kelimenin kimliğini okur.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "İşi yapan kim,<br>yapılan ne?"
+          dur: 3.0
+        - type: compare
+          kicker: "İKİ İSİM"
+          tr: "Fâil ve mef'ûl"
+          left:  {ar: "كَاتِب", title: "İsm-i fâil", text: "yazan — işi yapan"}
+          right: {ar: "مَكْتُوب", title: "İsm-i mef'ûl", text: "yazılan — işi yapılan"}
+          dur: 3.6
+        - type: concept
+          kicker: "KALIPLARI"
+          ar: "فَاعِل · مَفْعُول"
+          translit: "fâil · mef'ûl"
+          tr: "Sülâsî fiilde kalıp sabittir."
+          dur: 3.2
+        - type: list
+          kicker: "BAŞKA ÖRNEKLER"
+          tr: "Aynı mantık"
+          items:
+            - "قَارِئ — kârî · okuyan"
+            - "مَقْرُوء — makrû' · okunan"
+            - "عَالِم — âlim · bilen"
+            - "مَعْلُوم — ma'lûm · bilinen"
+          dur: 4.0
+        - type: point
+          kicker: "SONUÇ"
+          tr: "Kalıbı gören, kimliği okur."
+          body: "Sözlüğe bakmadan rolü anlarsın."
+          dur: 3.2
+        - type: cta
+          tr: "Önce kalıba bak."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "Fâil / mef'ûl"
+      scenes:
+        - type: compare
+          tr: "Yapan / yapılan"
+          left:  {ar: "كَاتِب", title: "kâtib", text: "yazan"}
+          right: {ar: "مَكْتُوب", title: "mektûb", text: "yazılan"}
+          vo: "كَاتِبٌ yazan, مَكْتُوبٌ yazılan demektir."
+        - type: point
+          tr: "Kalıplar sabit: فَاعِل · مَفْعُول"
+          vo: "Kalıpları sabittir: فَاعِل ve مَفْعُول."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 26 ═══════════════════════════════
+  - day: 26
+    title: "Medrese usulü: neden metin okunur?"
+    post:
+      kind: video
+      caption: |
+        Bugün herkesin elinde yüzlerce kaynak var; yine de ilerleme yavaş.
+        Klasik usulde kaynak azdı ama metin birdi.
+
+        Metin okumak demek: aynı kitabı baştan sona, sırayla, hocanın önünde
+        bitirmek demek. Atlamak yok, seçmek yok.
+
+        Çünkü her metin bir sonrakine hazırlık olarak yazılmıştır. Sıra bozulunca
+        basamak kırılır.
+      scenes:
+        - type: hook
+          kicker: "USUL"
+          tr: "Kaynak çok,<br>ilerleme yavaş."
+          vo: "Bugün herkesin elinde yüzlerce kaynak var. Yine de ilerleme yavaş. Sebep kaynak azlığı değil, dağınıklık."
+        - type: point
+          kicker: "ESKİDEN"
+          tr: "Kaynak azdı, metin birdi."
+          vo: "Klasik usulde kaynak azdı ama metin birdi. Talebe tek bir kitabı bitirir, sonra ikincisine geçerdi."
+        - type: concept
+          kicker: "METİN OKUMAK"
+          ar: "قِرَاءَةُ الْمَتْن"
+          translit: "kırâatü'l-metn"
+          tr: "Bir kitabı baştan sona, sırayla bitirmek."
+          vo: "قِرَاءَةُ الْمَتْن. Bir kitabı baştan sona, sırayla bitirmek."
+        - type: list
+          kicker: "ŞARTLARI"
+          tr: "Üç şart"
+          items:
+            - "Atlamak yok — sıra bozulmaz"
+            - "Seçmek yok — tamamı okunur"
+            - "Tek başına değil — hocaya okutulur"
+          vo: "Atlamak yok, seçmek yok, tek başına değil. Üçü birden olmazsa, okunan şey metin değil, parça olur."
+        - type: point
+          kicker: "NEDEN"
+          tr: "Her metin sonrakine hazırlıktır."
+          body: "Sıra bozulunca basamak kırılır."
+          vo: "Her metin bir sonrakine hazırlık olarak yazılmıştır. Sıra bozulunca basamak kırılır."
+        - type: cta
+          tr: "Bir metin bitir."
+          body: "On kitaba başlamaktan iyidir."
+          vo: "Bir metni bitirmek, on kitaba başlamaktan iyidir. Bitirilen her metin, bir sonrakinin anahtarını elinde bırakır."
+    story:
+      kind: video
+      caption: "Metin okumak"
+      scenes:
+        - type: hook
+          tr: "Kaynak çok, ilerleme yavaş."
+          vo: "Kaynak çok ama ilerleme neden yavaş?"
+        - type: point
+          tr: "Bir metni baştan sona bitir."
+          vo: "Bir metni baştan sona bitirmek, on kitaba başlamaktan iyidir."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 27 ═══════════════════════════════
+  - day: 27
+    title: "Sıfırdan nahiv: ed-Dürûsü'n-Nahviyye"
+    post:
+      kind: video
+      caption: |
+        Klasik metinler ağır geliyorsa, önce basamakları yakınlaştırmak gerekir.
+
+        ed-Dürûsü'n-Nahviyye, nahvi dört kademede, kolaydan zora doğru veren
+        modern bir müfredat. Her ders kısa, her kavram örnekle, her bölüm sonunda
+        alıştırma.
+
+        Klasik metne hazırlık için düşünülmüş bir köprü.
+      book_line: "ed-Dürûsü'n-Nahviyye"
+      scenes:
+        - type: hook
+          kicker: "BAŞLANGIÇ"
+          tr: "Klasik metin ağır mı geldi?"
+          vo: "Klasik metin sana ağır mı geldi? Bu, kabiliyetsizlik değil; basamak aralığının geniş olması demek."
+        - type: point
+          kicker: "ÇÖZÜM"
+          tr: "Basamakları yakınlaştır."
+          body: "Atlamak değil, aradaki mesafeyi kısaltmak."
+          vo: "Çözüm atlamak değil. Basamaklar arasındaki mesafeyi kısaltmak. Klasik metni bırakmak değil, ona hazırlanmak."
+        - type: concept
+          kicker: "ED-DÜRÛSÜ'N-NAHVİYYE"
+          ar: "اَلدُّرُوسُ النَّحْوِيَّة"
+          translit: "ed-Dürûsü'n-Nahviyye"
+          tr: "Dört kademeli nahiv müfredatı."
+          vo: "اَلدُّرُوسُ النَّحْوِيَّة. Nahvi dört kademede veren bir müfredat. Kolaydan zora, her ders bir öncekinin üzerine biner."
+        - type: list
+          kicker: "NASIL KURULMUŞ"
+          tr: "Her derste"
+          items:
+            - "Kısa ders, tek kavram"
+            - "Bol örnek cümle"
+            - "Bölüm sonunda alıştırma"
+          vo: "Kısa ders, bol örnek, bölüm sonunda alıştırma. Öğrendiğini aynı gün tatbik edersin, ertesi güne borç kalmaz."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: ed-durusun-nahviyye
+          vo: "Klasik metne geçmeden önce iyi bir köprü."
+        - type: cta
+          tr: "Köprüyü kullan, yolu bırakma."
+          vo: "Köprüyü kullan ama asıl yolu bırakma. Hedef modern bir kitabı bitirmek değil, klasik metni okuyabilmek."
+    story:
+      kind: video
+      caption: "Sıfırdan nahiv"
+      scenes:
+        - type: hook
+          tr: "Klasik metin ağır mı?"
+          vo: "Klasik metin ağır mı geliyor?"
+        - type: point
+          tr: "Kademeli bir müfredatla başla."
+          vo: "Kademeli bir müfredatla başlamak işi kolaylaştırır."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 28 ═══════════════════════════════
+  - day: 28
+    title: "Arapça ve Kur'an'ı anlamak"
+    post:
+      kind: video
+      caption: |
+        Meal okumak başka, metni anlamak başkadır.
+
+        Meal, mütercimin anladığıdır. Metni okuyabilen talebe ise kelimenin
+        kökünü, kalıbını ve cümledeki yerini kendisi görür — ve çoğu zaman
+        mealin niçin öyle tercih edildiğini de anlar.
+
+        Sarf ve nahiv, bu kapının iki kanadıdır.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Meal okumak,<br>metni anlamak mıdır?"
+          vo: "Meal okumak, metni anlamak mıdır? İkisi arasındaki mesafe, sandığından uzun."
+        - type: point
+          kicker: "MEAL"
+          tr: "Mütercimin anladığıdır."
+          body: "Değerlidir — ama bir okumadır."
+          vo: "Meal, mütercimin anladığıdır. Değerlidir ama bir okumadır. Her tercih, arkasında bir tercih sebebi taşır."
+        - type: quote
+          kicker: "ÂYET"
+          ar: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا"
+          tr: "“إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا. Biz onu Arapça bir Kur'an olarak indirdik.”"
+          src: "Yûsuf, 2"
+          vo: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا. Biz onu Arapça bir Kur'an olarak indirdik."
+        - type: point
+          kicker: "METNİ OKUYAN"
+          tr: "Kökü, kalıbı, yeri kendisi görür."
+          body: "Mealin niçin öyle tercih edildiğini de anlar."
+          vo: "Metni okuyabilen talebe kökü, kalıbı ve cümledeki yeri kendisi görür. Ve bir kelimenin niçin o kalıpta geldiğini sorabilir."
+        - type: point
+          kicker: "İKİ KANAT"
+          tr: "Sarf ve nahiv."
+          body: "Biri kelimeyi, diğeri cümleyi açar."
+          vo: "Sarf ve nahiv bu kapının iki kanadıdır."
+        - type: cta
+          tr: "Kapıyı aralamak elinde."
+          vo: "Kapıyı aralamak senin elinde. Sarfın ilk dersi, o kapının ilk basamağıdır."
+    story:
+      kind: video
+      caption: "Meal ve metin"
+      scenes:
+        - type: hook
+          tr: "Meal mi, metin mi?"
+          vo: "Meal okumak metni anlamak mıdır?"
+        - type: point
+          tr: "Meal, mütercimin anladığıdır."
+          vo: "Meal, mütercimin anladığıdır. Değerlidir ama bir okumadır."
+        - type: cta
+          tr: "Gönderide ayrıntısı"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 29 ═══════════════════════════════
+  - day: 29
+    title: "90 günde sarf: çalışma takvimi"
+    post:
+      kind: carousel
+      caption: |
+        Sarf üç ayda bitmez — ama üç ayda sağlam bir temel kurulur.
+
+        1-30. gün: Emsile. Sesli oku, sırayı bozma.
+        31-60. gün: Binâ. Her bâbı örnek fiiliyle.
+        61-90. gün: Maksûd'a giriş. Artık kural konuşulur.
+
+        Günde yirmi dakika. Haftada bir gün sadece tekrar.
+        Mühim olan hız değil, kesintisizlik.
+      scenes:
+        - type: hook
+          kicker: "TAKVİM"
+          tr: "90 gün.<br>Günde 20 dakika."
+          dur: 3.0
+        - type: point
+          kicker: "1 – 30. GÜN"
+          tr: "Emsile"
+          ar: "اَلْأَمْثِلَة"
+          body: "Sesli oku. Sırayı bozma. Ezberi zorlama, tekrar yetsin."
+          dur: 3.6
+        - type: point
+          kicker: "31 – 60. GÜN"
+          tr: "Binâ"
+          ar: "اَلْبِنَاء"
+          body: "Her bâbı kendi örnek fiiliyle. Kattığı anlamı not et."
+          dur: 3.6
+        - type: point
+          kicker: "61 – 90. GÜN"
+          tr: "Maksûd'a giriş"
+          ar: "اَلْمَقْصُود"
+          body: "Artık kural konuşulur. İ'lâl ve idgâma ısın."
+          dur: 3.6
+        - type: list
+          kicker: "KURALLAR"
+          tr: "Üç şart"
+          items:
+            - "Günde 20 dakika — fazlası değil, kesintisizi"
+            - "Haftada bir gün sadece tekrar"
+            - "Okuduğunu hocaya duyur"
+          dur: 3.8
+        - type: cta
+          tr: "Hız değil, kesintisizlik."
+          dur: 3.0
+    story:
+      kind: video
+      caption: "90 günlük plan"
+      scenes:
+        - type: stat
+          kicker: "SARF TEMELİ"
+          big: "90"
+          label: "gün"
+          vo: "Doksan günde sarfın temeli kurulur."
+        - type: point
+          tr: "Emsile → Binâ → Maksûd"
+          body: "Günde 20 dakika."
+          vo: "اَلْأَمْثِلَة، اَلْبِنَاء، اَلْمَقْصُود. Günde yirmi dakika."
+        - type: cta
+          tr: "Takvim gönderide"
+          vo: "Tam takvim bugünkü gönderide."
+
+  # ═══════════════════════════════ 30 ═══════════════════════════════
+  - day: 30
+    title: "Sarf ve nahiv bir arada"
+    post:
+      kind: video
+      caption: |
+        Otuz gün boyunca tek bir şeyi anlatmaya çalıştık: Arapça, ezberlenerek
+        değil, yapısı çözülerek öğrenilir.
+
+        اَلصَّرْفُ kelimeyi açar, اَلنَّحْوُ cümleyi. Biri olmadan diğeri eksik kalır.
+        Bu yüzden klasik usulde iki mecmua yan yana durur.
+
+        Yolun başındaysan, sırayı bozma. Ortasındaysan, geri dönüp temeli
+        tazele. Mühim olan devam etmek.
+      book_line: "Mecmûatü's-Sarf + Mecmûatü'n-Nahiv Set"
+      scenes:
+        - type: hook
+          kicker: "30 GÜN"
+          tr: "Tek bir mesele:<br>Arapça çözülerek öğrenilir."
+          vo: "Otuz gündür tek bir şey anlattık. Arapça ezberlenerek değil, çözülerek öğrenilir."
+        - type: compare
+          kicker: "İKİ KANAT"
+          tr: "Biri olmadan diğeri eksik"
+          left:  {ar: "اَلصَّرْف", title: "Sarf", text: "Kelimeyi açar."}
+          right: {ar: "اَلنَّحْو", title: "Nahiv", text: "Cümleyi açar."}
+          vo: "اَلصَّرْفُ kelimeyi açar, اَلنَّحْوُ cümleyi. Biri olmadan diğeri eksik kalır."
+        - type: list
+          kicker: "YOL HARİTASI"
+          tr: "Sırayla"
+          items:
+            - "Emsile → Binâ → Maksûd → İzzî"
+            - "Âcurrûmiyye → Kâfiye → Molla Câmî"
+            - "Sonra belâgat"
+          vo: "اَلْأَمْثِلَة، اَلْبِنَاء، اَلْمَقْصُود، اَلْعِزِّي. Sonra اَلْآجُرُّومِيَّة. En sonunda belâgat."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: sarf-nahiv-set
+          vo: "Klasik usulde مَجْمُوعَةُ الصَّرْف ile مَجْمُوعَةُ النَّحْو yan yana durur."
+        - type: point
+          kicker: "NEREDE OLURSAN"
+          tr: "Başındaysan sırayı bozma, ortadaysan temeli tazele."
+          vo: "Yolun başındaysan sırayı bozma. Ortasındaysan geri dönüp temeli tazele."
+        - type: cta
+          tr: "Mühim olan devam etmek."
+          vo: "Mühim olan hızlı gitmek değil, devam etmek."
+    story:
+      kind: video
+      caption: "30 günün özeti"
+      scenes:
+        - type: compare
+          tr: "İki kanat"
+          left:  {ar: "اَلصَّرْف", title: "Sarf", text: "kelimeyi açar"}
+          right: {ar: "اَلنَّحْو", title: "Nahiv", text: "cümleyi açar"}
+          vo: "اَلصَّرْفُ kelimeyi açar, اَلنَّحْوُ cümleyi."
+        - type: point
+          tr: "Biri olmadan diğeri eksik."
+          vo: "Biri olmadan diğeri eksik kalır."
+        - type: cta
+          tr: "Yeni ay, yeni seri"
+          vo: "Yarın yeni bir seriye başlıyoruz."

@@ -1,0 +1,70 @@
+name: Instagram yayını
+
+on:
+  schedule:
+    # Saatler UTC. Türkiye saati = UTC + 3.
+    - cron: "0 9 * * *"      # 12:00 TR — story
+    - cron: "0 16 * * *"     # 19:00 TR — post
+    - cron: "0 5 1 * *"      # ayın 1'i 08:00 TR — token yenileme
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "post / story"
+        type: choice
+        options: [post, story]
+        default: post
+      gun:
+        description: "Takvim günü (boşsa tarihten hesaplanır)"
+        type: string
+      deneme:
+        description: "Yayınlama, sadece dosyaları kontrol et"
+        type: boolean
+        default: true
+
+jobs:
+  yayinla:
+    if: github.event.schedule != '0 5 1 * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+
+      - name: Yayınla
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_BASE: ${{ secrets.MEDIA_BASE }}
+          SLOT_IN: ${{ inputs.slot }}
+          GUN_IN: ${{ inputs.gun }}
+          DENEME_IN: ${{ inputs.deneme }}
+          CRON: ${{ github.event.schedule }}
+        run: |
+          slot="$SLOT_IN"
+          if [ -z "$slot" ]; then
+            if [ "$CRON" = "0 9 * * *" ]; then slot=story; else slot=post; fi
+          fi
+          args="--slot $slot"
+          if [ -n "$GUN_IN" ]; then args="$args --gun $GUN_IN"; fi
+          if [ "$DENEME_IN" = "true" ]; then args="$args --deneme"; fi
+          python -m src.publish $args
+
+  token:
+    if: github.event.schedule == '0 5 1 * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+
+      - name: Token'ı yenile ve sakla
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          YENI=$(python -m src.publish --token-yenile)
+          gh secret set IG_TOKEN --body "$YENI"

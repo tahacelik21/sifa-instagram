@@ -1,0 +1,75 @@
+1
+00:00:00,350 --> 00:00:02,609
+Klasik bir sayfayı ilk açan şaşırır.
+
+2
+00:00:02,609 --> 00:00:04,984
+Ortada küçük bir metin, etrafında yazı
+
+3
+00:00:04,984 --> 00:00:07,475
+denizi. Oysa o kalabalık, sayfanın en
+
+4
+00:00:07,475 --> 00:00:08,691
+kıymetli kısmıdır.
+
+5
+00:00:09,491 --> 00:00:12,209
+Ana metin, yan haşiye, ara haşiye.
+
+6
+00:00:12,209 --> 00:00:14,800
+Üç ayrı katman. Bazen tek bir kelimeyi
+
+7
+00:00:14,800 --> 00:00:17,454
+açıklamak için sayfanın yarısı ayrılır.
+
+8
+00:00:18,254 --> 00:00:19,285
+اَلْحَاشِيَة.
+
+9
+00:00:19,485 --> 00:00:21,553
+Metnin kenarına düşülmüş âlim notu.
+
+10
+00:00:22,353 --> 00:00:24,387
+Haşiye, metnin asırlar boyunca nasıl
+
+11
+00:00:24,387 --> 00:00:26,368
+okunduğunun kaydıdır. Hangi noktada
+
+12
+00:00:26,368 --> 00:00:28,663
+durulmuş, nerede ihtilaf çıkmış, hepsi
+
+13
+00:00:28,663 --> 00:00:29,289
+oradadır.
+
+14
+00:00:30,089 --> 00:00:32,445
+İyi bir baskıda bu üç katman birbirine
+
+15
+00:00:32,445 --> 00:00:33,190
+karışmaz.
+
+16
+00:00:33,990 --> 00:00:35,953
+Sayfanın kenarındakini atlama.
+
+17
+00:00:35,953 --> 00:00:37,618
+Asıl mesele orada başlar.
+
+18
+00:00:37,618 --> 00:00:40,057
+Metni okumak kolaydır; haşiyeyi okumak
+
+19
+00:00:40,057 --> 00:00:41,841
+talebeyi âlime yaklaştırır.

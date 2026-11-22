@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,642
+İsimle başlarsa isim cümlesi, fiille
+
+2
+00:00:02,642 --> 00:00:04,111
+başlarsa fiil cümlesi.
+
+3
+00:00:04,911 --> 00:00:07,436
+Cümlenin türünü bilmeden i'râb yapılmaz.
+
+4
+00:00:08,236 --> 00:00:09,982
+Ayrıntısı bugünkü gönderide.
