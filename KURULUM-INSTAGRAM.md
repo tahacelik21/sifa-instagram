@@ -22,6 +22,10 @@ dosyaya herkese açık bir adres veriyor. Ek servis, ek ücret yok.
 
 ---
 
+> **Durum:** bu kurulum 22 Kasım 2026'da tamamlandı. Depo
+> [tahacelik21/sifa-instagram](https://github.com/tahacelik21/sifa-instagram),
+> yayın 1 Aralık 2026'da başlıyor. Aşağısı baştan kurmak ya da hatırlamak için.
+
 ## 1. Instagram hesabı
 
 Hesap **profesyonel** olmalı (İşletme ya da Kreatör):
@@ -62,7 +66,7 @@ git commit -m "Şifa Yayınevi içerik üretimi + Instagram yayını"
 GitHub'da **public** bir depo aç (örn. `sifa-instagram`), sonra:
 
 ```bash
-git remote add origin https://github.com/KULLANICI/sifa-instagram.git
+git remote add origin https://github.com/tahacelik21/sifa-instagram.git
 git push -u origin main
 ```
 
@@ -76,7 +80,7 @@ Depo → **Settings** → **Secrets and variables** → **Actions** → **New re
 |---|---|
 | `IG_USER_ID` | 2. adımdaki Instagram user ID |
 | `IG_TOKEN` | 2. adımdaki token |
-| `MEDIA_BASE` | `https://raw.githubusercontent.com/KULLANICI/sifa-instagram/main/out` |
+| `MEDIA_BASE` | `https://raw.githubusercontent.com/tahacelik21/sifa-instagram/main/out` |
 
 ## 5. Başlangıç tarihi
 
@@ -140,5 +144,8 @@ Push ettiğin an yayın sırasına girer.
 - Takvim 30. günde biter; iş akışı o gün "takvim bitti" yazıp durur, hata vermez.
 - Depo her ay ~300 MB büyüyor. Bir yıl sonra geçmişi temizlemek ya da medyayı
   ayrı bir depoya taşımak gerekebilir; o noktaya gelince hallederiz.
+- GitHub, 60 gün boyunca hiç hareket görmeyen depolarda zamanlanmış işleri
+  durduruyor. Ayda bir içerik push ettiğin sürece sorun olmaz; uzun ara verirsen
+  Actions sekmesinden iş akışını tekrar etkinleştirmen gerekebilir.
 - Instagram paylaşımı reddederse iş akışı kırmızı yanar ve sebebi log'a yazar.
   GitHub bunu e-posta ile bildirir.
