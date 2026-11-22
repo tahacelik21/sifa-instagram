@@ -34,16 +34,22 @@ Facebook Sayfası bağlamaya gerek yok.
 1. [developers.facebook.com/apps](https://developers.facebook.com/apps) → **Create app**
 2. Kullanım amacı: **Other** → tür: **Business**
 3. Ürünlerden **Instagram** → **Set up**
-4. **API setup with Instagram login** bölümünde:
-   - **Add account** ile Instagram hesabını bağla
-   - **Generate token** → çıkan uzun metni kopyala → bu `IG_TOKEN`
-   - Aynı ekrandaki **Instagram user ID** → bu `IG_USER_ID`
-5. İzinlerde şunlar işaretli olmalı:
-   `instagram_business_basic`, `instagram_business_content_publish`
+4. Sol menüden **API setup with Unified login**
+5. **Business portfolio** bağla (yoksa orada oluşturulur, ücretsiz)
+6. **1. Configure your app** → **Create new configuration**
+   - Login variation: **General**
+   - Business assets: Instagram hesabını seç
+   - İzinler: `instagram_basic` ve `instagram_content_publish` yeter
+7. **App roles → Roles** → Instagram hesabına **Instagram Tester** rolü ver.
+   Davet Instagram tarafından kabul edilir:
+   Instagram → Ayarlar → Website permissions → Tester invites
+8. **2. Generate access tokens** → Instagram hesabını ekle → token üret
+   - Çıkan token → `IG_TOKEN`
+   - Aynı ekrandaki **Instagram user ID** → `IG_USER_ID`
 
-Token **60 gün** geçerli. Ayın 1'inde iş akışı kendi kendine yeniliyor (aşağıda
-`GH_PAT` bunun için). Yenileme kaçarsa 2. adımdaki **Generate token**'a basıp yeni
-token'ı `IG_TOKEN` secret'ına yapıştırman yeter.
+Bu kurulumda token **sistem kullanıcı token'ı (SUAT)**; süresi dolmuyor, yenilemek
+gerekmiyor. Uygulama **Development** modunda kalabilir — tester rolü verilmiş kendi
+hesabına yayın yapmak için App Review gerekmiyor.
 
 ## 3. GitHub deposu
 
@@ -71,11 +77,6 @@ Depo → **Settings** → **Secrets and variables** → **Actions** → **New re
 | `IG_USER_ID` | 2. adımdaki Instagram user ID |
 | `IG_TOKEN` | 2. adımdaki token |
 | `MEDIA_BASE` | `https://raw.githubusercontent.com/KULLANICI/sifa-instagram/main/out` |
-| `GH_PAT` | GitHub kişisel erişim anahtarı (aşağıda) |
-
-`GH_PAT`: GitHub → Settings → Developer settings → **Personal access tokens** →
-Fine-grained → bu depoya **Secrets: Read and write** izni ver. Sadece token'ı
-kendi kendine yenilemek için kullanılıyor.
 
 ## 5. Başlangıç tarihi
 

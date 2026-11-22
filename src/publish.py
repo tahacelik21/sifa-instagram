@@ -7,13 +7,10 @@ Facebook Login for Business kuran uygulamalara açık, bu yüzden kullanmıyoruz
     python -m src.publish --slot post --deneme    # hiçbir şey yayınlamaz, kontrol eder
     python -m src.publish --slot post
     python -m src.publish --slot story --gun 3
-    python -m src.publish --token-yenile
 
 Gerekli ortam değişkenleri (.env ya da GitHub Secrets):
     IG_USER_ID    Instagram profesyonel hesabının kimliği
-    IG_TOKEN      uzun ömürlü Instagram User access token (60 gün)
-    IG_APP_SECRET sadece --token-yenile için değil, kısa ömürlüden uzun ömürlüye
-                  geçerken gerekir; günlük yayında kullanılmaz
+    IG_TOKEN      sistem kullanıcı token'ı (SUAT) — süresi dolmaz
     MEDIA_BASE    out/ klasörünün herkese açık kök adresi, sonunda / olmadan
 """
 from __future__ import annotations
@@ -42,12 +39,26 @@ def load_calendar() -> dict[int, dict]:
     data = yaml.safe_load((CONTENT / "calendar.yaml").read_text(encoding="utf-8"))
     return {int(d["day"]): d for d in data["days"]}
 
-API = os.environ.get("IG_API", "https://graph.instagram.com/v23.0")
+# Unified login kurulumunda istekler graph.facebook.com'a gider; Instagram login
+# kurulumunda graph.instagram.com'a. IG_API ile değiştirilebilir.
+API = os.environ.get("IG_API", "https://graph.facebook.com/v27.0")
 TIMEOUT = 60
 
 
 # ------------------------------------------------------------------ yardımcılar
+def _dotenv() -> None:
+    """Yerelde .env'i oku. GitHub Actions'ta dosya yok, değişkenler ortamdan gelir."""
+    f = ROOT / ".env"
+    if not f.exists():
+        return
+    for line in f.read_text(encoding="utf-8").splitlines():
+        if "=" in line and not line.lstrip().startswith("#"):
+            k, _, v = line.partition("=")
+            os.environ.setdefault(k.strip(), v.strip().strip("'\""))
+
+
 def _env(name: str) -> str:
+    _dotenv()
     v = os.environ.get(name, "").strip()
     if not v:
         raise SystemExit(f"{name} tanımlı değil — .env dosyasına ya da GitHub Secrets'a ekle.")
@@ -120,7 +131,7 @@ def _yayinla(cid: str) -> str:
     return _call("POST", f"{_env('IG_USER_ID')}/media_publish", creation_id=cid)["id"]
 
 
-def publish(day: int, slot: str, deneme: bool = False) -> str | None:
+def publish(day: int, slot: str, deneme: bool = False, kap: bool = False) -> str | None:
     cal = load_calendar()
     if day not in cal:
         raise SystemExit(f"Takvimde {day}. gün yok — takvim 1-{max(cal)} arası.")
@@ -155,21 +166,15 @@ def publish(day: int, slot: str, deneme: bool = False) -> str | None:
         cid = _container(media_type="REELS", video_url=url_for(rels[0]), caption=caption)
 
     _bekle(cid, slot)
+    if kap:
+        # Konteyner hazır ama yayınlanmıyor; 24 saat sonra kendiliğinden siliniyor.
+        print(f"  Meta medyayı indirdi ve kabul etti (konteyner {cid}) — yayınlanmadı")
+        return None
     mid = _yayinla(cid)
     print(f"  yayınlandı → https://www.instagram.com/p/ (media id {mid})")
     return mid
 
 
-def token_yenile() -> str:
-    """Uzun ömürlü token'ı 60 gün daha uzatır. Token en az 24 saatlik olmalı."""
-    r = requests.get(f"https://graph.instagram.com/refresh_access_token",
-                     params={"grant_type": "ig_refresh_token",
-                             "access_token": _env("IG_TOKEN")}, timeout=TIMEOUT)
-    d = r.json()
-    if "access_token" not in d:
-        raise SystemExit(f"Token yenilenemedi: {d}")
-    print(f"token yenilendi, {int(d.get('expires_in', 0)) // 86400} gün geçerli", file=sys.stderr)
-    return d["access_token"]
 
 
 def main(argv=None):
@@ -177,12 +182,16 @@ def main(argv=None):
     ap.add_argument("--slot", choices=["post", "story"])
     ap.add_argument("--gun", type=int, help="belirtilmezse yayin.yaml'daki tarihten hesaplanır")
     ap.add_argument("--deneme", action="store_true", help="yayınlama, sadece dosyaları kontrol et")
-    ap.add_argument("--token-yenile", action="store_true",
-                    help="yeni token'ı stdout'a basar, gerisini iş akışı halleder")
+    ap.add_argument("--kap", action="store_true",
+                    help="konteyner oluştur ama yayınlama — medya kabul ediliyor mu diye bak")
+    ap.add_argument("--hesap", action="store_true",
+                    help="token ve hesap kimliği doğru mu, tek istekle kontrol et")
     a = ap.parse_args(argv)
 
-    if a.token_yenile:
-        print(token_yenile())
+    if a.hesap:
+        d = _call("GET", _env("IG_USER_ID"), fields="username,name,followers_count")
+        print(f"bağlantı tamam → @{d.get('username')} ({d.get('name', '')}), "
+              f"{d.get('followers_count', '?')} takipçi")
         return
     if not a.slot:
         raise SystemExit("--slot post|story gerekli")
@@ -194,7 +203,7 @@ def main(argv=None):
     if gun > max(load_calendar()):
         print(f"Takvim {max(load_calendar())}. günde bitti — content/calendar.yaml'a yeni gün ekle.")
         return
-    publish(gun, a.slot, deneme=a.deneme)
+    publish(gun, a.slot, deneme=a.deneme, kap=a.kap)
 
 
 if __name__ == "__main__":

@@ -5,7 +5,6 @@ on:
     # Saatler UTC. Türkiye saati = UTC + 3.
     - cron: "0 9 * * *"      # 12:00 TR — story
     - cron: "0 16 * * *"     # 19:00 TR — post
-    - cron: "0 5 1 * *"      # ayın 1'i 08:00 TR — token yenileme
   workflow_dispatch:
     inputs:
       slot:
@@ -23,7 +22,6 @@ on:
 
 jobs:
   yayinla:
-    if: github.event.schedule != '0 5 1 * *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -51,20 +49,3 @@ jobs:
           if [ "$DENEME_IN" = "true" ]; then args="$args --deneme"; fi
           python -m src.publish $args
 
-  token:
-    if: github.event.schedule == '0 5 1 * *'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install requests pyyaml
-
-      - name: Token'ı yenile ve sakla
-        env:
-          IG_TOKEN: ${{ secrets.IG_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          YENI=$(python -m src.publish --token-yenile)
-          gh secret set IG_TOKEN --body "$YENI"
