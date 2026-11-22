@@ -16,6 +16,18 @@ Kitabı fotoğraftan ayırıp saydam PNG'ye çevirir, orijinali
 <slug>-orijinal.jpg olarak saklar. Videoda kitap zeminin üstünde
 kendi gölgesiyle durur.
 
+Kestikten sonra hepsi tek sayfada kontrol edilir:
+
+    python -m src.kapak --onizleme
+
+out/kapak-onizleme.jpg dosyasını açarsın; kapaklar videodaki bordo
+zeminde yan yana durur, kenarda hâle ya da eksik kesim varsa orada
+görünür. Bir kesimi beğenmezsen:
+
+    python -m src.kapak --geri <slug>
+
+Kesilmiş PNG silinir, orijinal fotoğraf geri gelir.
+
 Kare ya da dikey, kısa kenarı en az 800 px olsun.
 
 Beklenen dosya adları:

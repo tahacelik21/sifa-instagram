@@ -176,7 +176,21 @@ python -m src.kapak mecmuatus-sarf
 ```
 
 Kitabı ayırıp saydam PNG yapar, orijinali `<slug>-orijinal.jpg` olarak saklar.
-Sahne saydam görseli bekliyor: çerçeve yok, gölge kitabın siluetini takip ediyor. Hangi dosya adı bekleniyor, hangisi eksik:
+Sahne saydam görseli bekliyor: çerçeve yok, gölge kitabın siluetini takip ediyor.
+
+Birden çok fotoğraf yüklediysen hepsini birden kes ve sonucu kontrol et:
+
+```bash
+python -m src.kapak --hepsi
+```
+
+Kesim bitince `out/kapak-onizleme.jpg` yazılır — bütün kapaklar videodaki bordo
+zeminde yan yana. Beyaz zeminde görünmeyen hâle ve eksik kesimler burada belli
+olur. Sonradan tekrar bakmak için `--onizleme`, bir kesimi beğenmediysen:
+
+```bash
+python -m src.kapak --geri molla-cami
+``` Hangi dosya adı bekleniyor, hangisi eksik:
 `assets/books/OKUBENI.txt`. Görseli olmayan kitapta sahne yazıyla kurulur.
 
 ---
