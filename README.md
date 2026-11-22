@@ -179,11 +179,6 @@ Kitabı ayırıp saydam PNG yapar, orijinali `<slug>-orijinal.jpg` olarak saklar
 Sahne saydam görseli bekliyor: çerçeve yok, gölge kitabın siluetini takip ediyor. Hangi dosya adı bekleniyor, hangisi eksik:
 `assets/books/OKUBENI.txt`. Görseli olmayan kitapta sahne yazıyla kurulur.
 
-> **Not:** `mecmuatus-sarf` kaydındaki alt başlık ("Klasik sarf metinleri tek
-> ciltte") genel tutuldu — ürün sayfası cilt içindeki risalelerin listesini
-> vermiyor. Elindeki nüshadan bakıp (el-Emsile, el-Binâ, el-Maksûd, el-İzzî,
-> Merâh…) birebir yazman daha iyi olur.
-
 ---
 
 ## Otomatik yayın
