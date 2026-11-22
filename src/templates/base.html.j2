@@ -188,12 +188,130 @@ body{font-family:var(--body),system-ui,sans-serif;color:var(--ink);
 
 /* kitap */
 .bookwrap{display:flex;flex-direction:column;align-items:center;gap:{{ s(18) }}px}
-.bookshot{position:relative;filter:drop-shadow(0 {{ s(34) }}px {{ s(60) }}px rgba(0,0,0,.5))}
-.bookshot img{height:{{ s(430) }}px;width:auto;border-radius:6px;display:block}
-.bookshot::after{content:"";position:absolute;inset:0;border-radius:6px;
-  background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.28) 48%,transparent 62%);
-  animation:sheen 3.4s var(--ease) infinite;animation-delay:calc(var(--t0) + .5s)}
-@keyframes sheen{0%{transform:translateX(-120%)}45%,100%{transform:translateX(120%)}}
+.bookshot{position:relative;filter:drop-shadow(0 {{ s(30) }}px {{ s(52) }}px rgba(0,0,0,.6))}
+/* Kitap fotoğrafı arka planı kesilmiş saydam PNG (bkz. python -m src.kapak),
+   o yüzden çerçeve/vinyet yok — gölge doğrudan kitabın siluetini takip ediyor. */
+.bookshot img{height:{{ s(480) }}px;width:auto;display:block}
+
+/* 5 arabesk çizgi */
+.bg--lines{background:linear-gradient(160deg,var(--bg),var(--bg2))}
+.bg--lines svg{position:absolute;inset:0;width:100%;height:100%;
+  animation:lineTurn {{ (90/v.bg_speed)|round(1) }}s linear infinite}
+.bg--lines path{fill:none;stroke:color-mix(in srgb,var(--accent) 34%, transparent);stroke-width:2.5;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw {{ (14/v.bg_speed)|round(1) }}s var(--ease) infinite alternate}
+.bg--lines path:nth-child(2){animation-delay:-3s;stroke:color-mix(in srgb,var(--accent2) 30%, transparent)}
+.bg--lines path:nth-child(3){animation-delay:-6.5s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes lineTurn{to{transform:rotate(360deg) scale(1.1)}}
+
+/* 6 dalgalar */
+.bg--waves{background:linear-gradient(180deg,var(--bg),var(--bg2))}
+.bg--waves i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.bg--waves i:nth-child(1){width:70%;height:50%;left:-10%;top:5%;background:var(--accent2);
+  animation:float1 {{ (22/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+.bg--waves i:nth-child(2){width:60%;height:55%;right:-12%;bottom:0%;background:var(--accent);opacity:.3;
+  animation:float2 {{ (28/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+.bg--waves i:nth-child(3){width:45%;height:40%;left:30%;top:45%;background:var(--bg2);
+  animation:float1 {{ (19/v.bg_speed)|round(1) }}s ease-in-out infinite alternate-reverse}
+@keyframes float1{to{transform:translate(14%,10%) scale(1.18)}}
+@keyframes float2{to{transform:translate(-12%,-9%) scale(1.12)}}
+
+/* 7 toz zerreleri */
+.bg--dust{background:radial-gradient(90% 70% at 50% 20%,var(--bg2),var(--bg))}
+.bg--dust i{position:absolute;border-radius:50%;background:var(--accent);opacity:.5;
+  animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(0) scale(1);opacity:0}
+  12%{opacity:.6} 88%{opacity:.5} to{transform:translateY(-130%) scale(.4);opacity:0}}
+
+/* 8 tahta */
+.bg--chalk{background:linear-gradient(175deg,var(--bg2),var(--bg));
+  position:absolute}
+.bg--chalk::before{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg, color-mix(in srgb,var(--ink) 6%, transparent) 0 1px, transparent 1px {{ (84*v.bg_scale)|round|int }}px),
+  radial-gradient(50% 40% at 30% 25%, color-mix(in srgb,#fff 7%, transparent), transparent 70%);
+  animation:chalkSmudge {{ (26/v.bg_speed)|round(1) }}s ease-in-out infinite alternate}
+@keyframes chalkSmudge{to{opacity:.6;transform:translateX(2%)}}
+
+/* film grenisi */
+.grain{position:absolute;inset:-50%;z-index:9;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grainShift .6s steps(3) infinite}
+@keyframes grainShift{0%{transform:translate(0,0)}33%{transform:translate(-3%,2%)}66%{transform:translate(2%,-3%)}}
+
+/* ===================== sahne iskeleti ===================== */
+.scene{position:absolute;inset:0;z-index:2;display:flex;
+  justify-content:center;align-items:center;
+  padding:{{ pad_t }}px {{ pad_h }}px {{ pad_b }}px;opacity:0;
+  animation-name:var(--enter),var(--exitAnim);
+  animation-duration:.72s,.46s;
+  animation-delay:var(--t0),calc(var(--t0) + var(--dur) - .46s);
+  animation-fill-mode:both,forwards;
+  animation-timing-function:var(--ease),var(--easeOut)}
+.fit{display:flex;flex-direction:column;width:100%;
+  justify-content:center;align-items:{{ 'flex-start' if v.align=='left' else 'center' }};
+  text-align:{{ v.align }};gap:{{ gap }}px}
+.fit>*{animation-name:var(--textEnter);animation-duration:calc(.62s / var(--kin));
+  animation-fill-mode:both;animation-timing-function:var(--ease);
+  animation-delay:calc(var(--t0) + var(--d,0s))}
+
+/* ---- giriş ---- */
+@keyframes zoomBlur{from{opacity:0;transform:scale(1.09);filter:blur(16px)}to{opacity:1;transform:none;filter:none}}
+@keyframes inkBleed{from{opacity:0;filter:blur(20px) contrast(2.2) saturate(.4)}to{opacity:1;filter:none}}
+@keyframes scaleFade{from{opacity:0;transform:scale(.93)}to{opacity:1;transform:none}}
+@keyframes maskWipe{from{opacity:1;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes foldIn{from{opacity:0;transform:perspective(1400px) rotateX(16deg) translateY(7%)}to{opacity:1;transform:none}}
+@keyframes slideUp{from{opacity:0;transform:translateY(7%)}to{opacity:1;transform:none}}
+@keyframes dropIn{from{opacity:0;transform:translateY(-6%) scale(1.03)}to{opacity:1;transform:none}}
+@keyframes swipeLeft{from{opacity:0;transform:translateX(7%)}to{opacity:1;transform:none}}
+/* ---- çıkış ---- */
+@keyframes fadeOutUp{to{opacity:0;transform:translateY(-3.5%) scale(1.03);filter:blur(5px)}}
+@keyframes fadeOutDown{to{opacity:0;transform:translateY(3%);filter:blur(4px)}}
+@keyframes fadeOutScale{to{opacity:0;transform:scale(1.07);filter:blur(11px)}}
+@keyframes wipeOutLeft{to{opacity:1;clip-path:inset(0 0 0 100%)}}
+/* ---- metin ---- */
+@keyframes riseIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes blurIn{from{opacity:0;filter:blur(14px);transform:translateY(10px)}to{opacity:1;filter:none;transform:none}}
+@keyframes letterIn{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}
+@keyframes wipeRight{from{opacity:1;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 -8% 0 0)}}
+@keyframes popIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:none}}
+@keyframes tiltIn{from{opacity:0;transform:rotate(-2.4deg) translateY(26px)}to{opacity:1;transform:none}}
+
+/* ===================== tipografi ===================== */
+.kicker{font-size:{{ s(26) }}px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--accent);display:flex;align-items:center;gap:16px}
+.kicker::before{content:"";width:{{ s(54) }}px;height:3px;background:var(--accent);display:block}
+.h1{font-family:var(--disp),serif;font-weight:900;font-size:{{ s(88) }}px;line-height:1.06;letter-spacing:-.02em}
+.h2{font-family:var(--disp),serif;font-weight:700;font-size:{{ s(64) }}px;line-height:1.14;letter-spacing:-.015em}
+.h3{font-weight:700;font-size:{{ s(44) }}px;line-height:1.2}
+.body{font-size:{{ s(35) }}px;line-height:1.46;color:var(--muted);max-width:{{ s(880) }}px;font-weight:450}
+.lead{font-size:{{ s(40) }}px;line-height:1.4;font-weight:500;max-width:{{ s(900) }}px}
+.ar{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(118) }}px;line-height:1.5;color:var(--accent2);font-weight:700}
+.ar-md{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(72) }}px;line-height:1.7;color:var(--accent2)}
+.ar-quote{font-family:var(--ar),serif;direction:rtl;font-size:{{ s(62) }}px;line-height:1.85;
+  max-width:{{ s(900) }}px;color:var(--ink)}
+.translit{font-size:{{ s(29) }}px;font-style:italic;color:var(--muted);letter-spacing:.04em}
+.src{font-size:{{ s(26) }}px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.accentw{color:var(--accent)}
+.big{font-family:var(--disp),serif;font-size:{{ s(220) }}px;font-weight:900;line-height:.86;color:var(--accent);letter-spacing:-.04em}
+.label{font-size:{{ s(34) }}px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* liste */
+.list{display:flex;flex-direction:column;gap:{{ s(22) }}px;width:100%;max-width:{{ s(900) }}px;
+  text-align:left;align-items:stretch}
+.li{display:flex;gap:{{ s(22) }}px;align-items:flex-start;font-size:{{ s(38) }}px;line-height:1.34;
+  background:var(--card);border-left:4px solid var(--accent);padding:{{ s(22) }}px {{ s(28) }}px;border-radius:0 14px 14px 0}
+.li b{color:var(--accent);font-variant-numeric:tabular-nums;min-width:{{ s(44) }}px;font-weight:800}
+
+/* karşılaştırma */
+.cols{display:grid;grid-template-columns:1fr 1px 1fr;gap:{{ s(34) }}px;width:100%;
+  max-width:{{ s(940) }}px;align-items:start;text-align:left}
+.cols .sep{background:linear-gradient(180deg,transparent,var(--accent),transparent);width:1px;height:100%}
+.col h4{font-family:var(--disp),serif;font-size:{{ s(46) }}px;margin-bottom:{{ s(18) }}px;color:var(--accent)}
+.col p{font-size:{{ s(33) }}px;line-height:1.4;color:var(--muted)}
+.col .ar-md{font-size:{{ s(52) }}px;margin-bottom:{{ s(10) }}px}
+
+/* kitap */
+.bookwrap{display:flex;flex-direction:column;align-items:center;gap:{{ s(18) }}px}
 .chips{display:flex;flex-wrap:wrap;gap:{{ s(12) }}px;justify-content:center}
 .chip{font-size:{{ s(24) }}px;letter-spacing:.06em;padding:{{ s(10) }}px {{ s(20) }}px;border-radius:999px;
   border:1px solid color-mix(in srgb,var(--accent) 45%, transparent);color:var(--muted)}

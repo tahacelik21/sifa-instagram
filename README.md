@@ -167,7 +167,16 @@ assets/books/molla-cami.png
 ```
 
 Uzantı `jpg / jpeg / png / webp` olabilir, başka ayar gerekmez — o kitabın
-sahnesine otomatik yerleşir. Hangi dosya adı bekleniyor, hangisi eksik:
+sahnesine otomatik yerleşir.
+
+Arka planı olan ürün fotoğrafını kesmek için:
+
+```bash
+python -m src.kapak mecmuatus-sarf
+```
+
+Kitabı ayırıp saydam PNG yapar, orijinali `<slug>-orijinal.jpg` olarak saklar.
+Sahne saydam görseli bekliyor: çerçeve yok, gölge kitabın siluetini takip ediyor. Hangi dosya adı bekleniyor, hangisi eksik:
 `assets/books/OKUBENI.txt`. Görseli olmayan kitapta sahne yazıyla kurulur.
 
 > **Not:** `mecmuatus-sarf` kaydındaki alt başlık ("Klasik sarf metinleri tek

@@ -3,3 +3,10 @@ jinja2
 numpy
 imageio-ffmpeg
 pyyaml
+requests
+pillow
+
+# Kitap fotoğraflarının arka planını kesmek için (python -m src.kapak).
+# Video üretimi ve yayın için gerekmez.
+rembg
+onnxruntime

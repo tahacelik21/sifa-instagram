@@ -7,8 +7,16 @@ video üretilirken ilgili kitabın sahnesine otomatik yerleşir.
 
     assets/books/mecmuatus-sarf.jpg
 
-Kare ya da dikey, kısa kenarı en az 800 px olsun; arka planı boş/beyaz
-görseller sahnede daha temiz duruyor.
+Arka planı olan ürün fotoğrafı da olur — kesmek için:
+
+    python -m src.kapak <slug>        tek kitap
+    python -m src.kapak --hepsi       kesilmemiş bütün fotoğraflar
+
+Kitabı fotoğraftan ayırıp saydam PNG'ye çevirir, orijinali
+<slug>-orijinal.jpg olarak saklar. Videoda kitap zeminin üstünde
+kendi gölgesiyle durur.
+
+Kare ya da dikey, kısa kenarı en az 800 px olsun.
 
 Beklenen dosya adları:
 
