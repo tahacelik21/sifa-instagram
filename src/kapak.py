@@ -41,8 +41,13 @@ def _remove(im: Image.Image) -> Image.Image:
     return remove(im, session=_session)
 
 
+UZUN_KENAR = 1800   # sahnede kitap ~480 px; bundan büyüğü boşuna işlem
+
+
 def kes(src: Path) -> Path:
     im = Image.open(src).convert("RGBA")
+    if max(im.size) > UZUN_KENAR:
+        im.thumbnail((UZUN_KENAR, UZUN_KENAR), Image.LANCZOS)
     out = _remove(im)
     kutu = out.getbbox()          # saydam kenarları at
     if kutu:
@@ -153,7 +158,9 @@ def main(argv=None):
 
     for p in hedef:
         kes(p)
-    print(f"\n{len(hedef)} fotoğraf kesildi → ilgili günleri yeniden üret")
+    onizleme()
+    print(f"{len(hedef)} fotoğraf kesildi. Önizlemeye bak; beğenmediğin olursa\n"
+          f"python -m src.kapak --geri <slug>, iyiyse ilgili günleri yeniden üret.")
 
 
 if __name__ == "__main__":
