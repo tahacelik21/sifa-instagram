@@ -5808,3 +5808,1895 @@ days:
         - type: cta
           tr: "Üç kural gönderide"
           vo: "Üç kuralın tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 91 ══════════════════════════════
+  - day: 91
+    title: "Telhîs'i şerhle okumak + Muhtasarü'l-Meânî"
+    post:
+      tags: ["#belagat", "#klasikmetin", "#arapçakitap"]
+      kind: video
+      book_line: "Muhtasarü'l-Meânî"
+      caption: |
+        Telhîsu'l-Miftâh belâgatın özetidir. O kadar özettir ki tek başına
+        okunduğunda çoğu satır kapalı kalır.
+
+        Teftâzânî bu metni şerh etti ve ortaya Muhtasarü'l-Meânî çıktı.
+        Medresede belâgat çoğunlukla bu şerh üzerinden okunur.
+
+        Metin kapıyı gösterir, şerh açar. Belâgatta bu ayrım daha da
+        belirgindir — çünkü tartışılan şey ince bir mana farkıdır.
+      scenes:
+        - type: hook
+          kicker: "BELÂGAT"
+          tr: "Telhîs'i tek başına okudun.<br>Satırlar kapalı mı kaldı?"
+          vo: "Telhîsu'l-Miftâh'ı tek başına okudun ve çoğu satır kapalı kaldı. Normal."
+        - type: point
+          kicker: "SEBEP"
+          tr: "Telhîs zaten bir özettir."
+          body: "Özet, bilineni hatırlatmak için yazılır."
+          vo: "Telhîs zaten bir özettir. Özet, bilineni hatırlatmak için yazılır, öğretmek için değil."
+        - type: concept
+          kicker: "ŞERHİ"
+          ar: "مُخْتَصَرُ الْمَعَانِي"
+          translit: "Muhtasarü'l-Meânî"
+          tr: "Teftâzânî'nin Telhîs şerhi."
+          vo: "مُخْتَصَرُ الْمَعَانِي. Sa'düddîn et-Teftâzânî'nin Telhîs üzerine yazdığı şerh."
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Belâgatta tartışılan şey ince mana farkıdır."
+          body: "Örneksiz ve açıklamasız kavranmaz."
+          vo: "Belâgatta tartışılan şey ince bir mana farkıdır. Örneksiz ve açıklamasız kavranmaz. Bir kelimenin niçin öne alındığı bile başlı başına bir bahistir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: muhtasarul-meani
+          vo: "Medresede belâgat çoğunlukla bu şerh üzerinden okunur."
+        - type: cta
+          tr: "Metin kapıyı gösterir."
+          body: "Şerh açar."
+          vo: "Metin kapıyı gösterir, şerh açar. Belâgatta bu ayrım daha da belirgindir."
+    story:
+      kind: video
+      caption: "Telhîs niçin şerhli okunur?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Telhîs niçin<br>kapalı geliyor?"
+          vo: "Telhîsu'l-Miftâh niçin kapalı geliyor?"
+        - type: point
+          tr: "Çünkü zaten bir özet."
+          vo: "Çünkü zaten bir özet. Özet hatırlatır, öğretmez."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 92 ══════════════════════════════
+  - day: 92
+    title: "Haber ve inşâ cümlesi"
+    post:
+      tags: ["#belagat", "#arapçagramer", "#arapçaöğren"]
+      kind: carousel
+      caption: |
+        Belâgatın ilk dalı meânî, cümleyi duruma uydurmayı öğretir.
+        İlk ayrımı da şudur: bu cümle bir şey haber mi veriyor,
+        yoksa bir şey mi istiyor?
+
+        Haber cümlesi doğrulanabilir: "Talebe geldi" ya doğrudur ya yanlış.
+        İnşâ cümlesi doğrulanamaz: "Gel!" için doğru ya da yanlış denmez.
+
+        Emir, nehiy, soru, temennî, nidâ — hepsi inşâdır.
+      scenes:
+        - type: hook
+          kicker: "MEÂNÎ"
+          tr: "Bu cümle haber mi<br>veriyor, istek mi?"
+          dur: 3.4
+        - type: concept
+          kicker: "1 · HABER"
+          ar: "اَلْخَبَر"
+          tr: "Doğru ya da yanlış olabilir."
+          body: "جَاءَ الطَّالِبُ — talebe geldi"
+          dur: 3.8
+        - type: concept
+          kicker: "2 · İNŞÂ"
+          ar: "اَلْإِنْشَاء"
+          tr: "Doğru ya da yanlış denmez."
+          body: "اُكْتُبْ — yaz!"
+          dur: 3.8
+        - type: list
+          kicker: "İNŞÂ ÇEŞİTLERİ"
+          tr: "Hepsi istek bildirir"
+          items:
+            - "Emir ve nehiy"
+            - "Soru (istifhâm)"
+            - "Temennî ve nidâ"
+          dur: 4.0
+        - type: point
+          kicker: "NİÇİN AYRILIR"
+          tr: "Üslup buna göre seçilir."
+          body: "Muhatabın hâli cümlenin türünü belirler."
+          dur: 3.8
+        - type: cta
+          tr: "Önce türünü bil."
+          body: "Belâgat oradan başlar."
+          dur: 3.2
+    story:
+      kind: video
+      caption: "Haber mi, inşâ mı?"
+      scenes:
+        - type: concept
+          ar: "اَلْخَبَر · اَلْإِنْشَاء"
+          tr: "Haber doğrulanır, inşâ doğrulanmaz."
+          vo: "اَلْخَبَر doğrulanabilir, اَلْإِنْشَاء doğrulanamaz."
+        - type: point
+          ar: "جَاءَ · اُكْتُبْ"
+          tr: "Biri haber, biri emir."
+          vo: "جَاءَ haberdir, اُكْتُبْ emirdir."
+        - type: cta
+          tr: "Çeşitleri gönderide"
+          vo: "İnşâ çeşitleri bugünkü gönderide."
+
+  # ═══════════════════════════════ 93 ══════════════════════════════
+  - day: 93
+    title: "Kasr: sözü bir şeye hasretmek"
+    post:
+      tags: ["#belagat", "#arapçagramer", "#klasikmetin"]
+      kind: video
+      caption: |
+        "Zeyd geldi" ile "Ancak Zeyd geldi" arasında büyük fark var.
+        İkincisi gelişi Zeyd'e hasrediyor, başkasını dışarıda bırakıyor.
+
+        Belâgatta bu işleme kasr denir. Birkaç yolla yapılır: إِنَّمَا ile,
+        nefiy ve istisnâ ile, atıf harfleriyle, ya da öne alma ile.
+
+        Kur'an'da kasr çok kullanılır. Yapıyı tanıyan, âyetin neyi
+        vurguladığını görür.
+      scenes:
+        - type: hook
+          kicker: "BELÂGAT"
+          tr: "“Zeyd geldi” ile<br>“ancak Zeyd geldi”"
+          vo: "Zeyd geldi ile ancak Zeyd geldi. Aradaki fark nedir?"
+        - type: concept
+          kicker: "TERİM"
+          ar: "اَلْقَصْر"
+          translit: "el-kasr"
+          tr: "Hükmü bir şeye hasretmek."
+          vo: "اَلْقَصْر. Bir hükmü yalnız bir şeye hasretmek, başkasını dışarıda bırakmak."
+        - type: list
+          kicker: "YOLLARI"
+          tr: "Dört usul"
+          items:
+            - "إِنَّمَا ile"
+            - "Nefiy ve istisnâ ile: مَا ... إِلَّا"
+            - "Atıf harfleriyle: بَلْ · لَا"
+            - "Öne alma ile (takdîm)"
+          vo: "إِنَّمَا ile yapılır. Nefiy ve istisnâ ile yapılır. Atıf harfleriyle yapılır. Bir de kelimeyi öne alarak yapılır."
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ"
+          tr: "Ameller ancak niyetlere göredir."
+          body: "إِنَّمَا hükmü niyete hasretti."
+          vo: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ. Meşhur hadiste إِنَّمَا hükmü niyete hasrediyor."
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Vurgunun nerede olduğunu gösterir."
+          body: "Aynı kelimeler, başka bir mana."
+          vo: "Kasr, cümlede vurgunun nerede olduğunu gösterir. Aynı kelimelerle bambaşka bir mana kurulur."
+        - type: cta
+          tr: "Neyi dışarıda bırakıyor?"
+          body: "Kasrı gören bu soruyu sorar."
+          vo: "Kasrı gören talebe şunu sorar: bu cümle neyi dışarıda bırakıyor?"
+    story:
+      kind: video
+      caption: "Kasr nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْقَصْر"
+          translit: "el-kasr"
+          tr: "Hükmü bir şeye hasretmek."
+          vo: "اَلْقَصْر. Hükmü yalnız bir şeye hasretmek."
+        - type: point
+          ar: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ"
+          tr: "“Ancak” diyor."
+          vo: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ. إِنَّمَا hükmü niyete hasrediyor."
+        - type: cta
+          tr: "Dört usul gönderide"
+          vo: "Dört usulün tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 94 ══════════════════════════════
+  - day: 94
+    title: "Alıştırmalı belâgat + el-Belâgatü'l-Vâdıha"
+    post:
+      tags: ["#belagat", "#arapçaders", "#arapçakitap"]
+      kind: video
+      book_line: "el-Belâgatü'l-Vâdıha"
+      caption: |
+        Belâgat klasik metinlerde yoğun ve tartışmalı bir dille anlatılır.
+        Talebe ilk karşılaşmada çoğu zaman boğulur.
+
+        Modern bir giriş kitabı bu yükü hafifletir: kaide kısa verilir,
+        bol örnek konur, sonunda alıştırma gelir. Kavram oturduktan sonra
+        klasik metin çok daha kolay okunur.
+
+        Sıralamayı tersine çevirmek de olur: önce vâdıha, sonra Telhîs.
+      scenes:
+        - type: hook
+          kicker: "BELÂGAT"
+          tr: "İlk karşılaşmada<br>boğuldun mu?"
+          vo: "Belâgatla ilk karşılaşmada boğulduysan yalnız değilsin."
+        - type: point
+          kicker: "SEBEP"
+          tr: "Klasik metin yoğun ve tartışmalıdır."
+          body: "Kavramı bilene yazılmıştır."
+          vo: "Klasik belâgat metinleri yoğun ve tartışmalı bir dille yazılır. Kavramı bilene hitap eder. Yeni başlayan için bu, kapıyı içeriden kilitlemek gibidir."
+        - type: list
+          kicker: "GİRİŞ KİTABI NE YAPAR"
+          tr: "Yükü hafifletir"
+          items:
+            - "Kaideyi kısa verir"
+            - "Bol örnek koyar"
+            - "Sonunda alıştırma sorar"
+          vo: "Giriş kitabı kaideyi kısa verir, bol örnek koyar, sonunda alıştırma sorar."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: belagatul-vadiha
+          vo: "اَلْبَلَاغَةُ الْوَاضِحَة. Ali Cârim'in alıştırmalı belâgat kitabı."
+        - type: point
+          kicker: "SIRA"
+          tr: "Önce vâdıha, sonra Telhîs."
+          body: "Kavram oturunca klasik metin kolaylaşır."
+          vo: "Sıra şöyle kurulabilir: önce vâdıha, sonra Telhîs. Kavram oturunca klasik metin kolaylaşır. Aynı terimleri ikinci kez gördüğünde zihin onları tanır."
+        - type: cta
+          tr: "Köprü kurmaktan çekinme."
+          body: "Hedef klasik metni okuyabilmek."
+          vo: "Köprü kurmaktan çekinme. Hedef yine klasik metni okuyabilmek."
+    story:
+      kind: video
+      caption: "Belâgate nasıl başlanır?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Belâgate nereden<br>başlamalı?"
+          vo: "Belâgate nereden başlamalı?"
+        - type: point
+          tr: "Önce alıştırmalı giriş, sonra klasik metin."
+          vo: "Önce alıştırmalı bir giriş, sonra klasik metin."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 95 ══════════════════════════════
+  - day: 95
+    title: "Îcâz, itnâb, müsâvât"
+    post:
+      tags: ["#belagat", "#arapçagramer", "#klasikmetin"]
+      kind: carousel
+      caption: |
+        Aynı mana kısa da söylenir, uzun da. Hangisinin doğru olduğunu
+        belirleyen şey makamdır — yani durum ve muhatap.
+
+        Belâgat bu üç hâli ayırır: îcâz az sözle çok mana, itnâb bir
+        maksatla uzatma, müsâvât ise söz ile mananın denk gelmesi.
+
+        Uzatmak her zaman kusur değildir; yerinde yapılan itnâb
+        belâgattandır. Kusur, yersiz olanıdır.
+      scenes:
+        - type: hook
+          kicker: "MEÂNÎ"
+          tr: "Kısa mı söylemeli,<br>uzun mu?"
+          body: "Cevabı makam belirler."
+          dur: 3.6
+        - type: concept
+          kicker: "1 · ÎCÂZ"
+          ar: "اَلْإِيجَاز"
+          tr: "Az sözle çok mana."
+          body: "Lafız kısa, mana geniş."
+          dur: 3.6
+        - type: concept
+          kicker: "2 · İTNÂB"
+          ar: "اَلْإِطْنَاب"
+          tr: "Bir maksatla uzatma."
+          body: "Pekiştirme, açıklama, tekrar için."
+          dur: 3.8
+        - type: concept
+          kicker: "3 · MÜSÂVÂT"
+          ar: "اَلْمُسَاوَاة"
+          tr: "Söz ile mana denk."
+          body: "Ne fazla ne eksik."
+          dur: 3.6
+        - type: point
+          kicker: "ÖLÇÜ"
+          tr: "Uzatmak kusur değildir."
+          body: "Kusur, yersiz uzatmadır — buna haşv denir."
+          dur: 4.0
+        - type: cta
+          tr: "Makam neyi gerektiriyor?"
+          body: "Belâgatın bütün ölçüsü bu soruda."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Îcâz nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْإِيجَاز"
+          translit: "el-îcâz"
+          tr: "Az sözle çok mana."
+          vo: "اَلْإِيجَاز. Az sözle çok mana anlatmak."
+        - type: point
+          tr: "Uzatmak her zaman kusur değildir."
+          vo: "Uzatmak her zaman kusur değildir. Kusur, yersiz uzatmadır."
+        - type: cta
+          tr: "Üçü de gönderide"
+          vo: "Üçünün tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 96 ══════════════════════════════
+  - day: 96
+    title: "Fasl ve vasl"
+    post:
+      tags: ["#belagat", "#arapçagramer", "#arapçaders"]
+      kind: video
+      caption: |
+        İki cümle arasına و koymak mı, koymamak mı? Belâgatın en ince
+        bahislerinden biri budur.
+
+        Koymaya vasl, koymamaya fasl denir. Karar keyfî değil: iki cümle
+        arasındaki mana ilişkisine bakılır. İlişki çok yakınsa ya da
+        tamamen uzaksa vâv konmaz.
+
+        Klasik belâgatçılar bu bahsi "belâgatın zirvesi" sayar. Çünkü
+        burada ölçü kaideden çok zevke ve dikkate dayanır.
+      scenes:
+        - type: hook
+          kicker: "BELÂGAT"
+          tr: "İki cümle arasına<br>و koymalı mı?"
+          vo: "İki cümle arasına vâv koymalı mı, koymamalı mı?"
+        - type: compare
+          kicker: "İKİ KARAR"
+          tr: "Tek harf, büyük fark."
+          left:  {ar: "اَلْوَصْل", title: "Vasl", text: "Vâv konur. İki cümle hükümde ortaktır."}
+          right: {ar: "اَلْفَصْل", title: "Fasl", text: "Vâv konmaz. İlişki ya çok yakın ya çok uzaktır."}
+          vo: "اَلْوَصْل vâvın konmasıdır. اَلْفَصْل konmamasıdır. İkisi de mana ilişkisine göre seçilir."
+        - type: point
+          kicker: "ÇOK YAKINSA"
+          tr: "İkinci cümle birincinin açıklamasıysa vâv konmaz."
+          body: "Zaten aynı şeyi söylüyorlar."
+          vo: "İkinci cümle birincinin açıklamasıysa vâv konmaz. Zaten aynı şeyi söylüyorlardır."
+        - type: point
+          kicker: "ÇOK UZAKSA"
+          tr: "Hiç ilişkisi yoksa da vâv konmaz."
+          body: "Bağlamak yanlış bir ilişki kurar."
+          vo: "Hiç ilişkisi yoksa da vâv konmaz. Bağlamak, olmayan bir ilişki kurmak olur."
+        - type: point
+          kicker: "NİÇİN ZOR"
+          tr: "Ölçü kaideden çok dikkate dayanır."
+          body: "Klasikler buna “belâgatın zirvesi” der."
+          vo: "Bu bahiste ölçü kaideden çok dikkate dayanır. Klasik belâgatçılar ona belâgatın zirvesi der. Çünkü burada verilen karar, metni okuyanın anlayışını doğrudan değiştirir."
+        - type: cta
+          tr: "Bir harfin kararı."
+          body: "Mana ilişkisi neyse o konur."
+          vo: "Tek bir harfin kararı. Mana ilişkisi neyi gerektiriyorsa o yapılır."
+    story:
+      kind: video
+      caption: "Fasl ve vasl"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Araya و koymalı mı?"
+          vo: "İki cümle arasına vâv koymalı mı?"
+        - type: point
+          ar: "اَلْوَصْل · اَلْفَصْل"
+          tr: "Mana ilişkisi karar verir."
+          vo: "اَلْوَصْل ve اَلْفَصْل. Kararı mana ilişkisi verir."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 97 ══════════════════════════════
+  - day: 97
+    title: "Belâgate kısa giriş + Safahât fi'l-Belâga"
+    post:
+      tags: ["#belagat", "#arapçakitap", "#talebe"]
+      kind: video
+      book_line: "Safahât fi'l-Belâga"
+      caption: |
+        Her talebe belâgate aynı yerden giremez. Kimi klasik metinle
+        başlamak ister, kimi önce kuşbakışı görmek.
+
+        Kısa ve derli toplu bir giriş, konunun haritasını verir:
+        hangi dal neyi inceliyor, hangi terim nerede kullanılıyor.
+        Harita elde olunca uzun yol daha az yorar.
+
+        Bu tür kitaplar klasik metnin yerine geçmez, ona hazırlar.
+      scenes:
+        - type: hook
+          kicker: "BELÂGAT"
+          tr: "Önce haritayı görmek<br>işe yarar mı?"
+          vo: "Bir ilme girmeden önce haritasını görmek işe yarar mı?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Yarar. Yol daha az yorar."
+          body: "Nerede olduğunu bilen kaybolmaz."
+          vo: "Yarar. Nerede olduğunu bilen talebe kaybolmaz, yol daha az yorar. Kaybolmamak, ilerlemenin yarısıdır."
+        - type: list
+          kicker: "HARİTA NE VERİR"
+          tr: "Üç şey"
+          items:
+            - "Hangi dal neyi inceliyor"
+            - "Hangi terim nerede kullanılıyor"
+            - "Hangi metin hangi seviyede"
+          vo: "Hangi dalın neyi incelediğini, hangi terimin nerede kullanıldığını, hangi metnin hangi seviyede olduğunu. Bu üçü bilinince hangi kitabın ne zaman açılacağı da belli olur."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: safahat-belagat
+          vo: "صَفَحَاتٌ فِي الْبَلَاغَة. Belâgate kısa ve derli toplu bir giriş."
+        - type: point
+          kicker: "SINIRI"
+          tr: "Giriş kitabı klasik metnin yerine geçmez."
+          body: "Ona hazırlar, onu değiştirmez."
+          vo: "Giriş kitabı klasik metnin yerine geçmez. Ona hazırlar, onu değiştirmez. Hazırlıkla yetinen talebe, yıllar sonra hâlâ girişte kalır."
+        - type: cta
+          tr: "Haritayı al, yola çık."
+          body: "Ama haritada kalma."
+          vo: "Haritayı al ve yola çık. Ama haritada kalma."
+    story:
+      kind: video
+      caption: "Önce harita"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "İlme girmeden<br>haritasını gör."
+          vo: "Bir ilme girmeden önce haritasını görmek yolu kısaltır."
+        - type: point
+          tr: "Giriş kitabı hazırlar, değiştirmez."
+          vo: "Giriş kitabı klasik metne hazırlar, onun yerine geçmez."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 98 ══════════════════════════════
+  - day: 98
+    title: "Bedî' sanatları"
+    post:
+      tags: ["#belagat", "#klasikmetin", "#arapçagramer"]
+      kind: carousel
+      caption: |
+        Meânî sözü duruma uydurur, beyân manayı farklı yollarla anlatır.
+        Bedî' ise söze süs katar.
+
+        Süs derken boş bir bezeme kastedilmiyor. Bedî' sanatları manayı
+        pekiştirir, akılda kalmasını sağlar, sözü kulağa oturtur.
+
+        İki kola ayrılır: manaya ait sanatlar ve lafza ait sanatlar.
+      scenes:
+        - type: hook
+          kicker: "BEDÎ'"
+          tr: "Söze süs katan sanatlar"
+          ar: "اَلْبَدِيع"
+          dur: 3.2
+        - type: concept
+          kicker: "1 · TIBÂK"
+          ar: "اَلطِّبَاق"
+          tr: "Zıt iki manayı yan yana getirmek."
+          body: "gece ve gündüz · diri ve ölü"
+          dur: 4.0
+        - type: concept
+          kicker: "2 · CİNÂS"
+          ar: "اَلْجِنَاس"
+          tr: "Benzer iki lafız, farklı mana."
+          body: "Kulakta kalır, zihinde durur."
+          dur: 3.8
+        - type: concept
+          kicker: "3 · SECİ'"
+          ar: "اَلسَّجْع"
+          tr: "Cümle sonlarının uyumu."
+          body: "Nesirde ritim kurar."
+          dur: 3.8
+        - type: point
+          kicker: "İKİ KOL"
+          tr: "Manaya ait ve lafza ait."
+          body: "Tıbâk manaya, cinâs ve seci' lafza aittir."
+          dur: 3.8
+        - type: cta
+          tr: "Süs değil, pekiştirme."
+          body: "Bedî' manayı akılda tutar."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Bedî' nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْبَدِيع"
+          translit: "el-bedî'"
+          tr: "Söze süs katan ilim."
+          vo: "اَلْبَدِيع. Söze süs katan belâgat dalı."
+        - type: point
+          ar: "اَلطِّبَاق · اَلْجِنَاس · اَلسَّجْع"
+          tr: "Üç meşhur sanat."
+          vo: "اَلطِّبَاق، اَلْجِنَاس، اَلسَّجْع. En çok geçen üç sanat."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 99 ══════════════════════════════
+  - day: 99
+    title: "Kur'an'ın i'câzı ve belâgat"
+    post:
+      tags: ["#belagat", "#kuran", "#ilimyolu"]
+      kind: video
+      caption: |
+        Belâgat niçin medrese müfredatında bu kadar yer tutar?
+        Cevap tek kelimedir: i'câz.
+
+        Kur'an'ın benzerinin getirilememesi iddiasının en çok tartışıldığı
+        alan dildir. Bunu değerlendirebilmek için sözün nasıl kurulduğunu,
+        niçin öyle kurulduğunu bilmek gerekir.
+
+        Belâgat bilmeyen, i'câz üzerine konuşamaz. Bilen ise âyetin
+        yapısında neyin yapıldığını görür.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Belâgat niçin bu kadar<br>önemseniyor?"
+          vo: "Belâgat medrese müfredatında niçin bu kadar yer tutar?"
+        - type: concept
+          kicker: "CEVAP"
+          ar: "اَلْإِعْجَاز"
+          translit: "el-i'câz"
+          tr: "Benzerinin getirilememesi."
+          vo: "اَلْإِعْجَاز. Kur'an'ın benzerinin getirilememesi."
+        - type: point
+          kicker: "NİÇİN DİL"
+          tr: "İddianın en çok tartışıldığı alan dildir."
+          body: "Değerlendirmek için ölçü gerekir."
+          vo: "Bu iddianın en çok tartışıldığı alan dildir. Değerlendirebilmek için bir ölçü gerekir. Ölçüsüz bir iddia ne savunulabilir ne de anlaşılabilir."
+        - type: point
+          kicker: "ÖLÇÜ NEDİR"
+          tr: "Sözün nasıl ve niçin öyle kurulduğu."
+          body: "Belâgat tam olarak bunu öğretir."
+          vo: "O ölçü, sözün nasıl ve niçin öyle kurulduğudur. Belâgat tam olarak bunu öğretir."
+        - type: point
+          kicker: "SONUÇ"
+          tr: "Belâgat bilen âyetin yapısını görür."
+          body: "Bilmeyen yalnız tercümeyi görür."
+          vo: "Belâgat bilen talebe âyetin yapısında neyin yapıldığını görür. Bilmeyen yalnız tercümeyi görür. Tercüme ise yapının kendisini değil, sonucunu aktarır."
+        - type: cta
+          tr: "Önce alet, sonra iddia."
+          body: "Ölçüsüz değerlendirme olmaz."
+          vo: "Önce alet, sonra iddia. Ölçüsü olmayan değerlendirme yapamaz."
+    story:
+      kind: video
+      caption: "Belâgat niçin önemli?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Belâgat niçin<br>müfredatta?"
+          vo: "Belâgat medrese müfredatında niçin bu kadar yer tutar?"
+        - type: concept
+          ar: "اَلْإِعْجَاز"
+          tr: "Kur'an'ın i'câzı."
+          vo: "اَلْإِعْجَاز. Kur'an'ın benzerinin getirilememesi."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 100 ═════════════════════════════
+  - day: 100
+    title: "Alâka ve mecâzın mantığı + Şürûhu'l-Alâka"
+    post:
+      tags: ["#belagat", "#klasikmetin", "#arapçakitap"]
+      kind: video
+      book_line: "Şürûhu'l-Alâka"
+      caption: |
+        Mecâz keyfî değildir. Bir kelimeyi asıl manasının dışında
+        kullanabilmek için araya bir ilişki girmesi gerekir.
+
+        Bu ilişkiye alâka denir. "Elini öptüm" yerine "elini aldım"
+        denebilir, çünkü arada parça-bütün ilişkisi vardır. Ama rastgele
+        bir kelime yerine başka bir kelime konamaz.
+
+        Alâka çeşitlerini bilen talebe, mecâzı tanır ve hangi manaya
+        taşındığını çıkarır.
+      scenes:
+        - type: hook
+          kicker: "BEYÂN"
+          tr: "Mecâz keyfî mi?"
+          body: "Her kelime her kelimenin yerine geçer mi?"
+          vo: "Mecâz keyfî midir? Her kelime her kelimenin yerine konabilir mi?"
+        - type: concept
+          kicker: "CEVAP"
+          ar: "اَلْعَلَاقَة"
+          translit: "el-alâka"
+          tr: "Asıl mana ile mecâzî mana arasındaki ilişki."
+          vo: "اَلْعَلَاقَة. Asıl mana ile mecâzî mana arasında bulunması gereken ilişki."
+        - type: list
+          kicker: "ÇEŞİTLERİ"
+          tr: "Sık geçen alâkalar"
+          items:
+            - "Parça-bütün ilişkisi"
+            - "Sebep-sonuç ilişkisi"
+            - "Mahal ve içindeki ilişkisi"
+          vo: "Parça ile bütün arasındaki ilişki. Sebep ile sonuç arasındaki. Mahal ile içindeki arasındaki."
+        - type: point
+          kicker: "KARÎNE"
+          tr: "Bir de karîne gerekir."
+          body: "Asıl mananın kastedilmediğini gösteren işaret."
+          vo: "Alâka tek başına yetmez. Asıl mananın kastedilmediğini gösteren bir karîne de gerekir. Karîne yoksa muhatap kelimeyi gerçek manasında anlar."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: suruhul-alaka
+          vo: "شُرُوحُ الْعَلَاقَة فِي عُلُومِ الْبَلَاغَة. Alâka bahsini şerhleriyle veren derleme."
+        - type: cta
+          tr: "İlişki yoksa mecâz da yok."
+          body: "Kaide bu kadar net."
+          vo: "İlişki yoksa mecâz da yoktur. Kaide bu kadar nettir."
+    story:
+      kind: video
+      caption: "Alâka nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْعَلَاقَة"
+          translit: "el-alâka"
+          tr: "Mecâzı mümkün kılan ilişki."
+          vo: "اَلْعَلَاقَة. Mecâzı mümkün kılan ilişki."
+        - type: point
+          tr: "İlişki yoksa mecâz da yok."
+          vo: "İlişki yoksa mecâz da yoktur."
+        - type: cta
+          tr: "Çeşitleri gönderide"
+          vo: "Alâka çeşitleri bugünkü gönderide."
+  # ═══════════════════════════════ 101 ═════════════════════════════
+  - day: 101
+    title: "Fıkıh nedir, usûl-i fıkıh nedir?"
+    post:
+      tags: ["#ilimyolu", "#klasikmetin", "#talebe"]
+      kind: carousel
+      caption: |
+        Fıkıh "anlamak" demek. Istılahta ise amelî hükümleri, delillerinden
+        çıkararak bilmektir.
+
+        Yanında bir ilim daha durur: usûl-i fıkıh. Fıkıh hükmü verir,
+        usûl o hükmün nasıl çıkarıldığını anlatır. Biri sonuç, diğeri yöntem.
+
+        Alet ilimleri bitince sıra buraya gelir. Çünkü fıkıh metinleri
+        Arapça yazılmıştır ve nahivsiz okunmaz.
+      scenes:
+        - type: hook
+          kicker: "YENİ BAHİS"
+          tr: "Alet ilimleri bitti.<br>Sıra nerede?"
+          dur: 3.4
+        - type: concept
+          kicker: "KELİME"
+          ar: "اَلْفِقْه"
+          translit: "el-fıkh"
+          tr: "“Anlamak” demek."
+          body: "Istılahta: amelî hükümleri delilinden bilmek."
+          dur: 4.2
+        - type: compare
+          kicker: "İKİ İLİM"
+          tr: "Biri sonuç, diğeri yöntem."
+          left:  {ar: "اَلْفِقْه", title: "Fıkıh", text: "Hüküm nedir? “Bu caizdir.”"}
+          right: {ar: "أُصُولُ الْفِقْه", title: "Usûl-i fıkıh", text: "Hüküm nasıl çıkarıldı? Yöntemi verir."}
+          dur: 4.4
+        - type: point
+          kicker: "NİÇİN SONRA"
+          tr: "Fıkıh metinleri Arapça yazılmıştır."
+          body: "Nahivsiz okunmaz, sarfsız anlaşılmaz."
+          dur: 4.0
+        - type: point
+          kicker: "SIRASI"
+          tr: "Önce ibadet bahisleri."
+          body: "Taharet, namaz, oruç, zekât, hac."
+          dur: 3.8
+        - type: cta
+          tr: "Alet bitti, maksat başlıyor."
+          body: "Yolun ikinci yarısı burada."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Fıkıh ne demek?"
+      scenes:
+        - type: concept
+          ar: "اَلْفِقْه"
+          translit: "el-fıkh"
+          tr: "“Anlamak” demek."
+          vo: "اَلْفِقْه. Kelime olarak anlamak demek."
+        - type: point
+          tr: "Fıkıh hükmü verir, usûl yöntemi."
+          vo: "Fıkıh hükmü verir, usûl-i fıkıh o hükmün nasıl çıkarıldığını anlatır."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 102 ═════════════════════════════
+  - day: 102
+    title: "Mezhep niçin var?"
+    post:
+      tags: ["#ilimyolu", "#talebe", "#medreseusulü"]
+      kind: carousel
+      caption: |
+        Aynı âyet ve hadislerden niçin farklı hükümler çıkmış?
+
+        Sebep keyfîlik değil, yöntem farkıdır. Bir müctehid rivayeti
+        hangi şartlarla aldığını, delilleri nasıl sıraladığını, umum ve
+        husus ilişkisini nasıl kurduğunu baştan belirler. Yöntem farklı
+        olunca sonuç da farklı olur.
+
+        Mezhep, bu yöntemin sistemli hâlidir. Talebe için ise bir
+        güzergâhtır: dağınık görüş yerine takip edilebilir bir yol.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Aynı delillerden<br>niçin farklı hüküm?"
+          dur: 3.4
+        - type: point
+          kicker: "CEVAP"
+          tr: "Yöntem farkı."
+          body: "Keyfîlik değil, usûl farkı."
+          dur: 3.4
+        - type: list
+          kicker: "NEREDE AYRILIR"
+          tr: "Müctehid baştan belirler"
+          items:
+            - "Rivayeti hangi şartlarla alır"
+            - "Delilleri nasıl sıralar"
+            - "Umum ve hususu nasıl kurar"
+          dur: 4.4
+        - type: point
+          kicker: "MEZHEP"
+          ar: "اَلْمَذْهَب"
+          tr: "Bu yöntemin sistemli hâli."
+          body: "Dağınık görüş değil, takip edilebilir yol."
+          dur: 4.0
+        - type: point
+          kicker: "TALEBE İÇİN"
+          tr: "Bir mezhep üzerinden okumak hızlandırır."
+          body: "Her meselede baştan başlamak gerekmez."
+          dur: 4.0
+        - type: cta
+          tr: "Yöntemi bilen sonucu anlar."
+          body: "Usûl bilmeyen farkı keyfî sanır."
+          dur: 3.6
+    story:
+      kind: video
+      caption: "Mezhep niçin var?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Aynı delil,<br>farklı hüküm. Niçin?"
+          vo: "Aynı delillerden niçin farklı hükümler çıkmış?"
+        - type: point
+          tr: "Sebep yöntem farkı."
+          vo: "Sebep keyfîlik değil, yöntem farkı."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 103 ═════════════════════════════
+  - day: 103
+    title: "Fıkha ilk adım + Nûru'l-Îzâh"
+    post:
+      tags: ["#ilimyolu", "#arapçakitap", "#klasikmetin"]
+      kind: video
+      book_line: "Nûru'l-Îzâh"
+      caption: |
+        Fıkha nereden başlanır? Klasik cevap: ibadet bahislerini veren
+        kısa bir metinden.
+
+        Nûru'l-Îzâh tam olarak bunu yapar. Taharet, namaz, oruç, zekât
+        ve hac bahislerini sade bir dille, tartışmaya girmeden verir.
+        Talebe önce hükmü öğrenir; delili ve ihtilafı sonra.
+
+        Kısa olması zayıflığından değil, maksadındandır: başlangıç metni
+        tartışma değil, çerçeve verir.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Fıkha nereden<br>başlanır?"
+          vo: "Fıkha nereden başlanır? Klasik cevap bellidir."
+        - type: point
+          kicker: "CEVAP"
+          tr: "İbadet bahislerini veren kısa bir metinden."
+          body: "Önce çerçeve, sonra tartışma."
+          vo: "İbadet bahislerini veren kısa bir metinden. Önce çerçeve kurulur, tartışma sonra gelir. Çerçevesi olmayan talebe, tartışmanın neyle ilgili olduğunu bile göremez."
+        - type: list
+          kicker: "BAHİSLER"
+          tr: "Sıra değişmez"
+          items:
+            - "Taharet — temizlik"
+            - "Namaz · oruç"
+            - "Zekât · hac"
+          vo: "Önce taharet, yani temizlik. Sonra namaz ve oruç. Sonra zekât ve hac."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: nurul-izah
+          vo: "نُورُ الْإِيضَاح. Şürünbülâlî'nin ibadet bahislerini veren fıkıh metni."
+        - type: point
+          kicker: "NİÇİN KISA"
+          tr: "Başlangıç metni tartışma vermez."
+          body: "Kısalık maksattandır, zayıflıktan değil."
+          vo: "Başlangıç metni tartışma vermez, çerçeve verir. Kısalığı maksadındandır. Ezberlenebilsin diye kısa tutulmuştur."
+        - type: cta
+          tr: "Önce hüküm, sonra delil."
+          body: "Sırası tersine dönerse talebe kaybolur."
+          vo: "Önce hüküm, sonra delil. Sırası tersine dönerse talebe kaybolur."
+    story:
+      kind: video
+      caption: "Fıkha nereden başlanır?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Fıkha nereden<br>başlanır?"
+          vo: "Fıkha nereden başlanır?"
+        - type: point
+          tr: "İbadet bahislerini veren kısa metinden."
+          vo: "İbadet bahislerini veren kısa bir metinden. Önce çerçeve, sonra tartışma."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 104 ═════════════════════════════
+  - day: 104
+    title: "Metin, şerh, hâşiye, fetva"
+    post:
+      tags: ["#klasikmetin", "#ilimyolu", "#medreseusulü"]
+      kind: carousel
+      caption: |
+        Fıkıh kitaplarının hepsi aynı işi yapmaz. Her birinin yeri ve
+        seviyesi başkadır — karıştırmak talebeyi yorar.
+
+        Metin hükmü kısaca söyler. Şerh metni açar, delilini verir.
+        Hâşiye şerhin tartışmalı yerlerini tartışır. Fetva kitabı ise
+        meseleyi güncel bir olaya uygular.
+
+        Hangi seviyede olduğunu bilmeden kitap açmak, yanlış beklentiyle
+        okumaktır.
+      scenes:
+        - type: hook
+          kicker: "KÜTÜPHANE"
+          tr: "Hepsi fıkıh kitabı.<br>Ama aynı işi yapmıyor."
+          dur: 3.6
+        - type: concept
+          kicker: "1 · METİN"
+          ar: "اَلْمَتْن"
+          tr: "Hükmü kısaca söyler."
+          body: "Ezberlenmek için yazılır."
+          dur: 3.8
+        - type: concept
+          kicker: "2 · ŞERH"
+          ar: "اَلشَّرْح"
+          tr: "Metni açar, delilini verir."
+          body: "Derste okunur."
+          dur: 3.8
+        - type: concept
+          kicker: "3 · HÂŞİYE"
+          ar: "اَلْحَاشِيَة"
+          tr: "Şerhin tartışmalı yerlerini tartışır."
+          body: "İleri seviye."
+          dur: 3.8
+        - type: concept
+          kicker: "4 · FETVA"
+          ar: "اَلْفَتْوَى"
+          tr: "Meseleyi olaya uygular."
+          body: "Hükmü hayata bağlar."
+          dur: 3.8
+        - type: cta
+          tr: "Önce seviyeyi bil."
+          body: "Yanlış beklentiyle okumak yorar."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Metin mi, şerh mi, hâşiye mi?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Hepsi fıkıh kitabı,<br>ama seviyeleri farklı."
+          vo: "Hepsi fıkıh kitabı ama seviyeleri farklı."
+        - type: list
+          tr: "Dört basamak"
+          items: ["Metin", "Şerh", "Hâşiye", "Fetva"]
+          vo: "Dört basamak: metin, şerh, hâşiye, fetva."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 105 ═════════════════════════════
+  - day: 105
+    title: "Taharet niçin önce gelir?"
+    post:
+      tags: ["#ilimyolu", "#klasikmetin", "#talebe"]
+      kind: video
+      caption: |
+        Bütün fıkıh kitapları aynı bahisle başlar: taharet. Bu tesadüf
+        değil, usul gereğidir.
+
+        Namaz ibadetlerin direğidir ve taharet namazın şartıdır.
+        Şart, meşrûttan önce öğrenilir. Yani önce kapının anahtarı,
+        sonra kapı.
+
+        Bu sıralama bütün fıkıh müfredatında korunur. Sıranın kendisi
+        de bir bilgidir: hangi meselenin neye dayandığını gösterir.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Her fıkıh kitabı<br>niçin temizlikle başlar?"
+          vo: "Bütün fıkıh kitapları niçin taharet bahsiyle başlar?"
+        - type: concept
+          kicker: "SEBEP"
+          ar: "اَلطَّهَارَة"
+          translit: "et-tahâra"
+          tr: "Namazın şartıdır."
+          body: "Şart, meşrûttan önce öğrenilir."
+          vo: "اَلطَّهَارَة namazın şartıdır. Usulde şart, meşrûttan önce öğrenilir."
+        - type: point
+          kicker: "MANTIK"
+          tr: "Önce anahtar, sonra kapı."
+          body: "Namazı öğrenmeden önce şartını öğren."
+          vo: "Önce anahtar, sonra kapı. Namazı öğrenmeden önce şartını öğrenirsin. Şartı eksik olan ibadetin kendisi de eksik kalır."
+        - type: point
+          kicker: "SIRA DA BİLGİDİR"
+          tr: "Hangi mesele neye dayanıyor?"
+          body: "Müfredatın sırası bunu gösterir."
+          vo: "Müfredatın sırası da bir bilgidir. Hangi meselenin neye dayandığını gösterir. Sırayı okumak, kitabın içindekiler sayfasını okumak gibidir."
+        - type: point
+          kicker: "DİKKAT"
+          tr: "Bahsi atlayıp namaza geçme."
+          body: "Çoğu hata şartı bilmemekten çıkar."
+          vo: "Taharet bahsini atlayıp doğrudan namaza geçme. Pratikteki çoğu hata şartı bilmemekten çıkar."
+        - type: cta
+          tr: "Sırayı bozma."
+          body: "Klasik müfredat sebepsiz dizilmedi."
+          vo: "Sırayı bozma. Klasik müfredat sebepsiz dizilmedi."
+    story:
+      kind: video
+      caption: "Niçin temizlikle başlar?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Fıkıh niçin<br>temizlikle başlar?"
+          vo: "Fıkıh kitapları niçin temizlik bahsiyle başlar?"
+        - type: point
+          tr: "Taharet namazın şartıdır."
+          vo: "Çünkü taharet namazın şartıdır. Şart önce öğrenilir."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 106 ═════════════════════════════
+  - day: 106
+    title: "Metni şerhiyle okumak + Merâkı'l-Felâh"
+    post:
+      tags: ["#klasikmetin", "#arapçakitap", "#ilimyolu"]
+      kind: video
+      book_line: "Merâkı'l-Felâh"
+      caption: |
+        Nûru'l-Îzâh hükmü söyler ama niçin öyle olduğunu söylemez.
+        Metin budur: kısa, kesin, tartışmasız.
+
+        Soru geldiğinde cevap şerhte bulunur. Merâkı'l-Felâh,
+        Nûru'l-Îzâh'ın müellifinin kendi şerhidir — yani aynı kalemden.
+
+        Sarfta, nahivde, belâgatta gördüğümüz usul burada da aynı:
+        önce metin, sonra şerh. İlim dalı değişir, usul değişmez.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Metin hükmü söyledi.<br>“Niçin?” diye sordun."
+          vo: "Metin hükmü söyledi ama niçin öyle olduğunu söylemedi. Sorunun cevabı nerede?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Şerhte."
+          body: "Metin kısa, kesin, tartışmasızdır."
+          vo: "Cevap şerhtedir. Metin kısadır, kesindir, tartışmaya girmez. Bu onun eksikliği değil, görevinin gereğidir."
+        - type: concept
+          kicker: "ŞERHİ"
+          ar: "مَرَاقِي الْفَلَاح"
+          translit: "Merâkı'l-Felâh"
+          tr: "Nûru'l-Îzâh'ın şerhi."
+          body: "Müellifin kendi kaleminden."
+          vo: "مَرَاقِي الْفَلَاح. Nûru'l-Îzâh'ın şerhi ve aynı müellifin kaleminden."
+        - type: point
+          kicker: "AYNI USUL"
+          tr: "Sarfta, nahivde, fıkıhta: önce metin, sonra şerh."
+          body: "İlim dalı değişir, usul değişmez."
+          vo: "Sarfta, nahivde, belâgatta gördüğümüz usul burada da aynı. İlim dalı değişir, usul değişmez. Bir kere öğrenilen bu usul bütün ilimlerde işe yarar."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: merakil-felah
+          vo: "Metin ve şerhi birlikte okunduğunda hüküm de sebebi de yerine oturur."
+        - type: cta
+          tr: "Metni ezberle, şerhi oku."
+          body: "Bir ilimde işe yarayan, hepsinde yarar."
+          vo: "Metni ezberle, şerhi oku. Bir ilimde işe yarayan usul hepsinde yarar."
+    story:
+      kind: video
+      caption: "Niçin şerh gerekir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Metin “niçin”i<br>söylemiyor."
+          vo: "Metin hükmü söyler ama niçin olduğunu söylemez."
+        - type: point
+          tr: "Cevap şerhtedir."
+          vo: "Cevap şerhtedir. Fıkıhta da usul aynı."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 107 ═════════════════════════════
+  - day: 107
+    title: "Farz, vacip, sünnet, müstehap, mubah"
+    post:
+      tags: ["#ilimyolu", "#talebe", "#klasikmetin"]
+      kind: carousel
+      caption: |
+        Fıkıh metninde sürekli geçen bu kelimeler günlük dilde birbirinin
+        yerine kullanılıyor. Oysa her biri ayrı bir hüküm bildirir.
+
+        Hanefî fıkhında farz ile vacip ayrılır: farz kat'î delille,
+        vacip zannî delille sabittir. Diğer mezheplerin çoğunda bu ayrım
+        yapılmaz.
+
+        Terimleri karıştırmak, metni yanlış anlamaya götürür. Önce
+        ıstılah, sonra mesele.
+      scenes:
+        - type: hook
+          kicker: "ISTILAH"
+          tr: "Farz, vacip, sünnet…<br>Aynı şey değil."
+          dur: 3.4
+        - type: concept
+          kicker: "FARZ"
+          ar: "اَلْفَرْض"
+          tr: "Kat'î delille sabit, kesin istek."
+          dur: 3.6
+        - type: concept
+          kicker: "VACİP"
+          ar: "اَلْوَاجِب"
+          tr: "Zannî delille sabit, kesin istek."
+          body: "Hanefîde farzdan ayrılır."
+          dur: 4.0
+        - type: concept
+          kicker: "SÜNNET"
+          ar: "اَلسُّنَّة"
+          tr: "Peygamberin devam ettiği amel."
+          dur: 3.6
+        - type: concept
+          kicker: "MÜSTEHAP · MUBAH"
+          ar: "اَلْمُسْتَحَبّ · اَلْمُبَاح"
+          tr: "Sevilen amel · yapılması da terki de serbest."
+          dur: 4.0
+        - type: cta
+          tr: "Önce ıstılah, sonra mesele."
+          body: "Terimi karıştıran metni yanlış anlar."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Farz ile vacip farkı"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Farz ile vacip<br>aynı mı?"
+          vo: "Farz ile vacip aynı şey mi?"
+        - type: point
+          tr: "Hanefîde ayrılır: delilin kuvvetine göre."
+          vo: "Hanefî fıkhında ayrılır. Fark delilin kuvvetindedir."
+        - type: cta
+          tr: "Beşi de gönderide"
+          vo: "Beş terimin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 108 ═════════════════════════════
+  - day: 108
+    title: "Mezhep içinde görüş farkı"
+    post:
+      tags: ["#ilimyolu", "#medreseusulü", "#klasikmetin"]
+      kind: video
+      caption: |
+        Aynı mezhebin kitaplarında bazen farklı hükümler görürsün.
+        Bu bir tutarsızlık değil; mezhep tek bir kişinin sözü değildir.
+
+        İmamın görüşü vardır, talebelerinin görüşü vardır, sonraki
+        asırlarda tercih edilen görüş vardır. Metinler çoğu zaman
+        "esah olan", "müftâ bih olan" diyerek bunu belirtir.
+
+        Bu ifadeleri tanıyan talebe, kitapta gördüğü farkı doğru okur.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Aynı mezhep,<br>farklı hüküm. Nasıl?"
+          vo: "Aynı mezhebin kitaplarında farklı hükümler görüyorsun. Nasıl oluyor?"
+        - type: point
+          kicker: "SEBEP"
+          tr: "Mezhep tek bir kişinin sözü değildir."
+          body: "İmam, talebeleri, sonraki tercihler."
+          vo: "Mezhep tek bir kişinin sözü değildir. İmamın görüşü, talebelerinin görüşü, sonraki asırlarda tercih edilen görüş."
+        - type: list
+          kicker: "METİNDEKİ İŞARETLER"
+          tr: "Kitap bunu söyler"
+          items:
+            - "“Esah olan” — daha sahih görülen"
+            - "“Müftâ bih” — fetvaya esas alınan"
+            - "“Kavl-i âhar” — diğer görüş"
+          vo: "Metinler bunu belirtir. Esah olan, yani daha sahih görülen. Müftâ bih, yani fetvaya esas alınan. Kavl-i âhar, yani diğer görüş."
+        - type: point
+          kicker: "TALEBE NE YAPAR"
+          tr: "İşareti gör, hangisini okuduğunu bil."
+          body: "Fark tutarsızlık değil, kayıttır."
+          vo: "Talebe bu işaretleri görüp hangisini okuduğunu bilir. Fark bir tutarsızlık değil, tarihin kaydıdır."
+        - type: point
+          kicker: "DİKKAT"
+          tr: "Tercih yapmak talebenin işi değildir."
+          body: "Okumak başka, tercih etmek başka."
+          vo: "Görüşler arasında tercih yapmak talebenin işi değildir. Okumak başka, tercih etmek başkadır."
+        - type: cta
+          tr: "Farkı gör, yerini bil."
+          body: "Kitap zaten söylüyor."
+          vo: "Farkı gör ve yerini bil. Kitap zaten sana söylüyor."
+    story:
+      kind: video
+      caption: "Aynı mezhep, farklı hüküm"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Aynı mezhepte<br>niçin fark var?"
+          vo: "Aynı mezhebin kitaplarında niçin farklı hükümler var?"
+        - type: point
+          tr: "Mezhep tek kişinin sözü değildir."
+          vo: "Çünkü mezhep tek bir kişinin sözü değildir."
+        - type: cta
+          tr: "İşaretler gönderide"
+          vo: "Metindeki işaretler bugünkü gönderide."
+
+  # ═══════════════════════════════ 109 ═════════════════════════════
+  - day: 109
+    title: "Namazın fıkhı + Halebî Sagîr"
+    post:
+      tags: ["#klasikmetin", "#arapçakitap", "#ilimyolu"]
+      kind: video
+      book_line: "Halebî Sagîr"
+      caption: |
+        Namaz fıkhı niçin ayrı bir kitaba konu olur? Çünkü bahis geniştir:
+        şartlar, rükünler, vacipler, sünnetler, mekruhlar, sehiv secdesi,
+        kaza, cemaat…
+
+        Kısa metinler bunların hepsini veremez. Bu yüzden namaz bahsini
+        müstakil olarak genişçe işleyen eserler yazılmıştır.
+
+        Her gün yapılan bir ibadetin fıkhını bilmek, nafile bir bilgi değil.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Namaz niçin<br>ayrı bir kitap?"
+          vo: "Namaz fıkhı niçin ayrı bir kitaba konu olur?"
+        - type: list
+          kicker: "BAHİS GENİŞ"
+          tr: "Tek başlık, çok mesele"
+          items:
+            - "Şartlar ve rükünler"
+            - "Vacipler, sünnetler, mekruhlar"
+            - "Sehiv secdesi, kaza, cemaat"
+          vo: "Şartlar ve rükünler. Vacipler, sünnetler, mekruhlar. Sehiv secdesi, kaza, cemaat. Hepsi tek başlığın altında."
+        - type: point
+          kicker: "KISA METNİN SINIRI"
+          tr: "Giriş metni hepsini veremez."
+          body: "Çerçeve verir, ayrıntı veremez."
+          vo: "Giriş metni bunların hepsini veremez. Çerçeve verir, ayrıntıya giremez. Ayrıntıya girse zaten giriş metni olmaktan çıkardı."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: halebi-sagir
+          vo: "حَلَبِي صَغِير. İbrâhim Halebî'nin namaz bahsini genişçe işleyen eseri."
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Her gün yapılan bir ibadet."
+          body: "Fıkhını bilmek nafile bir bilgi değil."
+          vo: "Her gün yapılan bir ibadetin fıkhını bilmek nafile bir bilgi değildir."
+        - type: cta
+          tr: "Geniş bahis, müstakil kitap."
+          body: "Sırası geldiğinde açılır."
+          vo: "Geniş bahisler müstakil kitaplara konu olur. Sırası geldiğinde açılır."
+    story:
+      kind: video
+      caption: "Namaz fıkhı"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Namaz niçin<br>ayrı bir kitap?"
+          vo: "Namaz fıkhı niçin ayrı bir kitaba konu olur?"
+        - type: point
+          tr: "Bahis geniş: şart, rükün, vacip, sünnet…"
+          vo: "Çünkü bahis geniş: şartlar, rükünler, vacipler, sünnetler."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 110 ═════════════════════════════
+  - day: 110
+    title: "Fıkıh okurken dikkat edilecekler"
+    post:
+      tags: ["#talebe", "#medreseusulü", "#ilimyolu"]
+      kind: carousel
+      caption: |
+        Fıkıh metinleri diğer ilimlerden farklı okunur. Çünkü burada
+        okunan şey doğrudan amele bağlanır.
+
+        Beş tavsiye: ıstılahı önce öğren, mezhebi karıştırma, metnin
+        seviyesini bil, hükmü bağlamından koparma, fetva ile ders
+        arasındaki farkı gözet.
+
+        Bunlara dikkat eden talebe, okuduğunu doğru yere koyar.
+      scenes:
+        - type: hook
+          kicker: "USUL"
+          tr: "Fıkıh başka türlü okunur."
+          body: "Okunan şey doğrudan amele bağlanıyor."
+          dur: 3.8
+        - type: point
+          kicker: "1"
+          tr: "Istılahı önce öğren."
+          body: "Farz, vacip, sünnet karıştırılmaz."
+          dur: 3.6
+        - type: point
+          kicker: "2"
+          tr: "Mezhepleri karıştırma."
+          body: "Bir metin bir usulle yazılmıştır."
+          dur: 3.6
+        - type: point
+          kicker: "3"
+          tr: "Metnin seviyesini bil."
+          body: "Metin, şerh, hâşiye, fetva — hepsi ayrı."
+          dur: 3.8
+        - type: point
+          kicker: "4"
+          tr: "Hükmü bağlamından koparma."
+          body: "Şartı atlanan hüküm yanlış uygulanır."
+          dur: 3.8
+        - type: cta
+          tr: "5 · Ders ile fetvayı ayır."
+          body: "Öğrenmek başka, uygulamak başka."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Fıkıh okurken"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Fıkıh başka türlü<br>okunur."
+          vo: "Fıkıh metinleri diğer ilimlerden başka türlü okunur."
+        - type: point
+          tr: "Çünkü okunan şey amele bağlanır."
+          vo: "Çünkü burada okunan şey doğrudan amele bağlanır."
+        - type: cta
+          tr: "Beş tavsiye gönderide"
+          vo: "Beş tavsiyenin tamamı bugünkü gönderide."
+  # ═══════════════════════════════ 111 ═════════════════════════════
+  - day: 111
+    title: "Deliller: kitap, sünnet, icmâ, kıyas"
+    post:
+      tags: ["#ilimyolu", "#klasikmetin", "#talebe"]
+      kind: video
+      caption: |
+        "Bu hüküm nereden çıktı?" sorusunun cevabı usûl-i fıkıhtadır.
+
+        Cumhura göre aslî deliller dörttür: Kitap, sünnet, icmâ ve kıyas.
+        İlk ikisi naklî, üçüncüsü ümmetin ittifakı, dördüncüsü ise
+        nassta bulunmayan meseleyi bulunan bir meseleye benzetmektir.
+
+        Bu dördü bilinmeden fıkıh metinlerindeki "delili şudur" ifadeleri
+        havada kalır.
+      scenes:
+        - type: hook
+          kicker: "USÛL"
+          tr: "“Bu hüküm<br>nereden çıktı?”"
+          vo: "Bu hüküm nereden çıktı? Sorunun cevabı usûl-i fıkıhtadır."
+        - type: list
+          kicker: "DÖRT ASLÎ DELİL"
+          tr: "Cumhurun kabulü"
+          items:
+            - "Kitap — Kur'ân-ı Kerîm"
+            - "Sünnet — Peygamberin söz, fiil ve takriri"
+            - "İcmâ — ümmetin ittifakı"
+            - "Kıyas — benzetme yoluyla hüküm"
+          vo: "Kitap, yani Kur'ân-ı Kerîm. Sünnet, yani Peygamberin söz, fiil ve takriri. İcmâ, yani ümmetin ittifakı. Kıyas, yani benzetme yoluyla hüküm."
+        - type: point
+          kicker: "KIYAS NEDİR"
+          tr: "Nassta olmayanı, olana benzetmek."
+          body: "Ortak illet varsa hüküm de ortak olur."
+          vo: "Kıyas, hakkında nass bulunmayan meseleyi bulunan bir meseleye benzetmektir. Aradaki ortak illet varsa hüküm de ortak olur."
+        - type: point
+          kicker: "NİÇİN GEREKLİ"
+          tr: "Metindeki “delili şudur” ifadeleri."
+          body: "Dördü bilinmeden havada kalır."
+          vo: "Fıkıh metinlerindeki delili şudur ifadeleri, bu dördü bilinmeden havada kalır."
+        - type: point
+          kicker: "SIRA"
+          tr: "Önce fıkıh, sonra usûl."
+          body: "Klasik usul meseleyi görmeden yöntemi anlatmaz."
+          vo: "Klasik usulde önce fıkıh okunur, sonra usûl. Meseleyi görmeden yöntem anlatılmaz."
+        - type: cta
+          tr: "Hüküm ile delili birbirine bağla."
+          body: "Fıkhı ezberden çıkaran bağ budur."
+          vo: "Hüküm ile delilini birbirine bağla. Fıkhı ezberden çıkaran bağ budur."
+    story:
+      kind: video
+      caption: "Dört delil"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Hüküm nereden<br>çıkarılır?"
+          vo: "Fıkhî hüküm nereden çıkarılır?"
+        - type: list
+          tr: "Dört aslî delil"
+          items: ["Kitap", "Sünnet", "İcmâ", "Kıyas"]
+          vo: "Dört aslî delil: Kitap, sünnet, icmâ, kıyas."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 112 ═════════════════════════════
+  - day: 112
+    title: "Asırlık fıkıh metni + Mültekâ"
+    post:
+      tags: ["#klasikmetin", "#arapçakitap", "#ilimyolu"]
+      kind: video
+      book_line: "Mültekâ'l-Ebhur"
+      caption: |
+        Bir metnin asırlarca okutulması tesadüf değildir. Mültekâ'l-Ebhur
+        Osmanlı medreselerinde Hanefî fıkhının ana metinlerinden biri oldu;
+        kadılar ona göre hüküm verdi, talebeler onu ezberledi.
+
+        Sebebi derli toplu olması: dağınık mesele yığını yerine
+        düzenli bir çerçeve sunar. Kısadır ama eksik değildir.
+
+        Üzerine yazılan şerhler de bu yüzden çoğaldı.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Bir metin niçin<br>asırlarca okutulur?"
+          vo: "Bir metnin asırlarca okutulması tesadüf değildir. Sebebi nedir?"
+        - type: concept
+          kicker: "METİN"
+          ar: "مُلْتَقَى الْأَبْحُر"
+          translit: "Mültekâ'l-Ebhur"
+          tr: "İbrâhim Halebî'nin fıkıh metni."
+          vo: "مُلْتَقَى الْأَبْحُر. İbrâhim Halebî'nin Hanefî fıkhı metni."
+        - type: point
+          kicker: "YERİ"
+          tr: "Osmanlı medreselerinin ana metinlerinden."
+          body: "Kadılar ona göre hüküm verdi."
+          vo: "Osmanlı medreselerinde Hanefî fıkhının ana metinlerinden biri oldu. Kadılar ona göre hüküm verdi. Bir metnin mahkemede dayanak olması, güvenilirliğinin ölçüsüdür."
+        - type: point
+          kicker: "SEBEBİ"
+          tr: "Derli toplu olması."
+          body: "Dağınık mesele yığını değil, düzenli çerçeve."
+          vo: "Sebebi derli toplu olması. Dağınık mesele yığını yerine düzenli bir çerçeve sunar. Aradığını bulabildiğin kitap, okunan kitaptır."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: multeka
+          vo: "Kısadır ama eksik değildir. Üzerine yazılan şerhler de bu yüzden çoğaldı."
+        - type: cta
+          tr: "Dayanıklı metin, iyi düzenlenmiş metindir."
+          body: "Asırlar bunu seçiyor."
+          vo: "Dayanıklı metin, iyi düzenlenmiş metindir. Asırlar hep bunu seçiyor."
+    story:
+      kind: video
+      caption: "Mültekâ nedir?"
+      scenes:
+        - type: concept
+          ar: "مُلْتَقَى الْأَبْحُر"
+          tr: "Hanefî fıkhının ana metinlerinden."
+          vo: "مُلْتَقَى الْأَبْحُر. Hanefî fıkhının ana metinlerinden biri."
+        - type: point
+          tr: "Osmanlı medreselerinde asırlarca okutuldu."
+          vo: "Osmanlı medreselerinde asırlarca okutuldu."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 113 ═════════════════════════════
+  - day: 113
+    title: "Hanefî fıkhının metin zinciri"
+    post:
+      tags: ["#klasikmetin", "#ilimyolu", "#medreseusulü"]
+      kind: carousel
+      caption: |
+        Fıkıhta da sarf ve nahivde olduğu gibi bir sıra var. Metinler
+        birbirinin üstüne biner; atlayan talebe sonrakinde tutunamaz.
+
+        Giriş metniyle başlanır, orta seviye metinle devam edilir,
+        sonra şerhli büyük metinlere geçilir. Her basamak bir öncekinin
+        kavramlarını varsayar.
+
+        Sırayı bilmek, kütüphanede doğru kitabı seçmeyi kolaylaştırır.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Hangi metinden sonra<br>hangisi?"
+          dur: 3.4
+        - type: concept
+          kicker: "1 · GİRİŞ"
+          ar: "نُورُ الْإِيضَاح"
+          tr: "İbadet bahisleri, sade dil."
+          body: "Çerçeve kurulur."
+          dur: 3.8
+        - type: concept
+          kicker: "2 · ŞERHİ"
+          ar: "مَرَاقِي الْفَلَاح"
+          tr: "Aynı metnin açıklaması."
+          body: "Hükmün sebebi görünür."
+          dur: 3.8
+        - type: concept
+          kicker: "3 · ORTA METİN"
+          ar: "مُلْتَقَى الْأَبْحُر"
+          tr: "Bütün bahisler, düzenli çerçeve."
+          dur: 3.8
+        - type: concept
+          kicker: "4 · BÜYÜK ŞERH"
+          ar: "مَجْمَعُ الْأَنْهُر"
+          tr: "Mültekâ'nın geniş şerhi."
+          body: "İleri seviye."
+          dur: 3.8
+        - type: cta
+          tr: "Sırayı bil, kitabı seç."
+          body: "Atlayan sonrakinde tutunamaz."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Fıkıhta sıra"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Fıkıhta hangi metinden<br>sonra hangisi?"
+          vo: "Fıkıhta hangi metinden sonra hangisi okunur?"
+        - type: point
+          tr: "Giriş → şerhi → orta metin → büyük şerh"
+          vo: "Önce giriş metni, sonra şerhi, sonra orta metin, sonra büyük şerh."
+        - type: cta
+          tr: "Zincir gönderide"
+          vo: "Zincirin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 114 ═════════════════════════════
+  - day: 114
+    title: "Ders okumak ile fetva sormak"
+    post:
+      tags: ["#talebe", "#medreseusulü", "#ilimyolu"]
+      kind: video
+      caption: |
+        Fıkıh okuyan talebe bir süre sonra kendini soruları cevaplarken
+        bulur. Oysa ders okumak ile fetva vermek aynı şey değildir.
+
+        Derste mesele soyut olarak öğrenilir: şartlarıyla, istisnalarıyla.
+        Fetvada ise somut bir durum vardır — kişi, zaman, şartlar.
+        Aynı hüküm iki farklı durumda farklı sonuç verebilir.
+
+        Talebenin işi öğrenmektir. Sormak isteyeni ehline yönlendirmek de
+        ilmin edebindendir.
+      scenes:
+        - type: hook
+          kicker: "TALEBE"
+          tr: "Fıkıh okuyorsun.<br>Soru soruyorlar."
+          vo: "Fıkıh okumaya başladın ve etrafın sana soru sormaya başladı."
+        - type: compare
+          kicker: "İKİ AYRI İŞ"
+          tr: "Aynı bilgi, farklı iş."
+          left:  {title: "Ders", text: "Mesele soyut öğrenilir. Şartlar ve istisnalarla."}
+          right: {title: "Fetva", text: "Somut durum vardır. Kişi, zaman, şartlar."}
+          vo: "Derste mesele soyut olarak öğrenilir. Fetvada ise somut bir durum vardır: kişi, zaman, şartlar."
+        - type: point
+          kicker: "FARK NEREDE"
+          tr: "Aynı hüküm, farklı sonuç verebilir."
+          body: "Şartı değişen meselenin cevabı da değişir."
+          vo: "Aynı hüküm iki farklı durumda farklı sonuç verebilir. Şartı değişen meselenin cevabı da değişir. Bu yüzden fetva, meseleyi bilen kadar durumu da bilmeyi gerektirir."
+        - type: point
+          kicker: "TALEBENİN İŞİ"
+          tr: "Öğrenmek."
+          body: "Bildiğini aktarmak ayrı, hüküm vermek ayrı."
+          vo: "Talebenin işi öğrenmektir. Bildiğini aktarmak ayrı şey, hüküm vermek ayrı şeydir."
+        - type: point
+          kicker: "EDEP"
+          tr: "Bilmediğine “bilmiyorum” demek."
+          body: "Ehline yönlendirmek de ilmin edebindendir."
+          vo: "Bilmediğine bilmiyorum demek ve soranı ehline yönlendirmek de ilmin edebindendir."
+        - type: cta
+          tr: "Önce öğren."
+          body: "Acele eden kendini de soranı da yorar."
+          vo: "Önce öğren. Acele eden hem kendini hem soranı yorar."
+    story:
+      kind: video
+      caption: "Ders mi, fetva mı?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Okumak ile hüküm vermek<br>aynı şey mi?"
+          vo: "Fıkıh okumak ile hüküm vermek aynı şey mi?"
+        - type: point
+          tr: "Derste mesele soyut, fetvada somut."
+          vo: "Derste mesele soyuttur, fetvada somut bir durum vardır."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 115 ═════════════════════════════
+  - day: 115
+    title: "Kudûrî ve şerhleri + el-Lübâb"
+    post:
+      tags: ["#klasikmetin", "#arapçakitap", "#ilimyolu"]
+      kind: video
+      book_line: "el-Lübâb fî Şerhi'l-Kitâb"
+      caption: |
+        Hanefî fıkhında "el-Kitâb" denince akla tek bir eser gelir:
+        Kudûrî'nin Muhtasar'ı. Asırlarca medresede okutuldu, üzerine
+        onlarca şerh yazıldı.
+
+        el-Lübâb bu şerhlerin en çok okunanlarından biridir. Meydânî,
+        metni satır satır takip eder; hükmü verir, delilini gösterir,
+        ihtilafı belirtir.
+
+        Metin ezberlenir, şerh okunur. Bu ikisi birlikte Hanefî fıkhının
+        omurgasını kurar.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Hanefîde “el-Kitâb”<br>denince ne anlaşılır?"
+          vo: "Hanefî fıkhında el-Kitâb denince hangi eser anlaşılır?"
+        - type: concept
+          kicker: "CEVAP"
+          ar: "مُخْتَصَرُ الْقُدُورِي"
+          translit: "Kudûrî Muhtasarı"
+          tr: "Asırlarca okutulan fıkıh metni."
+          vo: "مُخْتَصَرُ الْقُدُورِي. Asırlarca medresede okutulan Hanefî fıkıh metni."
+        - type: point
+          kicker: "ŞERHLERİ"
+          tr: "Üzerine onlarca şerh yazıldı."
+          body: "Her biri metni başka bir açıdan açar."
+          vo: "Üzerine onlarca şerh yazıldı. Her biri metni başka bir açıdan açar. Bir metnin şerh sayısı, medresedeki yerini de gösterir."
+        - type: list
+          kicker: "ŞERH NE YAPAR"
+          tr: "Satır satır takip eder"
+          items:
+            - "Hükmü verir"
+            - "Delilini gösterir"
+            - "İhtilafı belirtir"
+          vo: "Şerh metni satır satır takip eder. Hükmü verir, delilini gösterir, ihtilafı belirtir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: el-lubab
+          vo: "اَللُّبَاب فِي شَرْحِ الْكِتَاب. Meydânî'nin Kudûrî şerhi, deri ve iki cilt takım olarak."
+        - type: cta
+          tr: "Metin ezber, şerh ders."
+          body: "İkisi Hanefî fıkhının omurgasını kurar."
+          vo: "Metin ezberlenir, şerh derste okunur. İkisi birlikte Hanefî fıkhının omurgasını kurar."
+    story:
+      kind: video
+      caption: "Kudûrî nedir?"
+      scenes:
+        - type: concept
+          ar: "مُخْتَصَرُ الْقُدُورِي"
+          tr: "Hanefîde “el-Kitâb”."
+          vo: "مُخْتَصَرُ الْقُدُورِي. Hanefî fıkhında el-Kitâb denince anlaşılan eser."
+        - type: point
+          tr: "Üzerine onlarca şerh yazıldı."
+          vo: "Üzerine onlarca şerh yazıldı."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 116 ═════════════════════════════
+  - day: 116
+    title: "İlmihal okumak yeterli mi?"
+    post:
+      tags: ["#talebe", "#ilimyolu", "#medreseusulü"]
+      kind: carousel
+      caption: |
+        İlmihal, müslümanın bilmesi gereken amelî bilgileri derli toplu
+        verir. Faydalıdır ve herkese lazımdır.
+
+        Ama ilmihal fıkıh öğretmez; fıkhın sonucunu aktarır. Delili
+        yoktur, ihtilafı göstermez, şartın niçin şart olduğunu söylemez.
+
+        İkisi farklı amaçlara hizmet eder: ilmihal amel içindir,
+        fıkıh metni ilim içindir. Biri diğerinin yerine geçmez.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "İlmihal okudum.<br>Fıkıh öğrendim mi?"
+          dur: 3.6
+        - type: compare
+          kicker: "İKİ AYRI AMAÇ"
+          tr: "İkisi de gerekli, ama aynı değil."
+          left:  {title: "İlmihal", text: "Amel için. Ne yapılacağını söyler."}
+          right: {title: "Fıkıh metni", text: "İlim için. Niçin öyle olduğunu gösterir."}
+          dur: 4.4
+        - type: list
+          kicker: "İLMİHALDE OLMAYAN"
+          tr: "Üç şey"
+          items:
+            - "Delil — hüküm nereden çıktı"
+            - "İhtilaf — başka görüş var mı"
+            - "Şartın sebebi — niçin şart"
+          dur: 4.4
+        - type: point
+          kicker: "YANLIŞ ANLAMA"
+          tr: "İlmihal eksik bir kitap değildir."
+          body: "Başka bir iş için yazılmıştır."
+          dur: 3.8
+        - type: point
+          kicker: "SIRALAMA"
+          tr: "Önce ilmihal, sonra metin."
+          body: "Amel bekleyemez, ilim zamanla gelir."
+          dur: 3.8
+        - type: cta
+          tr: "İkisi de lazım."
+          body: "Biri diğerinin yerine geçmez."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "İlmihal yeterli mi?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "İlmihal okudum.<br>Fıkıh öğrendim mi?"
+          vo: "İlmihal okudum, fıkıh öğrendim mi?"
+        - type: point
+          tr: "İlmihal amel için, fıkıh metni ilim için."
+          vo: "İlmihal amel içindir, fıkıh metni ilim için. İkisi de lazım."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 117 ═════════════════════════════
+  - day: 117
+    title: "Muâmelât: ibadetten sonrası"
+    post:
+      tags: ["#ilimyolu", "#klasikmetin", "#talebe"]
+      kind: video
+      caption: |
+        Fıkıh ibadetle başlar ama orada bitmez. Metinlerin yarısından
+        fazlası insanlar arası ilişkilere ayrılmıştır: alışveriş,
+        kira, ortaklık, borç, vekâlet, miras.
+
+        Bu bahislere muâmelât denir. İbadet bahisleri kişi ile Rabbi
+        arasındadır; muâmelât ise kişi ile diğer insanlar arasında.
+
+        Klasik fıkıh kitaplarının kalınlığının sebebi çoğunlukla buradadır.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Fıkıh ibadetle başlar.<br>Peki nerede biter?"
+          vo: "Fıkıh ibadetle başlar. Peki nerede biter?"
+        - type: concept
+          kicker: "İKİNCİ YARI"
+          ar: "اَلْمُعَامَلَات"
+          translit: "el-muâmelât"
+          tr: "İnsanlar arası ilişkiler."
+          vo: "اَلْمُعَامَلَات. İnsanlar arasındaki ilişkileri düzenleyen bahisler."
+        - type: list
+          kicker: "NELER VAR"
+          tr: "Metinlerin yarısından fazlası"
+          items:
+            - "Alışveriş, kira, ortaklık"
+            - "Borç, rehin, vekâlet"
+            - "Nikâh, miras, vakıf"
+          vo: "Alışveriş, kira, ortaklık. Borç, rehin, vekâlet. Nikâh, miras, vakıf."
+        - type: compare
+          kicker: "FARK"
+          tr: "İki bahis, iki alan."
+          left:  {title: "İbadât", text: "Kişi ile Rabbi arasında."}
+          right: {title: "Muâmelât", text: "Kişi ile diğer insanlar arasında."}
+          vo: "İbadet bahisleri kişi ile Rabbi arasındadır. Muâmelât ise kişi ile diğer insanlar arasında."
+        - type: point
+          kicker: "NİÇİN KALIN"
+          tr: "Klasik fıkıh kitaplarının hacmi buradan gelir."
+          body: "İnsan ilişkileri çeşitlidir, mesele çoktur."
+          vo: "Klasik fıkıh kitaplarının kalınlığının sebebi çoğunlukla burasıdır. İnsan ilişkileri çeşitlidir, mesele çoktur."
+        - type: cta
+          tr: "İbadeti bitirdin mi?"
+          body: "Asıl hacim bundan sonra başlıyor."
+          vo: "İbadet bahislerini bitirdiysen, asıl hacim bundan sonra başlıyor."
+    story:
+      kind: video
+      caption: "Muâmelât nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْمُعَامَلَات"
+          translit: "el-muâmelât"
+          tr: "İnsanlar arası ilişkiler."
+          vo: "اَلْمُعَامَلَات. İnsanlar arasındaki ilişkileri düzenleyen fıkıh bahisleri."
+        - type: point
+          tr: "Metinlerin yarısından fazlası."
+          vo: "Klasik fıkıh metinlerinin yarısından fazlası bu bahislere ayrılmıştır."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 118 ═════════════════════════════
+  - day: 118
+    title: "Büyük şerh ne işe yarar? + Mecmau'l-Enhur"
+    post:
+      tags: ["#klasikmetin", "#arapçakitap", "#ilimyolu"]
+      kind: video
+      book_line: "Mecmau'l-Enhur"
+      caption: |
+        Küçük şerh metni açar. Büyük şerh ise metnin etrafındaki bütün
+        tartışmayı toplar: hangi imam ne demiş, hangi görüş tercih edilmiş,
+        hangi mesele nereye bağlanmış.
+
+        Mecmau'l-Enhur, Mültekâ'nın bu türden şerhidir. Artık amaç
+        hükmü öğrenmek değil, hükmün nasıl kurulduğunu görmektir.
+
+        Bu seviyeye gelen talebe kitabı okumaz, kitapla çalışır.
+      scenes:
+        - type: hook
+          kicker: "FIKIH"
+          tr: "Küçük şerh açar.<br>Büyük şerh ne yapar?"
+          vo: "Küçük şerh metni açar. Peki büyük şerh ne yapar?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Etrafındaki bütün tartışmayı toplar."
+          body: "Hangi imam ne demiş, hangi görüş tercih edilmiş."
+          vo: "Metnin etrafındaki bütün tartışmayı toplar. Hangi imam ne demiş, hangi görüş tercih edilmiş, mesele nereye bağlanmış."
+        - type: point
+          kicker: "AMAÇ DEĞİŞİR"
+          tr: "Artık hükmü öğrenmiyorsun."
+          body: "Hükmün nasıl kurulduğunu görüyorsun."
+          vo: "Bu seviyede amaç değişir. Artık hükmü öğrenmiyorsun, hükmün nasıl kurulduğunu görüyorsun."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: mecmaul-enhur
+          vo: "مَجْمَعُ الْأَنْهُر. Şeyhîzâde'nin Mültekâ şerhi."
+        - type: point
+          kicker: "NASIL OKUNUR"
+          tr: "Baştan sona okunmaz."
+          body: "Bahis bahis açılır, not alınır, geri dönülür."
+          vo: "Büyük şerh baştan sona okunmaz. Bahis bahis açılır, not alınır, geri dönülür. Yıllara yayılan bir çalışma kitabıdır."
+        - type: cta
+          tr: "Kitabı okumuyorsun, kitapla çalışıyorsun."
+          body: "Bu seviyenin işareti budur."
+          vo: "Bu seviyeye gelen talebe kitabı okumaz, kitapla çalışır. Seviyenin işareti budur."
+    story:
+      kind: video
+      caption: "Büyük şerh"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Büyük şerh<br>ne işe yarar?"
+          vo: "Büyük şerh ne işe yarar?"
+        - type: point
+          tr: "Metnin etrafındaki tartışmayı toplar."
+          vo: "Metnin etrafındaki bütün tartışmayı toplar."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 119 ═════════════════════════════
+  - day: 119
+    title: "4. ayda ne öğrendik"
+    post:
+      tags: ["#belagat", "#ilimyolu", "#klasikmetin"]
+      kind: carousel
+      caption: |
+        Bu ay belâgatı tamamladık ve fıkha girdik.
+
+        Belâgat tarafında meânînin bahislerini gördük: haber-inşâ, kasr,
+        îcâz-itnâb, fasl-vasl. Bedî' sanatlarına baktık, i'câz meselesini
+        konuştuk.
+
+        Fıkıh tarafında ise çerçeveyi kurduk: ilmin tarifi, mezhep,
+        ıstılahlar, deliller, metin zinciri ve okuma usulü.
+
+        Kaydet, arada dön bak.
+      scenes:
+        - type: hook
+          kicker: "4. AY"
+          tr: "91-120 arası"
+          body: "Belâgat bitti, fıkıh başladı."
+          dur: 3.4
+        - type: list
+          kicker: "MEÂNÎ"
+          tr: "Sözü duruma uydurmak"
+          items:
+            - "Haber ve inşâ cümlesi"
+            - "Kasr — hükmü hasretmek"
+            - "Îcâz, itnâb, müsâvât · fasl ve vasl"
+          dur: 4.4
+        - type: list
+          kicker: "BEDÎ' VE İ'CÂZ"
+          tr: "Söze süs, manaya kuvvet"
+          items:
+            - "Tıbâk, cinâs, seci'"
+            - "Alâka ve mecâzın mantığı"
+            - "Belâgatın i'câzla ilişkisi"
+          dur: 4.4
+        - type: list
+          kicker: "FIKHA GİRİŞ"
+          tr: "Çerçeve kuruldu"
+          items:
+            - "Fıkıh ve usûl-i fıkıh farkı"
+            - "Mezhep, ıstılahlar, dört delil"
+            - "Metin, şerh, hâşiye, fetva"
+          dur: 4.4
+        - type: list
+          kicker: "USUL"
+          tr: "Nasıl okunur"
+          items:
+            - "Taharet niçin önce gelir"
+            - "Ders ile fetva arasındaki fark"
+            - "İlmihal ile fıkıh metni ayrımı"
+          dur: 4.4
+        - type: cta
+          tr: "Yarın 5. ay."
+          body: "Akaid, hadis ve tefsire giriyoruz."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "4. ayın özeti"
+      scenes:
+        - type: hook
+          kicker: "4. AY"
+          tr: "91-120 arası bitti."
+          vo: "Dördüncü ay tamamlandı."
+        - type: list
+          tr: "İki başlık"
+          items: ["Belâgatın tamamlanması", "Fıkha giriş"]
+          vo: "İki başlık: belâgatın tamamlanması ve fıkha giriş."
+        - type: cta
+          tr: "Özet gönderide"
+          vo: "Özetin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 120 ═════════════════════════════
+  - day: 120
+    title: "Bir ilimden diğerine geçerken"
+    post:
+      tags: ["#ilimyolu", "#medreseusulü", "#talebe"]
+      kind: video
+      caption: |
+        Sarf bitti, nahiv bitti, belâgat bitti, fıkha girdik. Peki
+        bitenler gerçekten bitti mi?
+
+        Klasik usulde alet ilimleri bırakılmaz, kullanılmaya başlanır.
+        Fıkıh metnini okurken nahiv çalışırsın; bir hükmün niçin öyle
+        kurulduğunu anlarken belâgat devreye girer.
+
+        Yeni ilme geçmek, eskisini rafa kaldırmak değildir. Aksine,
+        eskisi ancak yeni ilimde işe yarayınca yerine oturur.
+      scenes:
+        - type: hook
+          kicker: "USUL"
+          tr: "Alet ilimleri bitti mi,<br>rafa mı kalkıyor?"
+          vo: "Sarf bitti, nahiv bitti. Peki bu ilimler rafa mı kalkıyor?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Hayır. Kullanılmaya başlıyor."
+          body: "Alet, kullanıldığı yerde anlam kazanır."
+          vo: "Hayır. Kullanılmaya başlıyor. Alet, kullanıldığı yerde anlam kazanır."
+        - type: list
+          kicker: "NEREDE ÇALIŞIR"
+          tr: "Fıkıh metnini okurken"
+          items:
+            - "Nahiv — cümleyi çözmek için"
+            - "Sarf — kelimenin kökünü bulmak için"
+            - "Belâgat — ifadenin inceliğini görmek için"
+          vo: "Fıkıh metnini okurken nahiv cümleyi çözer, sarf kelimenin kökünü bulur, belâgat ifadenin inceliğini gösterir."
+        - type: point
+          kicker: "İŞARET"
+          tr: "Alet ilmi ancak burada oturur."
+          body: "Boşlukta öğrenilen kaide, metinde kalıcı olur."
+          vo: "Alet ilmi ancak burada yerine oturur. Boşlukta öğrenilen kaide, metinde kullanılınca kalıcı olur."
+        - type: point
+          kicker: "TEKRAR"
+          tr: "Eski metinlere ara ara dön."
+          body: "Unutmamak için değil, başka gözle görmek için."
+          vo: "Eski metinlere ara ara dön. Unutmamak için değil, aynı satırı başka bir gözle görmek için."
+        - type: cta
+          tr: "Hiçbir basamak geride kalmaz."
+          body: "Hepsi sonrakinde çalışır."
+          vo: "Hiçbir basamak geride kalmaz. Hepsi bir sonrakinde çalışmaya devam eder."
+    story:
+      kind: video
+      caption: "Alet ilimleri bitti mi?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Sarf ve nahiv<br>rafa mı kalkıyor?"
+          vo: "Sarf ve nahiv bitince rafa mı kalkıyor?"
+        - type: point
+          tr: "Hayır — kullanılmaya başlıyor."
+          vo: "Hayır. Asıl şimdi kullanılmaya başlıyor."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
