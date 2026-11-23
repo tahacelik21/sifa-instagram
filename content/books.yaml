@@ -7,6 +7,8 @@ mecmuatus-sarf:
   subtitle: "el-Emsile · el-Binâ · el-Maksûd · el-İzzî"   # kapaktan okundu
   url: "https://www.sifayayinevi.com.tr/mjmw-t-alsrf-mecmuatus-sarf-arapca"
   meta: ["272 sayfa", "Sert kapak, dikişli", "Şamua kâğıt", "16,5 × 23,5"]
+  variants:
+    - "https://www.sifayayinevi.com.tr/mecmuatus-sarf-karton"
   note: "Eski nüshaya sadık yeni dizgi · haşiyeli · harekeli"
 
 mecmuatun-nahiv:
@@ -14,6 +16,8 @@ mecmuatun-nahiv:
   title_tr: "Mecmûatü'n-Nahiv"
   subtitle: "Yeni dizgi · Arapça"
   url: "https://www.sifayayinevi.com.tr/mjmw-t-alnhw-mecmuatun-nahiv-yeni-dizgi-arapca"
+  variants:
+    - "https://www.sifayayinevi.com.tr/mecmuatun-nahiv-karton-kapak"
   meta: ["Yeni dizgi", "Arapça"]
   note: "Nahiv yolculuğunun ana güzergâhı"
 
@@ -112,3 +116,395 @@ sarf-nahiv-set:
   url: "https://www.sifayayinevi.com.tr/mecmuatus-sarf-mecmuatun-nahiv-set"
   meta: ["Set", "Sert kapak"]
   note: "Sarf ve nahvi aynı rafta tamamlamak"
+
+# ─────────────────────────────────────────────────────────────────────
+# Siteden alınan Şifa Yayınevi markalı ürünlerin tamamı (74 ürün).
+# Varyantlar (karton/deri/boy farkı) tek kayıtta toplandı, varyant
+# bağlantıları `variants` altında duruyor.
+# Kaynak: sifayayinevi.com.tr → Yayınevleri → Şifa Yayınevi
+# ─────────────────────────────────────────────────────────────────────
+
+# ---- Sarf ----
+suruhul-bina:
+  title: "شروح البناء"
+  title_tr: "Şürûhu'l-Binâ"
+  subtitle: "Dört risâle bir arada"
+  url: "https://www.sifayayinevi.com.tr/shrwh-albna-suruhul-bina-arapca"
+  meta: ["Arapça", "Dört risâle"]
+  note: "el-Binâ metninin şerhleri"
+
+izzi-teftazani:
+  title: "شرح التفتازاني على تصريف الزنجاني"
+  title_tr: "Şerhu't-Teftâzânî ale't-Tasrîfi'z-Zencânî"
+  subtitle: "el-İzzî üzerine Teftâzânî şerhi"
+  url: "https://www.sifayayinevi.com.tr/serhut-teftazani-ala-tasrifiz-zencani-el-marufi-bil-izzi"
+  meta: ["Arapça", "Şerh"]
+  note: "Sarfta klasik şerh"
+
+sarf-seti:
+  title: "شروح الصرف"
+  title_tr: "Şürûhu's-Sarf Seti"
+  subtitle: "Sarf şerhleri bir arada"
+  url: "https://www.sifayayinevi.com.tr/suruhus-sarf-seti"
+  meta: ["Set", "Arapça"]
+  note: "Sarf şerhlerinin takımı"
+
+# ---- Nahiv ----
+avamilan:
+  title: "عواملان البركوي والجرجاني"
+  title_tr: "Avâmilân"
+  subtitle: "Birgivî ve Cürcânî'nin Avâmil'i bir arada"
+  url: "https://www.sifayayinevi.com.tr/wamlan-albrkwy-waljrjany-avamilan-arapca"
+  meta: ["Arapça", "İki metin"]
+  note: "Nahvin ilk basamağı"
+
+avamil-semasi:
+  title: "شجرة العوامل"
+  title_tr: "Avâmil Şeması"
+  subtitle: "Âmiller tek sayfada"
+  url: "https://www.sifayayinevi.com.tr/avamil-semasi"
+  meta: ["Şema", "Duvar / masa boyu"]
+  note: "Ezber için görsel harita"
+
+metin-kavaidul-irab:
+  title: "الإعراب عن قواعد الإعراب"
+  title_tr: "Metn-i Kavâidü'l-İ'râb"
+  subtitle: "İbn Hişâm · şerhsiz metin"
+  url: "https://www.sifayayinevi.com.tr/ala-rab-n-qwa-d-ala-rab-metni-kavaidul-irab"
+  meta: ["Arapça", "Metin"]
+  note: "Ezber için sade metin"
+
+katrun-neda:
+  title: "شرح قطر الندى وبل الصدى"
+  title_tr: "Şerhu Katri'n-Nedâ ve Belli's-Sadâ"
+  subtitle: "İbn Hişâm'ın kendi şerhi"
+  url: "https://www.sifayayinevi.com.tr/shrh-qtr-alndy-wbl-alsdy-serhu-katri-n-neda-ve-belli-s-sada"
+  meta: ["Arapça", "Müellif şerhi"]
+  note: "Nahivde orta seviye metin"
+
+es-sami-cami:
+  title: "السامي شرح أبيات الجامي"
+  title_tr: "es-Sâmî Şerhu Ebyâti'l-Câmî"
+  subtitle: "Molla Câmî'deki beyitlerin şerhi"
+  url: "https://www.sifayayinevi.com.tr/es-sami-serhu-ebyati-l-cami"
+  meta: ["Arapça", "Şerh"]
+  note: "Câmî okuyanın yanındaki kitap"
+
+rabtus-sevarid:
+  title: "ربط الشوارد في حل الشواهد"
+  title_tr: "Rabtü'ş-Şevârid fî Halli'ş-Şevâhid"
+  subtitle: "Nahiv şâhidlerinin çözümü"
+  url: "https://www.sifayayinevi.com.tr/rbt-alshward-fy-hl-alshwahd-rabtu-s-sevarid-fi-hali-s-sevahid"
+  meta: ["Arapça", "Şâhid şerhi"]
+  note: "Metinlerde geçen beyitleri açar"
+
+zuruf-ve-terkib:
+  title: "الظروف والتراكيب"
+  title_tr: "Zurûf ve Terkîb"
+  subtitle: "Zarflar ve terkipler"
+  url: "https://www.sifayayinevi.com.tr/alzrwf-waltrakyb-zuruf-ve-terkib-arapca"
+  meta: ["Arapça", "Risâle"]
+  note: "Cümle kurmaya yardımcı küçük metin"
+
+tuhfe-tercume:
+  title: "التحفة السنية"
+  title_tr: "Tuhfetü's-Seniyye Tercümesi"
+  subtitle: "Âcurrûmiyye şerhinin Türkçesi"
+  url: "https://www.sifayayinevi.com.tr/et-tuhfetu-s-seniyye-tercumesi"
+  meta: ["Türkçe", "Tercüme"]
+  note: "Arapçası yetmeyen talebe için"
+
+ucaletur-rahmiyye:
+  title: "العجالة الرحمية شرح الرسالة الوضعية"
+  title_tr: "el-Ucâletü'r-Rahmiyye"
+  subtitle: "Risâle-i Vaz'iyye şerhi"
+  url: "https://www.sifayayinevi.com.tr/el-ucaletu-r-rahmiyye-serhu-r-risaletil-vaziyye"
+  meta: ["Arapça", "Vaz' ilmi"]
+  note: "Lafız-mana ilişkisinin ilmi"
+
+# ---- Belâgat ----
+muhtasarul-meani:
+  title: "مختصر المعاني"
+  title_tr: "Muhtasarü'l-Meânî"
+  subtitle: "Teftâzânî · Telhîs şerhi"
+  url: "https://www.sifayayinevi.com.tr/mkhtsr-alm-any-muhtasarul-meani-arapca"
+  meta: ["Arapça", "Şerh"]
+  note: "Belâgatta medrese metni"
+
+belagatul-vadiha:
+  title: "البلاغة الواضحة"
+  title_tr: "el-Belâgatü'l-Vâdıha"
+  subtitle: "Ali Cârim · alıştırmalı belâgat"
+  url: "https://www.sifayayinevi.com.tr/alblaght-alwadht-el-belagatul-vadiha"
+  meta: ["Arapça", "Alıştırmalı"]
+  note: "Belâgate modern giriş"
+
+safahat-belagat:
+  title: "صفحات في البلاغة"
+  title_tr: "Safahât fi'l-Belâga"
+  subtitle: "Dâvûd Süleymân"
+  url: "https://www.sifayayinevi.com.tr/sfhat-fy-alblaght-safahat-fil-belagat-arapca"
+  meta: ["Arapça", "Giriş"]
+  note: "Kısa ve derli toplu"
+
+suruhul-alaka:
+  title: "شروح العلاقة في علوم البلاغة"
+  title_tr: "Şürûhu'l-Alâka fî Ulûmi'l-Belâga"
+  subtitle: "Mahmûd el-Antâkî"
+  url: "https://www.sifayayinevi.com.tr/suruhu-l-alaka-fi-ulumi-l-belaga"
+  meta: ["Arapça", "Şerh"]
+  note: "Belâgat ilimleri üzerine"
+
+# ---- Fıkıh ----
+mecmaul-enhur:
+  title: "مجمع الأنهر"
+  title_tr: "Mecmau'l-Enhur"
+  subtitle: "Şeyhîzâde (Dâmâd) · Mülteka şerhi"
+  url: "https://www.sifayayinevi.com.tr/mecmau-l-enhur"
+  meta: ["Arapça", "Hanefî fıkhı"]
+  note: "Fıkhın büyük şerhlerinden"
+
+multeka:
+  title: "ملتقى الأبحر"
+  title_tr: "Mültekâ'l-Ebhur"
+  subtitle: "İbrâhim Halebî"
+  url: "https://www.sifayayinevi.com.tr/mltqy-alabhr-multeka-arapca"
+  meta: ["Arapça", "Hanefî fıkhı"]
+  note: "Asırlarca okutulan fıkıh metni"
+
+halebi-sagir:
+  title: "حلبي صغير"
+  title_tr: "Halebî Sagîr"
+  subtitle: "İbrâhim Halebî · namaz fıkhı"
+  url: "https://www.sifayayinevi.com.tr/hlby-sghyr-halebi-sagir-arapca"
+  meta: ["Arapça", "İbadet fıkhı"]
+  note: "Medresede ibadet bahislerinin metni"
+
+el-lubab:
+  title: "اللباب في شرح الكتاب"
+  title_tr: "el-Lübâb fî Şerhi'l-Kitâb"
+  subtitle: "Meydânî · Kudûrî şerhi"
+  url: "https://www.sifayayinevi.com.tr/el-lubab-fi-serh-il-kitap-deri"
+  meta: ["Arapça", "Deri ve 2 cilt takım"]
+  note: "Kudûrî'nin en çok okunan şerhi"
+  variants:
+    - "https://www.sifayayinevi.com.tr/allbab-fy-shrh-alktab-mjldan-el-lubab-2-cilt-takim-arapca"
+
+nurul-izah:
+  title: "المفتاح نور الإيضاح"
+  title_tr: "Nûru'l-Îzâh"
+  subtitle: "Şürünbülâlî · ibadet fıkhı"
+  url: "https://www.sifayayinevi.com.tr/almftah-nwr-alaydah-nurul-izah-arapca"
+  meta: ["Arapça", "İbadet fıkhı"]
+  note: "Fıkha giriş metni"
+
+merakil-felah:
+  title: "مراقي الفلاح"
+  title_tr: "Merâkı'l-Felâh"
+  subtitle: "Nûru'l-Îzâh şerhi"
+  url: "https://www.sifayayinevi.com.tr/mraqy-alflah-merakil-felah-serhu-nurul-izah-arapca"
+  meta: ["Arapça", "Şerh"]
+  note: "Nûru'l-Îzâh'ın yanındaki şerh"
+
+serhul-mugni:
+  title: "شرح المغني"
+  title_tr: "Şerhu'l-Mugnî"
+  subtitle: "Meydânî"
+  url: "https://www.sifayayinevi.com.tr/shrh-almghny-serhul-mugni-arapca"
+  meta: ["Arapça", "Şerh"]
+  note: "Usûl ve fıkıh arası metin"
+
+# ---- Akaid ----
+mutunul-akaid:
+  title: "متون العقائد"
+  title_tr: "Mütûnu'l-Akâid"
+  subtitle: "Akaid metinleri derlemesi"
+  url: "https://www.sifayayinevi.com.tr/mutunul-akaid-arapca"
+  meta: ["Arapça", "Derleme"]
+  note: "Akaidin temel metinleri bir arada"
+
+serhul-akide-tahavi:
+  title: "شرح العقيدة الطحاوية"
+  title_tr: "Şerhu'l-Akîdeti't-Tahâviyye"
+  subtitle: "Meydânî ve Bâbertî şerhleriyle"
+  url: "https://www.sifayayinevi.com.tr/shrh-al-qydt-althawyt-almylany-serhul-akidetut-tahavi-meydani"
+  meta: ["Arapça", "İki ayrı şerh"]
+  note: "Tahâvî akîdesinin şerhleri"
+  variants:
+    - "https://www.sifayayinevi.com.tr/shrh-al-qydt-althawyt-babrty-serhul-akidetut-tahavi-baberti"
+
+# ---- Hadis ----
+sahih-i-muslim:
+  title: "صحيح مسلم"
+  title_tr: "Sahîh-i Müslim"
+  subtitle: "Ahmed Davudoğlu tercüme ve şerhi"
+  url: "https://www.sifayayinevi.com.tr/sahih-i-muslim"
+  meta: ["Türkçe", "Takım"]
+  note: "Kütüb-i Sitte'nin ikinci kitabı"
+
+serhul-erbain:
+  title: "شرح الأربعين النووية"
+  title_tr: "Şerhu'l-Erbaîn"
+  subtitle: "İmam Nevevî · kırk hadis"
+  url: "https://www.sifayayinevi.com.tr/shrh-alarb-yn-alnwwyt-serhul-erbain-40-hadis"
+  meta: ["Arapça", "Kırk hadis"]
+  note: "Hadise başlangıç metni"
+
+riyazus-salihin:
+  title: "رياض الصالحين"
+  title_tr: "Riyâzü's-Sâlihîn"
+  subtitle: "İmam Nevevî"
+  url: "https://www.sifayayinevi.com.tr/ryad-alsalhyn-riyazsuz-salihin-arapca"
+  meta: ["Arapça"]
+  note: "Amel ve ahlâk hadisleri"
+
+usulul-hadis:
+  title: "شرح أصول الحديث"
+  title_tr: "Usûlü'l-Hadîs"
+  subtitle: "İmam Birgivî"
+  url: "https://www.sifayayinevi.com.tr/shrh-aswl-alhdyth-usulu-hadis-arapca"
+  meta: ["Arapça ve Türkçe baskı"]
+  note: "Hadis usûlüne giriş"
+  variants:
+    - "https://www.sifayayinevi.com.tr/usulu-l-hadis"
+
+mumin-gencin-hadis:
+  title: "الحديث للشباب"
+  title_tr: "Mü'min Gencin Hadis Kültürü"
+  subtitle: "Hadis usûlü ve metinleri ışığında"
+  url: "https://www.sifayayinevi.com.tr/hadis-usulu-ve-metinleri-isiginda-mu-min-gencin-hadis-kulturu"
+  meta: ["Türkçe"]
+  note: "Gençler için hadis girişi"
+
+# ---- Tefsir ve Kur'an ----
+tefsir-celaleyn:
+  title: "تفسير الجلالين"
+  title_tr: "Tefsîru'l-Celâleyn"
+  subtitle: "Mahallî ve Süyûtî"
+  url: "https://www.sifayayinevi.com.tr/tfsyr-aljlalyn-tefsiru-celaleyn-arapca"
+  meta: ["Arapça", "Deri ve karton baskı"]
+  note: "Medresede ilk okunan tefsir"
+  variants:
+    - "https://www.sifayayinevi.com.tr/tefsiru-l-celaleyn-deri"
+    - "https://www.sifayayinevi.com.tr/kampanyali-tefsiru-celaleyn-arapca"
+
+kiraat-i-asere:
+  title: "القراءات العشرة"
+  title_tr: "Kırâât-i Aşere Kâideleri"
+  subtitle: "Abdullah Boz"
+  url: "https://www.sifayayinevi.com.tr/alqra-at-al-shrt-kiraat-i-asere-kaideleri"
+  meta: ["Arapça", "Kıraat"]
+  note: "On kıraatin kaideleri"
+
+# ---- Dua, zikir, tasavvuf ----
+el-ezkar:
+  title: "الأذكار"
+  title_tr: "el-Ezkâr"
+  subtitle: "İmam Nevevî · dualar ve zikirler"
+  url: "https://www.sifayayinevi.com.tr/el-ezkar-peygamberimizden-s-a-v-dualar-ve-zikirler"
+  meta: ["Türkçe"]
+  note: "Sünnetten dua ve zikirler"
+
+esmaul-husna-sifa:
+  title: "الأسماء الحسنى"
+  title_tr: "Esmâü'l-Hüsnâ ile Şifa"
+  subtitle: "Esmâ-i hüsnâ üzerine"
+  url: "https://www.sifayayinevi.com.tr/esmaul-husna-ile-sifa"
+  meta: ["Türkçe"]
+  note: "İsimler ve manaları"
+
+tasavvuf-kaideleri:
+  title: "قواعد التصوف"
+  title_tr: "Tasavvuf Kâideleri — Kudsî Nurlar"
+  subtitle: "Tasavvufun esasları"
+  url: "https://www.sifayayinevi.com.tr/tasavvuf-kaideleri-kudsi-nurlar"
+  meta: ["Türkçe"]
+  note: "Usul çerçevesinde tasavvuf"
+
+sohbetler-gaflet:
+  title: "تنبيه الغافلين"
+  title_tr: "Sohbetler — Gafletten Uyanış"
+  subtitle: "Ebü'l-Leys es-Semerkandî"
+  url: "https://www.sifayayinevi.com.tr/sohbetler-gafletten-uyanis"
+  meta: ["Türkçe"]
+  note: "Klasik vaaz ve sohbet kitabı"
+
+# ---- Dil, sözlük, okuma ----
+kamus-i-turki:
+  title: "قاموس تركي"
+  title_tr: "Kâmûs-ı Türkî"
+  subtitle: "Şemseddin Sâmî · renkli yeni dizgi"
+  url: "https://www.sifayayinevi.com.tr/qamws-trky-mqas-kbyr-kamus-i-turki-ogrenciye-ozel-renkli-yeni-dizgi"
+  meta: ["Türkçe", "İki boy"]
+  note: "Osmanlı Türkçesinin temel sözlüğü"
+  variants:
+    - "https://www.sifayayinevi.com.tr/kamus-i-turki-ogrenciye-ozel-renkli-yeni-dizgi"
+
+kisasun-nebiyyin:
+  title: "قصص النبيين"
+  title_tr: "Kısasü'n-Nebiyyîn"
+  subtitle: "Ebü'l-Hasan en-Nedvî"
+  url: "https://www.sifayayinevi.com.tr/qss-alnbyyn-kisasun-nebiyyin-arapca"
+  meta: ["Arapça", "Uygulamalı baskı da var"]
+  note: "Arapça okumaya ilk metin"
+  variants:
+    - "https://www.sifayayinevi.com.tr/arapca-uygulamali-kisasun-nebiyyin-qasasu-alnabiiyna"
+
+# ---- Edep ve genel ----
+talimul-muteallim:
+  title: "تعليم المتعلم"
+  title_tr: "Ta'lîmü'l-Müteallim"
+  subtitle: "Zernûcî · ilim öğrenmenin edebi"
+  url: "https://www.sifayayinevi.com.tr/talimul-muteallim"
+  meta: ["Türkçe"]
+  note: "Talebenin el kitabı"
+
+nebevi-iklim:
+  title: "في المناخ النبوي"
+  title_tr: "Nebevî İklimde İnsan ve Toplum"
+  subtitle: "Dr. Mehmet Turan"
+  url: "https://www.sifayayinevi.com.tr/nebevi-iklimde-insan-ve-toplum"
+  meta: ["Türkçe"]
+  note: "Siyer ve toplum üzerine"
+
+her-anneye-lazim:
+  title: "لكل أم"
+  title_tr: "Her Anneye Lazım"
+  subtitle: "Esma Muratoğlu"
+  url: "https://www.sifayayinevi.com.tr/her-anneye-lazim"
+  meta: ["Türkçe", "Aile"]
+  note: "Anneler için el kitabı"
+
+# ---- Kartela ve tablolar ----
+kartelalar:
+  title: "بطاقات تعليمية"
+  title_tr: "Kartelalar"
+  subtitle: "Dinî bilgiler · zikirler · dualar · tecvid"
+  url: "https://www.sifayayinevi.com.tr/dini-bilgiler-kartela"
+  meta: ["Kartela", "Altı çeşit"]
+  note: "Duvara ve çantaya sığan özet kartlar"
+  variants:
+    - "https://www.sifayayinevi.com.tr/gunluk-zikirler-kartela"
+    - "https://www.sifayayinevi.com.tr/kuran-i-kerimden-dua-ayetleri-kartela"
+    - "https://www.sifayayinevi.com.tr/karabas-tecvidi-kartela"
+    - "https://www.sifayayinevi.com.tr/gunluk-dualar-kartela"
+    - "https://www.sifayayinevi.com.tr/32-54-farz-ve-esma-ul-husna-kartela"
+
+hilye-tablo:
+  title: "حلية شريفة"
+  title_tr: "Hilye-i Şerîf Tablo"
+  subtitle: "Üç boy · çerçevesiz"
+  url: "https://www.sifayayinevi.com.tr/hilye-i-serif-tablo-35x50-cm-cercevesiz"
+  meta: ["Tablo", "23×33 · 35×50 · 50×70"]
+  note: "Hilye-i şerîf levhası"
+  variants:
+    - "https://www.sifayayinevi.com.tr/hilye-i-serif-tablo-23x33-cm-cercevesiz"
+    - "https://www.sifayayinevi.com.tr/hilye-i-serif-tablo-50x70-cm-cercevesiz"
+
+sarf-nahiv-karton-set:
+  title: "مجموعة الصرف والنحو"
+  title_tr: "Mecmûatü's-Sarf + Mecmûatü'n-Nahiv (Karton) Set"
+  subtitle: "Karton kapak takım"
+  url: "https://www.sifayayinevi.com.tr/mecmuatus-sarf-mecmuatun-nahiv-karton-kapak-set"
+  meta: ["Set", "Karton kapak"]
+  note: "Setin ekonomik baskısı"

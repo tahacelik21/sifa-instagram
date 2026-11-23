@@ -1,0 +1,150 @@
+# Şifa Yayınevi — 180 günlük ürün tanıtım planı
+#
+# Amaç: katalogdaki bütün başlıkların 180 gün içinde en az bir kez tanıtılması,
+# akışı kitap önerisiyle boğmadan.
+#
+# Denge: her 30 günde ~10 kitap günü (gönderilerin üçte biri). Kalan günler
+# bilgilendirici içerik. Kitap günleri 3 günde bir geliyor.
+#
+# 1-60. günler üretildi; 14 başlık tanıtıldı.
+# 61-180 arası 40 kitap günü var: 38 tek kitap + 2 koleksiyon karuseli.
+#
+# "konu" alanı o günün içeriğinin ekseni — kitap konunun içinden çıkar,
+# konu kitabın etrafına kurulmaz.
+
+tamamlanan:
+  araliq: "1-60"
+  basliklar: [mecmuatus-sarf, mecmuatun-nahiv, suruhul-maksud, suruhul-izzi,
+              emsile-bina-semasi, tuhfetus-seniyye, molla-cami, ed-durusun-nahviyye,
+              et-tatbikus-sarfi, aciklamali-cekimler, suruhul-izhar, kavaidul-irab,
+              telhisul-miftah, sarf-nahiv-set]
+
+plan:
+
+  # ═══ 3. AY (61-90) — Nahivde derinleşme, sarfın tamamlanması ═══
+  - day: 61
+    book: avamilan
+    konu: "Âmil nedir? Harekeyi kim değiştirir?"
+  - day: 64
+    book: suruhul-bina
+    konu: "Binâ'yı şerhle okumak: 35 bâbın arkasındaki kaide"
+  - day: 67
+    book: metin-kavaidul-irab
+    konu: "Metin mi şerh mi? Ezber için sade metnin yeri"
+  - day: 70
+    book: katrun-neda
+    konu: "Müellif kendi metnini şerh ederse"
+  - day: 73
+    book: es-sami-cami
+    konu: "Molla Câmî'deki beyitler nereden geliyor?"
+  - day: 76
+    book: zuruf-ve-terkib
+    konu: "Zarflar: cümlenin zamanı ve yeri"
+  - day: 79
+    book: rabtus-sevarid
+    konu: "Şâhid beyit nedir, niçin ezberlenir?"
+  - day: 82
+    book: tuhfe-tercume
+    konu: "Arapçası yetmeyen talebe ne yapmalı?"
+  - day: 85
+    book: ucaletur-rahmiyye
+    konu: "Vaz' ilmi: lafız manaya nasıl bağlanır?"
+  - day: 88
+    koleksiyon: [avamil-semasi, sarf-seti, sarf-nahiv-karton-set, izzi-teftazani]
+    konu: "Ezberi kolaylaştıran yardımcılar: şemalar ve takımlar"
+
+  # ═══ 4. AY (91-120) — Belâgatın tamamlanması, fıkha giriş ═══
+  - day: 91
+    book: muhtasarul-meani
+    konu: "Telhîs'i şerhle okumak"
+  - day: 94
+    book: belagatul-vadiha
+    konu: "Belâgat alıştırmayla öğrenilir mi?"
+  - day: 97
+    book: safahat-belagat
+    konu: "Belâgate kısa yoldan giriş"
+  - day: 100
+    book: suruhul-alaka
+    konu: "Alâka: mecâzın mantığı"
+  - day: 103
+    book: nurul-izah
+    konu: "Fıkha ilk adım: ibadet bahisleri"
+  - day: 106
+    book: merakil-felah
+    konu: "Metni şerhiyle okumak — fıkıhta da aynı usul"
+  - day: 109
+    book: halebi-sagir
+    konu: "Namazın fıkhı niçin ayrı bir kitap?"
+  - day: 112
+    book: multeka
+    konu: "Asırlarca okutulan fıkıh metni"
+  - day: 115
+    book: el-lubab
+    konu: "Kudûrî ve şerhleri"
+  - day: 118
+    book: mecmaul-enhur
+    konu: "Büyük şerh ne işe yarar?"
+
+  # ═══ 5. AY (121-150) — Akaid, hadis, tefsir ═══
+  - day: 121
+    book: serhul-mugni
+    konu: "Usûl ile fıkıh arasındaki köprü"
+  - day: 124
+    book: mutunul-akaid
+    konu: "Akaid metinleri niçin ezberlenir?"
+  - day: 127
+    book: serhul-akide-tahavi
+    konu: "Tahâvî akîdesi ve iki şerhi"
+  - day: 130
+    book: serhul-erbain
+    konu: "Kırk hadis: hadise başlangıç"
+  - day: 133
+    book: riyazus-salihin
+    konu: "Amel ve ahlâk hadisleri"
+  - day: 136
+    book: usulul-hadis
+    konu: "Hadis usûlü: rivayet nasıl değerlendirilir?"
+  - day: 139
+    book: mumin-gencin-hadis
+    konu: "Gence hadis nasıl anlatılır?"
+  - day: 142
+    book: sahih-i-muslim
+    konu: "Sahîh-i Müslim ve Türkçe şerhi"
+  - day: 145
+    book: tefsir-celaleyn
+    konu: "Medresede ilk okunan tefsir"
+  - day: 148
+    book: kiraat-i-asere
+    konu: "On kıraat: aynı âyet, farklı okuyuş"
+
+  # ═══ 6. AY (151-180) — Kur'an dili, sözlük, tasavvuf, edep, aile ═══
+  - day: 151
+    book: kisasun-nebiyyin
+    konu: "İlk Arapça metnin nasıl seçilir?"
+  - day: 154
+    book: kamus-i-turki
+    konu: "Osmanlı Türkçesi okurken sözlük"
+  - day: 157
+    book: talimul-muteallim
+    konu: "İlim öğrenmenin edebi"
+  - day: 160
+    book: el-ezkar
+    konu: "Sünnetten dua ve zikirler"
+  - day: 163
+    book: esmaul-husna-sifa
+    konu: "Esmâ-i hüsnâ ve manaları"
+  - day: 166
+    book: tasavvuf-kaideleri
+    konu: "Tasavvufun usûlü var mı?"
+  - day: 169
+    book: sohbetler-gaflet
+    konu: "Klasik sohbet kitapları ne anlatır?"
+  - day: 172
+    book: nebevi-iklim
+    konu: "Siyeri toplum üzerinden okumak"
+  - day: 175
+    book: her-anneye-lazim
+    konu: "Evde dinî eğitim nereden başlar?"
+  - day: 178
+    koleksiyon: [kartelalar, hilye-tablo]
+    konu: "Duvara asılanlar: kartela ve levha"

@@ -137,6 +137,22 @@ kelimeyi kullanırsan ses ve görüntü örtüşür.
 | `book` | kicker, book (slug) | Kitap tanıtımı (görsel varsa otomatik) |
 | `cta` | tr, body | Kapanış |
 
+### Ürün tanıtım planı
+
+`content/tanitim-plani.yaml` — katalogdaki **58 başlığın tamamının 180 gün
+içinde** tanıtılması için hazırlanmış takvim. Katalog siteden alındı
+(Yayınevleri → Şifa Yayınevi, 74 ürün; varyantlar tek başlıkta toplandı).
+
+- 1-60. günler: 14 başlık tanıtıldı
+- 61-180: 40 kitap günü (3 günde bir), 38 tek kitap + 2 koleksiyon karuseli
+- Yoğunluk: gönderilerin üçte biri — kalanı bilgilendirici içerik
+
+Planı doğrulamak için:
+
+```bash
+python -m src.plan --kontrol
+```
+
 ### Etiketler
 
 Instagram **gönderi başına en fazla 5 etikete** izin veriyor (Aralık 2025'ten beri;
