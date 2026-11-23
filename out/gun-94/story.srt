@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:01,836
+Belâgate nereden başlamalı?
+
+2
+00:00:02,636 --> 00:00:05,086
+Önce alıştırmalı bir giriş, sonra klasik
+
+3
+00:00:05,086 --> 00:00:05,599
+metin.
+
+4
+00:00:06,399 --> 00:00:08,144
+Ayrıntısı bugünkü gönderide.

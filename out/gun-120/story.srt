@@ -1,0 +1,11 @@
+1
+00:00:00,350 --> 00:00:02,518
+Sarf ve nahiv bitince rafa mı kalkıyor?
+
+2
+00:00:03,318 --> 00:00:06,299
+Hayır. Asıl şimdi kullanılmaya başlıyor.
+
+3
+00:00:07,099 --> 00:00:08,844
+Ayrıntısı bugünkü gönderide.

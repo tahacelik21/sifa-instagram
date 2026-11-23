@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:02,559
+Fıkıhta hangi metinden sonra hangisi
+
+2
+00:00:02,559 --> 00:00:03,172
+okunur?
+
+3
+00:00:03,972 --> 00:00:06,744
+Önce giriş metni, sonra şerhi, sonra orta
+
+4
+00:00:06,744 --> 00:00:08,513
+metin, sonra büyük şerh.
+
+5
+00:00:09,313 --> 00:00:11,253
+Zincirin tamamı bugünkü gönderide.

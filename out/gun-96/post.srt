@@ -1,0 +1,71 @@
+1
+00:00:00,350 --> 00:00:02,189
+İki cümle arasına vâv koymalı mı,
+
+2
+00:00:02,189 --> 00:00:03,006
+koymamalı mı?
+
+3
+00:00:03,806 --> 00:00:04,570
+اَلْوَصْل
+
+4
+00:00:04,770 --> 00:00:05,952
+vâvın konmasıdır.
+
+5
+00:00:06,152 --> 00:00:07,004
+اَلْفَصْل
+
+6
+00:00:07,204 --> 00:00:10,050
+konmamasıdır. İkisi de mana ilişkisine
+
+7
+00:00:10,050 --> 00:00:11,160
+göre seçilir.
+
+8
+00:00:11,960 --> 00:00:13,970
+İkinci cümle birincinin açıklamasıysa vâv
+
+9
+00:00:13,970 --> 00:00:16,176
+konmaz. Zaten aynı şeyi söylüyorlardır.
+
+10
+00:00:16,976 --> 00:00:19,001
+Hiç ilişkisi yoksa da vâv konmaz.
+
+11
+00:00:19,001 --> 00:00:21,646
+Bağlamak, olmayan bir ilişki kurmak olur.
+
+12
+00:00:22,446 --> 00:00:24,609
+Bu bahiste ölçü kaideden çok dikkate
+
+13
+00:00:24,609 --> 00:00:27,312
+dayanır. Klasik belâgatçılar ona belâgatın
+
+14
+00:00:27,312 --> 00:00:30,075
+zirvesi der. Çünkü burada verilen karar,
+
+15
+00:00:30,075 --> 00:00:32,118
+metni okuyanın anlayışını doğrudan
+
+16
+00:00:32,118 --> 00:00:32,959
+değiştirir.
+
+17
+00:00:33,759 --> 00:00:36,251
+Tek bir harfin kararı. Mana ilişkisi neyi
+
+18
+00:00:36,251 --> 00:00:37,837
+gerektiriyorsa o yapılır.
