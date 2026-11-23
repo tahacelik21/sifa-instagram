@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,421
+Kelimenin son harekesini kim değiştiriyor?
+
+2
+00:00:03,221 --> 00:00:04,089
+اَلْعَامِل.
+
+3
+00:00:04,289 --> 00:00:05,775
+Harekeyi belirleyen şey.
+
+4
+00:00:06,575 --> 00:00:08,321
+Ayrıntısı bugünkü gönderide.

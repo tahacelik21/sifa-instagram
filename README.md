@@ -263,8 +263,8 @@ python -m src.tts --voices --ar
 
 ## Temalar
 
-`src/themes.py` — 8 tema. Gün bazlı rotasyon; ardışık gün aynı temayı almaz,
-post ile story aynı gün farklı tema alır.
+**1-60. günler** sekiz sabit temanın rotasyonunu kullanıyor (üretildikleri
+için dondurulmuş durumda).
 
 | Tema | Palet | Arka plan |
 |---|---|---|
@@ -277,10 +277,29 @@ post ile story aynı gün farklı tema alır.
 | `lacivert` | lacivert gece | toz zerrecikleri |
 | `tahta` | ders tahtası | tebeşir dokusu |
 
-Aynı tema iki kez düşse bile hareket farklı olur: `themes.variant()` gün
-tohumundan arka plan hızı, açı, hizalama, giriş animasyonu üretir.
+**61. günden sonra** tema sabit listeden seçilmiyor, üç listeden
+**birleştiriliyor**:
 
----
+```
+13 palet  ×  14 arka plan  ×  11 hareket seti
+```
+
+Yeni paletler: erguvan, bakır, deniz, kum, zeytin.
+Yeni arka planlar: mihrap kemerleri, tezhip gülü, nokta ızgarası,
+ipek parıltısı, sekiz köşeli yıldız, sedef.
+Yeni hareketler: `curtainIn`, `irisIn`, `tiltUp` ve çıkış eşleri.
+
+Üç listenin uzunlukları 60'ı bölmüyor ve aralarında asal, bu yüzden:
+
+- aynı palet-zemin-hareket üçlüsü 180 günde **hiç tekrar etmiyor**
+- her 30 günlük blok başka bir palet ve zeminle açılıyor
+- ardışık günler, aynı günün postu ile story'si her zaman farklı
+
+Üstüne `themes.variant()` gün tohumundan arka plan hızı, açı, hizalama ve
+giriş temposu üretiyor — yani aynı zemin iki kez düşse bile hareket başka oluyor.
+
+Takvimde bir güne `theme: kufi` yazarsan kompozisyon devre dışı kalır,
+o isimli sabit tema kullanılır.
 
 ## Ses tasarımı
 

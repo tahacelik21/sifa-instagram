@@ -140,8 +140,108 @@ def resolve(name: str) -> dict:
     return t
 
 
+# ═══════════════════════════════════════════════════════════════════
+# Kompozisyon: 61. günden itibaren tema sabit listeden seçilmiyor,
+# palet × arka plan × hareket seti olarak üretiliyor. Üç listenin
+# uzunlukları aralarında asal (12 · 13 · 11) ve adımlar farklı, bu
+# yüzden aynı üçlü 1716 slotta bir tekrar eder — 180 günde hiç.
+# 1-60. günler üretildiği için eski rotasyonda bırakıldı.
+# ═══════════════════════════════════════════════════════════════════
+
+FROZEN_UNTIL = 60
+
+PALETTES: dict[str, dict] = {
+    name: {"dark": t["dark"], "vars": t["vars"]} for name, t in THEMES.items()
+}
+PALETTES.update({
+    # 9 — patlıcan moru + altın
+    "erguvan": {"dark": True, "vars": {
+        "--bg": "#241028", "--bg2": "#3A1A3E", "--ink": "#F6EEF4",
+        "--accent": C["altin"], "--accent2": C["altin_acik"],
+        "--muted": "#B9A2BC", "--card": "rgba(201,162,39,.07)"}},
+    # 10 — koyu kahve + bakır
+    "bakir": {"dark": True, "vars": {
+        "--bg": "#1A120C", "--bg2": "#2E2014", "--ink": "#F5EADF",
+        "--accent": "#C97B3C", "--accent2": "#E3A469",
+        "--muted": "#A89079", "--card": "rgba(201,123,60,.08)"}},
+    # 11 — derin deniz mavisi + açık altın
+    "deniz": {"dark": True, "vars": {
+        "--bg": "#07202B", "--bg2": "#0E3443", "--ink": "#EFF6F8",
+        "--accent": C["altin_acik"], "--accent2": C["teal"],
+        "--muted": "#8FAFB9", "--card": "rgba(57,161,157,.09)"}},
+    # 12 — açık kum + koyu kahve (aydınlık)
+    "kum": {"dark": False, "vars": {
+        "--bg": "#F3EADC", "--bg2": "#E6D8C3", "--ink": "#2A1E13",
+        "--accent": "#8A5A2B", "--accent2": C["altin"],
+        "--muted": "#7C6952", "--card": "rgba(138,90,43,.07)"}},
+    # 13 — zeytin yeşili + altın
+    "zeytin": {"dark": True, "vars": {
+        "--bg": "#14180E", "--bg2": "#242B17", "--ink": "#F2F4E8",
+        "--accent": C["altin"], "--accent2": "#A8B977",
+        "--muted": "#9BA585", "--card": "rgba(201,162,39,.08)"}},
+})
+
+BGS = ["kufi", "paper", "rays", "grid", "lines", "waves", "dust", "chalk",
+       "mihrab", "tezhip", "nokta", "ipek", "yildiz", "sedef"]
+
+MOTIONS: list[dict] = [
+    {"enter": "zoomBlur",  "text": "riseIn",      "exit": "fadeOutUp",
+     "sfx": {"transition": "whoosh", "accent": "chime"}},
+    {"enter": "inkBleed",  "text": "blurIn",      "exit": "fadeOutDown",
+     "sfx": {"transition": "page", "accent": "chime"}},
+    {"enter": "scaleFade", "text": "letterIn",    "exit": "fadeOutScale",
+     "sfx": {"transition": "whoosh", "accent": "impact"}},
+    {"enter": "maskWipe",  "text": "wipeRight",   "exit": "wipeOutLeft",
+     "sfx": {"transition": "whoosh", "accent": "impact"}},
+    {"enter": "foldIn",    "text": "tiltIn",      "exit": "fadeOutDown",
+     "sfx": {"transition": "page", "accent": "chime"}},
+    {"enter": "slideUp",   "text": "popIn",       "exit": "fadeOutUp",
+     "sfx": {"transition": "whoosh", "accent": "chime"}},
+    {"enter": "dropIn",    "text": "riseIn",      "exit": "fadeOutScale",
+     "sfx": {"transition": "whoosh", "accent": "impact"}},
+    {"enter": "swipeLeft", "text": "wipeRight",   "exit": "wipeOutLeft",
+     "sfx": {"transition": "page", "accent": "impact"}},
+    {"enter": "curtainIn", "text": "slideDownIn", "exit": "fadeOutSide",
+     "sfx": {"transition": "whoosh", "accent": "chime"}},
+    {"enter": "irisIn",    "text": "spreadIn",    "exit": "irisOut",
+     "sfx": {"transition": "whoosh", "accent": "impact"}},
+    {"enter": "tiltUp",    "text": "stackIn",     "exit": "fadeOutTilt",
+     "sfx": {"transition": "page", "accent": "chime"}},
+]
+
+PAL_NAMES = list(PALETTES)
+
+
+def compose(day: int, slot: str = "post") -> dict:
+    """Gün ve slota göre palet × arka plan × hareket birleşimi."""
+    i = (day - 1) * 2 + (0 if slot == "post" else 1)
+    pal = PAL_NAMES[i % len(PAL_NAMES)]           # 13 — 60'ı bölmüyor
+    bg = BGS[(i * 5 + 1) % len(BGS)]              # 14, adım 5 (aralarında asal)
+    mot = MOTIONS[(i * 3) % len(MOTIONS)]         # 11, adım 3
+    p = PALETTES[pal]
+    return {"name": f"{pal}·{bg}", "dark": p["dark"], "bg": bg, "vars": p["vars"],
+            "enter": mot["enter"], "text": mot["text"], "exit": mot["exit"],
+            "sfx": mot["sfx"]}
+
+
+def for_day(day: int, slot: str = "post") -> dict:
+    """O günün teması. 1-60 eski rotasyon, sonrası kompozisyon."""
+    return resolve(pick(day, slot)) if day <= FROZEN_UNTIL else compose(day, slot)
+
+
 if __name__ == "__main__":
     seen = [pick(d) for d in range(1, 31)]
     assert all(seen[i] != seen[i + 1] for i in range(len(seen) - 1)), "ardışık tema tekrarı"
     assert all(pick(d) != pick(d, "story") for d in range(1, 31)), "post/story teması çakıştı"
-    print("tema rotasyonu tamam:", " ".join(seen[:10]), "...")
+
+    # Kompozisyon: 180 günde aynı üçlü iki kez düşmesin
+    uclu = [(t["name"], t["enter"]) for d in range(61, 181)
+            for t in (for_day(d, "post"), for_day(d, "story"))]
+    assert len(set(uclu)) == len(uclu), "kompozisyon tekrar etti"
+    for d in range(61, 180):
+        a, b = for_day(d, "post"), for_day(d + 1, "post")
+        assert (a["bg"], a["enter"]) != (b["bg"], b["enter"]), f"gün {d}-{d+1} aynı hareket"
+        assert a["name"] != for_day(d, "story")["name"], f"gün {d} post/story çakıştı"
+    print(f"tema: 1-60 sabit rotasyon, 61+ kompozisyon "
+          f"({len(PALETTES)} palet × {len(BGS)} zemin × {len(MOTIONS)} hareket)")
+    print("  örnek:", ", ".join(for_day(d)["name"] for d in (61, 62, 91, 121, 151)))

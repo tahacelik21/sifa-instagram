@@ -7,6 +7,7 @@ Gerçek TTS ve video kodlaması kapsam dışı (onlar `python -m src.build` ile 
 """
 from __future__ import annotations
 
+import pathlib
 import sys
 
 import numpy as np
@@ -62,9 +63,29 @@ def test_themes():
     assert all(posts[i] != posts[i + 1] for i in range(29)), "ardışık gün aynı temayı aldı"
     assert all(themes.pick(d) != themes.pick(d, "story") for d in range(1, 31)), "post/story teması çakıştı"
     assert len(set(posts)) >= 6, "tema çeşitliliği düşük"
+
+    # 61. günden sonra kompozisyon: aynı görünüm 180 günde tekrar etmemeli
+    uclu = [(t["name"], t["enter"]) for d in range(61, 181)
+            for t in (themes.for_day(d, "post"), themes.for_day(d, "story"))]
+    assert len(set(uclu)) == len(uclu), "kompozisyon tekrar etti"
+    for d in range(61, 180):
+        a, b = themes.for_day(d), themes.for_day(d + 1)
+        assert (a["bg"], a["enter"]) != (b["bg"], b["enter"]), f"gün {d}-{d+1} aynı"
+    # her 30 günlük blok farklı zeminlerle açılmalı
+    acilis = {themes.for_day(d)["bg"] for d in (61, 91, 121, 151)}
+    assert len(acilis) == 4, f"ay başları aynı zemine düşüyor: {acilis}"
+    # şablonda tanımsız zemin kalmasın
+    tpl = (pathlib.Path("src/templates/base.html.j2")).read_text(encoding="utf-8")
+    for bg in themes.BGS:
+        assert f".bg--{bg}" in tpl, f"şablonda yok: .bg--{bg}"
+    for m in themes.MOTIONS:
+        for k in ("enter", "text", "exit"):
+            assert f"@keyframes {m[k]}" in tpl, f"şablonda yok: {m[k]}"
+
     v1, v2 = themes.variant("a"), themes.variant("b")
     assert v1 != v2 and themes.variant("a") == v1, "varyant deterministik değil"
-    print(f"  temalar: {len(set(posts))} farklı tema dönüyor")
+    print(f"  temalar: 1-60 {len(set(posts))} sabit tema · 61+ "
+          f"{len(themes.PALETTES)}×{len(themes.BGS)}×{len(themes.MOTIONS)} kompozisyon")
 
 
 def test_timeline_and_html():

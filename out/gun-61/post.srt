@@ -1,0 +1,75 @@
+1
+00:00:00,350 --> 00:00:02,534
+Kelimenin son harekesi değişiyor.
+
+2
+00:00:02,534 --> 00:00:04,111
+Peki onu değiştiren ne?
+
+3
+00:00:04,911 --> 00:00:05,779
+اَلْعَامِل.
+
+4
+00:00:05,979 --> 00:00:08,059
+Cümledeki bir kelimeyi etkileyip son
+
+5
+00:00:08,059 --> 00:00:09,734
+harekesini belirleyen şey.
+
+6
+00:00:10,534 --> 00:00:12,598
+Lafzî âmil gözle görünür:
+
+7
+00:00:12,598 --> 00:00:14,294
+fiil, harf-i cer,
+
+8
+00:00:14,494 --> 00:00:15,094
+إِنَّ.
+
+9
+00:00:15,294 --> 00:00:17,550
+Manevî âmil yazıda yoktur, mantıkta
+
+10
+00:00:17,550 --> 00:00:18,143
+vardır.
+
+11
+00:00:18,943 --> 00:00:20,694
+كَتَبَ الطَّالِبُ الدَّرْسَ.
+
+12
+00:00:20,894 --> 00:00:23,722
+Fiil hem fâili merfû yaptı hem mef'ûlü
+
+13
+00:00:23,722 --> 00:00:26,475
+mansûb. İkisinin âmili de odur.
+
+14
+00:00:27,275 --> 00:00:28,377
+عَوَامِلَان.
+
+15
+00:00:28,577 --> 00:00:30,775
+Birgivî ve Cürcânî'nin Avâmil metinleri
+
+16
+00:00:30,775 --> 00:00:33,312
+bir arada — nahve girişin ilk basamağı.
+
+17
+00:00:34,112 --> 00:00:36,423
+İ'râbda sorulacak ilk soru şudur:
+
+18
+00:00:36,423 --> 00:00:39,310
+bu harekeyi kim verdi? Cevabı bilen tahmin
+
+19
+00:00:39,310 --> 00:00:39,888
+etmez.

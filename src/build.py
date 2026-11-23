@@ -57,9 +57,9 @@ def caption(day: int, spec: dict, book_url: str | None) -> str:
 
 
 def _theme_for(day: int, slot: str, spec: dict) -> tuple[dict, dict]:
-    name = spec.get("theme") or themes.pick(day, slot)
-    th = themes.resolve(name)
-    var = themes.variant(f"{day}-{slot}-{name}-{spec.get('title','')}")
+    # Takvimde theme verilmişse o, yoksa günün kompozisyonu (bkz. themes.for_day)
+    th = themes.resolve(spec["theme"]) if spec.get("theme") else themes.for_day(day, slot)
+    var = themes.variant(f"{day}-{slot}-{th['name']}-{spec.get('title','')}")
     return th, var
 
 
@@ -161,7 +161,7 @@ def check(days: list[int]) -> int:
             if spec.get("kind", "video") != "video":
                 line.append(f"{slot}: karusel")
                 continue
-            th = themes.resolve(spec.get("theme") or themes.pick(day, slot))
+            th, _ = _theme_for(day, slot, spec)
             tl = scenes.build(spec, _brand_for(th), with_audio=True)
             lo, hi = (35, 55) if slot == "post" else (8, 20)
             ok = lo <= tl.total <= hi
