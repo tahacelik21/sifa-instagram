@@ -53,6 +53,18 @@ def denetle() -> list[str]:
     if gunler != sorted(gunler):
         sorun.append("plan gün sırası bozuk")
 
+    # Üretilmiş günlerde takvim planla uyuşuyor mu?
+    import yaml as _y
+    cal = {d["day"]: d for d in _y.safe_load(
+        (CONTENT / "calendar.yaml").read_text(encoding="utf-8"))["days"]}
+    for e in plan["plan"]:
+        if e["day"] not in cal:
+            continue
+        bekl = set([e["book"]] if e.get("book") else e["koleksiyon"])
+        var = {s["book"] for s in cal[e["day"]]["post"]["scenes"] if s.get("book")}
+        if bekl != var:
+            sorun.append(f"gün {e['day']}: planda {sorted(bekl)}, takvimde {sorted(var)}")
+
     son = gunler[-1]
     print(f"katalog {len(BOOKS)} başlık · 1-{plan['tamamlanan']['araliq'].split('-')[-1]} "
           f"arası {len(bitti)} tanıtıldı · {gunler[0]}-{son} arası {len(plan['plan'])} kitap günü")

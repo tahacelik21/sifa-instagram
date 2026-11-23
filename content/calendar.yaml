@@ -3897,3 +3897,1914 @@ days:
         - type: cta
           tr: "Toparlama gönderide"
           vo: "Toparlamanın tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 61 ══════════════════════════════
+  - day: 61
+    title: "Âmil nedir? + Avâmilân"
+    post:
+      tags: ["#nahiv", "#irab", "#klasikmetin"]
+      kind: video
+      book_line: "Avâmilân"
+      caption: |
+        Son hareke değişiyor — peki onu kim değiştiriyor?
+
+        Nahvin cevabı tek kelime: âmil. Cümledeki bir kelimeyi etkileyip
+        son harekesini belirleyen şeye âmil denir. Fiil âmildir, harf-i cer
+        âmildir, hatta bazen görünmeyen bir şey âmildir.
+
+        Klasik usulde nahve âmilleri saymakla başlanır. Çünkü harekeyi
+        kimin verdiğini bilmeyen, i'râbı tahmin etmeye başlar.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Son hareke değişiyor.<br>Peki onu kim değiştiriyor?"
+          vo: "Kelimenin son harekesi değişiyor. Peki onu değiştiren ne?"
+        - type: concept
+          kicker: "CEVAP"
+          ar: "اَلْعَامِل"
+          translit: "el-âmil"
+          tr: "Harekeyi belirleyen şey."
+          vo: "اَلْعَامِل. Cümledeki bir kelimeyi etkileyip son harekesini belirleyen şey."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "Âmil her zaman görünmez."
+          left:  {ar: "لَفْظِي", title: "Lafzî", text: "Gözle görünür. Fiil, harf-i cer, إِنَّ gibi."}
+          right: {ar: "مَعْنَوِي", title: "Manevî", text: "Yazıda yok, mantıkta var. Mübtedâyı ref' eden gibi."}
+          vo: "Lafzî âmil gözle görünür: fiil, harf-i cer, إِنَّ. Manevî âmil yazıda yoktur, mantıkta vardır."
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "كَتَبَ الطَّالِبُ الدَّرْسَ"
+          tr: "Fiil iki kelimeyi birden etkiledi."
+          body: "Fâili merfû, mef'ûlü mansûb yaptı."
+          vo: "كَتَبَ الطَّالِبُ الدَّرْسَ. Fiil hem fâili merfû yaptı hem mef'ûlü mansûb. İkisinin âmili de odur."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: avamilan
+          vo: "عَوَامِلَان. Birgivî ve Cürcânî'nin Avâmil metinleri bir arada — nahve girişin ilk basamağı."
+        - type: cta
+          tr: "Harekeyi kim verdi?"
+          body: "İ'râbda sorulacak ilk soru budur."
+          vo: "İ'râbda sorulacak ilk soru şudur: bu harekeyi kim verdi? Cevabı bilen tahmin etmez."
+    story:
+      kind: video
+      caption: "Âmil nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Harekeyi kim değiştiriyor?"
+          vo: "Kelimenin son harekesini kim değiştiriyor?"
+        - type: concept
+          ar: "اَلْعَامِل"
+          translit: "el-âmil"
+          tr: "Harekeyi belirleyen şey."
+          vo: "اَلْعَامِل. Harekeyi belirleyen şey."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 62 ══════════════════════════════
+  - day: 62
+    title: "Âmil çeşitleri"
+    post:
+      tags: ["#nahiv", "#irab", "#arapçagramer"]
+      kind: carousel
+      caption: |
+        Âmil tek çeşit değil. Klasik metinler onları sayıp sınıflandırır —
+        çünkü hangi âmilin ne yaptığını bilmek, i'râbın yarısıdır.
+
+        Bazısı ref' eder, bazısı nasb, bazısı cer. Bazısı isme girer,
+        bazısı fiile. Hepsini ezberlemek gerekmez; mantığını kavramak yeter.
+
+        Avâmil metinlerinin yaptığı iş tam olarak budur: dağınık görünen
+        âmilleri düzenli bir listeye çevirmek.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Hangi âmil<br>ne yapıyor?"
+          body: "İ'râbın yarısı bu sorunun cevabında."
+          dur: 3.4
+        - type: concept
+          kicker: "1 · REF' EDENLER"
+          ar: "اَلرَّافِع"
+          tr: "Son harekeyi damme yapar."
+          body: "Fiil fâilini ref' eder: جَاءَ الطَّالِبُ"
+          dur: 3.8
+        - type: concept
+          kicker: "2 · NASB EDENLER"
+          ar: "اَلنَّاصِب"
+          tr: "Son harekeyi fetha yapar."
+          body: "إِنَّ ismini nasb eder: إِنَّ الطَّالِبَ"
+          dur: 3.8
+        - type: concept
+          kicker: "3 · CER EDENLER"
+          ar: "اَلْجَارّ"
+          tr: "Son harekeyi kesre yapar."
+          body: "Harf-i cer: فِي الْبَيْتِ"
+          dur: 3.8
+        - type: concept
+          kicker: "4 · CEZM EDENLER"
+          ar: "اَلْجَازِم"
+          tr: "Muzârinin sonunu düşürür."
+          body: "لَمْ يَكْتُبْ — yalnız fiile girer"
+          dur: 3.8
+        - type: cta
+          tr: "Dördünü ayır, cümle çözülsün."
+          body: "Avâmil metinleri bu listeyi verir."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Âmiller kaç çeşit?"
+      scenes:
+        - type: stat
+          kicker: "ÂMİL"
+          big: "4"
+          label: "etki"
+          body: "Ref' · nasb · cer · cezm"
+          vo: "Âmiller dört türlü etki yapar: ref', nasb, cer, cezm."
+        - type: point
+          tr: "Hangisinin ne yaptığını bil."
+          vo: "Hangi âmilin ne yaptığını bilen, i'râbın yarısını çözmüş olur."
+        - type: cta
+          tr: "Dördü de gönderide"
+          vo: "Dördünün tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 63 ══════════════════════════════
+  - day: 63
+    title: "Esmâ-i hamse: beş isim"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#irab"]
+      kind: video
+      caption: |
+        Arapçada çoğu isim i'râbını harekeyle gösterir. Ama beş isim var ki
+        harekeyle değil, harfle gösterir.
+
+        أَبُوكَ merfû, أَبَاكَ mansûb, أَبِيكَ mecrûr. Değişen hareke değil,
+        harfin kendisi: vâv, elif, yâ.
+
+        Bu beşi tanımayan talebe, metinde أَبَا görünce şaşırır. Oysa
+        kaide kısa ve istisnası azdır.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Bazı isimler i'râbını<br>harekeyle değil, harfle gösterir."
+          vo: "Çoğu isim i'râbını harekeyle gösterir. Ama beş isim harfle gösterir."
+        - type: concept
+          kicker: "TERİM"
+          ar: "اَلْأَسْمَاءُ الْخَمْسَة"
+          translit: "el-esmâü'l-hamse"
+          tr: "Beş isim."
+          body: "أَبٌ · أَخٌ · حَمٌ · فُو · ذُو"
+          vo: "اَلْأَسْمَاءُ الْخَمْسَة. Beş isim: أَبٌ، أَخٌ، حَمٌ، فُو، ذُو."
+        - type: list
+          kicker: "NASIL DEĞİŞİR"
+          tr: "Harf i'râbı taşır"
+          items:
+            - "Merfû: vâv ile — أَبُوكَ"
+            - "Mansûb: elif ile — أَبَاكَ"
+            - "Mecrûr: yâ ile — أَبِيكَ"
+          vo: "Merfû hâlinde vâv gelir: أَبُوكَ. Mansûb hâlinde elif: أَبَاكَ. Mecrûr hâlinde yâ: أَبِيكَ."
+        - type: point
+          kicker: "ŞARTI"
+          tr: "Muzâf olmaları ve tekil olmaları gerekir."
+          body: "Tek başına أَبٌ bu kaideye girmez."
+          vo: "Bu kaidenin şartı var: isimler muzâf olacak ve tekil kalacak. Tek başına أَبٌ bu kaideye girmez."
+        - type: point
+          kicker: "FAYDASI"
+          tr: "Metinde çok geçerler."
+          body: "ذُو özellikle sıfat terkiplerinde karşına çıkar."
+          vo: "Bu beş isim metinlerde çok geçer. Özellikle ذُو sıfat terkiplerinde sürekli karşına çıkar."
+        - type: cta
+          tr: "Beş isim, üç harf."
+          body: "Kısa kaide, sık karşılaşma."
+          vo: "Beş isim, üç harf. Kaidesi kısa ama karşılaşma sıklığı yüksek."
+    story:
+      kind: video
+      caption: "Esmâ-i hamse"
+      scenes:
+        - type: concept
+          ar: "اَلْأَسْمَاءُ الْخَمْسَة"
+          tr: "İ'râbını harfle gösteren beş isim."
+          vo: "اَلْأَسْمَاءُ الْخَمْسَة. İ'râbını harekeyle değil harfle gösteren beş isim."
+        - type: point
+          ar: "أَبُوكَ · أَبَاكَ · أَبِيكَ"
+          tr: "Vâv, elif, yâ."
+          vo: "أَبُوكَ، أَبَاكَ، أَبِيكَ. Vâv, elif, yâ."
+        - type: cta
+          tr: "Şartları gönderide"
+          vo: "Kaidenin şartları bugünkü gönderide."
+
+  # ═══════════════════════════════ 64 ══════════════════════════════
+  - day: 64
+    title: "Binâ'yı şerhle okumak + Şürûhu'l-Binâ"
+    post:
+      tags: ["#bina", "#sarf", "#klasikmetin"]
+      kind: video
+      book_line: "Şürûhu'l-Binâ"
+      caption: |
+        el-Binâ otuz beş bâbı sayar. Metin kısadır, neredeyse liste gibidir.
+        Talebe ezberler, geçer. Sonra bir soru gelir: bu bâb niçin böyle?
+
+        Metnin cevabı yoktur — çünkü metin cevap vermek için yazılmamıştır.
+        Cevap şerhtedir.
+
+        Şerh, satırın altındaki tartışmayı açar: bu vezin hangi manayı katar,
+        niçin bu harf ziyade edilmiştir, hangi fiiller bu bâba girer.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "Binâ'yı ezberledin.<br>“Niçin böyle?” diye sordun mu?"
+          vo: "el-Binâ'yı ezberledin. Peki bu bâb niçin böyle diye sordun mu?"
+        - type: point
+          kicker: "METNİN SINIRI"
+          tr: "Metin cevap vermek için yazılmaz."
+          body: "Metin hatırlatır, şerh açıklar."
+          vo: "Metin cevap vermek için yazılmaz. Metin hatırlatır, şerh açıklar. İkisini aynı şeyden beklemek talebeyi yorar."
+        - type: list
+          kicker: "ŞERH NE AÇAR"
+          tr: "Satırın altındaki tartışma"
+          items:
+            - "Bu vezin hangi manayı katıyor?"
+            - "Niçin bu harf ziyade edilmiş?"
+            - "Hangi fiiller bu bâba girer?"
+          vo: "Şerh şunları açar: bu vezin hangi manayı katıyor, niçin bu harf ziyade edilmiş, hangi fiiller bu bâba girer."
+        - type: point
+          kicker: "USUL"
+          tr: "Önce ezber, sonra şerh."
+          body: "Elinde metin olmadan tartışma takip edilmez."
+          vo: "Sıra şu: önce ezber, sonra şerh. Elinde metin olmadan tartışma takip edilmez. Çünkü şerh, metnin hangi satırını açtığını söyler."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: suruhul-bina
+          vo: "شُرُوحُ الْبِنَاء. el-Binâ metninin şerhleri, dört risâle bir arada."
+        - type: cta
+          tr: "Ezber başlangıç, şerh devam."
+          body: "İkisi ayrı ayrı yarım kalır."
+          vo: "Ezber başlangıçtır, şerh devamı. İkisi ayrı ayrı yarım kalır."
+    story:
+      kind: video
+      caption: "Binâ niçin şerhli okunur?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "“Bu bâb niçin böyle?”"
+          vo: "Bu bâb niçin böyle?"
+        - type: point
+          tr: "Metin hatırlatır, şerh açıklar."
+          vo: "Metin hatırlatır, şerh açıklar. İkisi ayrı iş görür."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 65 ══════════════════════════════
+  - day: 65
+    title: "Tesniye ve cemî i'râbı"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
+      kind: carousel
+      caption: |
+        Tekil isimde i'râb harekeyle gösterilir: damme, fetha, kesre.
+        Ama ikil ve çoğulda durum değişir — orada iş harfe düşer.
+
+        Tesniyede elif ve yâ, cemî müzekker sâlimde vâv ve yâ iş görür.
+        Cemî müennes sâlimde ise fetha yerine kesre gelir.
+
+        Bu üç yapıyı ayıran talebe, metinde ikil mi çoğul mu sorusunda
+        tereddüt etmez.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "İkil ve çoğulda<br>i'râb harekeyle gösterilmez."
+          dur: 3.4
+        - type: concept
+          kicker: "1 · TESNİYE"
+          ar: "اَلْمُثَنَّى"
+          tr: "İkil."
+          body: "Merfû: ـَانِ · mansûb ve mecrûr: ـَيْنِ"
+          dur: 4.0
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "جَاءَ الطَّالِبَانِ · رَأَيْتُ الطَّالِبَيْنِ"
+          tr: "Elif gitti, yâ geldi."
+          dur: 3.8
+        - type: concept
+          kicker: "2 · CEMÎ MÜZEKKER SÂLİM"
+          ar: "جَمْعُ الْمُذَكَّرِ السَّالِم"
+          tr: "Düzenli erkek çoğulu."
+          body: "Merfû: ـُونَ · mansûb ve mecrûr: ـِينَ"
+          dur: 4.2
+        - type: concept
+          kicker: "3 · CEMÎ MÜENNES SÂLİM"
+          ar: "جَمْعُ الْمُؤَنَّثِ السَّالِم"
+          tr: "Düzenli kadın çoğulu."
+          body: "Mansûb hâlinde fetha değil kesre alır."
+          dur: 4.0
+        - type: cta
+          tr: "Harf mi, hareke mi?"
+          body: "Önce yapıyı tanı, i'râb sonra gelir."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Tesniye nasıl i'râb alır?"
+      scenes:
+        - type: concept
+          ar: "اَلْمُثَنَّى"
+          translit: "el-müsennâ"
+          tr: "İkil."
+          vo: "اَلْمُثَنَّى. İkil demek."
+        - type: point
+          ar: "اَلطَّالِبَانِ · اَلطَّالِبَيْنِ"
+          tr: "Merfûda elif, mansûbda yâ."
+          vo: "اَلطَّالِبَانِ merfû, اَلطَّالِبَيْنِ mansûb. Hareke değil, harf değişti."
+        - type: cta
+          tr: "Üç yapı da gönderide"
+          vo: "Üç yapının tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 66 ══════════════════════════════
+  - day: 66
+    title: "Cemî çeşitleri: sâlim ve mükesser"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaöğren"]
+      kind: video
+      caption: |
+        Türkçede çoğul tek ektir: "-ler". Arapçada ise çoğul üç yoldan yapılır
+        ve biri kelimenin şeklini tamamen bozar.
+
+        Sâlim çoğulda kelime sağlam kalır, sonuna ek gelir. Mükesser çoğulda
+        kelime kırılır — harfler yerinde durur ama düzen değişir.
+
+        كِتَاب çoğul olunca كُتُب olur. Aynı kök, başka bir biçim.
+        Bu yüzden sözlükte kök aranır, kelimenin kendisi değil.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "كِتَاب çoğul olunca<br>neden كُتُب oluyor?"
+          vo: "كِتَاب çoğul olunca neden كُتُب oluyor? Ek gelmedi, kelime değişti."
+        - type: compare
+          kicker: "İKİ YOL"
+          tr: "Çoğul iki şekilde yapılır."
+          left:  {ar: "سَالِم", title: "Sâlim", text: "Kelime sağlam kalır, sonuna ek gelir. مُسْلِمُونَ"}
+          right: {ar: "مُكَسَّر", title: "Mükesser", text: "Kelime kırılır, biçim değişir. كُتُب"}
+          vo: "Sâlim çoğulda kelime sağlam kalır, sonuna ek gelir: مُسْلِمُونَ. Mükesser çoğulda kelime kırılır: كُتُب."
+        - type: point
+          kicker: "NEDEN ÖNEMLİ"
+          tr: "Mükesser çoğul sözlükte ayrı görünür."
+          body: "Kökü bilmeyen, çoğulu başka kelime sanır."
+          vo: "Mükesser çoğul sözlükte bambaşka görünür. Kökü bilmeyen talebe onu ayrı bir kelime sanır."
+        - type: point
+          kicker: "ÇÖZÜM"
+          tr: "Kökü çıkar, kalıbı tanı."
+          body: "كُتُب ← ك ت ب · فُعُل vezninde"
+          vo: "Çözüm kökü çıkarmak. كُتُب kelimesinin kökü kâf, tâ, bâ. Vezni فُعُل."
+        - type: point
+          kicker: "USUL"
+          tr: "Çoğulu kelimeyle birlikte ezberle."
+          body: "Sözlükte zaten yan yana yazar."
+          vo: "Kelimeyi öğrenirken çoğulunu da birlikte ezberle. Sözlükte zaten yan yana yazar."
+        - type: cta
+          tr: "Kırılan kelime, duran kök."
+          body: "Biçim değişir, kök durur."
+          vo: "Biçim değişir ama kök durur. Kökü tutan, kelimeyi kaybetmez."
+    story:
+      kind: video
+      caption: "Mükesser çoğul nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "كِتَاب → كُتُب<br>Ek yok, nasıl oldu?"
+          vo: "كِتَاب çoğul olunca كُتُب oldu. Ek gelmedi, kelime kırıldı."
+        - type: concept
+          ar: "جَمْعُ التَّكْسِير"
+          translit: "cem'u't-teksîr"
+          tr: "Kırık çoğul."
+          vo: "جَمْعُ التَّكْسِير. Kırık çoğul."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 67 ══════════════════════════════
+  - day: 67
+    title: "Metin mi şerh mi? + Metn-i Kavâidü'l-İ'râb"
+    post:
+      tags: ["#nahiv", "#klasikmetin", "#talebe"]
+      kind: video
+      book_line: "Metn-i Kavâidü'l-İ'râb"
+      caption: |
+        Aynı eserin iki baskısı var: biri sade metin, diğeri şerhli.
+        Hangisini almalı?
+
+        Cevap, o kitapla ne yapacağına bağlı. Ezberleyecekse sade metin
+        gerekir — şerhli baskıda göz dağılır, ezber tutmaz. Anlamaya
+        çalışıyorsa şerh şart.
+
+        Klasik usulde ikisi de alınır: metin ezberlenir, şerh okunurken
+        açılır. İkisi iki ayrı iş görür.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Sade metin mi,<br>şerhli baskı mı?"
+          vo: "Aynı eserin sade metni mi şerhlisi mi alınmalı?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Ne yapacağına bağlı."
+          body: "Ezber ayrı iş, anlama ayrı iş."
+          vo: "Cevap, o kitapla ne yapacağına bağlı. Ezber ayrı bir iştir, anlamak ayrı. İkisini tek baskıdan beklemek çoğu zaman ikisini de aksatır."
+        - type: compare
+          kicker: "İKİ İŞ"
+          tr: "İkisi birbirinin yerine geçmez."
+          left:  {title: "Sade metin", text: "Ezber için. Göz dağılmaz, satır akılda kalır."}
+          right: {title: "Şerhli baskı", text: "Anlamak için. Satırın altındaki bahis açılır."}
+          vo: "Sade metin ezber içindir, göz dağılmaz. Şerhli baskı anlamak içindir, satırın altındaki bahis açılır."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: metin-kavaidul-irab
+          vo: "اَلْإِعْرَابُ عَنْ قَوَاعِدِ الْإِعْرَاب. İbn Hişâm'ın metni, ezberlemek isteyen için şerhsiz."
+        - type: point
+          kicker: "KLASİK USUL"
+          tr: "İkisi de alınır."
+          body: "Metin ezberlenir, şerh derste açılır."
+          vo: "Klasik usulde ikisi de alınır. Metin ezberlenir, şerh derste açılır. Talebenin çantasında ikisi birden durur."
+        - type: cta
+          tr: "Önce hangisi lazım?"
+          body: "Soruyu sor, kitabı ona göre seç."
+          vo: "Önce hangisine ihtiyacın var? Soruyu sor, kitabı ona göre seç."
+    story:
+      kind: video
+      caption: "Metin mi, şerh mi?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Sade metin mi,<br>şerhli mi?"
+          vo: "Sade metin mi alınmalı, şerhli baskı mı?"
+        - type: point
+          tr: "Metin ezber için, şerh anlamak için."
+          vo: "Metin ezber içindir, şerh anlamak için."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 68 ══════════════════════════════
+  - day: 68
+    title: "Gayr-i munsarif"
+    post:
+      tags: ["#nahiv", "#irab", "#arapçagramer"]
+      kind: carousel
+      caption: |
+        Bazı isimler tenvin almaz. Mecrûr olduklarında da kesre yerine
+        fetha alırlar. Bunlara memnû' mine's-sarf, yani gayr-i munsarif denir.
+
+        Sebepsiz değil: kelimede iki illet bir araya gelmiştir. Özel isim
+        olması, müennes olması, yabancı kökenli olması gibi.
+
+        Metinde tenvinsiz bir isim görüp "hata var" demeden önce,
+        gayr-i munsarif olup olmadığını sormak gerekir.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Tenvin almayan isimler"
+          ar: "اَلْمَمْنُوعُ مِنَ الصَّرْف"
+          dur: 3.4
+        - type: point
+          kicker: "İKİ ÖZELLİĞİ"
+          tr: "Tenvin almaz, mecrûrda fetha alır."
+          body: "مَرَرْتُ بِأَحْمَدَ — kesre değil fetha"
+          dur: 4.0
+        - type: list
+          kicker: "SEBEPLERİ"
+          tr: "İki illet bir araya gelir"
+          items:
+            - "Özel isim + müenneslik: فَاطِمَةُ"
+            - "Özel isim + yabancı kök: إِبْرَاهِيمُ"
+            - "Sıfat + vezin: أَحْمَرُ"
+          dur: 4.4
+        - type: point
+          kicker: "İSTİSNA"
+          tr: "Başına ال gelirse kaide bozulur."
+          body: "Artık normal isim gibi kesre alır."
+          dur: 3.6
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Tenvinsiz isim hata değildir."
+          body: "Kaideyi bilmeyen metni yanlış okur."
+          dur: 3.6
+        - type: cta
+          tr: "Tenvin yoksa sebebini ara."
+          body: "Çoğu zaman sebep buradadır."
+          dur: 3.2
+    story:
+      kind: video
+      caption: "Tenvin niçin yok?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Bu isimde niçin<br>tenvin yok?"
+          vo: "Bu isimde niçin tenvin yok?"
+        - type: concept
+          ar: "اَلْمَمْنُوعُ مِنَ الصَّرْف"
+          tr: "Tenvin almayan isim."
+          vo: "اَلْمَمْنُوعُ مِنَ الصَّرْف. Tenvin almayan isim."
+        - type: cta
+          tr: "Sebepleri gönderide"
+          vo: "Sebeplerinin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 69 ══════════════════════════════
+  - day: 69
+    title: "Zamirler: muttasıl ve munfasıl"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
+      kind: video
+      caption: |
+        Arapçada zamir bazen ayrı bir kelimedir, bazen kelimeye yapışır.
+        Ayrı duranına munfasıl, yapışanına muttasıl denir.
+
+        هُوَ ayrıdır, كِتَابُهُ içindeki ـهُ yapışıktır. İkisi de aynı
+        kişiyi gösterir ama cümledeki görevleri farklıdır.
+
+        Muttasıl zamirler metinde çok geçer ve çoğu zaman gözden kaçar.
+        Oysa cümlenin fâili ya da mef'ûlü çoğunlukla odur.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Zamir bazen ayrı,<br>bazen kelimeye yapışık."
+          vo: "Arapçada zamir bazen ayrı bir kelimedir, bazen kelimeye yapışır."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "Aynı kişi, farklı görev."
+          left:  {ar: "مُنْفَصِل", title: "Munfasıl", text: "Ayrı durur. هُوَ · أَنْتَ · أَنَا"}
+          right: {ar: "مُتَّصِل", title: "Muttasıl", text: "Kelimeye yapışır. كِتَابُهُ · ضَرَبَنِي"}
+          vo: "مُنْفَصِل ayrı durur: هُوَ، أَنْتَ، أَنَا. مُتَّصِل kelimeye yapışır: كِتَابُهُ، ضَرَبَنِي."
+        - type: point
+          kicker: "DİKKAT"
+          tr: "Yapışık zamir cümlenin direğidir."
+          body: "Çoğu zaman fâil ya da mef'ûl odur."
+          vo: "Yapışık zamir gözden kaçar ama cümlenin fâili ya da mef'ûlü çoğunlukla odur."
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "ضَرَبَهُ"
+          tr: "Tek kelime, üç unsur."
+          body: "Fiil + gizli fâil + mef'ûl zamiri"
+          vo: "ضَرَبَهُ tek kelimedir ama içinde üç unsur var: fiil, gizli fâil ve mef'ûl zamiri."
+        - type: point
+          kicker: "GİZLİ ZAMİR"
+          tr: "Görünmeyen zamir de zamirdir."
+          body: "كَتَبَ — fâili gizli هُوَ'dir."
+          vo: "Bazen zamir hiç görünmez. كَتَبَ dendiğinde fâili gizli هُوَ'dir. İ'râbda yazılır."
+        - type: cta
+          tr: "Küçük harf, büyük görev."
+          body: "Zamiri atlayan cümleyi yarım okur."
+          vo: "Zamiri atlayan talebe cümleyi yarım okur. Küçük harf, büyük görev."
+    story:
+      kind: video
+      caption: "Muttasıl zamir nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلضَّمِيرُ الْمُتَّصِل"
+          tr: "Kelimeye yapışan zamir."
+          vo: "اَلضَّمِيرُ الْمُتَّصِل. Kelimeye yapışan zamir."
+        - type: point
+          ar: "ضَرَبَهُ"
+          tr: "Tek kelime, üç unsur."
+          vo: "ضَرَبَهُ. Tek kelimede üç unsur var."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 70 ══════════════════════════════
+  - day: 70
+    title: "Müellif kendi metnini şerh ederse + Katru'n-Nedâ"
+    post:
+      tags: ["#nahiv", "#klasikmetin", "#arapçakitap"]
+      kind: video
+      book_line: "Şerhu Katri'n-Nedâ"
+      caption: |
+        Şerh çoğunlukla başkası tarafından yazılır. Şârih metni yorumlar,
+        bazen müellifin kastetmediği bir manayı da tartışır.
+
+        Ama bir metni müellifin kendisi şerh ederse iş değişir. O zaman
+        "burada ne demek istedi?" sorusunun cevabı tahmin değil, beyandır.
+
+        İbn Hişâm, Katru'n-Nedâ'yı yazdı ve kendisi şerh etti. Nahivde
+        bu, talebeye en az tereddüt bırakan metinlerden biridir.
+      scenes:
+        - type: hook
+          kicker: "KLASİK METİN"
+          tr: "Metni şerh eden,<br>müellifin kendisiyse?"
+          vo: "Bir metni müellifin kendisi şerh ederse ne değişir?"
+        - type: compare
+          kicker: "FARK"
+          tr: "Tahmin ile beyan arasındaki mesafe."
+          left:  {title: "Başkasının şerhi", text: "“Burada şunu kastetmiş olmalı.” Yorum."}
+          right: {title: "Müellifin şerhi", text: "“Burada şunu kastettim.” Beyan."}
+          vo: "Başkasının şerhi yorumdur: burada şunu kastetmiş olmalı. Müellifin şerhi beyandır: burada şunu kastettim."
+        - type: point
+          kicker: "FAYDASI"
+          tr: "Tereddüt azalır, ilerleme hızlanır."
+          body: "Talebe tartışmaya değil, kaideye bakar."
+          vo: "Müellif şerhiyle okunan metinde tereddüt azalır. Talebe tartışmaya değil, kaidenin kendisine bakar. Bu da ilerlemeyi belirgin şekilde hızlandırır."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: katrun-neda
+          vo: "شَرْحُ قَطْرِ النَّدَى. İbn Hişâm'ın kendi metnine yazdığı şerh."
+        - type: point
+          kicker: "YERİ"
+          tr: "Âcurrûmiyye ile Kâfiye arasında."
+          body: "Orta seviye için yazılmış bir metin."
+          vo: "Yeri Âcurrûmiyye ile Kâfiye arasındadır. Orta seviye talebe için yazılmıştır. Girişten sonra atılacak ilk ciddi adımdır."
+        - type: cta
+          tr: "Müellifin sesi."
+          body: "Nahivde en az tereddüt bırakan metinlerden."
+          vo: "Metni müellifin sesinden okumak, nahivde en az tereddüt bırakan yoldur."
+    story:
+      kind: video
+      caption: "Müellif şerhi nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Metni müellifi<br>şerh ederse?"
+          vo: "Bir metni müellifinin kendisi şerh ederse ne değişir?"
+        - type: point
+          tr: "Yorum değil, beyan olur."
+          vo: "Şerh yorum olmaktan çıkar, beyan olur."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+  # ═══════════════════════════════ 71 ══════════════════════════════
+  - day: 71
+    title: "İsm-i işâret ve ism-i mevsûl"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
+      kind: carousel
+      caption: |
+        "Bu kitap" ile "okuduğun kitap" aynı işi yapar: ikisi de hangi
+        kitaptan söz edildiğini belirler. Ama yapıları bambaşkadır.
+
+        Birincisi ism-i işâret, ikincisi ism-i mevsûl. İkisi de mebnîdir,
+        yani son harekeleri değişmez. İkisi de marifedir.
+
+        Metinde çok geçerler ve çoğu zaman bir cümleyi kendi içine alırlar.
+        İsm-i mevsûlü tanımayan, cümlenin nerede bittiğini kaçırır.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "“Bu kitap” ve<br>“okuduğun kitap”"
+          body: "İkisi de belirler, ama başka yoldan."
+          dur: 3.6
+        - type: concept
+          kicker: "1 · İŞARET"
+          ar: "اِسْمُ الْإِشَارَة"
+          tr: "İşaret ismi."
+          body: "هَذَا · هَذِهِ · ذَلِكَ · تِلْكَ"
+          dur: 3.8
+        - type: concept
+          kicker: "2 · MEVSÛL"
+          ar: "اَلِاسْمُ الْمَوْصُول"
+          tr: "Bağlanan isim."
+          body: "اَلَّذِي · اَلَّتِي · اَلَّذِينَ"
+          dur: 3.8
+        - type: point
+          kicker: "SILA CÜMLESİ"
+          ar: "جَاءَ الَّذِي كَتَبَ الدَّرْسَ"
+          tr: "Mevsûl, arkasına bir cümle alır."
+          body: "O cümleye sıla denir; mevsûlü tamamlar."
+          dur: 4.2
+        - type: point
+          kicker: "ORTAK ÖZELLİK"
+          tr: "İkisi de mebnîdir."
+          body: "Görev değişse de son hareke değişmez."
+          dur: 3.6
+        - type: cta
+          tr: "Mevsûlü gör, cümlenin sınırını bul."
+          body: "Nerede bitiyor sorusunun cevabı orada."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "İsm-i mevsûl nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلِاسْمُ الْمَوْصُول"
+          tr: "Arkasına cümle alan isim."
+          vo: "اَلِاسْمُ الْمَوْصُول. Arkasına bir cümle alarak tamamlanan isim."
+        - type: point
+          ar: "اَلَّذِي كَتَبَ"
+          tr: "O cümleye sıla denir."
+          vo: "اَلَّذِي كَتَبَ. Arkasındaki cümleye sıla denir."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 72 ══════════════════════════════
+  - day: 72
+    title: "Muzârinin nasb edatları"
+    post:
+      tags: ["#nahiv", "#irab", "#arapçagramer"]
+      kind: video
+      caption: |
+        Muzâri fiilin son harekesi normalde dammedir: يَكْتُبُ.
+        Ama başına belli harfler gelirse fetha olur: أَنْ يَكْتُبَ.
+
+        Bu harflere nevâsıb denir. Dört tanesi doğrudan nasb eder:
+        أَنْ، لَنْ، كَيْ، إِذَنْ. Diğerleri gizli bir أَنْ ile nasb eder.
+
+        Muzârinin son harekesi cümlenin anlamını taşır. Fetha gördün mü,
+        önünde bir nâsıb ara.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "يَكْتُبُ neden bazen<br>يَكْتُبَ oluyor?"
+          vo: "يَكْتُبُ neden bazen يَكْتُبَ oluyor? Son hareke değişti, sebebi ne?"
+        - type: concept
+          kicker: "SEBEP"
+          ar: "نَوَاصِبُ الْمُضَارِع"
+          translit: "nevâsıbü'l-muzâri"
+          tr: "Muzâriyi nasb eden harfler."
+          vo: "نَوَاصِبُ الْمُضَارِع. Muzâri fiilin sonunu fetha yapan harfler."
+        - type: list
+          kicker: "DÖRDÜ"
+          tr: "Doğrudan nasb ederler"
+          items:
+            - "أَنْ — ki, -mek"
+            - "لَنْ — asla ...mayacak"
+            - "كَيْ — ...mek için"
+            - "إِذَنْ — öyleyse"
+          vo: "أَنْ، لَنْ، كَيْ، إِذَنْ. Dördü de muzârinin sonunu fetha yapar."
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "لَنْ أَنْسَى"
+          tr: "Asla unutmayacağım."
+          body: "لَنْ geldi, sonu fetha oldu."
+          vo: "لَنْ أَنْسَى. Asla unutmayacağım. لَنْ geldi, fiilin sonu fetha oldu."
+        - type: point
+          kicker: "GİZLİ أَنْ"
+          tr: "Bazı harfler gizli أَنْ ile nasb eder."
+          body: "لِ · حَتَّى · فَ — görünmeyen bir أَنْ taşırlar."
+          vo: "Bazı harfler doğrudan değil, gizli bir أَنْ ile nasb eder: لِ، حَتَّى، فَ."
+        - type: cta
+          tr: "Fetha gördün mü, nâsıb ara."
+          body: "Hareke sebepsiz değişmez."
+          vo: "Muzârinin sonunda fetha gördün mü, önünde bir nâsıb ara. Hareke sebepsiz değişmez."
+    story:
+      kind: video
+      caption: "Muzâri niçin nasb olur?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "يَكْتُبُ → يَكْتُبَ"
+          vo: "يَكْتُبُ nasıl يَكْتُبَ oldu?"
+        - type: list
+          tr: "Dört nâsıb"
+          items: ["أَنْ", "لَنْ", "كَيْ", "إِذَنْ"]
+          vo: "Dört nâsıb: أَنْ، لَنْ، كَيْ، إِذَنْ."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 73 ══════════════════════════════
+  - day: 73
+    title: "Câmî'deki beyitler + es-Sâmî"
+    post:
+      tags: ["#nahiv", "#mollacami", "#klasikmetin"]
+      kind: video
+      book_line: "es-Sâmî Şerhu Ebyâti'l-Câmî"
+      caption: |
+        Molla Câmî'yi okuyan talebe bir yerde takılır: metnin içinde
+        şiir geçer. Beyit Arapçadır, eskidir, bağlamı belli değildir.
+
+        Bu beyitler süs değil. Klasik nahiv, kaidesini Arap şiirinden
+        delillendirir. Beyti anlamayan, kaidenin niçin öyle olduğunu da
+        kavrayamaz.
+
+        Bu yüzden şâhid beyitlerin ayrı şerhleri yazılmıştır.
+      scenes:
+        - type: hook
+          kicker: "MOLLA CÂMÎ"
+          tr: "Metnin içinde şiir var.<br>Niçin?"
+          vo: "Molla Câmî'yi okurken metnin içinde beyitler çıkıyor. Niçin?"
+        - type: point
+          kicker: "SEBEP"
+          tr: "Kaide şiirle delillendirilir."
+          body: "Beyit süs değil, delildir."
+          vo: "Klasik nahiv kaidesini Arap şiiriyle delillendirir. Beyit süs değil, delildir. Kaidenin dayandığı kullanım o beyitte duruyor."
+        - type: point
+          kicker: "ZORLUK"
+          tr: "Beyit eskidir, bağlamı kayıptır."
+          body: "Kelime bilinse de mana çıkmayabilir."
+          vo: "Beyitler eskidir, bağlamları kayıptır. Kelimeler bilinse bile mana çıkmayabilir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: es-sami-cami
+          vo: "اَلسَّامِي شَرْحُ أَبْيَاتِ الْجَامِي. Câmî'de geçen beyitlerin ayrı şerhi."
+        - type: point
+          kicker: "NASIL KULLANILIR"
+          tr: "Câmî'nin yanında dursun."
+          body: "Beyte gelince aç, bak, devam et."
+          vo: "Câmî'nin yanında dursun. Beyte geldiğinde aç, bak, sonra metne devam et. Böylece metnin akışı bozulmaz, beyit de havada kalmaz."
+        - type: cta
+          tr: "Delili anlamadan kaide oturmaz."
+          body: "Beyti atlamak, kaidenin yarısını atlamaktır."
+          vo: "Delili anlamadan kaide oturmaz. Beyti atlamak, kaidenin yarısını atlamaktır."
+    story:
+      kind: video
+      caption: "Metindeki beyitler"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Nahiv metninde<br>niçin şiir var?"
+          vo: "Nahiv metinlerinin içinde niçin şiir geçer?"
+        - type: point
+          tr: "Beyit süs değil, delildir."
+          vo: "Beyit süs değil, kaidenin delilidir."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 74 ══════════════════════════════
+  - day: 74
+    title: "Muzârinin cezm edatları"
+    post:
+      tags: ["#nahiv", "#irab", "#arapçaders"]
+      kind: carousel
+      caption: |
+        Nasb edatları muzârinin sonunu fetha yapıyordu. Cezm edatları
+        ise sonu tamamen düşürür: يَكْتُبُ olur يَكْتُبْ.
+
+        Cezm yalnız fiile girer. İsimde cezm yoktur — bu, i'râbda yön
+        bulmanın en kullanışlı ipuçlarından biridir.
+
+        Bazı edatlar tek fiili cezm eder, bazıları iki fiili birden.
+        İkincilere şart edatları denir.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "يَكْتُبُ → يَكْتُبْ"
+          body: "Son hareke düştü. Sebebi ne?"
+          dur: 3.4
+        - type: concept
+          kicker: "TERİM"
+          ar: "جَوَازِمُ الْمُضَارِع"
+          tr: "Muzâriyi cezm edenler."
+          body: "Cezm yalnız fiile girer."
+          dur: 3.8
+        - type: list
+          kicker: "TEK FİİLİ CEZM EDENLER"
+          tr: "Dört edat"
+          items:
+            - "لَمْ — ...madı"
+            - "لَمَّا — henüz ...madı"
+            - "لَامُ الْأَمْرِ — ...sın"
+            - "لَا النَّاهِيَة — ...ma"
+          dur: 4.4
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "لَمْ يَكْتُبْ"
+          tr: "Yazmadı."
+          body: "Muzâri geldi ama mana geçmiş zaman oldu."
+          dur: 4.0
+        - type: point
+          kicker: "İKİ FİİLİ CEZM EDENLER"
+          tr: "Şart edatları"
+          body: "إِنْ · مَنْ · مَا · مَهْمَا — şart ve cevabı cezm olur."
+          dur: 4.0
+        - type: cta
+          tr: "Cezm gördün mü, fiildir."
+          body: "İsimde cezm olmaz — bu bir yön işareti."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Cezm nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Son hareke niçin düştü?"
+          vo: "Muzâri fiilin son harekesi niçin düştü?"
+        - type: point
+          ar: "لَمْ يَكْتُبْ"
+          tr: "Cezm edatı girdi."
+          vo: "لَمْ يَكْتُبْ. Bir cezm edatı girdi, son hareke düştü."
+        - type: cta
+          tr: "Edatlar gönderide"
+          vo: "Edatların tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 75 ══════════════════════════════
+  - day: 75
+    title: "Şart cümlesi"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaöğren"]
+      kind: video
+      caption: |
+        "Çalışırsan kazanırsın." Türkçede bu cümlenin şart olduğunu ek
+        söyler. Arapçada ise başa gelen bir edat söyler.
+
+        Şart cümlesinin üç parçası vardır: edat, şart fiili ve cevap fiili.
+        Edat cazim ise her iki fiil de cezm olur.
+
+        Kur'an'da şart cümlesi çok geçer. Yapıyı tanıyan, âyetin hangi
+        parçasının şart hangisinin sonuç olduğunu karıştırmaz.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "“Çalışırsan kazanırsın.”"
+          body: "Arapçada bu cümle nasıl kurulur?"
+          vo: "Çalışırsan kazanırsın. Arapçada bu cümle nasıl kurulur?"
+        - type: concept
+          kicker: "YAPI"
+          ar: "اَلشَّرْط"
+          translit: "eş-şart"
+          tr: "Üç parçalı cümle."
+          body: "Edat + şart fiili + cevap fiili"
+          vo: "اَلشَّرْط. Üç parçası vardır: edat, şart fiili ve cevap fiili."
+        - type: point
+          kicker: "ÖRNEK"
+          ar: "إِنْ تَجْتَهِدْ تَنْجَحْ"
+          tr: "Çalışırsan başarırsın."
+          body: "Her iki fiil de cezm oldu."
+          vo: "إِنْ تَجْتَهِدْ تَنْجَحْ. Çalışırsan başarırsın. Edat cazim olduğu için iki fiil de cezm oldu."
+        - type: list
+          kicker: "EDATLAR"
+          tr: "En çok geçenler"
+          items:
+            - "إِنْ — eğer"
+            - "مَنْ — kim ...ırsa"
+            - "مَا · مَهْمَا — ne ...ırsa"
+            - "إِذَا — ...dığı zaman (cezm etmez)"
+          vo: "إِنْ eğer demek. مَنْ kim ise. مَا ve مَهْمَا ne ise. إِذَا ise cezm etmez."
+        - type: point
+          kicker: "KUR'AN'DA"
+          tr: "Şart cümlesi çok geçer."
+          body: "Hangi parça şart, hangisi sonuç — ayırmak gerekir."
+          vo: "Kur'an'da şart cümlesi çok geçer. Hangi parçanın şart, hangisinin sonuç olduğunu ayırmak gerekir."
+        - type: cta
+          tr: "Edatı bul, yapıyı kur."
+          body: "Gerisi kendiliğinden gelir."
+          vo: "Önce edatı bul, sonra yapıyı kur. Gerisi kendiliğinden gelir."
+    story:
+      kind: video
+      caption: "Şart cümlesi"
+      scenes:
+        - type: concept
+          ar: "اَلشَّرْط"
+          tr: "Edat + şart + cevap"
+          vo: "اَلشَّرْط. Üç parçalı cümle: edat, şart fiili, cevap fiili."
+        - type: point
+          ar: "إِنْ تَجْتَهِدْ تَنْجَحْ"
+          tr: "Çalışırsan başarırsın."
+          vo: "إِنْ تَجْتَهِدْ تَنْجَحْ. Çalışırsan başarırsın."
+        - type: cta
+          tr: "Edatlar gönderide"
+          vo: "Edatların tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 76 ══════════════════════════════
+  - day: 76
+    title: "Zarflar ve terkipler + Zurûf ve Terkîb"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçakitap"]
+      kind: video
+      book_line: "Zurûf ve Terkîb"
+      caption: |
+        Cümlenin iskeleti fiil, fâil ve mef'ûldür. Ama konuşma bununla
+        bitmez: ne zaman, nerede, ne kadar süreyle?
+
+        Bu soruların cevabı zarflarla verilir. Zarf-ı zaman ve zarf-ı
+        mekân, mef'ûlün fîh başlığı altında incelenir ve mansûbdur.
+
+        Zarflar kısa kelimelerdir ama cümleye yerleşmeleri kuralsız değildir.
+        Terkip bilgisiyle birlikte öğrenilince yerli yerine oturur.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Ne zaman? Nerede?"
+          body: "Cümlenin iskeleti bunları söylemez."
+          vo: "Fiil, fâil, mef'ûl. Peki ne zaman, nerede? Cümlenin iskeleti bunları söylemez."
+        - type: concept
+          kicker: "CEVAP"
+          ar: "اَلظَّرْف"
+          translit: "ez-zarf"
+          tr: "Zaman ve yer bildiren mansûb isim."
+          vo: "اَلظَّرْف. Fiilin ne zaman ve nerede olduğunu bildiren mansûb isim."
+        - type: compare
+          kicker: "İKİ TÜR"
+          tr: "Soruya göre ayrılır."
+          left:  {ar: "ظَرْفُ زَمَان", title: "Zaman", text: "يَوْمَ · لَيْلًا · صَبَاحًا"}
+          right: {ar: "ظَرْفُ مَكَان", title: "Mekân", text: "أَمَامَ · تَحْتَ · عِنْدَ"}
+          vo: "ظَرْفُ زَمَان zamanı bildirir: يَوْمَ، لَيْلًا. ظَرْفُ مَكَان yeri bildirir: أَمَامَ، تَحْتَ، عِنْدَ."
+        - type: point
+          kicker: "İ'RÂBI"
+          tr: "Mef'ûlün fîh başlığına girer."
+          body: "Mansûbdur; âmili çoğunlukla fiildir."
+          vo: "Zarf, mef'ûlün fîh başlığı altında incelenir. Mansûbdur ve âmili çoğunlukla fiildir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: zuruf-ve-terkib
+          vo: "اَلظُّرُوفُ وَالتَّرَاكِيب. Zarflar ve terkipler üzerine kısa ve derli toplu bir risâle."
+        - type: cta
+          tr: "Küçük kelime, yerini bilen cümle."
+          body: "Zarf oturunca cümle tamamlanır."
+          vo: "Zarflar küçük kelimelerdir ama yerleri bellidir. Zarf oturunca cümle tamamlanır."
+    story:
+      kind: video
+      caption: "Zarf nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلظَّرْف"
+          translit: "ez-zarf"
+          tr: "Zaman ve yer bildirir."
+          vo: "اَلظَّرْف. Fiilin zamanını ve yerini bildiren mansûb isim."
+        - type: point
+          ar: "أَمَامَ · تَحْتَ · عِنْدَ"
+          tr: "Hepsi mansûbdur."
+          vo: "أَمَامَ، تَحْتَ، عِنْدَ. Hepsi mansûbdur."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 77 ══════════════════════════════
+  - day: 77
+    title: "“Mâ”nın çeşitleri"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#irab"]
+      kind: carousel
+      caption: |
+        مَا iki harflik bir kelime. Ama metinde en az beş ayrı iş yapar
+        ve hangisi olduğu cümleye göre değişir.
+
+        Bazen soru sorar, bazen olumsuz yapar, bazen ism-i mevsûl olur,
+        bazen şart edatıdır, bazen de hiçbir anlam katmadan sadece
+        araya girer.
+
+        Metinde مَا görünce otomatik "ne" demek, en sık yapılan
+        hatalardan biridir.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "مَا"
+          body: "İki harf, beş ayrı görev."
+          dur: 3.2
+        - type: concept
+          kicker: "1 · SORU"
+          ar: "مَا هَذَا؟"
+          tr: "“Ne?” demek."
+          body: "İstifhâmiyye"
+          dur: 3.4
+        - type: concept
+          kicker: "2 · OLUMSUZLUK"
+          ar: "مَا جَاءَ أَحَدٌ"
+          tr: "“...madı” demek."
+          body: "Nâfiye"
+          dur: 3.4
+        - type: concept
+          kicker: "3 · MEVSÛL"
+          ar: "مَا عِنْدَكَ"
+          tr: "“...şey” demek."
+          body: "Mevsûle — arkasına sıla alır"
+          dur: 3.6
+        - type: concept
+          kicker: "4 · ŞART"
+          ar: "مَا تَفْعَلْ تَجِدْ"
+          tr: "“Ne yaparsan” demek."
+          body: "Şartiyye — iki fiili cezm eder"
+          dur: 3.8
+        - type: cta
+          tr: "5 · Zâide: hiçbir mana katmaz."
+          body: "Önce hangisi olduğunu sor."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Mâ kaç anlama gelir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "مَا her zaman<br>“ne” demek değil."
+          vo: "مَا her zaman ne demek değildir."
+        - type: stat
+          big: "5"
+          label: "ayrı görev"
+          vo: "Metinde beş ayrı iş yapar."
+        - type: cta
+          tr: "Beşi de gönderide"
+          vo: "Beşinin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 78 ══════════════════════════════
+  - day: 78
+    title: "Sayılar ve temyizi"
+    post:
+      tags: ["#nahiv", "#arapçagramer", "#arapçaders"]
+      kind: video
+      caption: |
+        Arapçada sayı saymak, sayıyı söylemekle bitmez. Sayılan şeyin
+        hangi hâlde geleceği de kaidelidir — üstelik sayıya göre değişir.
+
+        Üçten ona kadar sayılan çoğul ve mecrûr gelir. On birden
+        doksan dokuza kadar tekil ve mansûb. Yüz ve bin ile tekil ve mecrûr.
+
+        Bir de sayının kendisinin müzekker-müennes uyumu var ve çoğu
+        yerde tersinedir. Kaideyi bilmeyen için en şaşırtıcı bahislerden biri.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "Sayıyı söyledin.<br>Peki sayılan nasıl gelecek?"
+          vo: "Sayıyı söylemek yetmiyor. Sayılan şeyin hangi hâlde geleceği de kaideli."
+        - type: list
+          kicker: "ÜÇ KAİDE"
+          tr: "Sayıya göre değişir"
+          items:
+            - "3-10: çoğul ve mecrûr — ثَلَاثَةُ كُتُبٍ"
+            - "11-99: tekil ve mansûb — عِشْرُونَ كِتَابًا"
+            - "100 ve 1000: tekil ve mecrûr — مِائَةُ كِتَابٍ"
+          vo: "Üçten ona kadar sayılan çoğul ve mecrûr gelir. On birden doksan dokuza tekil ve mansûb. Yüz ve binde tekil ve mecrûr."
+        - type: point
+          kicker: "ŞAŞIRTAN KISIM"
+          tr: "Sayının cinsiyeti çoğu yerde tersinedir."
+          body: "ثَلَاثَةُ كُتُبٍ — kitap müzekker, sayı müennes görünüyor."
+          vo: "Sayının müzekker-müennes uyumu çoğu yerde tersinedir. ثَلَاثَةُ كُتُبٍ denir; sayı müennes görünür."
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Metinde sayı çok geçer."
+          body: "Âyet, hadis, fıkıh — hepsinde miktar vardır."
+          vo: "Metinlerde sayı çok geçer. Âyette, hadiste, fıkıhta miktar vardır."
+        - type: point
+          kicker: "USUL"
+          tr: "Üç kaideyi örnekle ezberle."
+          body: "Kuru liste yerine üç cümle."
+          vo: "Üç kaideyi kuru liste olarak değil, üç örnek cümleyle ezberle. Daha kalıcı olur."
+        - type: cta
+          tr: "Sayı kolay, temyizi kaideli."
+          body: "Kaideyi bilen tereddüt etmez."
+          vo: "Sayıyı söylemek kolay, temyizi kaidelidir. Kaideyi bilen tereddüt etmez."
+    story:
+      kind: video
+      caption: "Sayıdan sonra ne gelir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Sayıdan sonra<br>hangi hâl gelir?"
+          vo: "Sayıdan sonra gelen kelime hangi hâlde olur?"
+        - type: point
+          ar: "ثَلَاثَةُ كُتُبٍ"
+          tr: "3-10 arası: çoğul ve mecrûr."
+          vo: "ثَلَاثَةُ كُتُبٍ. Üçten ona kadar çoğul ve mecrûr."
+        - type: cta
+          tr: "Üç kaide gönderide"
+          vo: "Üç kaidenin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 79 ══════════════════════════════
+  - day: 79
+    title: "Şâhid beyit + Rabtü'ş-Şevârid"
+    post:
+      tags: ["#nahiv", "#klasikmetin", "#ilimyolu"]
+      kind: video
+      book_line: "Rabtü'ş-Şevârid"
+      caption: |
+        Nahiv kitapları kaideyi söyler, sonra bir beyit getirir:
+        "şâhid budur". Yani kaide bu şiirde böyle kullanılmış.
+
+        Şâhid, kaidenin delilidir. Arap dilinin kaideleri sonradan
+        konmadı; konuşulan dilden çıkarıldı. Şiir de o dilin kaydıdır.
+
+        Metinlerde geçen şâhid beyitler asırlar içinde o kadar çoğaldı ki
+        onları toplayıp açıklayan ayrı kitaplar yazıldı.
+      scenes:
+        - type: hook
+          kicker: "NAHİV"
+          tr: "“Şâhid budur”<br>ne demek?"
+          vo: "Nahiv kitapları kaideyi söyleyip bir beyit getirir: şâhid budur. Ne demek bu?"
+        - type: concept
+          kicker: "TERİM"
+          ar: "اَلشَّاهِد"
+          translit: "eş-şâhid"
+          tr: "Kaidenin delili olan beyit."
+          vo: "اَلشَّاهِد. Kaidenin doğruluğunu gösteren delil beyit."
+        - type: point
+          kicker: "SEBEBİ"
+          tr: "Kaide dilden çıkarıldı, dile dayatılmadı."
+          body: "Önce dil vardı, kaide sonra yazıldı."
+          vo: "Arapçanın kaideleri sonradan konmadı, konuşulan dilden çıkarıldı. Önce dil vardı, kaide sonra yazıldı. Şâhid beyit de o dilin yazıya geçmiş kaydıdır."
+        - type: point
+          kicker: "ZORLUĞU"
+          tr: "Beyitler eski, bağlam kayıp."
+          body: "Kelimeleri bilmek çoğu zaman yetmez."
+          vo: "Beyitler eskidir, bağlamları kayıptır. Kelimeleri bilmek çoğu zaman yetmez. Kimin söylediği, hangi olaya söylendiği de gerekir."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: rabtus-sevarid
+          vo: "رَبْطُ الشَّوَارِد فِي حَلِّ الشَّوَاهِد. Metinlerde geçen şâhid beyitleri toplayıp çözen bir eser."
+        - type: cta
+          tr: "Delili anla, kaide otursun."
+          body: "Şâhidi atlamak kaideyi yarım bırakır."
+          vo: "Delili anladığında kaide yerine oturur. Şâhidi atlamak kaideyi yarım bırakır."
+    story:
+      kind: video
+      caption: "Şâhid nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلشَّاهِد"
+          translit: "eş-şâhid"
+          tr: "Kaidenin delil beyti."
+          vo: "اَلشَّاهِد. Kaidenin delili olan beyit."
+        - type: point
+          tr: "Kaide dilden çıkarıldı."
+          vo: "Kaide dile dayatılmadı, dilden çıkarıldı."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 80 ══════════════════════════════
+  - day: 80
+    title: "Mastar çeşitleri"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaöğren"]
+      kind: carousel
+      caption: |
+        Mastar, fiilin isim hâli. Türkçede "-mek" ekiyle yapılır ve tek
+        kalıptır. Arapçada ise mastar birden çok yoldan kurulur.
+
+        Sülâsî fiillerin mastarları kuralsız gibidir — her fiilin kendi
+        mastarı ezberlenir. Mezîd bâbların mastarları ise kalıplıdır,
+        bâbını bilen mastarını çıkarır.
+
+        Bir de özel mastarlar var: mîmî mastar, sınâî mastar, mastar-ı merre.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "Mastar"
+          ar: "اَلْمَصْدَر"
+          body: "Fiilin isim hâli."
+          dur: 3.2
+        - type: compare
+          kicker: "İKİ DURUM"
+          tr: "Hepsi aynı kolaylıkta değil."
+          left:  {ar: "ثُلَاثِي", title: "Sülâsî", text: "Mastarı ezberlenir. كَتَبَ ← كِتَابَة"}
+          right: {ar: "مَزِيد", title: "Mezîd", text: "Mastarı kalıplıdır. أَكْرَمَ ← إِكْرَام"}
+          dur: 4.4
+        - type: concept
+          kicker: "MÎMÎ MASTAR"
+          ar: "اَلْمَصْدَرُ الْمِيمِي"
+          tr: "Başında mîm olan mastar."
+          body: "مَضْرِب — vurma işi"
+          dur: 3.8
+        - type: concept
+          kicker: "MASTAR-I MERRE"
+          ar: "مَصْدَرُ الْمَرَّة"
+          tr: "Bir kezlik bildirir."
+          body: "ضَرْبَة — bir vuruş"
+          dur: 3.8
+        - type: concept
+          kicker: "SINÂÎ MASTAR"
+          ar: "اَلْمَصْدَرُ الصِّنَاعِي"
+          tr: "Sonuna ـِيَّة eklenir."
+          body: "إِنْسَانِيَّة — insanlık"
+          dur: 3.8
+        - type: cta
+          tr: "Bâbı bil, mastarı çıkar."
+          body: "Mezîdde ezbere gerek kalmaz."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Mastar nedir?"
+      scenes:
+        - type: concept
+          ar: "اَلْمَصْدَر"
+          translit: "el-masdar"
+          tr: "Fiilin isim hâli."
+          vo: "اَلْمَصْدَر. Fiilin isim hâli."
+        - type: point
+          ar: "أَكْرَمَ ← إِكْرَام"
+          tr: "Mezîdde kalıp bellidir."
+          vo: "أَكْرَمَ fiilinin mastarı إِكْرَام. Mezîd bâblarda mastar kalıplıdır."
+        - type: cta
+          tr: "Çeşitleri gönderide"
+          vo: "Mastar çeşitleri bugünkü gönderide."
+  # ═══════════════════════════════ 81 ══════════════════════════════
+  - day: 81
+    title: "İsm-i tafdîl"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaöğren"]
+      kind: video
+      caption: |
+        "Daha büyük", "en büyük" — Türkçede iki ayrı kelime gerekir.
+        Arapçada ikisi için tek kalıp vardır: أَفْعَل.
+
+        Bu kalıba ism-i tafdîl denir. أَكْبَر hem "daha büyük" hem
+        "en büyük" demektir; hangisi olduğunu cümledeki yapı belirler.
+
+        مِنْ ile gelirse karşılaştırma, ال ile gelirse üstünlük olur.
+        Tek harf, iki ayrı mana.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "“Daha büyük” ve “en büyük”<br>aynı kelimeyle söylenir."
+          vo: "Daha büyük ve en büyük. Arapçada ikisi de aynı kelimeyle söylenir."
+        - type: concept
+          kicker: "KALIP"
+          ar: "اِسْمُ التَّفْضِيل"
+          translit: "ism-i tafdîl"
+          tr: "Üstünlük bildiren kalıp."
+          body: "Vezni: أَفْعَل"
+          vo: "اِسْمُ التَّفْضِيل. Üstünlük bildiren kalıp, vezni أَفْعَل."
+        - type: compare
+          kicker: "AYIRAN ŞEY"
+          tr: "Yapı manayı belirler."
+          left:  {ar: "أَكْبَرُ مِنْ", title: "Karşılaştırma", text: "“...dan daha büyük.” مِنْ ile gelir."}
+          right: {ar: "اَلْأَكْبَر", title: "Üstünlük", text: "“En büyük.” ال ile gelir."}
+          vo: "أَكْبَرُ مِنْ dendiğinde karşılaştırma olur. اَلْأَكْبَر dendiğinde en büyük manası çıkar."
+        - type: point
+          kicker: "ŞARTLARI"
+          tr: "Her fiilden ism-i tafdîl yapılmaz."
+          body: "Fiil sülâsî, tam ve müsbet olmalı."
+          vo: "Her fiilden ism-i tafdîl yapılmaz. Fiilin sülâsî, tam ve müsbet olması gerekir."
+        - type: point
+          kicker: "RENK VE KUSURDA"
+          tr: "Renkler bu kalıbı başka iş için kullanır."
+          body: "أَحْمَر kırmızı demektir, “daha kırmızı” değil."
+          vo: "Renk ve kusur bildiren kelimeler de أَفْعَل veznindedir ama üstünlük bildirmez. أَحْمَر kırmızı demektir."
+        - type: cta
+          tr: "Tek kalıp, iki mana."
+          body: "Ayıran şey yanındaki harf."
+          vo: "Tek kalıp, iki ayrı mana. Ayıran şey yanına gelen harftir."
+    story:
+      kind: video
+      caption: "İsm-i tafdîl"
+      scenes:
+        - type: concept
+          ar: "أَفْعَل"
+          tr: "Üstünlük kalıbı."
+          vo: "أَفْعَل. Üstünlük bildiren kalıp."
+        - type: point
+          ar: "أَكْبَرُ مِنْ · اَلْأَكْبَر"
+          tr: "Biri karşılaştırma, biri üstünlük."
+          vo: "أَكْبَرُ مِنْ karşılaştırma, اَلْأَكْبَر üstünlük."
+        - type: cta
+          tr: "Şartları gönderide"
+          vo: "Kalıbın şartları bugünkü gönderide."
+
+  # ═══════════════════════════════ 82 ══════════════════════════════
+  - day: 82
+    title: "Arapçası yetmeyen talebe + Tuhfe Tercümesi"
+    post:
+      tags: ["#nahiv", "#arapçaöğren", "#talebe"]
+      kind: video
+      book_line: "Tuhfetü's-Seniyye Tercümesi"
+      caption: |
+        Klasik metni aslından okumak hedeftir. Ama hedefe bir günde
+        varılmaz ve o güne kadar talebe boş oturmaz.
+
+        Tercüme bir ara duraktır. Metnin ne söylediğini önce Türkçe
+        görürsün, sonra aynı satırı Arapça okuduğunda gözün tanır.
+        Anlamadığın bir metni tekrar tekrar okumaktan hızlıdır.
+
+        Şartı şu: tercüme hedef değil araçtır. Aslına dönmeyen talebe
+        yolda kalır.
+      scenes:
+        - type: hook
+          kicker: "TALEBE"
+          tr: "Metin ağır geliyor.<br>Tercüme okumak ayıp mı?"
+          vo: "Klasik metin ağır geliyor. Tercümesinden okumak ayıp mı?"
+        - type: point
+          kicker: "CEVAP"
+          tr: "Değil. Ama şartı var."
+          body: "Tercüme ara duraktır, varış değil."
+          vo: "Değil. Ama şartı var: tercüme bir ara duraktır, varış noktası değil. Ara durakta oturup kalan, yolculuğu bitirmiş sayılmaz."
+        - type: list
+          kicker: "NASIL KULLANILIR"
+          tr: "Üç adım"
+          items:
+            - "Önce Türkçesini oku, bahsi kavra"
+            - "Sonra aynı satırı Arapçadan oku"
+            - "Takıldığın yeri işaretle, hocaya sor"
+          vo: "Önce Türkçesini oku ve bahsi kavra. Sonra aynı satırı Arapçadan oku. Takıldığın yeri işaretle."
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: tuhfe-tercume
+          vo: "Tuhfetü's-Seniyye Tercümesi. Âcurrûmiyye şerhinin Türkçesi."
+        - type: point
+          kicker: "TEHLİKE"
+          tr: "Tercümede kalan ilerleyemez."
+          body: "Her metinde aslına dön, yoksa alışkanlık olur."
+          vo: "Tehlike şu: tercümede kalan talebe ilerleyemez. Her metinde aslına dönmek gerekir. Yoksa Arapça okuma kası hiç gelişmez."
+        - type: cta
+          tr: "Köprüyü kullan, yolda kalma."
+          body: "Hedef aslını okuyabilmek."
+          vo: "Köprüyü kullan ama yolda kalma. Hedef metni aslından okuyabilmektir. Tercüme o hedefe giden yolu kısaltmak içindir."
+    story:
+      kind: video
+      caption: "Tercüme okumak ayıp mı?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Tercümeden okumak<br>ayıp mı?"
+          vo: "Klasik metni tercümesinden okumak ayıp mı?"
+        - type: point
+          tr: "Değil — ara durak olarak."
+          vo: "Değil. Ara durak olarak kullanılırsa faydalıdır."
+        - type: cta
+          tr: "Üç adım gönderide"
+          vo: "Nasıl kullanılacağı bugünkü gönderide."
+
+  # ═══════════════════════════════ 83 ══════════════════════════════
+  - day: 83
+    title: "İsm-i zaman, mekân ve âlet"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaders"]
+      kind: carousel
+      caption: |
+        Aynı kökten hem "yazan" hem "yazılan" hem "yazı yeri" hem de
+        "yazma aleti" türetilebilir. Kalıp değişir, kök durur.
+
+        مَكْتَب yazı yeri, مِكْتَاب yazma aleti. Aradaki fark tek harekede:
+        mîm fethalıysa zaman ya da mekân, kesreliyse âlet.
+
+        Bu üç kalıbı tanıyan talebe, sözlüğe bakmadan da kelimenin ne
+        işe yaradığını tahmin eder.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "Tek kök, dört ayrı kelime"
+          ar: "ك ت ب"
+          dur: 3.4
+        - type: concept
+          kicker: "1 · ZAMAN VE MEKÂN"
+          ar: "مَفْعَل · مَفْعِل"
+          tr: "İşin olduğu zaman ya da yer."
+          body: "مَكْتَب — yazı yeri, büro"
+          dur: 4.0
+        - type: concept
+          kicker: "2 · ÂLET"
+          ar: "مِفْعَل · مِفْعَال · مِفْعَلَة"
+          tr: "İşi yapan araç."
+          body: "مِفْتَاح — anahtar"
+          dur: 4.0
+        - type: point
+          kicker: "AYIRAN HAREKE"
+          tr: "Mîmin harekesine bak."
+          body: "Fetha → zaman/mekân · kesre → âlet"
+          dur: 3.8
+        - type: point
+          kicker: "FAYDASI"
+          tr: "Sözlüğe bakmadan tahmin."
+          body: "Kalıbı tanıyan manayı sezer."
+          dur: 3.6
+        - type: cta
+          tr: "Kök durur, kalıp konuşur."
+          body: "Sarfın bütün mantığı bu cümlede."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Mekân mı, âlet mi?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "مَكْتَب mi,<br>مِفْتَاح mı?"
+          vo: "مَكْتَب ile مِفْتَاح arasındaki fark ne?"
+        - type: point
+          tr: "Mîmin harekesi ayırır."
+          body: "Fetha → yer · kesre → âlet"
+          vo: "Mîmin harekesi ayırır. Fetha yer bildirir, kesre âlet."
+        - type: cta
+          tr: "Kalıplar gönderide"
+          vo: "Kalıpların tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 84 ══════════════════════════════
+  - day: 84
+    title: "Mübalağa kalıpları"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#belagat"]
+      kind: video
+      caption: |
+        "Bilen" ile "çok bilen" arasındaki fark Türkçede bir kelimeyle
+        kurulur. Arapçada ise kalıp değişir.
+
+        İsm-i fâil işi yapanı bildirir: عَالِم, bilen. Mübalağa kalıbı
+        ise işi çok yapanı: عَلَّام, çok bilen.
+
+        Beş meşhur vezni vardır ve bunlar esmâ-i hüsnâda sık geçer.
+        Kalıbı tanıyan, ismin niçin o şekilde geldiğini de anlar.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "“Bilen” ile “çok bilen”<br>aynı kalıpta olmaz."
+          vo: "Bilen ile çok bilen. Arapçada bu ikisi aynı kalıpta olmaz."
+        - type: compare
+          kicker: "İKİ KALIP"
+          tr: "Biri işi yapar, diğeri çok yapar."
+          left:  {ar: "عَالِم", title: "İsm-i fâil", text: "İşi yapan. Vezni فَاعِل."}
+          right: {ar: "عَلَّام", title: "Mübalağa", text: "İşi çok yapan. Vezni فَعَّال."}
+          vo: "عَالِم ism-i fâildir, işi yapanı bildirir. عَلَّام mübalağa kalıbıdır, işi çok yapanı."
+        - type: list
+          kicker: "BEŞ VEZİN"
+          tr: "En çok kullanılanlar"
+          items:
+            - "فَعَّال — غَفَّار"
+            - "فَعُول — شَكُور"
+            - "فَعِيل — عَلِيم"
+            - "مِفْعَال — مِعْطَاء"
+            - "فَعِل — حَذِر"
+          vo: "Beş vezni var: فَعَّال، فَعُول، فَعِيل، مِفْعَال، فَعِل."
+        - type: point
+          kicker: "NEREDE GÖRÜLÜR"
+          tr: "Esmâ-i hüsnâda sık geçer."
+          body: "اَلْغَفَّار · اَلشَّكُور · اَلْعَلِيم"
+          vo: "Bu kalıplar esmâ-i hüsnâda sık geçer: اَلْغَفَّار، اَلشَّكُور، اَلْعَلِيم."
+        - type: point
+          kicker: "ANLAM FARKI"
+          tr: "Kalıp arttıkça mana kuvvetlenir."
+          body: "Sarf bilgisi burada mana bilgisine dönüşür."
+          vo: "Kalıp değiştikçe mana kuvvetlenir. Sarf bilgisi burada doğrudan mana bilgisine dönüşür."
+        - type: cta
+          tr: "Kalıbı tanı, manayı sez."
+          body: "İsim niçin böyle gelmiş, cevabı kalıpta."
+          vo: "Kalıbı tanıyan, ismin niçin öyle geldiğini de anlar."
+    story:
+      kind: video
+      caption: "Mübalağa kalıbı"
+      scenes:
+        - type: concept
+          ar: "فَعَّال"
+          tr: "İşi çok yapan."
+          vo: "فَعَّال. İşi çok yapanı bildiren kalıp."
+        - type: point
+          ar: "عَالِم ← عَلَّام"
+          tr: "Bilen → çok bilen."
+          vo: "عَالِم bilen demek, عَلَّام çok bilen."
+        - type: cta
+          tr: "Beş vezin gönderide"
+          vo: "Beş veznin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 85 ══════════════════════════════
+  - day: 85
+    title: "Vaz' ilmi + el-Ucâletü'r-Rahmiyye"
+    post:
+      tags: ["#klasikmetin", "#ilimyolu", "#arapçagramer"]
+      kind: video
+      book_line: "el-Ucâletü'r-Rahmiyye"
+      caption: |
+        Bir kelime manasına nasıl bağlanır? "Kitap" sesiyle kitap nesnesi
+        arasındaki ilişki nereden geliyor?
+
+        Bu soruyu soran bir ilim var: vaz' ilmi. Medrese müfredatında
+        nahiv ve belâgatın yanında okutulur, çünkü ikisinin de altında
+        bu soru durur.
+
+        Küçük bir risâledir ama talebeyi dilin kendisi üzerinde
+        düşünmeye alıştırır.
+      scenes:
+        - type: hook
+          kicker: "SORU"
+          tr: "Kelime manasına<br>nasıl bağlanıyor?"
+          vo: "Bir kelime manasına nasıl bağlanıyor? Ses ile mana arasındaki ilişki nereden geliyor?"
+        - type: concept
+          kicker: "İLİM"
+          ar: "عِلْمُ الْوَضْع"
+          translit: "ilmü'l-vaz'"
+          tr: "Lafzın manaya konulmasını inceleyen ilim."
+          vo: "عِلْمُ الْوَضْع. Lafzın manaya hangi yolla konulduğunu inceleyen ilim."
+        - type: point
+          kicker: "NİÇİN GEREKLİ"
+          tr: "Nahiv ve belâgat bunun üstüne kurulur."
+          body: "İkisi de lafız-mana ilişkisini varsayar."
+          vo: "Nahiv de belâgat da lafız ile mana arasındaki ilişkiyi varsayar. Vaz' ilmi o varsayımı inceler."
+        - type: point
+          kicker: "ÖRNEK SORU"
+          tr: "هَذَا hangi manaya konmuştur?"
+          body: "Belli bir şeye mi, her işaret edilene mi?"
+          vo: "Mesela هَذَا hangi manaya konmuştur? Belli bir şeye mi, yoksa işaret edilen her şeye mi?"
+        - type: book
+          kicker: "ŞİFA YAYINEVİ"
+          book: ucaletur-rahmiyye
+          vo: "اَلْعُجَالَةُ الرَّحْمِيَّة. Risâle-i Vaz'iyye'nin şerhi, medrese müfredatından."
+        - type: cta
+          tr: "Küçük risâle, derin soru."
+          body: "Dilin kendisi üzerinde düşünmeye alıştırır."
+          vo: "Küçük bir risâledir ama talebeyi dilin kendisi üzerinde düşünmeye alıştırır."
+    story:
+      kind: video
+      caption: "Vaz' ilmi nedir?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Kelime manasına<br>nasıl bağlanır?"
+          vo: "Bir kelime manasına nasıl bağlanır?"
+        - type: concept
+          ar: "عِلْمُ الْوَضْع"
+          tr: "Lafız-mana ilişkisinin ilmi."
+          vo: "عِلْمُ الْوَضْع. Lafız ile mana arasındaki ilişkiyi inceleyen ilim."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 86 ══════════════════════════════
+  - day: 86
+    title: "Nisbet yâsı ve tasgîr"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaöğren"]
+      kind: carousel
+      caption: |
+        İki küçük ek, kelimenin manasını baştan kurar.
+
+        Nisbet yâsı bir şeye ait olmayı bildirir: مِصْر Mısır, مِصْرِيّ
+        Mısırlı. Soyadları, mezhep adları, nispet isimleri hep böyle kurulur.
+
+        Tasgîr ise küçültme kalıbıdır: كِتَاب kitap, كُتَيِّب kitapçık.
+        Bazen küçültmek için değil, sevgi ya da küçümseme için kullanılır.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "İki küçük ek,<br>yeni mana."
+          dur: 3.0
+        - type: concept
+          kicker: "1 · NİSBET"
+          ar: "يَاءُ النِّسْبَة"
+          tr: "Bir şeye ait olmak."
+          body: "مِصْر ← مِصْرِيّ"
+          dur: 3.6
+        - type: point
+          kicker: "NEREDE GÖRÜLÜR"
+          tr: "İsimlerin çoğu böyle kurulur."
+          body: "اَلْبُخَارِيّ · اَلْحَنَفِيّ · اَلدِّمَشْقِيّ"
+          dur: 4.0
+        - type: concept
+          kicker: "2 · TASGÎR"
+          ar: "اَلتَّصْغِير"
+          tr: "Küçültme kalıbı."
+          body: "كِتَاب ← كُتَيِّب"
+          dur: 3.6
+        - type: point
+          kicker: "SADECE KÜÇÜLTME DEĞİL"
+          tr: "Sevgi ya da küçümseme de bildirir."
+          body: "Bağlam hangisi olduğunu söyler."
+          dur: 3.8
+        - type: cta
+          tr: "Eki gör, manayı çöz."
+          body: "Kelimenin yarısı ekinde saklı."
+          dur: 3.2
+    story:
+      kind: video
+      caption: "Nisbet yâsı"
+      scenes:
+        - type: concept
+          ar: "يَاءُ النِّسْبَة"
+          tr: "Aidiyet bildiren yâ."
+          vo: "يَاءُ النِّسْبَة. Bir şeye ait olmayı bildiren yâ."
+        - type: point
+          ar: "مِصْر ← مِصْرِيّ"
+          tr: "Mısır → Mısırlı."
+          vo: "مِصْر Mısır demek, مِصْرِيّ Mısırlı."
+        - type: cta
+          tr: "Tasgîr de gönderide"
+          vo: "Küçültme kalıbı da bugünkü gönderide."
+
+  # ═══════════════════════════════ 87 ══════════════════════════════
+  - day: 87
+    title: "Müzekker ve müennes alametleri"
+    post:
+      tags: ["#sarf", "#arapçagramer", "#arapçaders"]
+      kind: video
+      caption: |
+        Arapçada her ismin bir cinsiyeti var. Fiil ona göre çekilir,
+        sıfat ona göre uyar, zamir ona göre seçilir. Yani cinsiyeti
+        bilmeden cümle kurulmaz.
+
+        Çoğu zaman alamet bellidir: sonunda tâ-i merbûta varsa müennestir.
+        Ama alametsiz müennesler de var — semâî müennes denir, ezberlenir.
+
+        Güneş, savaş, el, ayak… Bunlar alametsiz müennestir ve metinde
+        sürekli karşına çıkar.
+      scenes:
+        - type: hook
+          kicker: "SARF"
+          tr: "Cinsiyeti bilmeden<br>cümle kurulmaz."
+          vo: "Arapçada ismin cinsiyetini bilmeden cümle kurulmaz. Fiil, sıfat ve zamir ona göre gelir."
+        - type: list
+          kicker: "ÜÇ ALAMET"
+          tr: "Müenneslik işaretleri"
+          items:
+            - "Tâ-i merbûta: مَدْرَسَة"
+            - "Elif-i maksûre: كُبْرَى"
+            - "Elif-i memdûde: حَمْرَاء"
+          vo: "Üç alamet var. Tâ-i merbûta: مَدْرَسَة. Elif-i maksûre: كُبْرَى. Elif-i memdûde: حَمْرَاء."
+        - type: concept
+          kicker: "ALAMETSİZ OLANLAR"
+          ar: "اَلْمُؤَنَّثُ السَّمَاعِي"
+          translit: "semâî müennes"
+          tr: "İşareti yok ama müennestir."
+          body: "شَمْس · حَرْب · يَد · رِجْل"
+          vo: "اَلْمُؤَنَّثُ السَّمَاعِي. Alameti yoktur ama müennestir: شَمْس، حَرْب، يَد، رِجْل."
+        - type: point
+          kicker: "NİÇİN ÖNEMLİ"
+          tr: "Fiil yanlış çekilir."
+          body: "طَلَعَتِ الشَّمْسُ denir, طَلَعَ değil."
+          vo: "Bilinmezse fiil yanlış çekilir. طَلَعَتِ الشَّمْسُ denir, طَلَعَ الشَّمْسُ denmez."
+        - type: point
+          kicker: "USUL"
+          tr: "Alametsizleri listeyle ezberle."
+          body: "Sayıları sınırlıdır, bir kerede öğrenilir."
+          vo: "Alametsiz müennesleri bir liste hâlinde ezberle. Sayıları sınırlıdır, bir kerede öğrenilir."
+        - type: cta
+          tr: "Cinsiyet küçük mesele değil."
+          body: "Cümlenin yarısı ona göre kurulur."
+          vo: "Cinsiyet küçük bir mesele değildir. Cümlenin yarısı ona göre kurulur."
+    story:
+      kind: video
+      caption: "Müenneslik alametleri"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "شَمْس müzekker mi,<br>müennes mi?"
+          vo: "شَمْس kelimesi müzekker mi müennes mi?"
+        - type: point
+          tr: "Alameti yok ama müennestir."
+          vo: "Alameti yoktur ama müennestir. Semâî müennes denir."
+        - type: cta
+          tr: "Listesi gönderide"
+          vo: "Alametlerin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 88 ══════════════════════════════
+  - day: 88
+    title: "Ezberi kolaylaştıranlar: şemalar ve takımlar"
+    post:
+      tags: ["#sarf", "#nahiv", "#talebe"]
+      kind: carousel
+      book_url: "https://www.sifayayinevi.com.tr/suruhus-sarf-seti"
+      book_line: "Şemalar ve takımlar"
+      caption: |
+        Metin ezberi uzun iştir. Kısaltmanın yolu yok ama kolaylaştırmanın
+        yolu var: bütünü tek sayfada görmek ve metinleri dağınık değil
+        takım hâlinde edinmek.
+
+        Şema, haftalarca tekrarın yerini tutar — duvarda asılı durur,
+        günde beş dakikalık bakış ezberi taze tutar.
+
+        Takım ise sırayı kendiliğinden kurar. Hangi metinden sonra
+        hangisi sorusunu ortadan kaldırır.
+      scenes:
+        - type: hook
+          kicker: "TALEBE"
+          tr: "Ezberi kolaylaştıran<br>iki şey"
+          body: "Şema ve takım."
+          dur: 3.4
+        - type: book
+          kicker: "1 · ŞEMA"
+          book: avamil-semasi
+          dur: 4.2
+        - type: book
+          kicker: "2 · SARF TAKIMI"
+          book: sarf-seti
+          dur: 4.2
+        - type: book
+          kicker: "3 · SARF + NAHİV"
+          book: sarf-nahiv-karton-set
+          dur: 4.2
+        - type: book
+          kicker: "4 · İZZÎ ŞERHİ"
+          book: izzi-teftazani
+          dur: 4.2
+        - type: cta
+          tr: "Bütünü gör, sırayı kur."
+          body: "Ezber o zaman kolaylaşır."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "Şema neden işe yarar?"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Ezber dağınık mı?"
+          vo: "Ezberlediklerin dağınık mı duruyor?"
+        - type: point
+          tr: "Bütünü tek sayfada gör."
+          vo: "Bütünü tek sayfada görmek, haftalarca tekrarın yerini tutar."
+        - type: cta
+          tr: "Ayrıntısı gönderide"
+          vo: "Ayrıntısı bugünkü gönderide."
+
+  # ═══════════════════════════════ 89 ══════════════════════════════
+  - day: 89
+    title: "3. ayda ne öğrendik"
+    post:
+      tags: ["#nahiv", "#sarf", "#ilimyolu"]
+      kind: carousel
+      caption: |
+        Bu ay nahivde derinleştik, sarfta eksik kalan bahisleri tamamladık.
+
+        Âmillerle başladık, i'râbın harfle gösterildiği yapıları gördük,
+        muzârinin nasb ve cezm edatlarını ayırdık, şart cümlesini kurduk.
+
+        Sarf tarafında kalıpları topladık: mastar, ism-i tafdîl, mübalağa,
+        zaman-mekân-âlet, nisbet ve tasgîr.
+
+        Kaydet, arada dön bak.
+      scenes:
+        - type: hook
+          kicker: "3. AY"
+          tr: "61-90 arası"
+          body: "Bu ay ne konuştuk?"
+          dur: 3.2
+        - type: list
+          kicker: "ÂMİL VE İ'RÂB"
+          tr: "Harekeyi kim verir"
+          items:
+            - "Âmil çeşitleri: ref', nasb, cer, cezm"
+            - "Esmâ-i hamse, tesniye, cemî"
+            - "Gayr-i munsarif"
+          dur: 4.4
+        - type: list
+          kicker: "FİİL VE CÜMLE"
+          tr: "Muzârinin hâlleri"
+          items:
+            - "Nasb edatları: أَنْ · لَنْ · كَيْ"
+            - "Cezm edatları: لَمْ · لَا النَّاهِيَة"
+            - "Şart cümlesi ve مَا'nın çeşitleri"
+          dur: 4.4
+        - type: list
+          kicker: "SARF KALIPLARI"
+          tr: "Kök durur, kalıp konuşur"
+          items:
+            - "Mastar çeşitleri, ism-i tafdîl"
+            - "Mübalağa, zaman-mekân-âlet"
+            - "Nisbet yâsı, tasgîr, müenneslik"
+          dur: 4.4
+        - type: list
+          kicker: "USUL"
+          tr: "Nasıl çalışılır"
+          items:
+            - "Metin mi şerh mi?"
+            - "Tercüme bir ara duraktır"
+            - "Şâhid beyit kaidenin delilidir"
+          dur: 4.2
+        - type: cta
+          tr: "Yarın 4. ay başlıyor."
+          body: "Belâgat tamamlanıyor, fıkha giriyoruz."
+          dur: 3.4
+    story:
+      kind: video
+      caption: "3. ayın özeti"
+      scenes:
+        - type: hook
+          kicker: "3. AY"
+          tr: "61-90 arası bitti."
+          vo: "Üçüncü ay tamamlandı."
+        - type: list
+          tr: "Üç başlık"
+          items: ["Âmil ve i'râb", "Muzârinin hâlleri", "Sarf kalıpları"]
+          vo: "Üç başlık: âmil ve i'râb, muzârinin hâlleri, sarf kalıpları."
+        - type: cta
+          tr: "Özet gönderide"
+          vo: "Özetin tamamı bugünkü gönderide."
+
+  # ═══════════════════════════════ 90 ══════════════════════════════
+  - day: 90
+    title: "Metin ezberinde ritim"
+    post:
+      tags: ["#ilimyolu", "#talebe", "#medreseusulü"]
+      kind: video
+      caption: |
+        Ezber, zihnin değil kulağın işidir. Klasik usulde metin sessizce
+        okunmaz; sesli okunur, tekrarlanır, ritmi oturur.
+
+        Sebebi basit: Arapça metinler ritimli yazılmıştır. Secili cümleler,
+        eşit uzunlukta bölümler, tekrar eden kalıplar. Sesli okuyan talebe
+        bu ritmi yakalar ve metin kendi kendini hatırlatır.
+
+        Günde az, her gün, sesli. Üç kuralın üçü birden lazım.
+      scenes:
+        - type: hook
+          kicker: "USUL"
+          tr: "Ezber zihnin değil,<br>kulağın işidir."
+          vo: "Ezber çoğu zaman zihnin değil kulağın işidir."
+        - type: point
+          kicker: "SEBEBİ"
+          tr: "Klasik metinler ritimli yazılmıştır."
+          body: "Seci, eşit bölümler, tekrar eden kalıplar."
+          vo: "Klasik metinler ritimli yazılmıştır. Secili cümleler, eşit uzunlukta bölümler, tekrar eden kalıplar."
+        - type: list
+          kicker: "ÜÇ KURAL"
+          tr: "Üçü birden lazım"
+          items:
+            - "Sesli oku — ritim kulakta oturur"
+            - "Günde az — yarım sayfa yeter"
+            - "Her gün — ara verince ritim bozulur"
+          vo: "Sesli oku, ritim kulakta otursun. Günde az oku, yarım sayfa yeter. Ama her gün oku, ara verince ritim bozulur."
+        - type: point
+          kicker: "TEKRAR"
+          tr: "Dünküyü okumadan bugünküne geçme."
+          body: "Eski satır yeni satırı taşır."
+          vo: "Dünkü satırı okumadan bugünküne geçme. Eski satır yeni satırı taşır."
+        - type: point
+          kicker: "İŞARET"
+          tr: "Metin kendi kendini hatırlatmaya başlarsa oturmuştur."
+          body: "Takıldığın yerde devamı kendiliğinden gelir."
+          vo: "Metin kendi kendini hatırlatmaya başladıysa oturmuş demektir. Takıldığın yerde devamı kendiliğinden gelir."
+        - type: cta
+          tr: "Az, her gün, sesli."
+          body: "Üçü bir arada olmazsa ezber tutmaz."
+          vo: "Az oku, her gün oku, sesli oku. Üçü bir arada olmazsa ezber tutmaz."
+    story:
+      kind: video
+      caption: "Ezberde ritim"
+      scenes:
+        - type: hook
+          kicker: "BUGÜN"
+          tr: "Ezber niçin<br>sesli yapılır?"
+          vo: "Metin ezberi niçin sesli yapılır?"
+        - type: point
+          tr: "Klasik metinler ritimli yazılmıştır."
+          vo: "Çünkü klasik metinler ritimli yazılmıştır."
+        - type: cta
+          tr: "Üç kural gönderide"
+          vo: "Üç kuralın tamamı bugünkü gönderide."
