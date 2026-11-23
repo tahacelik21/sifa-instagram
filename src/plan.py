@@ -31,6 +31,7 @@ def denetle() -> list[str]:
     for e in plan["plan"]:
         kalan += [e["book"]] if e.get("book") else list(e["koleksiyon"])
 
+    haric = dict(plan.get("haric") or {})
     hepsi = bitti + kalan
     sorun = []
     for b in sorted(set(hepsi)):
@@ -40,8 +41,13 @@ def denetle() -> list[str]:
         if hepsi.count(b) > 1:
             sorun.append(f"{hepsi.count(b)} kez geçiyor: {b}")
     for k in BOOKS:
-        if k not in hepsi:
+        if k not in hepsi and k not in haric:
             sorun.append(f"hiç tanıtılmıyor: {k}")
+    for k in haric:
+        if k not in BOOKS:
+            sorun.append(f"hariç listesinde ama katalogda yok: {k}")
+        if k in hepsi:
+            sorun.append(f"hem hariç hem planda: {k}")
 
     gunler = [e["day"] for e in plan["plan"]]
     if gunler != sorted(gunler):
@@ -50,7 +56,9 @@ def denetle() -> list[str]:
     son = gunler[-1]
     print(f"katalog {len(BOOKS)} başlık · 1-{plan['tamamlanan']['araliq'].split('-')[-1]} "
           f"arası {len(bitti)} tanıtıldı · {gunler[0]}-{son} arası {len(plan['plan'])} kitap günü")
-    print(f"kapsanan: {len(set(hepsi))}/{len(BOOKS)} başlık")
+    print(f"kapsanan: {len(set(hepsi))}/{len(BOOKS) - len(haric)} başlık")
+    for k, sebep in haric.items():
+        print(f"plan dışı: {k} — {sebep}")
     return sorun
 
 

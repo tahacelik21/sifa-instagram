@@ -139,12 +139,13 @@ kelimeyi kullanırsan ses ve görüntü örtüşür.
 
 ### Ürün tanıtım planı
 
-`content/tanitim-plani.yaml` — katalogdaki **58 başlığın tamamının 180 gün
-içinde** tanıtılması için hazırlanmış takvim. Katalog siteden alındı
+`content/tanitim-plani.yaml` — kataloğun **180 gün içinde** tanıtılması için
+hazırlanmış takvim. Katalog siteden alındı
 (Yayınevleri → Şifa Yayınevi, 74 ürün; varyantlar tek başlıkta toplandı).
 
 - 1-60. günler: 14 başlık tanıtıldı
-- 61-180: 40 kitap günü (3 günde bir), 38 tek kitap + 2 koleksiyon karuseli
+- 61-180: 40 kitap günü (3 günde bir), 39 tek kitap + 1 koleksiyon karuseli
+- Plan dışı tutulanlar `haric:` altında (şu an kartelalar — ayrı çalışılacak)
 - Yoğunluk: gönderilerin üçte biri — kalanı bilgilendirici içerik
 
 Planı doğrulamak için:

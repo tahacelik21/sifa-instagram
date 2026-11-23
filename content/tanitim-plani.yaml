@@ -12,6 +12,11 @@
 # "konu" alanı o günün içeriğinin ekseni — kitap konunun içinden çıkar,
 # konu kitabın etrafına kurulmaz.
 
+# Plan dışı tutulanlar: kataloğa kayıtlı ama bu 180 günde tanıtılmıyor.
+# Denetim bunları eksik saymaz.
+haric:
+  kartelalar: "Kartelalar için ayrı bir çalışma yapılacak."
+
 tamamlanan:
   araliq: "1-60"
   basliklar: [mecmuatus-sarf, mecmuatun-nahiv, suruhul-maksud, suruhul-izzi,
@@ -146,5 +151,5 @@ plan:
     book: her-anneye-lazim
     konu: "Evde dinî eğitim nereden başlar?"
   - day: 178
-    koleksiyon: [kartelalar, hilye-tablo]
-    konu: "Duvara asılanlar: kartela ve levha"
+    book: hilye-tablo
+    konu: "Hilye-i şerîf: evin duvarındaki metin"
