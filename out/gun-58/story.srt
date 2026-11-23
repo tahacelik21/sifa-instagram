@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,470
+Klasik medresede bir ders nasıl işlenir?
+
+2
+00:00:03,270 --> 00:00:06,455
+Dört basamak: ezber, kıraat, şerh,
+
+3
+00:00:06,455 --> 00:00:07,286
+münâzara.
+
+4
+00:00:08,086 --> 00:00:09,832
+Ayrıntısı bugünkü gönderide.

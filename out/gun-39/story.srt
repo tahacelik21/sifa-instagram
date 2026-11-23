@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,192
+Nahivde hangi metin önce okunur?
+
+2
+00:00:02,992 --> 00:00:06,229
+Önce el-Avâmil, sonra el-İzhâr, sonra
+
+3
+00:00:06,229 --> 00:00:07,208
+el-Kâfiye.
+
+4
+00:00:08,008 --> 00:00:09,753
+Ayrıntısı bugünkü gönderide.

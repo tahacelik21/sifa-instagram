@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:01,446
+Hâl mi, temyiz mi?
+
+2
+00:00:02,550 --> 00:00:04,674
+Hâl nasıl sorusuna, temyiz ne sorusuna
+
+3
+00:00:04,674 --> 00:00:05,451
+cevap verir.
+
+4
+00:00:06,251 --> 00:00:07,737
+Örnekleri bugünkü gönderide.

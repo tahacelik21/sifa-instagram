@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,410
+Kaideyi anladın ama uygulayamıyor musun?
+
+2
+00:00:03,210 --> 00:00:05,422
+Anlamakla yapabilmenin arasında alıştırma
+
+3
+00:00:05,422 --> 00:00:05,800
+var.
+
+4
+00:00:06,600 --> 00:00:08,801
+Üç adımlık usul bugünkü gönderide.

@@ -1,0 +1,71 @@
+1
+00:00:00,350 --> 00:00:02,717
+el-Avâmil bitti, âmilleri tanıdın.
+
+2
+00:00:02,717 --> 00:00:04,966
+Peki sıra nerede? Cümlenin bütününe
+
+3
+00:00:04,966 --> 00:00:06,386
+bakmanın vakti geldi.
+
+4
+00:00:07,186 --> 00:00:08,136
+اَلْإِظْهَار.
+
+5
+00:00:08,336 --> 00:00:10,877
+Açığa çıkarmak demek. Cümlede neyin niçin
+
+6
+00:00:10,877 --> 00:00:13,072
+o harekeyi aldığını gösteren metin.
+
+7
+00:00:13,872 --> 00:00:16,578
+Yeri el-Avâmil ile el-Kâfiye arasındadır.
+
+8
+00:00:16,578 --> 00:00:19,469
+Bu basamağı atlayan, Kâfiye'de tutunamaz.
+
+9
+00:00:19,469 --> 00:00:22,053
+Her basamak bir öncekinin üstüne biner.
+
+10
+00:00:22,853 --> 00:00:24,903
+Metin kısadır ama her satırı bir bahis
+
+11
+00:00:24,903 --> 00:00:27,331
+açar. Bir satırın altında bazen sayfalarca
+
+12
+00:00:27,331 --> 00:00:28,302
+tartışma durur.
+
+13
+00:00:29,102 --> 00:00:30,410
+شُرُوحُ الْإِظْهَار.
+
+14
+00:00:30,610 --> 00:00:32,615
+Metni şerhleriyle birlikte veren derleme.
+
+15
+00:00:33,415 --> 00:00:36,106
+Metni şerhiyle oku. Şerhsiz okunan metin,
+
+16
+00:00:36,106 --> 00:00:38,281
+ezberlenmiş bir satır olarak kalır.
+
+17
+00:00:38,281 --> 00:00:40,628
+Şerh, o satırın niçin öyle yazıldığını
+
+18
+00:00:40,628 --> 00:00:41,200
+söyler.

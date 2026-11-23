@@ -1,0 +1,63 @@
+1
+00:00:00,350 --> 00:00:02,453
+Elinde on kaynak var ama ilerleme yok.
+
+2
+00:00:02,453 --> 00:00:04,761
+Sebebi kaynak azlığı değil, dağınıklık.
+
+3
+00:00:05,561 --> 00:00:07,911
+Klasik usulde yol sıralı metinle alınır.
+
+4
+00:00:07,911 --> 00:00:10,152
+Her metin bir öncekinin üzerine biner.
+
+5
+00:00:10,952 --> 00:00:13,507
+Önce el-Avâmil: harekeyi değiştiren
+
+6
+00:00:13,507 --> 00:00:15,523
+âmiller. Sonra el-İzhâr:
+
+7
+00:00:15,523 --> 00:00:18,548
+cümle yapısı ve i'râb. Sonra el-Kâfiye.
+
+8
+00:00:19,348 --> 00:00:21,334
+Biri bitmeden diğerine geçilmez.
+
+9
+00:00:21,334 --> 00:00:23,151
+Atlayan talebe sonraki basamakta
+
+10
+00:00:23,151 --> 00:00:23,889
+tutunamaz.
+
+11
+00:00:24,689 --> 00:00:26,131
+مَجْمُوعَةُ النَّحْو.
+
+12
+00:00:26,331 --> 00:00:28,541
+Bu sırayı tek ciltte toplar:
+
+13
+00:00:28,541 --> 00:00:31,392
+el-Avâmil, el-İzhâr, el-Kâfiye.
+
+14
+00:00:32,192 --> 00:00:34,193
+Dağınık kaynak yerine basamaklı yol.
+
+15
+00:00:34,193 --> 00:00:36,298
+Bitirilen her metin sonrakinin anahtarını
+
+16
+00:00:36,298 --> 00:00:36,862
+bırakır.

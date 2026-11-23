@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:01,186
+İki ay doldu.
+
+2
+00:00:02,550 --> 00:00:04,603
+Gönderi merak uyandırır, metin okumak
+
+3
+00:00:04,603 --> 00:00:05,271
+ilerletir.
+
+4
+00:00:06,071 --> 00:00:08,271
+Toparlamanın tamamı bugünkü gönderide.

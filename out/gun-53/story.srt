@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:01,563
+Hangi sözlüğü almalı?
+
+2
+00:00:02,550 --> 00:00:05,245
+Başlangıçta Arapça-Türkçe, metin okurken
+
+3
+00:00:05,245 --> 00:00:06,311
+Arapça-Arapça.
+
+4
+00:00:07,111 --> 00:00:08,856
+Kullanım usulü bugünkü gönderide.

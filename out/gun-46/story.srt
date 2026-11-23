@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,941
+Arapçada sıfat mevsûfuna kaç şeyde uyar?
+
+2
+00:00:03,741 --> 00:00:07,163
+Dört şeyde: i'râbda, sayıda, cinsiyette,
+
+3
+00:00:07,163 --> 00:00:08,216
+belirlilikte.
+
+4
+00:00:09,016 --> 00:00:10,502
+Örnekleri bugünkü gönderide.

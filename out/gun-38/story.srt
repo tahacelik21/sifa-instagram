@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,616
+Arapçada mef'ûl beş çeşittir.
+
+2
+00:00:03,416 --> 00:00:05,532
+Hepsi mansûbdur ama her biri başka bir şey
+
+3
+00:00:05,532 --> 00:00:06,136
+bildirir.
+
+4
+00:00:06,936 --> 00:00:08,942
+Beşinin tamamı bugünkü gönderide.
