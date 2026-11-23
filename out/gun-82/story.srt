@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:02,681
+Klasik metni tercümesinden okumak ayıp mı?
+
+2
+00:00:03,481 --> 00:00:05,578
+Değil. Ara durak olarak kullanılırsa
+
+3
+00:00:05,578 --> 00:00:06,331
+faydalıdır.
+
+4
+00:00:07,131 --> 00:00:09,202
+Nasıl kullanılacağı bugünkü gönderide.

@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:03,044
+Bir metni müellifinin kendisi şerh ederse
+
+2
+00:00:03,044 --> 00:00:03,964
+ne değişir?
+
+3
+00:00:04,764 --> 00:00:07,148
+Şerh yorum olmaktan çıkar, beyan olur.
+
+4
+00:00:07,948 --> 00:00:09,694
+Ayrıntısı bugünkü gönderide.

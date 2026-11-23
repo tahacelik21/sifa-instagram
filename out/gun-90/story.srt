@@ -1,0 +1,11 @@
+1
+00:00:00,350 --> 00:00:02,330
+Metin ezberi niçin sesli yapılır?
+
+2
+00:00:03,130 --> 00:00:05,396
+Çünkü klasik metinler ritimli yazılmıştır.
+
+3
+00:00:06,196 --> 00:00:08,592
+Üç kuralın tamamı bugünkü gönderide.
