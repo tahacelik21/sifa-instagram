@@ -24,8 +24,9 @@ SCENE_TYPES = {"hook", "concept", "point", "list", "compare", "quote", "stat", "
 
 def test_calendar():
     cal = load_calendar()
-    assert len(cal) == 30, f"30 gün bekleniyor, {len(cal)} var"
-    assert sorted(cal) == list(range(1, 31)), "gün numaraları 1..30 olmalı"
+    n = len(cal)
+    assert n % 30 == 0 and n >= 30, f"takvim 30'un katı olmalı, {n} var"
+    assert sorted(cal) == list(range(1, n + 1)), "gün numaraları boşluksuz 1..N olmalı"
 
     books_used = 0
     for day, d in cal.items():
@@ -49,8 +50,11 @@ def test_calendar():
         if any(s.get("book") for s in d["post"]["scenes"]):
             books_used += 1
 
-    assert 5 <= books_used <= 12, f"kitap önerisi dengesi bozuk: 30 günde {books_used}"
-    print(f"  takvim: 30 gün, {books_used} gün kitap önerili")
+    # Her 30 günde 5-12 kitap önerisi — akış kitapla boğulmasın
+    oran = books_used / n * 30
+    assert 5 <= oran <= 12, f"kitap önerisi dengesi bozuk: {n} günde {books_used}"
+    assert all(d["post"].get("tags") for d in cal.values()), "etiketsiz gün var"
+    print(f"  takvim: {n} gün, {books_used} gün kitap önerili")
 
 
 def test_themes():
